@@ -2,29 +2,25 @@
 
 : Trabajo Final de Grado
 
-<span id='MVC'>MVC</span>
-
-: Patrón de diseño Modelo-Vista-Controlador
-
 <span id='NoSQL'>NoSQL</span>
 
-: No solo lenguaje de consulta estructurada
+: Not Only Structured Query Language (No Solo Lenguaje de Consulta Estructurada)
 
 <span id='HTML'>HTML</span>
 
-: Lenguaje de marcas de hypertexto
+: HyperText Markup Language (Lenguaje de Marcas de Hypertexto)
 
 <span id='CSS'>CSS</span>
 
-: Hojas de estilo en cascada
+: Cascading Style Sheets (Hojas de Estilo en Cascada)
 
 <span id='DOM'>DOM</span>
 
-: Modelo de Objeto de Documento
+: Document Object Model (Modelo de Objeto de Documento)
 
 <span id='SPA'>SPA</span>
 
-: Aplicaciones de una Sola Página
+: Single Page Application (Aplicaciones de una Sola Página)
 
 <span id='Wasm'>Wasm</span>
 
@@ -32,11 +28,11 @@
 
 <span id='PWA'>PWA</span>
 
-: Aplicaciones Web Progresivas
+: Progressive Web Applications (Aplicaciones Web Progresivas)
 
 <span id='HTTP'>HTTP</span>
 
-: Protocolo de Transferencia de Hipertexto
+: Hypertext Transfer Protocol (Protocolo de Transferencia de Hipertexto)
 
 <span id='SO'>SO</span>
 
@@ -50,11 +46,31 @@
 
 : Interacción Persona-Ordenador
 
+<span id='SIGCHI'>SIGCHI</span>
+
+: Special Interest Group on Computer-Human Interaction (Grupo de Interés Especial sobre la Interacción Persona-Ordenador)
+
 <span id='ISO'>ISO</span>
 
-: Organización Internacional de Normalización
+: International Organization for Standardization (Organización Internacional de Normalización)
+
+<span id='MVC'>MVC</span>
+
+: Model-View-Controller (Modelo-Vista-Controlador)
 
 <span id='HU'>HU</span>
 
 : Historia de Usuario
+
+<span id='PB'>PB</span>
+
+: Product Backlog
+
+<span id='SB'>SB</span>
+
+: Sprint Backlog
+
+<span id='BC'>BC</span>
+
+: Burndown Chart
 
