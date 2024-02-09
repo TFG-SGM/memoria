@@ -1,6 +1,8 @@
 # Resumen de Sprints
 
-En este anexo, se proporciona un detallado registro de los diferentes Sprints llevados a cabo a lo largo del proyecto. Cada Sprint se inicia con una reunión de planificación, en la que se establecen las distintas [HU](#HU) a abordar durante el Sprint, con la participación de los tutores Félix Albertos Marco (FAM) y Juan Enrique Garrido Navarro (JEGN), quienes desempeñan los roles de Scrum Master y Product Owner. Es fundamental destacar que la reunión de planificación, donde se definen los objetivos del Sprint, se lleva a cabo el mismo día que la revisión y retrospectiva del Sprint anterior.
+En este anexo, se proporciona un detallado registro de los diferentes Sprints llevados a cabo a lo largo del proyecto. Cada Sprint se inicia con una reunión de planificación, en la que se establecen las distintas [HU](#HU) a abordar durante el Sprint, con la participación de los tutores Félix Albertos Marco (FAM) y Juan Enrique Garrido Navarro (JEGN), quienes desempeñan los roles de Scrum Master y Product Owner. 
+
+Es fundamental destacar que la reunión de planificación, donde se definen los objetivos del Sprint, se lleva a cabo el mismo día que la revisión y retrospectiva del Sprint anterior.
 
 También, es relevante señalar que la fecha de inicio de cada Sprint es considerada automáticamente como la fecha de finalización del Sprint anterior, asegurando así una continuidad temporal en el desarrollo de las iteraciones del proyecto.
 
@@ -56,7 +58,7 @@ Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual 
 
 Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint1}, el cual refleja que el progreso del trabajo realizado ha ido por detrás del planificado inicialmente. Sin embargo, a pesar de esta variación, se logra completar el trabajo dentro del plazo establecido.
 
-![[BC](#BC) del Sprint 1\label{anexo1:bc-sprint1}](bc-sprint1.png){width=75%}
+![[BC](#BC) del Sprint 1\label{anexo1:bc-sprint1}](anx1_bc-sprint1.png){width=75%}
 
 ## Sprint 2 
 
@@ -64,7 +66,7 @@ Este Sprint tiene comienzo el **13 de octubre de 2023** con una duración de 3 s
 
 ### Planificación del Sprint
 
-En esta esta reunión, se concretó mejor el título del proyecto, así como de los diferentes objetivos principales. Además, se tomó la decisión final de realizar la memoria en español. A continuación, en la Tabla \ref{anexo1:product-backlog-2} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-2} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+En esta esta reunión, se concretó mejor el título del proyecto, así como de los diferentes objetivos principales. Además, se tomó la decisión final de realizar el documento en español. A continuación, en la Tabla \ref{anexo1:product-backlog-2} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-2} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
 | **ID** | **Tarea**                                       | **Peso** |
 | ------- | ----------------------------------------------- | -------- |
@@ -92,15 +94,15 @@ Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual 
 
 Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint2}, el cual refleja que el progreso del trabajo realizado ha coincidido con la planificación inicial.
 
-![[BC](#BC) del Sprint 2\label{anexo1:bc-sprint2}](bc-sprint2.png){width=75%}
+![[BC](#BC) del Sprint 2\label{anexo1:bc-sprint2}](anx1_bc-sprint2.png){width=75%}
 
 ## Sprint 3
 
-Este Sprint tiene comienzo el **3 de noviembre de 2023**  con una duración de 4 semanas. Su objetivo principal era empezar la memoria realizando el primer capitulo de la misma. A continuación, se detallan las diferentes fases del Sprint.
+Este Sprint tiene comienzo el **3 de noviembre de 2023**  con una duración de 4 semanas. Su objetivo principal era empezar el documento realizando el primer capitulo de la misma. A continuación, se detallan las diferentes fases del Sprint.
 
 ### Planificación del Sprint
 
-En esta reunión, se realizó el anteproyecto, además se dio un repaso a los distintos capítulos que debería tener la memoria del proyecto. A continuación, en la Tabla \ref{anexo1:product-backlog-3} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-3} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+En esta reunión, se realizó el anteproyecto, además se dio un repaso a los distintos capítulos que debería tener el documento del proyecto. A continuación, en la Tabla \ref{anexo1:product-backlog-3} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-3} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
 | **ID**  | **Tarea**                                  | **Peso** |
 | -------- | ------------------------------------------ | -------- |
@@ -123,7 +125,7 @@ En esta reunión, se realizó el anteproyecto, además se dio un repaso a los di
 
 ### Desarrollo del Sprint 
 
-Durante el Sprint, se empezó y finalizó el capítulo 1 de la memoria. Además, también se comenzó a realizar el primer anexo, el cual consistiría en el resumen de los diferentes Sprints que tuvieron lugar durante la realización del proyecto. 
+Durante el Sprint, se empezó y finalizó el capítulo 1 del documento. Además, también se comenzó a realizar el primer anexo, el cual consistiría en el resumen de los diferentes Sprints que tuvieron lugar durante la realización del proyecto. 
 
 ### Revisión del Sprint
 
@@ -133,15 +135,15 @@ Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual 
 
 Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint3}, el cual refleja que el progreso del trabajo realizado ha coincidido con la planificación inicial con algunas variaciones de tiempo.
 
-![[BC](#BC) del Sprint 3\label{anexo1:bc-sprint3}](bc-sprint3.png){width=75%}
+![[BC](#BC) del Sprint 3\label{anexo1:bc-sprint3}](anx1_bc-sprint3.png){width=75%}
 
 ## Sprint 4
 
-Este Sprint tiene comienzo el **1 de diciembre de 2023** con una duración de 2 semanas. Su objetivo principal era seguir progresando con la memoria, realizando el segundo capitulo de la misma. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **1 de diciembre de 2023** con una duración de 2 semanas. Su objetivo principal era seguir progresando con el documento, realizando el segundo capitulo de la misma. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
-En esta reunión, se pusieron las nuevas tareas para el siguiente Sprint, de las cuales, tratarán principalmente de realizar el capítulo 2 de la memoria y la adicción del siguiente Sprint al anexo. También, se habló sobre la importancia del concepto de usabilidad, el cual tendría que estar presente en todo momento durante el proyecto, lo que supone hablar sobre él en el capítulo 2 del estado de arte.
+En esta reunión, se pusieron las nuevas tareas para el siguiente Sprint, de las cuales, tratarán principalmente de realizar el capítulo 2 del documento y la adicción del siguiente Sprint al anexo. También, se habló sobre la importancia del concepto de usabilidad, el cual tendría que estar presente en todo momento durante el proyecto, lo que supone hablar sobre él en el capítulo 2 del estado de arte.
 
 Además, se tomó la decisión que el Sprint duraría tan solo dos semanas, para no posponer la siguiente reunión después de fiestas, lo que supondría un Sprint de más de un mes de duración. A continuación, en la Tabla \ref{anexo1:product-backlog-4} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-4} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
@@ -173,25 +175,25 @@ Además, se tomó la decisión que el Sprint duraría tan solo dos semanas, para
 
 ### Desarrollo de Sprint 
 
-Durante el Sprint, se fueron realizando las diferentes tareas. Se decidió primero crear la organización en la plataforma GitHub, en la cual se crearán los repositorios donde se guardaría el código fuente del proyecto. También, se empezó a usar la herramienta de “GitHub Proyects” de la misma plataforma para gestionar mejor la metodología de scrum. Sin embargo, se tuvieron problemas para hacer esto último, ya que no se encontraba la manera de crear el [BC](#BC), por lo que se decidió postergar la tarea para el siguiente Sprint y de esta forma poner más foco en progresar la memoria.
+Durante el Sprint, se fueron realizando las diferentes tareas. Se decidió primero crear la organización en la plataforma GitHub, en la cual se crearán los repositorios donde se guardaría el código fuente del proyecto. También, se empezó a usar la herramienta de “GitHub Proyects” de la misma plataforma para gestionar mejor la metodología de scrum. Sin embargo, se tuvieron problemas para hacer esto último, ya que no se encontraba la manera de crear el [BC](#BC), por lo que se decidió postergar la tarea para el siguiente Sprint y de esta forma poner más foco en progresar el documento.
 
-A parte de lo mencionado y de compartir la memoria a los tutores para que pudieran ver el progreso de esta misma. Se empezó a realizar el capítulo 2 de la memoria, el cual trataría sobre el estado del arte. Por último, también se siguió completando el anexo de los Sprints.
+A parte de lo mencionado y de compartir el documento a los tutores para que pudieran ver el progreso de esta misma. Se empezó a realizar el capítulo 2 del documento, el cual trataría sobre el estado del arte. Por último, también se siguió completando el anexo de los Sprints.
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual el tutor FAM dio el consejo de realizar la memoria en tercera persona, además de buscar ser más literario a la hora de explicar los diferentes apartados. 
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual el tutor FAM dio el consejo de realizar el documento en tercera persona, además de buscar ser más literario a la hora de explicar los diferentes apartados. 
 
 Por otro lado, también se discutió la manera correcta de organizar el anexo de los Sprints, en el cual de cada Sprint se detallarán por separada cada una de sus fases: planificación, desarrollo, revisión y retrospectiva. Además, se puso gran énfasis en la manera correcta de describir las diferentes [HU](#HU). Las cuales deberían tener un determinado identificador, peso y un nombre que implique acción.
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint4}, el cual refleja que el progreso del trabajo realizado ha ido por delante del planificado inicialmente. Además, se puede observar que no se ha quemado todo el peso de las [HU](#HU) debido al problema con la configuración del [BC](#BC).
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint4}, el cual refleja que el progreso del trabajo realizado ha ido por delante del planificado inicialmente. Además, se puede observar que no se llegó a quemar todo el peso de las [HU](#HU) debido al problema con la configuración del [BC](#BC).
 
-![[BC](#BC) del Sprint 4\label{anexo1:bc-sprint4}](bc-sprint4.png){width=75%}
+![[BC](#BC) del Sprint 4\label{anexo1:bc-sprint4}](anx1_bc-sprint4.png){width=75%}
 
 ## Sprint 5
 
-Este Sprint tiene comienzo el **15 de diciembre de 2023**  con una duración de 5 semanas. Su objetivo principal era finalizar el segundo capitulo de la memoria. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **15 de diciembre de 2023**  con una duración de 5 semanas. Su objetivo principal era finalizar el segundo capitulo del documento. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
@@ -224,9 +226,9 @@ En esta reunión, se decidió que en el siguiente Sprint se terminaría de refin
 
 Durante el Sprint, se realizaron las diferentes tareas planteadas en la reunión de planificación. Es decir, se acabó el capítulo del estado del arte y se mejoró el anexo de los Sprints. Además, se empezó a usar la plantilla de markdown proporcionada por el tutor FAM. 
 
-Durante el uso de dicha plantilla, apareció un problema, el cual consistía en que no se encontraba el makefile correspondiente al ejecutar el comando "sudo make docker". Esto se consiguió solucionarlo, cambiando “PWD” a “shell pwd” en la línea 24 del makefile. El archivo makefile previo al cambio se puede ver en el Listado \ref{anexo1:antes-cambio-archivo-makefile}, mientras que en el Listado \ref{anexo1:despues-cambio-archivo-makefile} se puede ver el cambio realizado (en el caso de los listados, la línea 5 corresponde a la línea 24 del makefile original).
+Durante el uso de dicha plantilla, apareció un problema, el cual consistía en que no se encontraba el makefile correspondiente al ejecutar el comando "sudo make docker". Esto se consiguió solucionarlo, cambiando “PWD” a “shell pwd” en la línea 24 del makefile. El archivo makefile previo al cambio se puede ver en el Listado \ref{anexo1:antes-cambio-archivo-makefile}, mientras que en el Listado \ref{anexo1:despues-cambio-archivo-makefile} se puede ver el cambio realizado.
 
-```{.yaml #anexo1:antes-cambio-archivo-makefile .numberLines caption="Archivo makefile antes del cambio" frame=single}
+```{.yaml #anexo1:antes-cambio-archivo-makefile .numberLines startFrom="20" caption="Archivo makefile antes del cambio" frame=single}
 tfg: deleteContainer
 	@echo "*********************************"
 	@echo "Compilando Trabajo Final de Grado"
@@ -239,7 +241,7 @@ deleteContainer:
 	-docker rm tfgii
 ```
 
-```{.yaml #anexo1:despues-cambio-archivo-makefile .numberLines caption="Archivo makefile después del cambio" frame=single}
+```{.yaml #anexo1:despues-cambio-archivo-makefile .numberLines startFrom="20" caption="Archivo makefile después del cambio" frame=single}
 tfg: deleteContainer
 	@echo "*********************************"
 	@echo "Compilando Trabajo Final de Grado"
@@ -254,7 +256,7 @@ deleteContainer:
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual los tutores dieron algunos comentarios sobre la memoria poniendo especial atención en la escritura y el formato de la misma. Además, el tutor JEGN dio el consejo de añadir los diferentes [PB](#PB) en el anexo de Sprints con el objetivo de dar un mejor contexto a las [HU](#HU) que se seleccionan.
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual los tutores dieron algunos comentarios sobre el documento poniendo especial atención en la escritura y el formato de la misma. Además, el tutor JEGN dio el consejo de añadir los diferentes [PB](#PB) en el anexo de Sprints con el objetivo de dar un mejor contexto a las [HU](#HU) que se seleccionan.
 
 Por otro lado, se discutió la forma de realizar el [BC]( #BC) utilizando la herramienta GitHub Projects, ya que está estaba dando problemas para crear dicho gráfico. Al final, se llego a la conclusión de hacer el burnup chart en vez del [BC](#BC) para no perder más tiempo con esta tarea. 
 
@@ -264,15 +266,15 @@ Finalmente, se acordó modificar el enfoque del proyecto, pasando de diagnostica
 
 Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint5}, el cual refleja que el progreso del trabajo realizado ha ido ligeramente por detrás del planificado inicialmente. Sin embargo, a pesar de esta variación, se logra completar el trabajo dentro del plazo establecido.
 
-![[BC](#BC) del Sprint 5\label{anexo1:bc-sprint5}](bc-sprint5.png){width=75%}
+![[BC](#BC) del Sprint 5\label{anexo1:bc-sprint5}](anx1_bc-sprint5.png){width=75%}
 
 ## Sprint 6 
 
-Este Sprint tiene comienzo el **19 de enero de 2024 ** con una duración de 2 semanas. Su objetivo principal era realizar el capítulo 3 de la memoria. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **19 de enero de 2024 ** con una duración de 2 semanas. Su objetivo principal era realizar el capítulo 3 del documento. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
-En esta reunión, se planificaron las tareas a realizar durante el siguiente Sprint, acordando realizar el capítulo de propuesta de solución así como realizar las mejoras a la memoria según la revisión realizada anteriormente. Además, se discutió de una posible entrevista con Cristina para la siguiente reunión. A continuación, en la Tabla \ref{anexo1:product-backlog-6} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-6} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+En esta reunión, se planificaron las tareas a realizar durante el siguiente Sprint, acordando realizar el capítulo de propuesta de solución así como realizar las mejoras a el documento según la revisión realizada anteriormente. Además, se discutió de una posible entrevista con Cristina para la siguiente reunión. A continuación, en la Tabla \ref{anexo1:product-backlog-6} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-6} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
 | **ID**  | **Tarea**                                              | **Peso** |
 | -------- | :----------------------------------------------------- | -------- |
@@ -282,7 +284,7 @@ En esta reunión, se planificaron las tareas a realizar durante el siguiente Spr
 | TSGM-10 | Realizar capítulo de conclusiones                      | 5        |
 | TSGM-15 | Configurar “GitHub Project” para la gestión de Sprints | 1 > 3   |
 | TSGM-20 | Realizar cambios según revisión                        | 5        |
-| TSGM-21 | Crear el repositorio para la memoria                   | 1        |
+| TSGM-21 | Crear el repositorio para el documento                 | 1        |
 | TSGM-22 | Añadir el [PB](#PB) en el anexo de Sprints             | 3        |
 | TSGM-23 | Ver que técnicas usar según test usuarios              | 5        |
 | TSGM-24 | Preparar entrevista con Cristina                       | 5        |
@@ -296,7 +298,7 @@ En esta reunión, se planificaron las tareas a realizar durante el siguiente Spr
 | TSGM-7  | Realizar capítulo de propuesta de solución             | 7        |
 | TSGM-15 | Configurar “GitHub Project” para la gestión de Sprints | 3        |
 | TSGM-20 | Realizar cambios según revisión                        | 5        |
-| TSGM-21 | Crear el repositorio para la memoria                   | 1        |
+| TSGM-21 | Crear el repositorio para el documento                 | 1        |
 | TSGM-22 | Añadir el [PB](#PB) en el anexo de Sprints             | 3        |
 | TSGM-23 | Ver que técnicas usar según test usuarios              | 5        |
 | TSGM-24 | Preparar entrevista con Cristina                       | 5        |
@@ -314,21 +316,75 @@ Es importante destacar que, en este período, se configuró finalmente el proyec
 
 ### Revisión Sprint
 
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual el tutor FAM proporciono algunos consejos generales para la mejora del documento. Además, se revisó el capítulo 3 realizado durante el Sprint, del cual se comentó algunas posibles mejoras en específico sobre la estructura del capítulo. 
+
+### Retrospectiva del Sprint
+
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint6}, el cual refleja que el progreso del trabajo realizado ha coincidido con la planificación inicial. Sin embargo, esto se pierde a mitad de Sprint, cuando el progreso de trabajo realizado se empieza a quedar por detrás del planificado, dejando al final la [HU](#HU) TSGM-24 sin realizar.
+
+![[BC](#BC) del Sprint 6\label{anexo1:bc-sprint6}](anx1_bc-sprint6.png){width=75%}
+
+## Sprint 7
+
+Este Sprint tiene comienzo el **2 de febrero de 2024 ** con una duración de 2 semanas. Su objetivo principal era la realización de un [MVP](#MVP) de una aplicación Web funcional. A continuación, se detallan las diferentes fases del Sprint. 
+
+### Planificación del Sprint
+
+En esta reunión, se decidió que durante el siguiente Sprint se revisitaría el capítulo 2.3 con el fin de profundizar más en las diferentes técnicas de visualización de datos, así como la inclusión de imágenes. También, se planteo la realización de un primer [MVP](#MVP), el cual consistiría en un aplicación Web funcional que utilice todas las operaciones [CRUD](#CRUD) y con una arquitectura [MVC](#MVC). Finalmente, también se habló de realizar la entrevista con Cristina durante el Sprint, así como las respectivas mejoras según la reunión de revisión previamente realizada.
+
+A continuación, en la Tabla \ref{anexo1:product-backlog-7} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-7} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+
+| **ID**  | **Tarea**                                            | **Peso** |
+| --------- | :--------------------------------------------------- | -------- |
+| TSGM-8  | Realizar capítulo de resultados                      | 11       |
+| TSGM-9  | Realizar capítulo de evaluación                      | 5        |
+| TSGM-10 | Realizar capítulo de conclusiones                    | 5        |
+| TSGM-23 | Ver que técnicas usar según test usuarios            | 5        |
+| TSGM-24 | Realizar cambios según revisión                      | 1        |
+| TSGM-25 | Completar estructura del documento                   | 1        |
+| TSGM-26 | Mejorar estructura del capítulo 3                    | 3        |
+| TSGM-27 | Revisitar capítulo 2.3                               | 5        |
+| TSGM-28 | Hacer [MVP](#MVP) de aplicación Web funcional | 11       |
+| TSGM-29 | Realizar la entrevista con Cristina                  | 5        |
+| TSGM-30 | Empezar nuevo anexo sobre entrevistas                | 1        |
+| TSGM-31 | Añadir siguiente Sprint en anexo                     | 1        |
+
+: [PB](#PB) del Sprint 7\label{anexo1:product-backlog-7}
+
+| **ID**  | **Tarea**                                            | **Peso** |
+| --------- | ---------------------------------------------------- | -------- |
+| TSGM-24 | Realizar cambios según revisión                      | 1        |
+| TSGM-25 | Completar estructura del documento                   | 1        |
+| TSGM-26 | Mejorar estructura del capítulo 3                    | 3        |
+| TSGM-27 | Revisitar capítulo 2.3                               | 5        |
+| TSGM-28 | Hacer [MVP](#MVP) de aplicación Web funcional | 11       |
+| TSGM-29 | Realizar la entrevista con Cristina                  | 5        |
+| TSGM-30 | Empezar nuevo anexo sobre entrevistas                | 1        |
+| TSGM-31 | Añadir siguiente Sprint en anexo                     | 1        |
+
+: [SB](#SB) del Sprint 7\label{anexo1:Sprint-backlog-7}
+
+### Desarrollo de Sprint 
+
+Durante el Sprint, …
+
+### Revisión Sprint
+
 Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint6}, el cual refleja...
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint7}, el cual refleja...
 
-![[BC](#BC) del Sprint 6\label{anexo1:bc-sprint6}](bc-sprint6.png){width=75%}
+![[BC](#BC) del Sprint 7\label{anexo1:bc-sprint7}](anx1_bc-sprint7.png){width=75%}
 
-## Sprint 7
+## Sprint 8
 
-Este Sprint tiene comienzo el **2 de febrero de 2024 ** con una duración de X semanas. Su objetivo principal era [...]. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **16 de febrero de 2024 ** con una duración de X semanas. Su objetivo principal era [...]. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
-En esta reunión, …
+En esta reunión, ...
 
 A continuación, en la Tabla \ref{anexo1:product-backlog-7} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-7} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
@@ -344,4 +400,4 @@ Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual 
 
 Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint7}, el cual refleja...
 
-![[BC](#BC) del Sprint 7\label{anexo1:bc-sprint7}](bc-sprint7.png){width=75%}
+![[BC](#BC) del Sprint 7\label{anexo1:bc-sprint7}](anx1_bc-sprint7.png){width=75%}

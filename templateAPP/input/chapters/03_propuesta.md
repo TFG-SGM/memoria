@@ -2,47 +2,80 @@
 
 En este capítulo se proporciona la propuesta diseñada para abordar el problema presentado en el capítulo de introducción. Asimismo, se presenta una explicación detallada de la metodología de desarrollo seleccionada y las herramientas empleadas a lo largo del proyecto.
 
-## Propuesta de Solución
+## Aplicación Web
 
-Para llevar a cabo la solución al problema planteado en la introducción, se propone el desarrollo de una aplicación Web moderna y eficiente con el fin de brindar una buena experiencia de usuario. Para conseguir esto se plantea la creación de una [SPA](#SPA) con una arquitectura [MVC](#MVC) teniendo un foco en la usabilidad. A continuación, se detallarán mejor todos estos puntos.
-
-### Tecnología SPA
-
-Los [SPA](#SPA), como se detalla en el capítulo anterior y señala BasuMallick en @ventajas-spa, ofrecen la ventaja crucial de posibilitar la interacción del usuario sin tener que recargar la página. Esta característica contribuye de manera significativa a la reducción del tiempo de carga, lo que, a su vez, se traduce en una mejora sustancial en la velocidad de la aplicación. Al prescindir de la recarga de la página, como se ilustra en la Figura \ref{capitulo3:flujo-spa}, solo es necesario intercambiar datos, mientras que recursos fundamentales como [HTML](#HTML) y [CSS](#CSS) se cargan de manera única al inicio.
-
-![Flujo de una [SPA](#SPA)\label{capitulo3:flujo-spa}](flujo-spa.png){width=50%}
-
-Además, los [SPA](#SPA) pueden incorporar las funcionalidades de los [PWA](#PWA), permitiendo su uso incluso cuando no hay conexión a internet. Esto lo consiguen los [SPA](#SPA) enviando una única petición al servidor, para luego guardar y almacenar lo que recibe en el caché, permitiendo sincronizar los datos sel servidor cuando la conexión lo permita.
-
-Asimismo, los [SPA](#SPA) permiten crear aplicaciones Web con una compatibilidad multiplataforma, teniendo la posibilidad de utilizar la aplicación en cualquier dispositivo, navegador y sistema operativo. 
-
-Finalmente, con todas estas características se puede concluir que los [SPA](#SPA) mejoran significativamente la experiencia del usuario gracias a la velocidad, la posibilidad de utilizarla offline y en cualquier dispositivo. Para la creación de dicha aplicación, se propone también el uso de una arquitectura [MVC](#MVC), la cual será detallada en el siguiente punto.
+Para llevar a cabo la solución al problema planteado en la introducción, se propone el desarrollo de una aplicación Web moderna y eficiente con el fin de brindar una buena experiencia de usuario. Para conseguir esto se plantea la creación de una [SPA](#SPA) siguiendo una arquitectura [MVC](#MVC) y prestando especial atención a la usabilidad. A continuación, se profundizará en todos estos aspectos, así como el marco tecnológico que se sugiere utilizar.
 
 ### Arquitectura MVC
 
 Con una arquitectura [MVC](#MVC), tal y como explica Hernández en @arquitectura-mvc, se conseguirá fortalecer la robustez y escalabilidad de la aplicación, al dividir el código en tres componentes principales, cada uno con responsabilidades específicas, lo que facilita la organización, el mantenimiento y la expansión esenciales en una aplicación moderna y eficiente. Estos tres componentes consisten en: Modelo, Vista y Controlador.
 
 1. **Modelo:** Encargado de gestionar los datos y la lógica. En el contexto de la aplicación de diagnóstico de fibromialgia, el Modelo podría ser responsable de la manipulación de datos relacionados con los pacientes, resultados de diagnóstico y cualquier información relevante para el proceso de evaluación médica.
-2. **Vista:** Representa la interfaz de usuario y se encarga de la presentación de datos. La Vista en este caso sería responsable de mostrar al usuario la información relevante de manera clara y comprensible, teniendo un gran enfoque en la usabilidad.
+2. **Vista:** Representa la interfaz de usuario y se encarga de la presentación de datos. La Vista en este caso sería responsable de mostrar al usuario la información crucial de manera clara y comprensible, teniendo un gran enfoque en la usabilidad.
 3. **Controlador:** Gestiona la interacción del usuario y actúa como intermediario entre el Modelo y la Vista. El Controlador sería responsable de procesar las acciones del usuario, actualizar el Modelo según sea necesario y coordinar la presentación actualizada a través de la Vista.
 
 Esta división clara de responsabilidades, que se puede ver en la Figura \ref{capitulo3:arquitectura-mvc}, no solo facilita el desarrollo y la mantenibilidad del código, sino que también proporciona una base sólida para futuras expansiones y mejoras en la aplicación.
 
-![Arquitectura [MVC](#MVC)\label{capitulo3:arquitectura-mvc}](arquitectura-mvc.png){width=75%}
+![Arquitectura [MVC](#MVC)\label{capitulo3:arquitectura-mvc}](cap3_arquitectura-mvc.png){width=75%}
 
-En adicción al uso de esta arquitectura para la escalabilidad de la aplicación, se plantea la elección de una **base de datos no relacional**, ya que estas ofrecen ventajas significativas en términos de flexibilidad y capacidad para manejar grandes volúmenes de datos.
+Una vez presentada la arquitectura, resulta fundamental explorar la tecnología de las [SPA](#SPA), la cual será detallada en el próximo punto.
 
-Por último, en el siguiente punto se detallará la propuesta de un enfoque en la usabilidad con el objetivo de dar una gran experiencia al usuario final.
+### Tecnología SPA
 
-### Usabilidad
+Los [SPA](#SPA), como se detalla en el capítulo anterior y señala BasuMallick en @ventajas-spa, ofrecen la ventaja crucial de posibilitar la interacción del usuario sin tener que recargar la página. Esta característica contribuye de manera significativa a la reducción del tiempo de carga, lo que, a su vez, se traduce en una mejora sustancial en la velocidad de la aplicación. Al prescindir de la recarga de la página, como se ilustra en la Figura \ref{capitulo3:flujo-spa}, solo es necesario intercambiar datos, mientras que recursos fundamentales como [HTML](#HTML) y [CSS](#CSS) se cargan de manera única al inicio.
 
-Diseñar una interfaz intuitiva y usable que responda a las necesidades del usuario final, haciendo que sea tanto fácil de utilizar como de aprender, es esencial en una aplicación Web que quiera brindar una gran experiencia de usuario.
+![Flujo de una [SPA](#SPA)\label{capitulo3:flujo-spa}](cap3_flujo-spa.png){width=50%}
+
+Además, los [SPA](#SPA) pueden incorporar las funcionalidades de los [PWA](#PWA), permitiendo su uso incluso cuando no hay conexión a internet. Esto lo consiguen los [SPA](#SPA) enviando una única petición al servidor, para luego guardar y almacenar lo que recibe en el caché, permitiendo sincronizar los datos sel servidor cuando la conexión lo permita.
+
+Asimismo, los [SPA](#SPA) permiten crear aplicaciones Web con una compatibilidad multiplataforma, teniendo la posibilidad de utilizar la aplicación en cualquier dispositivo, navegador y sistema operativo. 
+
+Finalmente, con todas estas características se puede concluir que los [SPA](#SPA) mejoran significativamente la experiencia del usuario gracias a la velocidad, la posibilidad de utilizarla offline y en cualquier dispositivo. Sin embargo, para potenciar aún más esta experiencia, es crucial centrarse en la usabilidad de la aplicación, un aspecto que se explorará con más detalle en el próximo punto.
+
+### Usabilidad como Características Clave
+
+Diseñar una interfaz intuitiva y usable que responda a las necesidades del usuario final, haciendo que sea tanto fácil de utilizar como de aprender, es esencial en una aplicación Web que quiera brindar una gran experiencia de usuario. 
 
 La creación de una interfaz intuitiva implica la adopción de elementos visuales y de diseño que reflejen la lógica y el flujo de trabajo esperado por el usuario. Se busca minimizar la curva de aprendizaje, permitiendo que tanto profesionales de la salud como pacientes puedan interactuar de manera natural con la aplicación desde el primer momento. La disposición lógica de los elementos, la claridad en las indicaciones y la consistencia en el diseño contribuirán a una experiencia de usuario sin complicaciones.
 
-En paralelo, se plantea la implementación de un **diseño responsive** que se adapte fluidamente a diversos tamaños de pantalla. Después de todo, la gran variabilidad de dispositivos que existen, como ordenadores, tablets y teléfonos móviles, requiere que la interfaz sea flexible y se ajuste de manera óptima a cada contexto. Esta adaptabilidad no solo mejora la accesibilidad, sino que también proporciona una experiencia consistente y agradable independientemente del dispositivo utilizado.
+En paralelo, se plantea la implementación de un **diseño responsive**, como expone Mozilla en @responsive, con el cual se conseguirá una adaptación fluida para los diversos tamaños de pantalla. Después de todo, la gran variabilidad de dispositivos que existen, como ordenadores, tablets y teléfonos móviles, requiere que la interfaz sea flexible y se ajuste de manera óptima a cada contexto. Esta adaptabilidad no solo mejora la accesibilidad, sino que también proporciona una experiencia consistente y agradable independientemente del dispositivo utilizado.
 
-En resumen, con una interfaz usable, tecnología [SPA](#SPA) y arquitectura [MVC](#MVC) se asegura que la aplicación sea moderna y eficiente, ofreciendo una buena experiencia al usuario. No obstante, para lograr la implementación exitosa de dicha aplicación Web, es esencial seguir una metodología de desarrollo adecuada, la cual se detallará en el próximo punto.
+En conclusión, la creación de una interfaz intuitiva y responsive es un elemento clave para ofrecer una experiencia de usuario positiva en la aplicación web. Estos aspectos se integran dentro del marco tecnológico propuesto para la creación de la aplicación web, el cual será detallado en el siguiente punto.
+
+### Marco Tecnológico
+
+Dentro del marco tecnológico, se distinguen diversas tecnologías agrupadas en dos categorías principales: FrontEnd y BackEnd.
+
+- **FrontEnd**
+  - **Lenguaje de marcado:** HTML
+  - **Lenguaje de diseño gráfico:** CSS
+  - **Lenguaje de programación:** TypeScript @typescript
+  - **Framework:** React @react
+  - **Herramienta:** Vite @vite
+  - **Librería destacada:** D3.js @d3js
+- **BackEnd**
+  - **Lenguaje de programación:** TypeScript @typescript
+  - **Entorno de desarrollo:** Node.js @nodejs
+  - **Framework:** Express.js @expressjs
+  - **Base de datos:** MongoDB @mongodb
+  - **Librerías destacadas:** Mongoose @mongoose
+
+
+Estas tecnologías han sido seleccionadas cuidadosamente con el objetivo de implementar el stack *MERN* utilizando *TypeScript* como lenguaje central. El propósito es lograr el desarrollo de una aplicación Web moderna y eficiente que abarque tanto el lado del cliente como el del servidor. A continuación, se detallan a fondo cada una de estas tecnologías.
+
+Por un lado, en el FrontEnd, se opta por tecnologías líderes en la industria, como [HTML](#HTML), [CSS](#CSS), *TypeScript* y *React*. Estas elecciones proporcionan una estructura sólida para la creación de interfaces de usuario dinámicas y atractivas. Además, se utilizará *Vite* como herramienta de construcción, ofreciendo un entorno de desarrollo rápido y liviano que contribuye a la eficiencia del proceso de desarrollo. Finalmente, en el lado del cliente, se resalta la elección de la librería *D3.js* para la visualización de datos.
+
+Por otro lado, en el BackEnd, se repite la elección de *TypeScript* dentro del entorno de *Node.js*. Este último será respaldado por *Express.js* como framework, proporcionando un entorno ágil y escalable para la gestión eficiente de las operaciones del servidor. El stack *MERN* se solidifica al optar por *MongoDB* como base de datos, destacándose por su capacidad de almacenamiento flexible y escalable. La interfaz con esta base de datos se simplifica mediante el uso de la librería *Mongoose*, facilitando el acceso y la manipulación de los datos de manera eficaz.
+
+Todas estas tecnologías están interrelacionadas, como se ilustra en la Figura \ref{capitulo3:arquitectura-tecnologica}. Esta figura no solo presenta la implementación de la arquitectura [MVC](#MVC) previamente mencionada, sino que también muestra una clara división en tres secciones: Cliente, Servidor y Base de Datos.
+
+- **Cliente:** En la sección del cliente, se incorpora toda la tecnología presentada anteriormente en el FrontEnd. Además, esta sección representa la Vista en la arquitectura [MVC](#MVC).
+- **Servidor:** En esta sección, se observa la mayoría de la tecnología presentada en el BackEnd. Además, esta sección contiene tanto el Controlador, el cual sería la [API](#API) utilizando el framework *Express*, como el Modelo utilizando la librería *Mongoose*.
+- **Base de Datos:** Aquí se destaca el uso de la base de datos no relacional *MongoDB*, que sirve como el componente clave para el almacenamiento de datos.
+
+![Arquitectura tecnológica\label{capitulo3:arquitectura-tecnologica}](cap3_arquitectura-tecnologica.png){width=50%}
+
+En resumen, la combinación de la tecnología presentada, respaldada por una arquitectura [MVC](#MVC), tecnología [SPA](#SPA) y una interfaz usable, garantiza que la aplicación sea tanto moderna como eficiente, brindando una experiencia positiva al usuario. Sin embargo, para lograr una implementación exitosa de dicha aplicación Web, es esencial seguir una metodología de desarrollo adecuada, la cual será detallada en el próximo punto.
 
 ## Metodología de Desarrollo
 
@@ -97,7 +130,7 @@ Estos artefactos proporcionan una representación clara de las metas y el progre
 
 La información presentada anteriormente se ha obtenido de "La Guía de Scrum" @scrum-guide por Schwaber y Sutherland. En conclusión, la interacción de todos estos elementos en la metodología Scrum se ilustra en la figura \ref{capitulo3:scrum}. Comienza con la reunión de planificación, en la que participan todos los roles, marcando así el inicio del Sprint. Este Sprint tiene una duración máxima de 4 semanas y se acompaña de reuniones diarias realizadas por el equipo de desarrollo. Durante el Sprint, se llevan a cabo las tareas del [SB](#SB), seleccionadas previamente del [PB](#PB), y culminan en un incremento al final del Sprint. A continuación, se llevan a cabo la reunión de revisión y la retrospectiva, nuevamente con la participación de todo el equipo Scrum.
 
-![Flujo de la metodología Scrum @imagen-scrum\label{capitulo3:scrum}](scrum.png)
+![Flujo de la metodología Scrum @imagen-scrum\label{capitulo3:scrum}](cap3_scrum.png)
 
 No obstante, para la ejecución de este proyecto, ha sido esencial realizar adaptaciones específicas de la metodología, las cuales se detallan en el siguiente apartado.
 
@@ -128,15 +161,15 @@ En el ámbito de la gestión de proyectos, se han seleccionado las siguientes he
 - **Comunicación y reuniones:** Outlook @outlook, Microsoft Teams @teams y OneDrive @onedrive
 - **Control de versiones:** Git @git y GitHub @github
 
-Para la planificación detallada del proyecto, se implementará GitHub Projects, una herramienta que simplifica la creación de tableros adaptados al flujo de trabajo de la metodología Scrum, detallada previamente. Esta plataforma será complementada con el uso de Excel, aplicación de hojas de cálculo proporcionada por *Microsoft*, la cual será utilizada para la creación de los diferentes [BC](#BC) destinados a evaluar el trabajo realizado en cada sprint. 
+Para la planificación detallada del proyecto, se implementará *GitHub Projects*, una herramienta que simplifica la creación de tableros adaptados al flujo de trabajo de la metodología Scrum, detallada previamente. Esta plataforma será complementada con el uso de Excel, aplicación de hojas de cálculo proporcionada por *Microsoft*, la cual será utilizada para la creación de los diferentes [BC](#BC) destinados a evaluar el trabajo realizado en cada sprint. 
 
 Específicamente, se utilizará la plantilla diseñada siguiendo los pasos expuestos por Swam en @plantilla-bc. La representación visual de esta plantilla se muestra en la Figura \ref{capitulo3:plantilla-bc}, la cual consiste en una tabla que incluye fechas, el peso planificado de las [HU](#HU) a realizar cada día, el peso real de las [HU](#HU) completadas diariamente y el peso "quemado" en relación con el peso total del Sprint.
 
-![Plantilla para la creación del [BC](#BC)\label{capitulo3:plantilla-bc}](plantilla-bc.png){width=75%}
+![Plantilla para la creación del [BC](#BC)\label{capitulo3:plantilla-bc}](cap3_plantilla-bc.png){width=75%}
 
-En términos de comunicación y reuniones entre los miembros del equipo, se aprovechará el entorno proporcionado por *Microsoft*. Esto incluye el uso de Outlook para el envío de correos electrónicos, Microsoft Teams para facilitar reuniones virtuales y OneDrive para la compartición de archivos.
+En términos de comunicación y reuniones entre los miembros del equipo, se aprovechará el entorno proporcionado por *Microsoft*. Esto incluye el uso de *Outlook* para el envío de correos electrónicos, *Microsoft Teams* para facilitar reuniones virtuales y *OneDrive* para la compartición de archivos.
 
-Finalmente, para gestionar el control de versiones tanto de la documentación como de la aplicación Web, se empleará Git junto con GitHub. En esta última, se creará una organización, la cual estará configurada con los distintos miembros del equipo, permitiendo la gestión de repositorios, así como del proyecto a través de la herramienta GitHub Projects mencionada anteriormente.
+Finalmente, para gestionar el control de versiones tanto de la documentación como de la aplicación Web, se empleará *Git* junto con *GitHub*. En esta última, se creará una organización, la cual estará configurada con los distintos miembros del equipo, permitiendo la gestión de repositorios, así como del proyecto a través de la herramienta *GitHub Projects* mencionada anteriormente.
 
 En conjunto, todas estas herramientas permitirán tener una gestión del proyecto adecuada desde la fase de planificación hasta el despliegue. No obstante, el éxito en el desarrollo de un proyecto no solo depende del uso adecuado de herramientas para gestionarlo, sino también de la correcta documentación. A continuación, en la siguiente sección, se detallarán las herramientas específicas utilizadas para documentar de manera efectiva cada aspecto del proyecto.
 
@@ -144,54 +177,33 @@ En conjunto, todas estas herramientas permitirán tener una gestión del proyect
 
 En lo que respecta a las herramientas destinadas a la documentación del proyecto, se han seleccionado las siguientes:
 
-- **Lenguaje de marcado:** Markdown
+- **Lenguaje de marcado:** Markdown @markdown
 - **Editor de texto:** Typora @typora
-- **Generación de memoria:** Plantilla de Félix Albertos @plantilla-felix
+- **Generación de documento:** Plantilla de Félix Albertos @plantilla-felix
 - **Diagramas:** Diagrams.net @diagramsnet 
 - **Diseño de interfaces:** Excalidraw @excalidraw y Figma @figma
 
-Por un lado, la documentación se redacta utilizando el lenguaje de marcado Markdown, que simplifica la aplicación de formato a un texto plano mediante caracteres especiales. Para esta tarea, se utiliza el editor Typora, elegido por su experiencia de escritura sin distracciones y su fácil manejo. En cuanto a la generación de la memoria final con el formato adecuado, se emplea la plantilla proporcionada por el tutor Félix Albertos. Esta plantilla, diseñada específicamente para la elaboración del [TFG](#TFG), elimina las posibles preocupaciones de formato al utilizar Markdown como entrada.
+Por un lado, la documentación se redacta utilizando el lenguaje de marcado *Markdown*, que simplifica la aplicación de formato a un texto plano mediante caracteres especiales. Para esta tarea, se utiliza el editor *Typora*, elegido por su experiencia de escritura sin distracciones y su fácil manejo. En cuanto a la generación del documento con el formato adecuado, se emplea la plantilla proporcionada por el tutor Félix Albertos. Esta plantilla, diseñada específicamente para la elaboración del [TFG](#TFG), elimina las posibles preocupaciones de formato al utilizar *Markdown* como entrada.
 
-Por otro lado, en el caso de necesitar desarrollar diagramas, se recurrirá a Diagrams.net. Finalmente, para el diseño de las interfaces a implementar, se utilizará Excalidraw para bocetos con pocos detalles y Figma para diseños más elaborados.
+Por otro lado, en el caso de necesitar desarrollar diagramas, se recurrirá a *Diagrams.net*. Finalmente, para el diseño de las interfaces a implementar, se utilizará *Excalidraw* para bocetos con pocos detalles y *Figma* para diseños más elaborados.
 
-Con la combinación de todas estas herramientas se conseguirá crear un flujo de trabajo documental eficiente y versátil, optimizando la redacción, formato, generación de memoria y diseño de interfaces en el proyecto. Sin embargo, una vez se han presentado las herramientas destinadas a la documentación, es esencial pasar a detallar las distintas herramientas específicas utilizadas en el desarrollo del proyecto.
+Con la combinación de todas estas herramientas se conseguirá crear un flujo de trabajo documental eficiente y versátil, optimizando la redacción, formato, generación del documento y diseño de interfaces en el proyecto. Sin embargo, una vez se han presentado las herramientas destinadas a la documentación, es esencial pasar a detallar las distintas herramientas específicas utilizadas en el desarrollo del proyecto.
 
 ### Desarrollo
 
-Dentro de las herramientas de desarrollo, se contemplan las que se enumeran a continuación, agrupadas en tres categorías: FrontEnd, BackEnd y Otras.
+Finalmente, dentro de las herramientas de desarrollo, se contemplan las que se enumeran a continuación:
 
-- **FrontEnd**
-  - **Lenguaje de marcado:** HTML
-  - **Lenguaje de diseño gráfico:** CSS
-  - **Lenguaje de programación:** TypeScript @typescript
-  - **Framework:** React @react
-  - **Herramienta:** Vite @vite
-  - **Librería destacada:** D3.js @d3js
-- **BackEnd**
-  - **Lenguaje de programación:** TypeScript @typescript
-  - **Entorno de desarrollo:** Node.js @nodejs
-  - **Framework:** Express.js @expressjs
-  - **Base de datos:** MongoDB @mongodb
-  - **Librerías destacadas:** Mongoose @mongoose
-- **Otras**
-  - **Editor de código:** Visual Studio Code @vscode
-  - **Gestor de paquetes:** pnpm @pnpm
+- **Editor de código:** Visual Studio Code @vscode
+- **Extesión destacada:** Rest Client @rest-client
+- **Gestión de bases de datos:** MongoDB Atlas @mongodb-atlas
+- **Gestor de paquetes:** pnpm @pnpm
 
+Se destaca la elección de *Visual Studio Code* como editor de código, una decisión respaldada por su extraordinaria popularidad, su extensibilidad y sus potentes características que impulsan la productividad del desarrollador. Además, para facilitar el desarrollo de la aplicación Web, se hará uso de varias extensiones, destacando especialmente la extensión *REST Client*, que permite probar los distintos endpoints de la [API](#API).
 
-Estas herramientas han sido seleccionadas cuidadosamente con el objetivo de implementar el stack MERN utilizando TypeScript como lenguaje central. El propósito es lograr el desarrollo de una aplicación web moderna y eficiente que abarque tanto el lado del cliente como el del servidor. A continuación, se detallan a fondo cada una de estas tecnologías.
+En cuanto a la gestión de la base de datos de *MongoDB*, se empleará la herramienta *MongoDB Atlas*, la cual otorga 512 MB gratuitos en la nube. 
 
-En el FrontEnd, se ha optado por tecnologías líderes en la industria, como [HTML](#HTML), [CSS](#CSS), TypeScript y React. Estas elecciones proporcionan una estructura sólida para la creación de interfaces de usuario dinámicas y atractivas. Además, se ha incorporado Vite como herramienta de construcción, ofreciendo un entorno de desarrollo rápido y liviano que contribuye a la eficiencia del proceso de desarrollo. Finalmente, en el lado del cliente, se resalta la elección de la librería D3.js para la visualización de datos.
+Finalmente, se optará por *pnpm* como gestor de paquetes. La elección de pnpm se fundamenta en su capacidad para mejorar la eficiencia en la gestión de dependencias, posibilitando una instalación y actualización más rápida y coherente de bibliotecas y herramientas.
 
-En el BackEnd, se repite la elección de TypeScript dentro del entorno de Node.js. Este último será respaldado por Express.js como framework, proporcionando un entorno ágil y escalable para la gestión eficiente de las operaciones del servidor. El stack MERN se solidifica al optar por MongoDB como base de datos, destacándose por su capacidad de almacenamiento flexible y escalable. La interfaz con esta base de datos se simplifica mediante el uso de la librería Mongoose, facilitando el acceso y la manipulación de los datos de manera eficaz.
+La integración de todas estas herramientas está diseñada para potenciar de manera significativa el desarrollo de la aplicación Web, estableciendo así una base sólida y eficiente que respaldará el logro exitoso de los objetivos del proyecto. 
 
-Finalmente, se destaca la elección de Visual Studio Code como editor de código debido a su popularidad, extensibilidad y potentes características que mejoran la productividad del desarrollador. Además, se utilizará pnpm como gestor de paquetes, el cual añade eficiencia a la gestión de dependencias, facilitando la instalación y actualización de bibliotecas y herramientas de manera más rápida y consistente.
-
-En conclusión, la selección de estas herramientas se alinea con el objetivo de desarrollar una aplicación Web moderna, eficiente y atractiva para el usuario. Todas estas tecnologías están interrelacionadas, como se ilustra en la Figura \ref{capitulo3:arquitectura-tecnologica}. Esta figura no solo presenta la implementación de la arquitectura [MVC](#MVC) previamente mencionada, sino que también muestra una clara división en tres secciones: Cliente, Servidor y Base de Datos.
-
-- **Cliente:** En la sección del cliente, se incorpora toda la tecnología presentada anteriormente en el FrontEnd. Además, esta sección representa la Vista en la arquitectura [MVC](#MVC).
-- **Servidor:** En esta sección, se observa la mayoría de la tecnología presentada en el BackEnd. Además, esta sección contiene tanto el Controlador, el cual sería la API utilizando el framework Express, como el Modelo utilizando la librería Mongoose.
-- **Base de Datos:** Aquí se destaca el uso de la base de datos no relacional MongoDB, que sirve como el componente clave para el almacenamiento de datos.
-
-![Arquitectura tecnológica\label{capitulo3:arquitectura-tecnologica}](arquitectura-tecnologica.png){width=40%}
-
-Una vez que se ha presentado las diversas herramientas que se utilizarán en el proyecto, junto con la metodología y la propuesta de solución, en el próximo capítulo se explicará el resultado final de la aplicación Web.
+Con la presentación detallada de las diversas herramientas seleccionadas para el proyecto, junto con la metodología propuesta y la solución planteada, el próximo capítulo abordará el resultado final de la aplicación Web.

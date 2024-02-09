@@ -1,14 +1,10 @@
-<span id='TFG'>TFG</span>
+<span id='BC'>BC</span>
 
-: Trabajo Final de Grado
+: Burndown Chart
 
-<span id='NoSQL'>NoSQL</span>
+<span id='BD'>BD</span>
 
-: Not Only Structured Query Language (No Solo Lenguaje de Consulta Estructurada)
-
-<span id='HTML'>HTML</span>
-
-: HyperText Markup Language (Lenguaje de Marcas de Hypertexto)
+: Base de Datos
 
 <span id='CSS'>CSS</span>
 
@@ -18,37 +14,21 @@
 
 : Document Object Model (Modelo de Objeto de Documento)
 
-<span id='SPA'>SPA</span>
+<span id='HTML'>HTML</span>
 
-: Single Page Application (Aplicaciones de una Sola Página)
-
-<span id='Wasm'>Wasm</span>
-
-: WebAssembly
-
-<span id='PWA'>PWA</span>
-
-: Progressive Web Applications (Aplicaciones Web Progresivas)
+: HyperText Markup Language (Lenguaje de Marcas de Hypertexto)
 
 <span id='HTTP'>HTTP</span>
 
 : Hypertext Transfer Protocol (Protocolo de Transferencia de Hipertexto)
 
-<span id='SO'>SO</span>
+<span id='HU'>HU</span>
 
-: Sistema Operativo
-
-<span id='BD'>BD</span>
-
-: Base de Datos
+: Historia de Usuario
 
 <span id='IPO'>IPO</span>
 
 : Interacción Persona-Ordenador
-
-<span id='SIGCHI'>SIGCHI</span>
-
-: Special Interest Group on Computer-Human Interaction (Grupo de Interés Especial sobre la Interacción Persona-Ordenador)
 
 <span id='ISO'>ISO</span>
 
@@ -58,19 +38,51 @@
 
 : Model-View-Controller (Modelo-Vista-Controlador)
 
-<span id='HU'>HU</span>
+<span id='NoSQL'>NoSQL</span>
 
-: Historia de Usuario
+: Not Only Structured Query Language (No Solo Lenguaje de Consulta Estructurada)
 
 <span id='PB'>PB</span>
 
 : Product Backlog
 
+<span id='PWA'>PWA</span>
+
+: Progressive Web Applications (Aplicaciones Web Progresivas)
+
 <span id='SB'>SB</span>
 
 : Sprint Backlog
 
-<span id='BC'>BC</span>
+<span id='SIGCHI'>SIGCHI</span>
 
-: Burndown Chart
+: Special Interest Group on Computer-Human Interaction (Grupo de Interés Especial sobre la Interacción Persona-Ordenador)
+
+<span id='SO'>SO</span>
+
+: Sistema Operativo
+
+<span id='SPA'>SPA</span>
+
+: Single Page Application (Aplicaciones de una Sola Página)
+
+<span id='TFG'>TFG</span>
+
+: Trabajo Final de Grado
+
+<span id='Wasm'>Wasm</span>
+
+: WebAssembly
+
+<span id='MVP'>MVP</span>
+
+: Minimum Viable Product (Producto Mínimo Viable)
+
+<span id='CRUD'>CRUD</span>
+
+: Create, Read, Update and Delete (Crear, Leer, Actualizar, Borrar)
+
+<span id='API'>API</span>
+
+: Application Programming Interface (Interfaz de Programación de Aplicaciones)
 

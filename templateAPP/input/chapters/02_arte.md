@@ -44,52 +44,52 @@ En el proceso de implementación de una aplicación Web, resulta esencial no sol
 ### BackEnd
 En el ámbito del desarrollo BackEnd, se puede encontrar un ecosistema diverso de lenguajes de programación, cada uno acompañado de sus propios frameworks. Este panorama se enriquece aún más con la presencia crucial de bases de datos y la adopción generalizada de contenedores. En este análisis, se explora detenidamente cada una de estas áreas tecnológicas.
 
-Por un lado, los lenguajes de programación, los cuales desempeñan un papel significativo, definiendo la estructura y el rendimiento de las aplicaciones. Se destacan principalmente cuatro lenguajes, tal y como expone Osadchuk en @tecnologia-backend: JavaScript, Python, Ruby y PHP.
+Por un lado, los lenguajes de programación, los cuales desempeñan un papel significativo, definiendo la estructura y el rendimiento de las aplicaciones. Se destacan principalmente cuatro lenguajes, tal y como expone Osadchuk en @tecnologia-backend: *JavaScript*, *Python*, *Ruby* y *PHP*.
 
-- **JavaScript:** Se trata de un lenguaje de programación versátil y ampliamente utilizado que funciona tanto en el lado del cliente como en el lado del servidor. En el contexto del desarrollo del lado del servidor, se emplea en el entorno de ejecución **Node.js @nodejs**, que utiliza el motor V8 de Google Chrome. JavaScript es destacado por su capacidad para manejar operaciones de entrada/salida de manera eficiente y su naturaleza asíncrona, lo que lo hace ideal para aplicaciones escalables y basadas en eventos, como aplicaciones Web en tiempo real.
-- **Python @python:** Consiste en un lenguaje versátil y de alto nivel que enfatiza la legibilidad del código y la productividad del programador. Con una sintaxis clara y concisa, Python es utilizado en una amplia gama de aplicaciones, desde desarrollo Web hasta inteligencia artificial y análisis de datos. 
+- **JavaScript:** Se trata de un lenguaje de programación versátil y ampliamente utilizado que funciona tanto en el lado del cliente como en el lado del servidor. En el contexto del desarrollo del lado del servidor, se emplea en el entorno de ejecución **Node.js @nodejs**, que utiliza el motor V8 de *Google Chrome*. *JavaScript* es destacado por su capacidad para manejar operaciones de entrada/salida de manera eficiente y su naturaleza asíncrona, lo que lo hace ideal para aplicaciones escalables y basadas en eventos, como aplicaciones Web en tiempo real.
+- **Python @python:** Consiste en un lenguaje versátil y de alto nivel que enfatiza la legibilidad del código y la productividad del programador. Con una sintaxis clara y concisa, *Python* es utilizado en una amplia gama de aplicaciones, desde desarrollo Web hasta inteligencia artificial y análisis de datos. 
 - **Ruby @ruby:** Es conocido por su elegancia y simplicidad, priorizando la productividad del desarrollador. Aunque es menos ubicuo que otros lenguajes, ha ganado popularidad gracias a su enfoque en la facilidad de uso y la creación de código conciso y expresivo.
-- **PHP:** Se trata de un lenguaje de scripting especialmente diseñado para el desarrollo Web. Ampliamente utilizado para construir aplicaciones Web dinámicas, PHP se integra fácilmente con [HTML](#HTML) y se ejecuta en el lado del servidor.
+- **PHP:** Se trata de un lenguaje de scripting especialmente diseñado para el desarrollo Web. Ampliamente utilizado para construir aplicaciones Web dinámicas, *PHP* se integra fácilmente con [HTML](#HTML) y se ejecuta en el lado del servidor.
 
-Estos lenguajes, aunque poderosos por sí mismos, se ven potenciados cuando se combinan con frameworks específicos. Cada uno de los mencionados tiene su conjunto de frameworks que agilizan y estructuran el proceso de desarrollo. A continuación, se explora un framework representativo para cada uno de estos lenguajes respectivamente, tal y como expone nuevamente Osadchuk en @tecnologia-backend: Express, Django, Ruby on Rails y Laravel.
+Estos lenguajes, aunque poderosos por sí mismos, se ven potenciados cuando se combinan con frameworks específicos. Cada uno de los mencionados tiene su conjunto de frameworks que agilizan y estructuran el proceso de desarrollo. A continuación, se explora un framework representativo para cada uno de estos lenguajes respectivamente, tal y como expone nuevamente Osadchuk en @tecnologia-backend: *Express*, *Django*, *Ruby* on *Rails* y *Laravel*.
 
-- **Express.js @expressjs:** Es un framework para Node.js que simplifica el desarrollo de aplicaciones Web y APIs. Con un enfoque minimalista, permite la creación rápida de servidores y rutas, facilitando la construcción de aplicaciones robustas con JavaScript del lado del servidor.
-- **Django @django:** Es un framework de alto nivel para Python, diseñado para maximizar la eficiencia y la reutilización del código. Con un conjunto integrado de herramientas y una arquitectura basada en el patrón de diseño Modelo-Vista-Controlador (MVC), Django simplifica la creación de aplicaciones Web complejas al proporcionar una estructura organizativa y características como la administración automática de bases de datos.
-- **Ruby on Rails @rubyonrails:** Es un framework que sigue el principio de convención sobre configuración para el desarrollo rápido de aplicaciones Web en Ruby. Facilita la creación de aplicaciones mediante la automatización de tareas repetitivas y la adopción de convenciones predefinidas. Rails proporciona un entorno coherente que acelera el proceso de desarrollo y favorece la escritura de código limpio y conciso.
-- **Laravel @laravel:** Es un framework elegante y completo para PHP que aborda diversos aspectos del desarrollo Web. Ofrece una sintaxis expresiva, una gestión eficiente de bases de datos, y una amplia gama de herramientas para tareas comunes. Laravel fomenta la creación de aplicaciones seguras y modernas, con un énfasis en la legibilidad y mantenimiento del código.
+- **Express.js @expressjs:** Es un framework para Node.js que simplifica el desarrollo de aplicaciones Web y APIs. Con un enfoque minimalista, permite la creación rápida de servidores y rutas, facilitando la construcción de aplicaciones robustas con *JavaScript* del lado del servidor.
+- **Django @django:** Es un framework de alto nivel para *Python*, diseñado para maximizar la eficiencia y la reutilización del código. Con un conjunto integrado de herramientas y una arquitectura basada en el patrón de diseño [MVC](#MVC), *Django* simplifica la creación de aplicaciones Web complejas al proporcionar una estructura organizativa y características como la administración automática de bases de datos.
+- **Ruby on Rails @rubyonrails:** Es un framework que sigue el principio de convención sobre configuración para el desarrollo rápido de aplicaciones Web en *Ruby*. Facilita la creación de aplicaciones mediante la automatización de tareas repetitivas y la adopción de convenciones predefinidas. *Rails* proporciona un entorno coherente que acelera el proceso de desarrollo y favorece la escritura de código limpio y conciso.
+- **Laravel @laravel:** Es un framework elegante y completo para *PHP* que aborda diversos aspectos del desarrollo Web. Ofrece una sintaxis expresiva, una gestión eficiente de bases de datos, y una amplia gama de herramientas para tareas comunes. *Laravel* fomenta la creación de aplicaciones seguras y modernas, con un énfasis en la legibilidad y mantenimiento del código.
 
-Por otro lado, en el contexto del desarrollo del lado del servidor es esencial considerar no solo los lenguajes de programación y sus frameworks asociados, sino también las bases de datos, los cuales son elementos fundamentales para la persistencia y gestión de datos. Para una comprensión más detallada, se examinan tres bases de datos específicas, tal y como expone Ramotion en @bases-de-datos: MySQL, MongoDB y Neo4j.
+Por otro lado, en el contexto del desarrollo del lado del servidor es esencial considerar no solo los lenguajes de programación y sus frameworks asociados, sino también las bases de datos, los cuales son elementos fundamentales para la persistencia y gestión de datos. Para una comprensión más detallada, se examinan tres bases de datos específicas, tal y como expone Ramotion en @bases-de-datos: *MySQL*, *MongoDB* y *Neo4j*.
 
 - **MySQL @mysql:** Se trata de una [BD](#BD) relacional, reconocida por su fiabilidad y consistencia en la gestión de datos estructurados. Ha sido una opción de confianza en el desarrollo Web, proporcionando un entorno robusto para aplicaciones que dependen de una estructura de datos clara y relaciones definidas.
 - **MongoDB @mongodb:** Destaca como una [BD](#BD) no relacional orientada a documentos, ofreciendo flexibilidad en el esquema y una capacidad eficaz para manejar grandes volúmenes de datos no estructurados. Esta característica la convierte en una elección popular para aplicaciones que requieren escalabilidad y adaptabilidad a cambios en la estructura de datos.
 - **Neo4j @neo4j:** Como una [BD](#BD) de grafos, está diseñada para almacenar y procesar datos en forma de nodos y relaciones. Esto la convierte en una opción adecuada para aplicaciones que necesiten modelar y analizar redes complejas, como redes sociales, sistemas de recomendación y análisis de relaciones en datos interconectados.
 
-Finalmente, en el lado del servidor, no se debe pasar por alto la importancia de los contenedores, ya que optimizan la implementación, escalabilidad y gestión de aplicaciones. A continuación, se analizan dos tecnologías destacadas, tal y como expone Baryshevskiy en @tendencias-tecnologias-web: Docker y Kubernetes.
+Finalmente, en el lado del servidor, no se debe pasar por alto la importancia de los contenedores, ya que optimizan la implementación, escalabilidad y gestión de aplicaciones. A continuación, se analizan dos tecnologías destacadas, tal y como expone Baryshevskiy en @tendencias-tecnologias-web: *Docker* y *Kubernetes*.
 
 - **Docker @docker:** Se trata de plataforma de contenedores que posibilita el empaquetado, la distribución y la ejecución coherente de aplicaciones en diversos entornos. Su enfoque revolucionario ha transformado la consistencia y portabilidad en el despliegue de software, permitiendo una gestión eficaz de dependencias y configuraciones. En la Figura \ref{capitulo2:docker-vs-vm} se puede observar la diferencia entre un despliegue de contenedores que comparten el [SO](#SO) y un despliegue de maquinas virtuales que hacen una copia completa del [SO](#SO) cada una.
 - **Kubernetes @kubernetes:** Consiste en un sistema de orquestación de contenedores, simplificando la administración, escalabilidad y despliegue de aplicaciones contenidas en entornos distribuidos. Su capacidad para coordinar eficientemente la ejecución de contenedores a lo largo de múltiples nodos ha consolidado su posición como una herramienta fundamental en el despliegue de infraestructuras escalables y resilientes. 
 
-![Despliegue con docker vs con maquinas virtuales @imagen-docker-vs-vm\label{capitulo2:docker-vs-vm}](docker-vs-vm.png)
+![Despliegue con docker vs con maquinas virtuales @imagen-docker-vs-vm\label{capitulo2:docker-vs-vm}](cap2_docker-vs-vm.png){width=75%}
 
 En resumen, la tecnología de BackEnd engloba un conjunto diverso de herramientas y tecnologías esenciales para el desarrollo y funcionamiento de aplicaciones Web y servicios. La elección de tecnologías específicas depende de factores como los requisitos del proyecto, la escala y complejidad de la aplicación, así como las preferencias del equipo de desarrollo. La combinación adecuada de estos elementos contribuye a la creación de sistemas BackEnd robustos, eficientes y escalables. Sin embargo, una vez se conoce el lado del servidor, es vital conocer el otro lado conocido como el FrontEnd, el cual se enfoca más en el cliente. En el siguiente punto, se detalla la diferente tecnología Web dentro de dicha área. 
 
 ### FrontEnd
 En el ámbito del Frontend, se pueden encontrar diferentes lenguajes tanto de marcado como de programación. Además, destacan los diferentes frameworks, así como de las diferentes librerías de visualización de datos que desempeñan un papel crucial en la construcción de interfaces de usuario atractivas. Tampoco se puede pasar por alto, la creciente popularidad del WebAssembly y las Progressive Web Apps, innovaciones que están transformando la experiencia del usuario dentro del ámbito del FrontEnd. A continuación, se realizará un análisis de estas tecnologías para comprender su impacto y aplicaciones específicas.
 
-Por un lado, los lenguajes de marcado como de programación fundamentales que encontramos en el desarrollo del FrontEnd son la tríada formada de HTML, CSS y JavaScript, este último extendido mediante TypeScript. A continuación, se realiza una breve explicación de cada uno de estos lenguajes.
+Por un lado, los lenguajes de marcado como de programación fundamentales que encontramos en el desarrollo del FrontEnd son la tríada formada de [HTML](#HTML), [CSS](#CSS) y JavaScript, este último extendido mediante TypeScript. A continuación, se realiza una breve explicación de cada uno de estos lenguajes, tal como exponen *Mozilla* en @html y @css, y Cherni en @libro-typescript.
 
 - **HTML:** Lenguaje de marcado estándar utilizado para estructurar el contenido de las páginas Web. Define la jerarquía y organización de los elementos en una página.
 - **CSS:** Lenguaje de estilo que complementa a [HTML](#HTML). Permite definir el diseño, la presentación y la apariencia visual de los elementos [HTML](#HTML), proporcionando control sobre colores, tipografías y disposición.
 - **JavaScript:** Se trata del lenguaje de programación del lado del cliente que permite la creación de interactividad en las páginas Web. Es esencial para manipular el [DOM](#DOM) y responder a eventos del usuario.
 - **TypeScript @typescript:** Es un lenguaje de programación fuertemente tipado que se basa en JavaScript. A diferencia de este último, TypeScript añade un sistema de tipos estático, proporcionando beneficios como la detección temprana de errores y una mejor mantenibilidad en proyectos a gran escala. Esta diferencia se puede ver ilustrada en la Figura \ref{capitulo2:circulo-typescript}.
 
-![TypeScript vs JavaScript\label{capitulo2:circulo-typescript}](circulo-typescript.png){width=40%}
+![TypeScript vs JavaScript\label{capitulo2:circulo-typescript}](cap2_circulo-typescript.png){width=40%}
 
-Además de estos lenguajes fundamentales, los frameworks de [SPA](#SPA) han revolucionado la forma en que se desarrollan las interfaces de usuario. Estos frameworks permiten la creación de experiencias más dinámicas al cargar solo los componentes necesarios a diferencia de recargar toda la página como lo haría una aplicación Web tradicional. Aquí se presentan cuatro de dichos frameworks, tal y como expone Baryshevskiy en @tendencias-tecnologias-web: React, Angular, Vue y Svelte.
+Además de estos lenguajes fundamentales, los frameworks de [SPA](#SPA) han revolucionado la forma en que se desarrollan las interfaces de usuario. Estos frameworks permiten la creación de experiencias más dinámicas al cargar solo los componentes necesarios a diferencia de recargar toda la página como lo haría una aplicación Web tradicional. Aquí se presentan cuatro de dichos frameworks, tal y como expone Baryshevskiy en @tendencias-tecnologias-web: *React*, *Angular*, *Vue* y *Svelte*.
 
-- **React @react:** Desarrollado por *Facebook*, React es una biblioteca de JavaScript que se centra en la construcción de interfaces de usuario reactivas y eficientes. Su enfoque en la creación de componentes modulares y su capacidad para gestionar el estado de manera efectiva lo convierten en una elección popular para aplicaciones dinámicas y escalables.
-- **Angular @angular:** Respaldado por *Google*, es un framework completo de desarrollo que abarca desde la creación de componentes hasta la gestión del estado y el enrutamiento. Su estructura robusta y su integración con TypeScript ofrecen un enfoque amplio para el desarrollo de [SPAs](#SPA), siendo especialmente adecuado para proyectos empresariales complejos.
-- **Vue.js @vuejs:** Se trata de un framework progresivo de JavaScript que destaca por su simplicidad y flexibilidad. Su diseño modular facilita la integración gradual en proyectos existentes, y su curva de aprendizaje suave lo convierte en una opción popular para desarrolladores que buscan una alternativa accesible y potente.
+- **React @react:** Desarrollado por *Facebook*, *React* es una biblioteca de JavaScript que se centra en la construcción de interfaces de usuario reactivas y eficientes. Su enfoque en la creación de componentes modulares y su capacidad para gestionar el estado de manera efectiva lo convierten en una elección popular para aplicaciones dinámicas y escalables.
+- **Angular @angular:** Respaldado por *Google*, es un framework completo de desarrollo que abarca desde la creación de componentes hasta la gestión del estado y el enrutamiento. Su estructura robusta y su integración con *TypeScript* ofrecen un enfoque amplio para el desarrollo de [SPAs](#SPA), siendo especialmente adecuado para proyectos empresariales complejos.
+- **Vue.js @vuejs:** Se trata de un framework progresivo de *JavaScript* que destaca por su simplicidad y flexibilidad. Su diseño modular facilita la integración gradual en proyectos existentes, y su curva de aprendizaje suave lo convierte en una opción popular para desarrolladores que buscan una alternativa accesible y potente.
 - **Svelte @svelte:** Adopta un enfoque diferente al trasladar gran parte del trabajo de construcción a tiempo de compilación. Esto resulta en aplicaciones más livianas y rápidas en tiempo de ejecución. Su sintaxis sencilla y su rendimiento eficiente lo hacen atractivo para desarrolladores que buscan una alternativa innovadora y eficaz en la construcción de [SPAs](#SPA).
 
 Por otro lado, diversas librerías han surgido para facilitar la creación de visualizaciones atractivas e interactivas, después de todo la visualización de datos desempeña un papel fundamental en la comprensión y comunicación efectiva de información en entornos Web. A continuación, son presentadas algunas de las librerías más destacadas, tal y como expone Majorek en @librerias-visualizacion-datos:
@@ -99,11 +99,11 @@ Por otro lado, diversas librerías han surgido para facilitar la creación de vi
 - **Chart.js @chartjs:** Aporta una solución simple y fácil de usar, ofreciendo una variedad de gráficos, como barras, líneas y radar. Esta librería en JavaScript permite a los desarrolladores incorporar rápidamente visualizaciones atractivas en sus aplicaciones Web.
 - **ECharts @echarts:** Ofrece una amplia variedad de gráficos, incluyendo líneas, barras, dispersión y mapas, entre otros. La capacidad de Echarts para manejar grandes conjuntos de datos y su enfoque en la interactividad hacen que sea una elección sólida para proyectos que requieren visualizaciones dinámicas y atractivas. 
 - **Highcharts @highcharts:** Con una amplia gama de opciones de personalización, Highcharts simplifica la creación de gráficos interactivos. Esta librería en JavaScript es adecuada para proyectos que buscan una solución robusta y fácil de implementar.
-- **React-Vis @reactvis:** Diseñada específicamente para trabajar con React, React-Vis proporciona componentes listos para usar que facilitan la incorporación de visualizaciones de datos en aplicaciones React. Es una elección eficiente para proyectos que utilizan este marco de trabajo.
+- **React-Vis @reactvis:** Diseñada específicamente para trabajar con *React*, *React-Vis* proporciona componentes listos para usar que facilitan la incorporación de visualizaciones de datos en aplicaciones *React*. Es una elección eficiente para proyectos que utilizan este marco de trabajo.
 
-Por último, dentro del ámbito del FrontEnd destacan dos innovaciones particulares: el WebAssemby y las Progressive Web Apps. Ambas son analizadas más en detalle a continuación, tal y como expone Baryshevskiy en @tendencias-tecnologias-web.
+Por último, dentro del ámbito del FrontEnd destacan dos innovaciones particulares: el *WebAssemby* y las *Progressive Web Apps*. Ambas son analizadas más en detalle a continuación, tal y como expone Baryshevskiy en @tendencias-tecnologias-web.
 
-- **WebAssembly (Wasm):** Permite la ejecución de código de alto rendimiento, escrito en lenguajes como C++ o Rust, directamente en el navegador. Esto amplía significativamente las posibilidades para construir aplicaciones Web más potentes y rápidas, acercando el rendimiento de las aplicaciones Web al de las aplicaciones nativas.
+- **WebAssembly (Wasm):** Permite la ejecución de código de alto rendimiento, escrito en lenguajes como *C++* o *Rust*, directamente en el navegador. Esto amplía significativamente las posibilidades para construir aplicaciones Web más potentes y rápidas, acercando el rendimiento de las aplicaciones Web al de las aplicaciones nativas.
 - **Progressive Web Apps (PWA):** Ofrecen experiencias avanzadas que combinan lo mejor de las aplicaciones Web y nativas. Su capacidad para funcionar offline permite a los usuarios acceder a contenido incluso en ausencia de conexión a Internet, mejorando la accesibilidad y la continuidad de la experiencia del usuario.
 
 En conclusión, la tecnología del Frontend al igual que el BackEnd abarca un conjunto diverso de herramientas y tecnologías esenciales para la creación y operación de aplicaciones Web y servicios. La selección de tecnologías particulares está condicionada por diversos factores, incluyendo los requisitos específicos del proyecto y la complejidad de la aplicación, así como las preferencias del equipo de desarrollo.
@@ -111,12 +111,12 @@ En conclusión, la tecnología del Frontend al igual que el BackEnd abarca un co
 Una vez se conoce la diferente tecnología Web que rodea tanto el lado del BackEnd como el lado del FrontEnd, es de gran ayuda conocer los stacks tecnológicos más utilizados y analizarlos. Lo cual se realizará en el siguiente punto.
 
 ### Stacks Tecnológicos
-En el contexto de los stacks tecnológicos, es decir, la elección de un conjunto específico de tecnologías, se trata de un aspecto crítico dentro del desarrollo Web, ya que afecta directamente la eficiencia del desarrollo, la escalabilidad y el mantenimiento del sistema. A continuación son explicadas brevemente cuatro stacks, tal y como expone Campana en @stacks-tecnologicos: LAMP, Python Django, MEAN y MERN.
+En el contexto de los stacks tecnológicos, es decir, la elección de un conjunto específico de tecnologías, se trata de un aspecto crítico dentro del desarrollo Web, ya que afecta directamente la eficiencia del desarrollo, la escalabilidad y el mantenimiento del sistema. A continuación son explicadas brevemente cuatro stacks, tal y como expone Campana en @stacks-tecnologicos: *LAMP*, *Python Django*, *MEAN* y *MERN*.
 
-- **LAMP (Linux, Apache, MySQL, PHP/Python/Perl):** Ha sido un pilar en el desarrollo Web durante muchos años y sigue siendo una opción confiable para una variedad de proyectos tradicionales. Linux proporciona el sistema operativo, Apache sirve como servidor Web, MySQL maneja la base de datos, y PHP, Python o Perl actúan como lenguajes de programación del lado del servidor. Este conjunto ofrece estabilidad, flexibilidad y una amplia base de conocimientos, siendo especialmente adecuado para aplicaciones Web convencionales.
-- **Python Django (Python, Django, Apache, MySQL):** Stack tecnológico compuesto de Python como lenguaje principal de programación, Django como framework Web basado en el patrón MVC, Apache como servidor Web para la gestión de solicitudes [HTTP](#HTTP), y MySQL como sistema de gestión de bases de datos. Este conjunto es especialmente adecuado para proyectos Web que buscan la combinación de la versatilidad de Python, la solidez de Django, y la confiabilidad de Apache y MySQL.
-- **MEAN (MongoDB, Express.js, Angular, Node.js):** Es un stack tecnológico basado completamente en JavaScript. MongoDB es la base de datos [NoSQL](#NoSQL), Express.js actúa como el framework del lado del servidor, Angular es el framework del lado del cliente y Node.js proporciona el entorno de ejecución del servidor. Este stack ha ganado popularidad por su coherencia en el uso de un solo lenguaje de programación (JavaScript/TypeScript) en todo el flujo de desarrollo, lo que simplifica la colaboración entre los equipos de desarrollo y permite una transición más fluida de los datos entre el servidor y el cliente.
-- **MERN (MongoDB, Express.js, React, Node.js):** Similar a MEAN, pero reemplaza Angular con React en el lado del cliente. React ha ganado una enorme popularidad por su enfoque declarativo y su capacidad para construir interfaces de usuario altamente interactivas. MERN comparte las ventajas de MEAN, pero además permite a los desarrolladores aprovechar las características distintivas de React para crear experiencias de usuario más dinámicas y eficientes.
+- **LAMP (Linux, Apache, MySQL, PHP/Python/Perl):** Ha sido un pilar en el desarrollo Web durante muchos años y sigue siendo una opción confiable para una variedad de proyectos tradicionales. Linux proporciona el sistema operativo, Apache sirve como servidor Web, *MySQL* maneja la base de datos, y *PHP*, *Python* o *Perl* actúan como lenguajes de programación del lado del servidor. Este conjunto ofrece estabilidad, flexibilidad y una amplia base de conocimientos, siendo especialmente adecuado para aplicaciones Web convencionales.
+- **Python Django (Python, Django, Apache, MySQL):** Stack tecnológico compuesto de Python como lenguaje principal de programación, Django como framework Web basado en el patrón [MVC](#MVC), Apache como servidor Web para la gestión de solicitudes [HTTP](#HTTP), y *MySQL* como sistema de gestión de bases de datos. Este conjunto es especialmente adecuado para proyectos Web que buscan la combinación de la versatilidad de *Python*, la solidez de *Django*, y la confiabilidad de *Apache* y *MySQL*.
+- **MEAN (MongoDB, Express.js, Angular, Node.js):** Es un stack tecnológico basado completamente en *JavaScript*. *MongoDB* es la base de datos [NoSQL](#NoSQL), *Express.js* actúa como el framework del lado del servidor, *Angular* es el framework del lado del cliente y Node.js proporciona el entorno de ejecución del servidor. Este stack ha ganado popularidad por su coherencia en el uso de un solo lenguaje de programación (*JavaScript* / *TypeScript*) en todo el flujo de desarrollo, lo que simplifica la colaboración entre los equipos de desarrollo y permite una transición más fluida de los datos entre el servidor y el cliente.
+- **MERN (MongoDB, Express.js, React, Node.js):** Similar a *MEAN*, pero reemplaza *Angular* con *React* en el lado del cliente. *React* ha ganado una enorme popularidad por su enfoque declarativo y su capacidad para construir interfaces de usuario altamente interactivas. *MERN* comparte las ventajas de *MEAN*, pero además permite a los desarrolladores aprovechar las características distintivas de *React* para crear experiencias de usuario más dinámicas y eficientes.
 
 Con todo esto en mente, se puede concluir que la elección entre los diferentes stacks tecnológicos que existen depende de las necesidades específicas del proyecto y las preferencias del equipo de desarrollo. Teniendo cada stack sus propias ventajas y pudiendo ser la elección correcta según los requisitos particulares de la aplicación que se esté construyendo.
 
@@ -133,74 +133,152 @@ Finalmente, en la Tabla \ref{capitulo2:tabla-tecnologia} se puede observar una v
 
 Una vez se conoce toda la tecnología que se puede utilizar a la hora de construir una aplicación Web. Es fundamental, tener en mente las diferentes técnicas de visualización que existen para asegurar que el usuario entienda los datos que se muestran con dicha aplicación. Estas técnicas son analizadas en el siguiente punto. 
 
-## Técnicas de Visualización
-Como se ha mencionado previamente, para desarrollar la aplicación Web deseada es necesario mostrar datos de una manera atractiva al usuario y para ello hay que hacer uso de las técnicas existentes de visualización de datos. Al fin y al cabo, esto vendría a ser la traducción de una gran cantidad de información en un contexto visual usando elementos gráficos. De forma que consiga comunicar relaciones de datos complejas para una mejor comprensión de los usuarios. A continuación es realizado un análisis de las diferentes técnicas.
+## Técnicas de Visualización de Datos
+Como se ha mencionado previamente, el desarrollo de la aplicación Web deseada requiere la presentación atractiva de datos para los usuarios, lo que implica el uso de técnicas de visualización de datos existentes. En esencia, esto implica la transformación de una gran cantidad de información en un formato visual comprensible mediante elementos gráficos. Esto permite comunicar relaciones complejas entre los datos para mejorar la comprensión por parte de los usuarios. A continuación, se realiza un análisis de las diversas técnicas, según lo expuesto por Wilke en @fundamentals-data-visualization, Yi y Restori en @chartio, y Holtz en @data-viz. Estas técnicas se agrupan en seis categorías principales: distribución, correlación, ranking, parte de un todo, evolución y otras técnicas.
 
-### Tipos de Visualización
-Para conseguir mostrar toda esta cantidad de datos existen diferentes tipos de visualización de datos, algunos de estos son los que se presentan a continuación, tal y como expone Calzon en @tipos-visualizacion-datos.
+### Técnicas de Distribución
 
-- **Gráficos de números:** Representan inmediatamente un dato clave. 
-- **Gráficos de líneas:** Muestran datos a lo largo de una línea continua, conectando puntos de datos. Se utilizan comúnmente para visualizar tendencias a lo largo del tiempo.
-- **Mapas:** muestran los datos por una localización geográfica. Normalmente, la información se muestra con un mapa de áreas coloreado.
-- **Gráfico de cascada:** Muestra los datos durante un periodo de tiempo determinado, ilustrando los valores positivos y negativos
-- **Gráficos de barras:** Representan datos utilizando barras rectangulares de longitudes proporcionales a los valores que representan. Pueden ser horizontales o verticales. Además, pueden mostrar las barras individualmente, acumuladas o agrupadas entre ellas.
-- **Gráficos de pastel (pie charts):** Dividen un círculo en sectores para representar proporciones. Son útiles para mostrar la distribución porcentual de un conjunto de datos.
-- **Gráficos de calibre (gauge charts):** Utiliza agujas y colores para mostrar datos similares a la lectura en un velocímetro.
-- **Gráficos radiales (radar charts):** Muestran datos en un formato circular, útiles para comparar múltiples categorías en función de varias variables.
-- **Diagramas de dispersión:** Representan puntos en un plano cartesiano para mostrar la relación entre dos variables. Cada punto representa una observación.
-- **Tablas:** Forma común de visualización de datos que organiza la información en filas y columnas. Cada fila representa un conjunto de datos y cada columna representa un atributo. 
-- **Gráficos de burbujas:** Similar a un diagrama de dispersión, pero con la adición de un tercer valor que se representa mediante el tamaño de las burbujas.
-- **Diagramas de caja (boxplots):** Representan la distribución estadística de un conjunto de datos a través de cuartiles. Muestran la mediana, los cuartiles y los valores atípicos.
-- **Gráfico de embudo (funnel chart):** Muestra como los datos se mueven a través de un proceso específico.
-- **Mapas de calor:** utilizan colores para representar la intensidad de un valor en una matriz bidimensional. Son útiles para mostrar la concentración de datos en áreas específicas.
+Las técnicas de distribución se utilizan para comprender cómo se distribuyen los datos en un conjunto. Esto es crucial para comprender la dispersión y la concentración de los valores. Las visualizaciones de distribución permiten identificar patrones, valores atípicos y la forma general de la distribución de los datos. Dentro de este grupo se encuentran técnicas como el histograma; el gráfico de densidad; el diagrama de caja y bigotes; y el diagrama de violín. A continuación, se detallan cada una de estas técnicas.
 
-Sin embargo, no solo es necesario conocer qué técnicas existen, sino también saber cuáles son las mejores prácticas a la hora de utilizarlas. En el siguiente punto, se tratarán estas diferentes prácticas.
+Por un lado, el **histograma** toma como entrada únicamente una variable numérica. Esta variable se divide en varios intervalos, y el número de observaciones por intervalo se representa mediante la altura de las barras, tal y como se ilustra en la Figura \ref{capitulo2:histograma}. Utilizando esta técnica, es posible representar la distribución de varias variables en el mismo *eje Y* de esta forma compararlas.
 
-### Mejores Prácticas
-Existen diferentes prácticas recomendadas que se emplean a la hora de mostrar los datos, entre las que encontramos el uso de la teoría de color, la importancia de la sencillez, el uso de comparaciones, entre otros muchas más. A continuación se analizan más en detalle todas estas prácticas y consejos expuestas nuevamente por Calzon en @practicas-visualizacion-datos.
+![Histograma @data-viz\label{capitulo2:histograma}](cap2_histograma.png){width=50%}
 
-- **Conocer el caso de uso para cada tipo.** Es de vital importancia tener en mente que cada tipo de visualización de datos es mejor en diferentes situaciones.
-- **Evitar mostrar datos que puedan engañar al usuario.** Para ello se aconseja principalmente que los ejes no empiecen por 0 y que tampoco se omitan datos. 
-- **Tomar ventaja de la teoría de color.** Al fin y al cabo, los colores no solo ayudan a destacar datos importantes, sino también está demostrado que distintos colores causan distintas emociones a las personas. Además, se pueden aprovechar asociaciones de colores que los usuarios den por hecho, como colores de tonos más claros para valores bajos.
-- **Priorizar la sencillez.** Se trata de otra buena práctica para conseguir que el usuario entienda mejor los datos. Evitando muchas etiquetas, imágenes, colores demasiado brillantes, entre otras cosas.
-- **Usar los diferentes elementos textuales con cuidado.** Haciendo que los subtítulos sean cortos y contengan las unidades de medida; etiquetas cortas; ordenar la leyenda por orden de aparición; adición de tooltips interactivos para mostrar texto adicional. 
-- **Incluir comparaciones.** Presentar dos gráficas juntas que muestren la misma información durante un periodo de tiempo particular proporcionará una guía del impacto de los diferentes datos.
-- **Añadir interactividad a los datos.** De esta forma se consigue dar vida a la visualización de datos, permitiendo a los usuarios navegar por ellos, a través de filtros y widgets.
+Por otro lado, una versión más suave del histograma es el **gráfico de densidad**, el cual representa la distribución de una variable numérica utilizando una estimación de densidad del núcleo para mostrar la función de densidad de probabilidad de la variable. En la Figura  \ref{capitulo2:grafico-densidad} se ve el mismo ejemplo anterior pero esta vez usando un gráfico de densidad. Nuevamente, al igual que el histograma es posible representar varias variables en el mismo eje.
 
-Todas estas prácticas ayudan en gran medida a que el usuario comprenda mejor los datos que se muestran. Sin embargo, otra buena práctica que se recomienda es el uso de los principios de Gestalt, los cuales se detallan mejor en el siguiente punto.
+![Gráfico de densidad @data-viz\label{capitulo2:grafico-densidad}](cap2_grafico-densidad.png){width=50%}
 
-### Principios de Gestalt
-Los principios de Gestalt describen cómo los humanos agrupan elementos similares, reconocen patrones y simplifican imágenes complejas cuando se perciben objetos. Los diseñadores utilizan estos principios para organizar el contenido en sitios Web y otras interfaces para que sea estéticamente agradable y fácil de entender. En este punto se tratan los principios de simplicidad, proximidad y cierre que pueden ser usados en la visualización de datos, tal y como expone Meeks en @principios-gestalt. A continuación se detallan cada uno de ellos.
+El **diagrama de cajas y bigotes** proporciona un buen resumen de una o más variables numéricas. Este tipo de diagramas está compuesto por varios elementos, tal y como muestra la Figura \ref{capitulo2:diagrama-caja-componentes}. La desventaja de estos diagramas es que resumir también significa perder información. Por ejemplo, en el diagrama de cajas y bigotes de la Figura \ref{capitulo2:diagrama-caja}, es fácil concluir que el de color verde tiene un valor más alto que los demás. Sin embargo, no se puede ver la distribución subyacente de puntos en cada grupo ni su número de observaciones. Es por eso, que si la cantidad de datos no es muy grande es una buena práctica añadir lo que se conoce como "*jitter*" al gráfico, tal y como muestra la Figura \ref{capitulo2:diagrama-caja-jitter}.
 
-- **Simplicidad:** Indica que los elementos gráficos que tengan propiedades visuales compartidas se consideran como parte de un mismo grupo. En la Figura \ref{capitlo2:principios-gestalt} se puede ver el uso de similitud de color para indicar dos clases de elementos: los rojos y los grises.
-- **Proximidad:** Sigue la misma lógica que el anterior, este principio indica que los elementos que estén próximos entre ellos se consideran como un mismo grupo. En la Figura \ref{capitlo2:principios-gestalt} se puede ver el uso de este principio.
-- **Cierre:** Nuevamente sigue la misma lógica anterior, encerrando los elementos en un área. Como se puede ver en la Figura \ref{capitlo2:principios-gestalt}, junto a los otros dos principios, este último es el más fuerte visualmente.
+![Componentes del diagrama de caja y bigotes @diagrama-caja-componentes\label{capitulo2:diagrama-caja-componentes}](cap2_diagrama-caja-componentes.png){width=50%}
 
-![Principios de Gestalt @principios-gestalt\label{capitlo2:principios-gestalt}](principios-gestalt.png){width=40%}
+![Diagrama de caja y bigotes @data-viz\label{capitulo2:diagrama-caja}](cap2_diagrama-caja.png){width=50%}
 
-Los principios que se han presentado aquí solo son tres de los muchos que existen y son aplicados. Sin embargo, con los ejemplos anteriores uno se puede dar cuenta de la gran utilidad que tienen estos principios a la hora de mostrar datos a los usuarios, y poder dar una mejor experiencia de usuario. Concepto el cual se profundizará más en el siguiente punto junto con el concepto de usabilidad.
+![Diagrama de caja y bigotes con "*jitter*" @data-viz\label{capitulo2:diagrama-caja-jitter}](cap2_diagrama-caja-jitter.png){width=50%}
+
+Sin embargo, si se tiene un tamaño de muestra grande, usar "*jitter*" provocaría que los puntos se superpondrían entre ellos. Por lo que, una alternativa es usar el **diagrama de violín** que permite visualizar la distribución de una variable numérica para uno o varios grupos. Cada "violín" representa un grupo o una variable. La forma representa la estimación de densidad de la variable: cuanto más datos haya en un rango específico, más grande será el "violín" para ese rango. Es muy similar a un diagrama de caja y bigotes, pero permite una comprensión más profunda de la distribución. En la Figura \ref{capitulo2:diagrama-violin} se ve un ejemplo de este tipo de diagramas.
+
+![Diagrama de violin @data-viz\label{capitulo2:diagrama-violin}](cap2_diagrama-violin.png){width=50%}
+
+Una vez presentadas las técnicas utilizadas para comprender la distribución de los datos, en el siguiente punto se detallarán las técnicas para conocer la relación entre ellos.
+
+### Técnicas de Correlación
+
+Las técnicas de correlación revelan la relación entre dos o más variables. Determinar esta relación entre variables es fundamental para comprender cómo cambian juntas y si existe alguna dependencia entre ellas. Las visualizaciones de correlación ayudan a identificar patrones, tendencias y posibles relaciones causales entre variables. Dentro de este grupo se encuentran técnicas como el gráfico de dispersión, el gráfico de burbujas y el mapa de calor. A continuación, se detallan cada una de estas técnicas.
+
+El **diagrama de dispersión** muestra la relación entre 2 variables numéricas. Para cada punto de datos, el valor de su primera variable se representa en el *eje X* y el de la segunda en el *eje Y*, tal y como se ilustra en la Figura \ref{capitulo2:diagrama-dispersion}.
+
+![Diagrama de dispersión @data-viz\label{capitulo2:diagrama-dispersion}](cap2_diagrama-dispersion.png){width=50%}
+
+Por otro lado, como se observa en la Figura \ref{capitulo2:grafico-burbujas}, si al diagrama de dispersión se le agrega una tercera dimensión a través del tamaño de los puntos, se trataría de un **gráfico de burbujas**.
+
+![Gráfico de burbujas @data-viz\label{capitulo2:grafico-burbujas}](cap2_grafico-burbujas.png){width=50%}
+
+Finalmente, el **mapa de calor** consiste en una representación gráfica de datos donde los valores individuales contenidos en una matriz se representan como colores. Se puede observar un ejemplo en la Figura \ref{capitulo2:mapa-calor}.
+
+![Mapa de calor @data-viz\label{capitulo2:mapa-calor}](cap2_mapa-calor.png){width=50%}
+
+Una vez presentadas las técnicas utilizadas para conocer la relación entre los datos, en el siguiente punto se detallarán las técnicas para clasificarlos.
+
+### Técnicas de Ranking
+
+Las técnicas de ranking se centran en comparar y ordenar valores para identificar los más altos, los más bajos o cualquier otro criterio de clasificación. Estas visualizaciones son útiles para comprender la posición relativa de los elementos dentro de un conjunto de datos y para identificar tendencias o patrones de comportamiento. Dentro de este grupo se encuentran técnicas como la gráfica de barras, el gráfico lollipop, el gráfico de barras circular y el gráfico radial. A continuación, se detallan cada una de estas técnicas.
+
+El **gráfico de barras** es una herramienta visual ampliamente empleada para la representación de datos, siendo su función principal la de mostrar la relación entre una variable numérica y una variable categórica. Siendo cada categoría representada mediante una barra, y el valor numérico mediante la longitud de dicha barra.
+
+Es importante destacar que estos gráficos permiten comparar los valores entre distintos grupos. Esto se logra colocando las barras una al lado de la otra o apilándolas entre sí. Además, cuando las etiquetas de las categorías son muy largas, se recomienda invertir los ejes y crear un gráfico de barras horizontal para una mejor visualización, tal y como muestra la Figura \ref{capitulo2:grafico-barras}. Esto facilita la lectura de las etiquetas y la interpretación de los datos.
+
+![Gráfico de barras @data-viz\label{capitulo2:grafico-barras}](cap2_grafico-barras.png){width=50%}
+
+Al tratarse de un gráfico tan común, el diagrama de barras puede resultar aburrido. Es por este motivo que surgieron variaciones como el **gráfico lollipop** que sustituye las barras por una línea y un punto como se ve en la Figura \ref{capitulo2:grafico-lollipop} y el **gráfico de barras circular** ilustrado en la Figura \ref{capitulo2:grafico-barras-circular}. Este último es más difícil de leer, por lo que es una buena práctica utilizarlos cuando la diferencia entre las barras es muy obvia o hay muchas que mostrar.
+
+![Gráfico lollipop @data-viz\label{capitulo2:grafico-lollipop}](cap2_grafico-lollipop.png){width=50%}
+
+![Gráfico de barras circular @data-viz\label{capitulo2:grafico-barras-circular}](cap2_grafico-barras-circular.png){width=50%}
+
+Finalmente, dentro de este grupo se encuentra el **gráfico radial**, el cual consiste en un gráfico bidimensional diseñado para representar una o más series de valores sobre múltiples variables cuantitativas. Cada variable tiene su propio eje, y todos los ejes están unidos en el centro del gráfico. Una práctica común es comparar varios individuos en un mismo gráfico, como se muestra en la Figura \ref{capitulo2:grafico-radial}, o en caso de que sean muchos individuos, mostrarlos en gráficos separados.
+
+![Gráfico radial @data-viz\label{capitulo2:grafico-radial}](cap2_grafico-radial.png){width=50%}
+
+A pesar de su atractivo visual, los gráficos radar no suelen ser ampliamente utilizados debido a que al tener un formato circular, pueden resultar más difíciles de interpretar. Este formato tampoco permite ordenar los valores de manera efectiva. Además, el dibujo que se forma puede variar según el orden de las categorías, a pesar de que los datos sean los mismos.
+
+Una vez presentadas las técnicas utilizadas para ordenar los diferentes valores, en el siguiente punto se detallarán las técnicas para conocer como los datos se proporcionan según el todo.
+
+### Técnicas de Parte de un Todo
+
+Las técnicas de parte de un todo, como indica su nombre, muestran cómo se dividen los datos en partes proporcionales al todo. Son útiles para comprender la composición de un conjunto de datos y para visualizar la distribución de los valores en relación con el conjunto completo. Las visualizaciones de parte de un todo permiten identificar las contribuciones relativas de cada componente y compararlos entre sí. Dentro de este grupo se encuentran técnicas como el gráfico de pastel, los mapas de árbol y el diagrama de sol. A continuación, se detallan cada una de estas técnicas.
+
+El **gráfico de pastel**, caracterizado por un círculo dividido en secciones que representan proporciones del total, se emplea comúnmente para visualizar porcentajes, donde la suma total alcanza el 100%. A pesar de su popularidad, este tipo de representación resulta difícil de interpretar debido a la baja capacidad humana para percibir con precisión ángulos. Esta dificultad se evidencia al intentar determinar cuál de las secciones es la más grande en diferentes gráficos como el mostrado en la Figura \ref{capitulo2:grafico-tarta}, seguido de la comparación con la Figura \ref{capitulo2:grafico-barras-apiladas}, que presenta los mismos datos pero en un formato de barras.
+
+![Gráfico de tarta @data-viz\label{capitulo2:grafico-tarta}](cap2_grafico-tarta.png){width=50%}
+
+![Gráfico de barras apiladas @data-viz\label{capitulo2:grafico-barras-apiladas}](cap2_grafico-barras-apiladas.png){width=50%}
+
+De este ejemplo se deduce que alternativas más efectivas son los gráficos de barras y los de lollipop, explicados en el grupo anterior, los cuales pueden emplearse también en este contexto. Asimismo, los mapas de árbol constituyen otra alternativa viable.
+
+Los **mapas de árbol** muestran datos jerárquicos como un conjunto de rectángulos anidados. Cada grupo se representa mediante un rectángulo, cuya área es proporcional a su valor. Mediante esquemas de color o interactividad, es posible representar varias dimensiones. En la Figura \ref{capitulo2:mapa-arbol} se puede observar un ejemplo de este tipo de diagramas.
+
+![Mapa de árbol @data-viz\label{capitulo2:mapa-arbol}](cap2_mapa-arbol.png){width=50%}
+
+Por último, una técnica muy similar al mapa de árbol, pero con un diseño radial es el **diagrama de sol**, tal y como se ilustra en la Figura \ref{capitulo2:diagrama-sol}. Este tipo de diagramas muestran una estructura jerárquica, siendo el origen de la organización el centro del círculo, y cada nivel es representado con un anillo adicional. El último nivel (hojas) se encuentra en la parte exterior extrema del círculo. 
+
+![Diagrama de sol @data-viz\label{capitulo2:diagrama-sol}](cap2_diagrama-sol.png){width=50%}
+
+Una vez presentadas las técnicas utilizadas para conocer las proporciones de los datos, en el siguiente punto se detallarán las técnicas que indican la evolución de los datos a lo largo del tiempo.
+
+### Técnicas de Evolución
+
+Las técnicas de evolución muestran cómo cambian los datos a lo largo del tiempo o en relación con otra variable. Son esenciales para identificar tendencias, patrones estacionales, ciclos y cambios a largo plazo en los datos. Las visualizaciones de evolución permiten comprender la dinámica temporal de los fenómenos y tomar decisiones informadas basadas en estos cambios. Dentro de este grupo se encuentran técnicas como la gráfica de línea, la gráfica de área y la gráfica de área apilada. A continuación, se detallan cada una de estas técnicas.
+
+La **gráfica de línea** es una herramienta visual que representa la evolución de una o varias variables numéricas a lo largo del tiempo. En este tipo de gráfica, los puntos de datos se disponen en orden según su valor en el *eje X* y se conectan mediante segmentos de línea recta, como se muestra en la Figura \ref{capitulo2:grafica-linea}. Además, de representar la evolución temporal de una única variable, las gráficas de línea también pueden utilizarse para comparar la evolución de varias variables simultáneamente. 
+
+Es importante destacar que en este tipo de gráficas no se suelen señalar los datos. No obstante, es una buena práctica señalarlos con un punto cuando se trata de una muestra pequeña, lo que contribuye a mantener la claridad y la precisión en la representación visual de los datos, facilitando su interpretación por parte del lector.
+
+![Gráfica de línea @data-viz\label{capitulo2:grafica-linea}](cap2_grafica-linea.png){width=50%}
+
+En el caso que el área entre el *eje X* y la línea este rellena de un color como se ilustra en la Figura \ref{capitulo2:grafica-area} se trataría de una **gráfica de área**. Por otro lado, una extensión de este tipo es la **gráfica de área apilada** que consiste en un gráfico de área que muestra la evolución de varios grupos en la misma gráfica. Los valores de cada grupo se muestra encima de cada uno, lo que permite comprobar la evolución del total y la importancia de cada grupo. La Figura \ref{capitulo2:grafica-area-apilada} muestra un ejemplo de este tipo de gráficas.
+
+![Gráfica de área @data-viz\label{capitulo2:grafica-area}](cap2_grafica-area.png){width=50%}
+
+![Gráfica de área apilada @data-viz\label{capitulo2:grafica-area-apilada}](cap2_grafica-area-apilada.png){width=50%}
+
+Finalmente, una vez presentadas las técnicas utilizadas para conocer la evolución de los datos, en el siguiente punto se detallarán otras técnicas de visualización interesantes.
+
+### Otras Técnicas
+
+Este grupo abarca diversas técnicas que no se ajustan directamente a las categorías anteriores debido a la gran variedad de enfoques disponibles, un ejemplo son las visualizaciones especializadas para representar datos geoespaciales, como el **mapa** ilustrado en la Figura \ref{capitulo2:mapa}.
+
+![Mapa @data-viz\label{capitulo2:mapa}](cap2_mapa.png){width=50%}
+
+Otro tipo de visualizaciones que entraría dentro de esta categoría son las visualizaciones de flujo, como el **diagrama de cuerdas**, que representa conexiones entre nodos. Cada nodo se representa mediante un fragmento en la parte exterior del diseño circular, y se trazan arcos entre cada par de entidades. El tamaño de cada arco es proporcional a la importancia del flujo. La Figura \ref{capitulo2:diagrama-cuerdas} muestra un ejemplo de este tipo de diagramas.
+
+![Diagrama de cuerdas @data-viz\label{capitulo2:diagrama-cuerdas}](cap2_diagrama-cuerdas.png){width=50%}
+
+Por último, dentro de este grupo también se incluye la visualización de datos en su forma **individual**, cuando solo se desea mostrar un único dato, así como en **formato de tabla**.
+
+Una vez se han presentado las diferentes técnicas de visualización de datos que existen, es crucial conocer la disciplina de la [IPO](#IPO), concepto que se detallará mejor en el siguiente punto.
 
 ## Interacción Persona-Ordenador 
-Por último, para el desarrollo de una aplicación Web enfocada en el lado del cliente es indispensable detenerse para hablar de la disciplina de interacción Persona-Ordenador, de la usabilidad y de la experiencia de usuario. A continuación, se detallan cada uno de estos conceptos. 
+Por último, para el desarrollo de una aplicación Web enfocada en el lado del cliente es indispensable detenerse para hablar de la disciplina de [IPO](#IPO), de la usabilidad y de la experiencia de usuario. A continuación, se detallan cada uno de estos conceptos. 
 
-### Interacción Persona-Ordenador
+### Concepto de la IPO
 La [IPO](#IPO) es definida por [SIGCHI](#SIGCHI) como “la disciplina relacionada con el diseño, evaluación e implementación de sistemas informáticos interactivos para el uso de seres humanos, y con el estudio de los fenómenos más importantes con los que está relacionado” @toni-ipo.
 
 Dentro de esta disciplina, se pueden encontrar distintos aspectos, los cuales se pueden ver reflejados en la Figura \ref{capitlo2:interaccion-persona-ordenador}. Por un lado, se observa una persona con sus características de procesamiento de la información, tanto las de comunicación como las físicas que interactúa con un ordenador. El cual también tiene sus propias características. Por otro lado, en medio se encuentran los dispositivos de entrada y salida que relacionan a la persona con el ordenador, comunicándose mediante diferentes elementos de diseño.
 
 Además, la figura muestra que la persona no está sola, sino que realiza el trabajo dentro de una organización social, siendo posible gracias a un proceso de desarrollo en el que cada uno de estos componentes debe ser abordado con igual grado de implicación y no caer en el error de obviar la parte humana, centrándose solamente en la parte tecnológica.
 
-![Flujo de la disciplina de la Interacción Persona-Ordenador @toni-ipo\label{capitlo2:interaccion-persona-ordenador}](interaccion-persona-ordenador.png){width=75%}
+![Flujo de la disciplina de la [IPO](#IPO) @toni-ipo\label{capitlo2:interaccion-persona-ordenador}](cap2_flujo-ipo.png){width=75%}
 
 Con todo esto en mente, se puede decir que la disciplina de interacción Persona-Ordenador es la encargada de estudiar la usabilidad de la aplicación Web. Concepto que se detalla más en profundidad en el siguiente punto.
 
 ### Usabilidad
-El concepto de usabilidad fue introducido por J. Nielsen en @nielsen-book, quien concluyó que un sistema software tiene dos componentes: el aspecto funcional y la forma en que los usuarios pueden usar este aspecto. Siendo este último, el que es tratado para mejorar la usabilidad de una aplicación. Por consiguiente, los aspectos que se tienen en mente al hablar de usabilidad serían la facilidad de aprendizaje, la efectividad de uso y la satisfacción con las que las personas son capaces de realizar sus tareas.
+El concepto de usabilidad fue introducido por J. Nielsen en @libro-nielsen, quien concluyó que un sistema software tiene dos componentes: el aspecto funcional y la forma en que los usuarios pueden usar este aspecto. Siendo este último, el que es tratado para mejorar la usabilidad de una aplicación. Por consiguiente, los aspectos que se tienen en mente al hablar de usabilidad serían la facilidad de aprendizaje, la efectividad de uso y la satisfacción con las que las personas son capaces de realizar sus tareas.
 
 Teniendo esto en cuenta, la usabilidad se puede definir coloquialmente como “fácil de usar o de utilizar y de aprender” @toni-usabilidad. Definición que se considera correcta, pero incompleta, ya que el concepto engloba muchos más aspectos, es por ello que el organismo de estandarización [ISO](#ISO) propone dos definiciones:
 
-- La medida en la que un producto se puede usar por determinados usuarios para conseguir objetivos específicos con efectividad, eficiencia y satisfacción en un contexto de uso especificado @iso98.
-- La capacidad que tiene un producto software para ser atractivo, entendido, aprendido, usado por el usuario cuando es utilizado bajo unas condiciones específicas @iso91b.
+- "La medida en la que un producto se puede usar por determinados usuarios para conseguir objetivos específicos con efectividad, eficiencia y satisfacción en un contexto de uso especificado" propuesta por la [ISO](#ISO) 9241-11  @iso92.
+- "La capacidad que tiene un producto software para ser atractivo, entendido, aprendido, usado por el usuario cuando es utilizado bajo unas condiciones específicas" propuesta por la [ISO](#ISO)/IEC 9126 @iso91.
 
 Una vez se ha definido el concepto de usabilidad, se debe saber que este tiene un gran conjunto de atributos, los cuales Granollers en @toni-usabilidad los resumen en: facilidad de aprendizaje, sintetizabilidad, familiaridad, consistencia, flexibilidad, robustez, recuperabilidad, tiempo de respuesta, adecuación de tareas y disminución de la carga cognitiva.
 
@@ -213,7 +291,7 @@ Además, los sistemas interactivos deben centrarse en todos los usuarios, consid
 Por otro lado, dentro de la disciplina de la [IPO](#IPO), también se puede encontrar el término experiencia de usuario, el cual no debe ser confundido con usabilidad, después de todo este último es una faceta del primero. En el siguiente punto, se explica mejor el concepto de experiencia de usuario.
 
 ### Experiencia de Usuario
-El término de experiencia de usuario no tiene una definición consensuada, sin embargo, una de las más destacadas es la que propone el estándar [ISO](#ISO) en @iso-ux, definiendo este concepto como "las percepciones y respuestas de una persona que resultan del uso y/o uso anticipado de un producto, sistema o servicio".
+El término de experiencia de usuario no tiene una definición consensuada, sin embargo, una de las más destacadas es la que propone el estándar [ISO](#ISO) DIS 9241-210:2008 en @iso-ux, definiendo este concepto como "las percepciones y respuestas de una persona que resultan del uso y/o uso anticipado de un producto, sistema o servicio".
 
 Además, la experiencia de usuario presenta diferentes facetas a considerar para el diseño o evaluación de un sistema interactivo. Sin embargo, nuevamente al igual que ocurre con su definición, todavía no están consensuadas ni por la comunidad científica ni por ningún organismo de estandarización. A continuación, se mencionan diferentes facetas para diferentes autores:
 

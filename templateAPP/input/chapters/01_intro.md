@@ -35,14 +35,14 @@ Además de los objetivos mencionados previamente, también se pretende hacer uso
 
 ## Estructura del Documento
 
-Este documento se organiza de la siguiente manera para proporcionar una visión completa y estructurada del proyecto:
+Para concluir este primer capítulo de introducción, se presenta a continuación la estructura detallada del documento:
 
 1. **Introducción:** Se brinda una visión inicial del proyecto, donde se presenta la motivación que impulsó su desarrollo, así como los objetivos y competencias del mismo.
 2. **Estado del arte:** Se lleva a cabo un análisis exhaustivo de las diferentes metodologías de desarrollo, tecnologías web y técnicas de visualización relevantes en el campo.
 3. **Propuesta de solución:** Se presenta la propuesta para la creación de la aplicación Web, detallando la metodología a seguir, las herramientas a utilizar en su desarrollo, así como las técnicas de visualización.
 4. **Resultado:** Se muestra el producto final de la creación de la aplicación Web, acompañado de distintas capturas de pantalla que muestran su funcionalidad y diseño.
-5. **Evaluación:** Se realiza una evaluación crítica del resultado final de la aplicación Web, analizando su usabilidad y eficacia.
+5. **Evaluación del sistema:** Se realiza una evaluación crítica del resultado final de la aplicación Web, analizando su usabilidad y eficacia.
 6. **Conclusiones:** Se presentan las conclusiones finales del proyecto, incluyendo la verificación de sí se han alcanzado los objetivos establecidos inicialmente.
 
-Finalmente, se encuentra la **Bibliografía**, donde se enumeran las diversas fuentes de información consultadas y utilizadas durante la realización del proyecto. Además, se incluyen los respectivos **Anexos** que complementan y enriquecen la información presentada en la memoria final.
+Finalmente, se encuentra la **Bibliografía**, donde se enumeran las diversas fuentes de información consultadas y utilizadas durante la realización del proyecto. Además, se incluyen los respectivos **Anexos** que complementan y enriquecen la información presentada en el documento.
 
