@@ -20,3 +20,4 @@ Wasm: WebAssembly
 MVP: Minimum Viable Product (Producto Mínimo Viable)
 CRUD: Create, Read, Update and Delete (Crear, Leer, Actualizar, Borrar)
 API: Application Programming Interface (Interfaz de Programación de Aplicaciones)
+AJAX: Asynchronous JavaScript and XML (JavaScript y XML asincrónos)

@@ -1,0 +1,29 @@
+@startuml
+Doctor -> PatientsListPage: Pincha en botón de crear
+PatientsListPage -> Doctor : Enseña menú de creación
+Doctor -> PatientsListPage: Introduce los datos necesarios
+Doctor -> PatientsListPage: Confirma creación
+
+PatientsListPage -> DataService : createData("/patient", newData)
+DataService -> PatientRouter : post("/patient", newData, header)
+
+PatientRouter -> PatientRouter : userAuth()
+PatientRouter -> PatientRouter : checkRole("doctor")
+
+PatientRouter -> PatientController : create()
+
+PatientController -> PatientSchema  : validatePatient()
+PatientSchema -> PatientController : result
+PatientController -> AuthController : validateEmail(email)
+AuthController -> PatientController : true
+PatientController -> PatientModel : create(result.data)
+PatientModel -> "MongoDB Atlas" : insertOne(result.data)
+
+"MongoDB Atlas" -> PatientModel : newPatient 
+PatientModel -> PatientController : newPatient
+PatientController -> PatientRouter : newPatient
+PatientRouter -> DataService: newPatient
+DataService -> PatientsListPage : newPatient
+
+PatientsListPage -> Doctor : Muestra nuevo paciente
+@enduml

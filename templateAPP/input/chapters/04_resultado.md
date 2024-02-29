@@ -4,21 +4,13 @@
 
 ## Arquitectura del Sistema
 
-### Arquitectura de Clases
-
-### Arquitectura de FrontEnd
-
-### Arquitectura de API
-
-### Arquietectura de BD
-
 ## Guía de Utilización
 
-### Admin
+### Instalación
 
-### Doctor
+### Rol de Administrador
 
-### Paciente
+### Rol de Médico
 
 ## Análisis de Técnicas de Visualización Utilizadas
 

@@ -1,0 +1,21 @@
+@startuml
+
+node "PC Cliente" {
+node Camara
+node "Navegador Web" {
+artifact index.html
+artifact react_components.tsx
+}
+}
+node "Servidor Web" {
+node API
+
+artifact app.ts
+artifact routers.ts
+artifact controllers.ts
+artifact models.ts
+
+}
+database "MongoDB Atlas"
+
+@enduml

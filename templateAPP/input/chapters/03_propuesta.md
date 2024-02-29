@@ -22,9 +22,7 @@ Una vez presentada la arquitectura, resulta fundamental explorar la tecnología 
 
 ### Tecnología SPA
 
-Los [SPA](#SPA), como se detalla en el capítulo anterior y señala BasuMallick en @ventajas-spa, ofrecen la ventaja crucial de posibilitar la interacción del usuario sin tener que recargar la página. Esta característica contribuye de manera significativa a la reducción del tiempo de carga, lo que, a su vez, se traduce en una mejora sustancial en la velocidad de la aplicación. Al prescindir de la recarga de la página, como se ilustra en la Figura \ref{capitulo3:flujo-spa}, solo es necesario intercambiar datos, mientras que recursos fundamentales como [HTML](#HTML) y [CSS](#CSS) se cargan de manera única al inicio.
-
-![Flujo de una [SPA](#SPA)\label{capitulo3:flujo-spa}](cap3_flujo-spa.png){width=50%}
+Los [SPA](#SPA), como se detalla en el capítulo anterior y señala BasuMallick en @ventajas-spa, ofrecen la ventaja crucial de posibilitar la interacción del usuario sin tener que recargar la página. Esta característica contribuye de manera significativa a la reducción del tiempo de carga, lo que, a su vez, se traduce en una mejora sustancial en la velocidad de la aplicación. Al prescindir de la recarga de la página, solo es necesario intercambiar datos, mientras que recursos fundamentales como [HTML](#HTML) y [CSS](#CSS) se cargan de manera única al inicio.
 
 Además, los [SPA](#SPA) pueden incorporar las funcionalidades de los [PWA](#PWA), permitiendo su uso incluso cuando no hay conexión a internet. Esto lo consiguen los [SPA](#SPA) enviando una única petición al servidor, para luego guardar y almacenar lo que recibe en el caché, permitiendo sincronizar los datos sel servidor cuando la conexión lo permita.
 
@@ -38,7 +36,7 @@ Diseñar una interfaz intuitiva y usable que responda a las necesidades del usua
 
 La creación de una interfaz intuitiva implica la adopción de elementos visuales y de diseño que reflejen la lógica y el flujo de trabajo esperado por el usuario. Se busca minimizar la curva de aprendizaje, permitiendo que tanto profesionales de la salud como pacientes puedan interactuar de manera natural con la aplicación desde el primer momento. La disposición lógica de los elementos, la claridad en las indicaciones y la consistencia en el diseño contribuirán a una experiencia de usuario sin complicaciones.
 
-En paralelo, se plantea la implementación de un **diseño responsive**, como expone Mozilla en @responsive, con el cual se conseguirá una adaptación fluida para los diversos tamaños de pantalla. Después de todo, la gran variabilidad de dispositivos que existen, como ordenadores, tablets y teléfonos móviles, requiere que la interfaz sea flexible y se ajuste de manera óptima a cada contexto. Esta adaptabilidad no solo mejora la accesibilidad, sino que también proporciona una experiencia consistente y agradable independientemente del dispositivo utilizado.
+En paralelo, se plantea la implementación de un *diseño responsive*, como expone Mozilla en @responsive, con el cual se conseguirá una adaptación fluida para los diversos tamaños de pantalla. Después de todo, la gran variabilidad de dispositivos que existen, como ordenadores, tablets y teléfonos móviles, requiere que la interfaz sea flexible y se ajuste de manera óptima a cada contexto. Esta adaptabilidad no solo mejora la accesibilidad, sino que también proporciona una experiencia consistente y agradable independientemente del dispositivo utilizado.
 
 En conclusión, la creación de una interfaz intuitiva y responsive es un elemento clave para ofrecer una experiencia de usuario positiva en la aplicación web. Estos aspectos se integran dentro del marco tecnológico propuesto para la creación de la aplicación web, el cual será detallado en el siguiente punto.
 
@@ -52,26 +50,26 @@ Dentro del marco tecnológico, se distinguen diversas tecnologías agrupadas en 
   - **Lenguaje de programación:** TypeScript @typescript
   - **Framework:** React @react
   - **Herramienta:** Vite @vite
-  - **Librería destacada:** D3.js @d3js
+  - **Librería destacada:** ECharts @echarts
 - **BackEnd**
   - **Lenguaje de programación:** TypeScript @typescript
   - **Entorno de desarrollo:** Node.js @nodejs
   - **Framework:** Express.js @expressjs
   - **Base de datos:** MongoDB @mongodb
-  - **Librerías destacadas:** Mongoose @mongoose
+  - **Librerías destacadas:** Zod @zod
 
 
 Estas tecnologías han sido seleccionadas cuidadosamente con el objetivo de implementar el stack *MERN* utilizando *TypeScript* como lenguaje central. El propósito es lograr el desarrollo de una aplicación Web moderna y eficiente que abarque tanto el lado del cliente como el del servidor. A continuación, se detallan a fondo cada una de estas tecnologías.
 
-Por un lado, en el FrontEnd, se opta por tecnologías líderes en la industria, como [HTML](#HTML), [CSS](#CSS), *TypeScript* y *React*. Estas elecciones proporcionan una estructura sólida para la creación de interfaces de usuario dinámicas y atractivas. Además, se utilizará *Vite* como herramienta de construcción, ofreciendo un entorno de desarrollo rápido y liviano que contribuye a la eficiencia del proceso de desarrollo. Finalmente, en el lado del cliente, se resalta la elección de la librería *D3.js* para la visualización de datos.
+Por un lado, en el FrontEnd, se opta por tecnologías líderes en la industria, como [HTML](#HTML), [CSS](#CSS), *TypeScript* y *React*. Estas elecciones proporcionan una estructura sólida para la creación de interfaces de usuario dinámicas y atractivas. Además, se utilizará *Vite* como herramienta de construcción, ofreciendo un entorno de desarrollo rápido y liviano que contribuye a la eficiencia del proceso de desarrollo. Finalmente, en el lado del cliente, se resalta la elección de la librería *ECharts* para la visualización de datos.
 
-Por otro lado, en el BackEnd, se repite la elección de *TypeScript* dentro del entorno de *Node.js*. Este último será respaldado por *Express.js* como framework, proporcionando un entorno ágil y escalable para la gestión eficiente de las operaciones del servidor. El stack *MERN* se solidifica al optar por *MongoDB* como base de datos, destacándose por su capacidad de almacenamiento flexible y escalable. La interfaz con esta base de datos se simplifica mediante el uso de la librería *Mongoose*, facilitando el acceso y la manipulación de los datos de manera eficaz.
+Por otro lado, en el BackEnd, se repite la elección de *TypeScript* dentro del entorno de *Node.js*. Este último será respaldado por *Express.js* como framework, proporcionando un entorno ágil y escalable para la gestión eficiente de las operaciones del servidor. El stack *MERN* se solidifica al optar por *MongoDB* como base de datos, destacándose por su capacidad de almacenamiento flexible y escalable. La interfaz con esta base de datos se simplifica mediante el uso de la librería *Zod*, que ofrece una manera eficiente de definir y validar los esquemas de datos en *TypeScript*, facilitando así el acceso y la manipulación de los datos de manera eficaz.
 
 Todas estas tecnologías están interrelacionadas, como se ilustra en la Figura \ref{capitulo3:arquitectura-tecnologica}. Esta figura no solo presenta la implementación de la arquitectura [MVC](#MVC) previamente mencionada, sino que también muestra una clara división en tres secciones: Cliente, Servidor y Base de Datos.
 
 - **Cliente:** En la sección del cliente, se incorpora toda la tecnología presentada anteriormente en el FrontEnd. Además, esta sección representa la Vista en la arquitectura [MVC](#MVC).
-- **Servidor:** En esta sección, se observa la mayoría de la tecnología presentada en el BackEnd. Además, esta sección contiene tanto el Controlador, el cual sería la [API](#API) utilizando el framework *Express*, como el Modelo utilizando la librería *Mongoose*.
-- **Base de Datos:** Aquí se destaca el uso de la base de datos no relacional *MongoDB*, que sirve como el componente clave para el almacenamiento de datos.
+- **Servidor:** En esta sección, se observa la mayoría de la tecnología presentada en el BackEnd. Además, esta sección contiene tanto el Controlador, el cual sería la [API](#API) utilizando el framework *Express*, como el Modelo utilizando el cliente oficial de *MongoDB*. Los datos que son pasados del controlador al modelo se validan empleando la librería *Zod*.
+- **Base de Datos:** Aquí se destaca el uso de la base de datos no relacional *MongoDB* empleando la herramienta *MongoDB Atlas*, que sirve como el componente clave para el almacenamiento de datos.
 
 ![Arquitectura tecnológica\label{capitulo3:arquitectura-tecnologica}](cap3_arquitectura-tecnologica.png){width=50%}
 
@@ -165,7 +163,7 @@ Para la planificación detallada del proyecto, se implementará *GitHub Projects
 
 Específicamente, se utilizará la plantilla diseñada siguiendo los pasos expuestos por Swam en @plantilla-bc. La representación visual de esta plantilla se muestra en la Figura \ref{capitulo3:plantilla-bc}, la cual consiste en una tabla que incluye fechas, el peso planificado de las [HU](#HU) a realizar cada día, el peso real de las [HU](#HU) completadas diariamente y el peso "quemado" en relación con el peso total del Sprint.
 
-![Plantilla para la creación del [BC](#BC)\label{capitulo3:plantilla-bc}](cap3_plantilla-bc.png){width=75%}
+![Plantilla utilizada para la creación del [BC](#BC)\label{capitulo3:plantilla-bc}](cap3_plantilla-bc.png){width=75%}
 
 En términos de comunicación y reuniones entre los miembros del equipo, se aprovechará el entorno proporcionado por *Microsoft*. Esto incluye el uso de *Outlook* para el envío de correos electrónicos, *Microsoft Teams* para facilitar reuniones virtuales y *OneDrive* para la compartición de archivos.
 
@@ -180,12 +178,12 @@ En lo que respecta a las herramientas destinadas a la documentación del proyect
 - **Lenguaje de marcado:** Markdown @markdown
 - **Editor de texto:** Typora @typora
 - **Generación de documento:** Plantilla de Félix Albertos @plantilla-felix
-- **Diagramas:** Diagrams.net @diagramsnet 
-- **Diseño de interfaces:** Excalidraw @excalidraw y Figma @figma
+- **Diagramas:** Diagrams.net @diagramsnet y PlantUML @plant-uml
+- **Diseño de prototipos:** Excalidraw @excalidraw
 
 Por un lado, la documentación se redacta utilizando el lenguaje de marcado *Markdown*, que simplifica la aplicación de formato a un texto plano mediante caracteres especiales. Para esta tarea, se utiliza el editor *Typora*, elegido por su experiencia de escritura sin distracciones y su fácil manejo. En cuanto a la generación del documento con el formato adecuado, se emplea la plantilla proporcionada por el tutor Félix Albertos. Esta plantilla, diseñada específicamente para la elaboración del [TFG](#TFG), elimina las posibles preocupaciones de formato al utilizar *Markdown* como entrada.
 
-Por otro lado, en el caso de necesitar desarrollar diagramas, se recurrirá a *Diagrams.net*. Finalmente, para el diseño de las interfaces a implementar, se utilizará *Excalidraw* para bocetos con pocos detalles y *Figma* para diseños más elaborados.
+Por otro lado, en el caso de necesitar desarrollar diagramas, se recurrirá a *Diagrams.net* y a la sintaxis de *PlantUML*. Finalmente, para el diseño de los prototipos a implementar, se utilizará *Excalidraw*.
 
 Con la combinación de todas estas herramientas se conseguirá crear un flujo de trabajo documental eficiente y versátil, optimizando la redacción, formato, generación del documento y diseño de interfaces en el proyecto. Sin embargo, una vez se han presentado las herramientas destinadas a la documentación, es esencial pasar a detallar las distintas herramientas específicas utilizadas en el desarrollo del proyecto.
 
@@ -195,12 +193,12 @@ Finalmente, dentro de las herramientas de desarrollo, se contemplan las que se e
 
 - **Editor de código:** Visual Studio Code @vscode
 - **Extesión destacada:** Rest Client @rest-client
-- **Gestión de bases de datos:** MongoDB Atlas @mongodb-atlas
+- **Gestión de bases de datos:** MongoDB Compass @mongodb-compass y MongoDB Atlas @mongodb-atlas
 - **Gestor de paquetes:** pnpm @pnpm
 
 Se destaca la elección de *Visual Studio Code* como editor de código, una decisión respaldada por su extraordinaria popularidad, su extensibilidad y sus potentes características que impulsan la productividad del desarrollador. Además, para facilitar el desarrollo de la aplicación Web, se hará uso de varias extensiones, destacando especialmente la extensión *REST Client*, que permite probar los distintos endpoints de la [API](#API).
 
-En cuanto a la gestión de la base de datos de *MongoDB*, se empleará la herramienta *MongoDB Atlas*, la cual otorga 512 MB gratuitos en la nube. 
+En cuanto a la gestión de la base de datos de *MongoDB*, se empleará *MongoDB Compass* para administrar los datos en local y *MongoDB Atlas* para gestionarlos en la nube, aprovechando los 512 MB gratuitos que proporciona.  
 
 Finalmente, se optará por *pnpm* como gestor de paquetes. La elección de pnpm se fundamenta en su capacidad para mejorar la eficiencia en la gestión de dependencias, posibilitando una instalación y actualización más rápida y coherente de bibliotecas y herramientas.
 

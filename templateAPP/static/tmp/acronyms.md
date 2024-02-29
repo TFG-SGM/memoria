@@ -86,3 +86,7 @@
 
 : Application Programming Interface (Interfaz de Programación de Aplicaciones)
 
+<span id='AJAX'>AJAX</span>
+
+: Asynchronous JavaScript and XML (JavaScript y XML asincrónos)
+

@@ -92,6 +92,10 @@ Además de estos lenguajes fundamentales, los frameworks de [SPA](#SPA) han revo
 - **Vue.js @vuejs:** Se trata de un framework progresivo de *JavaScript* que destaca por su simplicidad y flexibilidad. Su diseño modular facilita la integración gradual en proyectos existentes, y su curva de aprendizaje suave lo convierte en una opción popular para desarrolladores que buscan una alternativa accesible y potente.
 - **Svelte @svelte:** Adopta un enfoque diferente al trasladar gran parte del trabajo de construcción a tiempo de compilación. Esto resulta en aplicaciones más livianas y rápidas en tiempo de ejecución. Su sintaxis sencilla y su rendimiento eficiente lo hacen atractivo para desarrolladores que buscan una alternativa innovadora y eficaz en la construcción de [SPAs](#SPA).
 
+Para el desarrollo de una [SPA](#SPA) junto con los frameworks mencionados, se emplea la técnica de desarrollo conocida como [AJAX](#AJAX), como describe *Mozilla* en @ajax. Esta técnica, implica que la aplicación web solicita contenido al servidor mediante peticiones [HTTP](#HTTP) asíncronas. Posteriormente, utiliza este nuevo contenido para actualizar las secciones relevantes de la página sin necesidad de recargarla por completo, provocando que solo sea necesario pedir tanto el [HTML](#HTML) como el [CSS](#CSS) en la petición inicial, tal y como muestra la Figura \ref{capitulo2:flujo-spa}. Inicialmente, [AJAX](#AJAX) se implementaba mediante la interfaz *XMLHttpRequest*, pero en la actualidad, son más comunes el uso de la *API fetch* @api-fetch y la biblioteca *Axios* @axios.
+
+![Flujo de una [SPA](#SPA)\label{capitulo2:flujo-spa}](cap3_flujo-spa.png){width=50%}
+
 Por otro lado, diversas librerías han surgido para facilitar la creación de visualizaciones atractivas e interactivas, después de todo la visualización de datos desempeña un papel fundamental en la comprensión y comunicación efectiva de información en entornos Web. A continuación, son presentadas algunas de las librerías más destacadas, tal y como expone Majorek en @librerias-visualizacion-datos:
 
 - **D3.js @d3js:** Destaca como una herramienta poderosa para la manipulación basada en datos en documentos . Su capacidad para crear visualizaciones altamente personalizables e interactivas lo convierte en una opción popular para desarrolladores que buscan flexibilidad en la representación gráfica de datos complejos.
@@ -138,67 +142,81 @@ Como se ha mencionado previamente, el desarrollo de la aplicación Web deseada r
 
 ### Técnicas de Distribución
 
-Las técnicas de distribución se utilizan para comprender cómo se distribuyen los datos en un conjunto. Esto es crucial para comprender la dispersión y la concentración de los valores. Las visualizaciones de distribución permiten identificar patrones, valores atípicos y la forma general de la distribución de los datos. Dentro de este grupo se encuentran técnicas como el histograma; el gráfico de densidad; el diagrama de caja y bigotes; y el diagrama de violín. A continuación, se detallan cada una de estas técnicas.
+Las técnicas de distribución se utilizan para comprender cómo se distribuyen los datos en un conjunto. Esto es crucial para comprender la dispersión y la concentración de los valores. Las visualizaciones de distribución permiten identificar patrones, valores atípicos y la forma general de la distribución de los datos. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
 
-Por un lado, el **histograma** toma como entrada únicamente una variable numérica. Esta variable se divide en varios intervalos, y el número de observaciones por intervalo se representa mediante la altura de las barras, tal y como se ilustra en la Figura \ref{capitulo2:histograma}. Utilizando esta técnica, es posible representar la distribución de varias variables en el mismo *eje Y* de esta forma compararlas.
+- El histograma.
+- El gráfico de densidad.
+- El diagrama de caja y bigotes.
+- El diagrama de violín.
 
-![Histograma @data-viz\label{capitulo2:histograma}](cap2_histograma.png){width=50%}
+Por un lado, el histograma toma como entrada únicamente una variable numérica. Esta variable se divide en varios intervalos, y el número de observaciones por intervalo se representa mediante la altura de las barras, tal y como se ilustra en la Figura \ref{capitulo2:histograma}. Utilizando esta técnica, es posible representar la distribución de varias variables en el mismo *eje Y* de esta forma compararlas.
 
-Por otro lado, una versión más suave del histograma es el **gráfico de densidad**, el cual representa la distribución de una variable numérica utilizando una estimación de densidad del núcleo para mostrar la función de densidad de probabilidad de la variable. En la Figura  \ref{capitulo2:grafico-densidad} se ve el mismo ejemplo anterior pero esta vez usando un gráfico de densidad. Nuevamente, al igual que el histograma es posible representar varias variables en el mismo eje.
+![Histograma @data-viz\label{capitulo2:histograma}](cap2_histograma.png)
 
-![Gráfico de densidad @data-viz\label{capitulo2:grafico-densidad}](cap2_grafico-densidad.png){width=50%}
+Por otro lado, una versión más suave del histograma es el gráfico de densidad, el cual representa la distribución de una variable numérica utilizando una estimación de densidad del núcleo para mostrar la función de densidad de probabilidad de la variable. En la Figura  \ref{capitulo2:grafico-densidad} se ve el mismo ejemplo anterior pero esta vez usando un gráfico de densidad. Nuevamente, al igual que el histograma es posible representar varias variables en el mismo eje.
 
-El **diagrama de cajas y bigotes** proporciona un buen resumen de una o más variables numéricas. Este tipo de diagramas está compuesto por varios elementos, tal y como muestra la Figura \ref{capitulo2:diagrama-caja-componentes}. La desventaja de estos diagramas es que resumir también significa perder información. Por ejemplo, en el diagrama de cajas y bigotes de la Figura \ref{capitulo2:diagrama-caja}, es fácil concluir que el de color verde tiene un valor más alto que los demás. Sin embargo, no se puede ver la distribución subyacente de puntos en cada grupo ni su número de observaciones. Es por eso, que si la cantidad de datos no es muy grande es una buena práctica añadir lo que se conoce como "*jitter*" al gráfico, tal y como muestra la Figura \ref{capitulo2:diagrama-caja-jitter}.
+![Gráfico de densidad @data-viz\label{capitulo2:grafico-densidad}](cap2_grafico-densidad.png)
 
-![Componentes del diagrama de caja y bigotes @diagrama-caja-componentes\label{capitulo2:diagrama-caja-componentes}](cap2_diagrama-caja-componentes.png){width=50%}
+El diagrama de cajas y bigotes proporciona un buen resumen de una o más variables numéricas. Este tipo de diagramas está compuesto por varios elementos, tal y como muestra la Figura \ref{capitulo2:diagrama-caja-componentes}. La desventaja de estos diagramas es que resumir también significa perder información. Por ejemplo, en el diagrama de cajas y bigotes de la Figura \ref{capitulo2:diagrama-caja}, es fácil concluir que el de color verde tiene un valor más alto que los demás. Sin embargo, no se puede ver la distribución subyacente de puntos en cada grupo ni su número de observaciones. Es por eso, que si la cantidad de datos no es muy grande es una buena práctica añadir lo que se conoce como "*jitter*" al gráfico, tal y como muestra la Figura \ref{capitulo2:diagrama-caja-jitter}.
 
-![Diagrama de caja y bigotes @data-viz\label{capitulo2:diagrama-caja}](cap2_diagrama-caja.png){width=50%}
+![Componentes del diagrama de caja y bigotes @diagrama-caja-componentes\label{capitulo2:diagrama-caja-componentes}](cap2_diagrama-caja-componentes.png)
 
-![Diagrama de caja y bigotes con "*jitter*" @data-viz\label{capitulo2:diagrama-caja-jitter}](cap2_diagrama-caja-jitter.png){width=50%}
+![Diagrama de caja y bigotes @data-viz\label{capitulo2:diagrama-caja}](cap2_diagrama-caja.png)
 
-Sin embargo, si se tiene un tamaño de muestra grande, usar "*jitter*" provocaría que los puntos se superpondrían entre ellos. Por lo que, una alternativa es usar el **diagrama de violín** que permite visualizar la distribución de una variable numérica para uno o varios grupos. Cada "violín" representa un grupo o una variable. La forma representa la estimación de densidad de la variable: cuanto más datos haya en un rango específico, más grande será el "violín" para ese rango. Es muy similar a un diagrama de caja y bigotes, pero permite una comprensión más profunda de la distribución. En la Figura \ref{capitulo2:diagrama-violin} se ve un ejemplo de este tipo de diagramas.
+![Diagrama de caja y bigotes con "*jitter*" @data-viz\label{capitulo2:diagrama-caja-jitter}](cap2_diagrama-caja-jitter.png)
 
-![Diagrama de violin @data-viz\label{capitulo2:diagrama-violin}](cap2_diagrama-violin.png){width=50%}
+Sin embargo, si se tiene un tamaño de muestra grande, usar "*jitter*" provocaría que los puntos se superpondrían entre ellos. Por lo que, una alternativa es usar el diagrama de violín que permite visualizar la distribución de una variable numérica para uno o varios grupos. Cada "violín" representa un grupo o una variable. La forma representa la estimación de densidad de la variable: cuanto más datos haya en un rango específico, más grande será el "violín" para ese rango. Es muy similar a un diagrama de caja y bigotes, pero permite una comprensión más profunda de la distribución. En la Figura \ref{capitulo2:diagrama-violin} se ve un ejemplo de este tipo de diagramas.
+
+![Diagrama de violin @data-viz\label{capitulo2:diagrama-violin}](cap2_diagrama-violin.png)
 
 Una vez presentadas las técnicas utilizadas para comprender la distribución de los datos, en el siguiente punto se detallarán las técnicas para conocer la relación entre ellos.
 
 ### Técnicas de Correlación
 
-Las técnicas de correlación revelan la relación entre dos o más variables. Determinar esta relación entre variables es fundamental para comprender cómo cambian juntas y si existe alguna dependencia entre ellas. Las visualizaciones de correlación ayudan a identificar patrones, tendencias y posibles relaciones causales entre variables. Dentro de este grupo se encuentran técnicas como el gráfico de dispersión, el gráfico de burbujas y el mapa de calor. A continuación, se detallan cada una de estas técnicas.
+Las técnicas de correlación revelan la relación entre dos o más variables. Determinar esta relación entre variables es fundamental para comprender cómo cambian juntas y si existe alguna dependencia entre ellas. Las visualizaciones de correlación ayudan a identificar patrones, tendencias y posibles relaciones causales entre variables. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
 
-El **diagrama de dispersión** muestra la relación entre 2 variables numéricas. Para cada punto de datos, el valor de su primera variable se representa en el *eje X* y el de la segunda en el *eje Y*, tal y como se ilustra en la Figura \ref{capitulo2:diagrama-dispersion}.
+- El gráfico de dispersión.
+- El gráfico de burbujas.
+- El mapa de calor. 
 
-![Diagrama de dispersión @data-viz\label{capitulo2:diagrama-dispersion}](cap2_diagrama-dispersion.png){width=50%}
+El diagrama de dispersión muestra la relación entre 2 variables numéricas. Para cada punto de datos, el valor de su primera variable se representa en el *eje X* y el de la segunda en el *eje Y*, tal y como se ilustra en la Figura \ref{capitulo2:diagrama-dispersion}.
 
-Por otro lado, como se observa en la Figura \ref{capitulo2:grafico-burbujas}, si al diagrama de dispersión se le agrega una tercera dimensión a través del tamaño de los puntos, se trataría de un **gráfico de burbujas**.
+![Diagrama de dispersión @data-viz\label{capitulo2:diagrama-dispersion}](cap2_diagrama-dispersion.png)
 
-![Gráfico de burbujas @data-viz\label{capitulo2:grafico-burbujas}](cap2_grafico-burbujas.png){width=50%}
+Por otro lado, como se observa en la Figura \ref{capitulo2:grafico-burbujas}, si al diagrama de dispersión se le agrega una tercera dimensión a través del tamaño de los puntos, se trataría de un gráfico de burbujas.
 
-Finalmente, el **mapa de calor** consiste en una representación gráfica de datos donde los valores individuales contenidos en una matriz se representan como colores. Se puede observar un ejemplo en la Figura \ref{capitulo2:mapa-calor}.
+![Gráfico de burbujas @data-viz\label{capitulo2:grafico-burbujas}](cap2_grafico-burbujas.png)
 
-![Mapa de calor @data-viz\label{capitulo2:mapa-calor}](cap2_mapa-calor.png){width=50%}
+Finalmente, el mapa de calor consiste en una representación gráfica de datos donde los valores individuales contenidos en una matriz se representan como colores. Se puede observar un ejemplo en la Figura \ref{capitulo2:mapa-calor}.
+
+![Mapa de calor @data-viz\label{capitulo2:mapa-calor}](cap2_mapa-calor.png)
 
 Una vez presentadas las técnicas utilizadas para conocer la relación entre los datos, en el siguiente punto se detallarán las técnicas para clasificarlos.
 
 ### Técnicas de Ranking
 
-Las técnicas de ranking se centran en comparar y ordenar valores para identificar los más altos, los más bajos o cualquier otro criterio de clasificación. Estas visualizaciones son útiles para comprender la posición relativa de los elementos dentro de un conjunto de datos y para identificar tendencias o patrones de comportamiento. Dentro de este grupo se encuentran técnicas como la gráfica de barras, el gráfico lollipop, el gráfico de barras circular y el gráfico radial. A continuación, se detallan cada una de estas técnicas.
+Las técnicas de ranking se centran en comparar y ordenar valores para identificar los más altos, los más bajos o cualquier otro criterio de clasificación. Estas visualizaciones son útiles para comprender la posición relativa de los elementos dentro de un conjunto de datos y para identificar tendencias o patrones de comportamiento. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
 
-El **gráfico de barras** es una herramienta visual ampliamente empleada para la representación de datos, siendo su función principal la de mostrar la relación entre una variable numérica y una variable categórica. Siendo cada categoría representada mediante una barra, y el valor numérico mediante la longitud de dicha barra.
+- La gráfica de barras.
+- El gráfico lollipop.
+- El gráfico de barras circular.
+- El gráfico radial. 
+
+El gráfico de barras es una herramienta visual ampliamente empleada para la representación de datos, siendo su función principal la de mostrar la relación entre una variable numérica y una variable categórica. Siendo cada categoría representada mediante una barra, y el valor numérico mediante la longitud de dicha barra.
 
 Es importante destacar que estos gráficos permiten comparar los valores entre distintos grupos. Esto se logra colocando las barras una al lado de la otra o apilándolas entre sí. Además, cuando las etiquetas de las categorías son muy largas, se recomienda invertir los ejes y crear un gráfico de barras horizontal para una mejor visualización, tal y como muestra la Figura \ref{capitulo2:grafico-barras}. Esto facilita la lectura de las etiquetas y la interpretación de los datos.
 
-![Gráfico de barras @data-viz\label{capitulo2:grafico-barras}](cap2_grafico-barras.png){width=50%}
+![Gráfico de barras @data-viz\label{capitulo2:grafico-barras}](cap2_grafico-barras.png)
 
-Al tratarse de un gráfico tan común, el diagrama de barras puede resultar aburrido. Es por este motivo que surgieron variaciones como el **gráfico lollipop** que sustituye las barras por una línea y un punto como se ve en la Figura \ref{capitulo2:grafico-lollipop} y el **gráfico de barras circular** ilustrado en la Figura \ref{capitulo2:grafico-barras-circular}. Este último es más difícil de leer, por lo que es una buena práctica utilizarlos cuando la diferencia entre las barras es muy obvia o hay muchas que mostrar.
+Al tratarse de un gráfico tan común, el diagrama de barras puede resultar aburrido. Es por este motivo que surgieron variaciones como el gráfico lollipop que sustituye las barras por una línea y un punto como se ve en la Figura \ref{capitulo2:grafico-lollipop} y el gráfico de barras circular ilustrado en la Figura \ref{capitulo2:grafico-barras-circular}. Este último es más difícil de leer, por lo que es una buena práctica utilizarlos cuando la diferencia entre las barras es muy obvia o hay muchas que mostrar.
 
-![Gráfico lollipop @data-viz\label{capitulo2:grafico-lollipop}](cap2_grafico-lollipop.png){width=50%}
+![Gráfico lollipop @data-viz\label{capitulo2:grafico-lollipop}](cap2_grafico-lollipop.png)
 
-![Gráfico de barras circular @data-viz\label{capitulo2:grafico-barras-circular}](cap2_grafico-barras-circular.png){width=50%}
+![Gráfico de barras circular @data-viz\label{capitulo2:grafico-barras-circular}](cap2_grafico-barras-circular.png)
 
-Finalmente, dentro de este grupo se encuentra el **gráfico radial**, el cual consiste en un gráfico bidimensional diseñado para representar una o más series de valores sobre múltiples variables cuantitativas. Cada variable tiene su propio eje, y todos los ejes están unidos en el centro del gráfico. Una práctica común es comparar varios individuos en un mismo gráfico, como se muestra en la Figura \ref{capitulo2:grafico-radial}, o en caso de que sean muchos individuos, mostrarlos en gráficos separados.
+Finalmente, dentro de este grupo se encuentra el gráfico radial, el cual consiste en un gráfico bidimensional diseñado para representar una o más series de valores sobre múltiples variables cuantitativas. Cada variable tiene su propio eje, y todos los ejes están unidos en el centro del gráfico. Una práctica común es comparar varios individuos en un mismo gráfico, como se muestra en la Figura \ref{capitulo2:grafico-radial}, o en caso de que sean muchos individuos, mostrarlos en gráficos separados.
 
-![Gráfico radial @data-viz\label{capitulo2:grafico-radial}](cap2_grafico-radial.png){width=50%}
+![Gráfico radial @data-viz\label{capitulo2:grafico-radial}](cap2_grafico-radial.png)
 
 A pesar de su atractivo visual, los gráficos radar no suelen ser ampliamente utilizados debido a que al tener un formato circular, pueden resultar más difíciles de interpretar. Este formato tampoco permite ordenar los valores de manera efectiva. Además, el dibujo que se forma puede variar según el orden de las categorías, a pesar de que los datos sean los mismos.
 
@@ -206,60 +224,68 @@ Una vez presentadas las técnicas utilizadas para ordenar los diferentes valores
 
 ### Técnicas de Parte de un Todo
 
-Las técnicas de parte de un todo, como indica su nombre, muestran cómo se dividen los datos en partes proporcionales al todo. Son útiles para comprender la composición de un conjunto de datos y para visualizar la distribución de los valores en relación con el conjunto completo. Las visualizaciones de parte de un todo permiten identificar las contribuciones relativas de cada componente y compararlos entre sí. Dentro de este grupo se encuentran técnicas como el gráfico de pastel, los mapas de árbol y el diagrama de sol. A continuación, se detallan cada una de estas técnicas.
+Las técnicas de parte de un todo, como indica su nombre, muestran cómo se dividen los datos en partes proporcionales al todo. Son útiles para comprender la composición de un conjunto de datos y para visualizar la distribución de los valores en relación con el conjunto completo. Las visualizaciones de parte de un todo permiten identificar las contribuciones relativas de cada componente y compararlos entre sí. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
 
-El **gráfico de pastel**, caracterizado por un círculo dividido en secciones que representan proporciones del total, se emplea comúnmente para visualizar porcentajes, donde la suma total alcanza el 100%. A pesar de su popularidad, este tipo de representación resulta difícil de interpretar debido a la baja capacidad humana para percibir con precisión ángulos. Esta dificultad se evidencia al intentar determinar cuál de las secciones es la más grande en diferentes gráficos como el mostrado en la Figura \ref{capitulo2:grafico-tarta}, seguido de la comparación con la Figura \ref{capitulo2:grafico-barras-apiladas}, que presenta los mismos datos pero en un formato de barras.
+- El gráfico de pastel
+- El mapa de árbol
+- El diagrama de sol. 
 
-![Gráfico de tarta @data-viz\label{capitulo2:grafico-tarta}](cap2_grafico-tarta.png){width=50%}
+El gráfico de pastel caracterizado por un círculo dividido en secciones que representan proporciones del total, se emplea comúnmente para visualizar porcentajes, donde la suma total alcanza el 100%. A pesar de su popularidad, este tipo de representación resulta difícil de interpretar debido a la baja capacidad humana para percibir con precisión ángulos. Esta dificultad se evidencia al intentar determinar cuál de las secciones es la más grande en diferentes gráficos como el mostrado en la Figura \ref{capitulo2:grafico-tarta}, seguido de la comparación con la Figura \ref{capitulo2:grafico-barras-apiladas}, que presenta los mismos datos pero en un formato de barras.
 
-![Gráfico de barras apiladas @data-viz\label{capitulo2:grafico-barras-apiladas}](cap2_grafico-barras-apiladas.png){width=50%}
+![Gráfico de tarta @data-viz\label{capitulo2:grafico-tarta}](cap2_grafico-tarta.png)
+
+![Gráfico de barras apiladas @data-viz\label{capitulo2:grafico-barras-apiladas}](cap2_grafico-barras-apiladas.png)
 
 De este ejemplo se deduce que alternativas más efectivas son los gráficos de barras y los de lollipop, explicados en el grupo anterior, los cuales pueden emplearse también en este contexto. Asimismo, los mapas de árbol constituyen otra alternativa viable.
 
-Los **mapas de árbol** muestran datos jerárquicos como un conjunto de rectángulos anidados. Cada grupo se representa mediante un rectángulo, cuya área es proporcional a su valor. Mediante esquemas de color o interactividad, es posible representar varias dimensiones. En la Figura \ref{capitulo2:mapa-arbol} se puede observar un ejemplo de este tipo de diagramas.
+Los mapas de árbol muestran datos jerárquicos como un conjunto de rectángulos anidados. Cada grupo se representa mediante un rectángulo, cuya área es proporcional a su valor. Mediante esquemas de color o interactividad, es posible representar varias dimensiones. En la Figura \ref{capitulo2:mapa-arbol} se puede observar un ejemplo de este tipo de diagramas.
 
-![Mapa de árbol @data-viz\label{capitulo2:mapa-arbol}](cap2_mapa-arbol.png){width=50%}
+![Mapa de árbol @data-viz\label{capitulo2:mapa-arbol}](cap2_mapa-arbol.png)
 
-Por último, una técnica muy similar al mapa de árbol, pero con un diseño radial es el **diagrama de sol**, tal y como se ilustra en la Figura \ref{capitulo2:diagrama-sol}. Este tipo de diagramas muestran una estructura jerárquica, siendo el origen de la organización el centro del círculo, y cada nivel es representado con un anillo adicional. El último nivel (hojas) se encuentra en la parte exterior extrema del círculo. 
+Por último, una técnica muy similar al mapa de árbol, pero con un diseño radial es el diagrama de sol tal y como se ilustra en la Figura \ref{capitulo2:diagrama-sol}. Este tipo de diagramas muestran una estructura jerárquica, siendo el origen de la organización el centro del círculo, y cada nivel es representado con un anillo adicional. El último nivel (hojas) se encuentra en la parte exterior extrema del círculo. 
 
-![Diagrama de sol @data-viz\label{capitulo2:diagrama-sol}](cap2_diagrama-sol.png){width=50%}
+![Diagrama de sol @data-viz\label{capitulo2:diagrama-sol}](cap2_diagrama-sol.png)
 
 Una vez presentadas las técnicas utilizadas para conocer las proporciones de los datos, en el siguiente punto se detallarán las técnicas que indican la evolución de los datos a lo largo del tiempo.
 
 ### Técnicas de Evolución
 
-Las técnicas de evolución muestran cómo cambian los datos a lo largo del tiempo o en relación con otra variable. Son esenciales para identificar tendencias, patrones estacionales, ciclos y cambios a largo plazo en los datos. Las visualizaciones de evolución permiten comprender la dinámica temporal de los fenómenos y tomar decisiones informadas basadas en estos cambios. Dentro de este grupo se encuentran técnicas como la gráfica de línea, la gráfica de área y la gráfica de área apilada. A continuación, se detallan cada una de estas técnicas.
+Las técnicas de evolución muestran cómo cambian los datos a lo largo del tiempo o en relación con otra variable. Son esenciales para identificar tendencias, patrones estacionales, ciclos y cambios a largo plazo en los datos. Las visualizaciones de evolución permiten comprender la dinámica temporal de los fenómenos y tomar decisiones informadas basadas en estos cambios. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
 
-La **gráfica de línea** es una herramienta visual que representa la evolución de una o varias variables numéricas a lo largo del tiempo. En este tipo de gráfica, los puntos de datos se disponen en orden según su valor en el *eje X* y se conectan mediante segmentos de línea recta, como se muestra en la Figura \ref{capitulo2:grafica-linea}. Además, de representar la evolución temporal de una única variable, las gráficas de línea también pueden utilizarse para comparar la evolución de varias variables simultáneamente. 
+- La gráfica de línea.
+- La gráfica de área.
+- La gráfica de área apilada. 
+
+La gráfica de línea es una herramienta visual que representa la evolución de una o varias variables numéricas a lo largo del tiempo. En este tipo de gráfica, los puntos de datos se disponen en orden según su valor en el *eje X* y se conectan mediante segmentos de línea recta, como se muestra en la Figura \ref{capitulo2:grafica-linea}. Además, de representar la evolución temporal de una única variable, las gráficas de línea también pueden utilizarse para comparar la evolución de varias variables simultáneamente. 
 
 Es importante destacar que en este tipo de gráficas no se suelen señalar los datos. No obstante, es una buena práctica señalarlos con un punto cuando se trata de una muestra pequeña, lo que contribuye a mantener la claridad y la precisión en la representación visual de los datos, facilitando su interpretación por parte del lector.
 
-![Gráfica de línea @data-viz\label{capitulo2:grafica-linea}](cap2_grafica-linea.png){width=50%}
+![Gráfica de línea @data-viz\label{capitulo2:grafica-linea}](cap2_grafica-linea.png)
 
-En el caso que el área entre el *eje X* y la línea este rellena de un color como se ilustra en la Figura \ref{capitulo2:grafica-area} se trataría de una **gráfica de área**. Por otro lado, una extensión de este tipo es la **gráfica de área apilada** que consiste en un gráfico de área que muestra la evolución de varios grupos en la misma gráfica. Los valores de cada grupo se muestra encima de cada uno, lo que permite comprobar la evolución del total y la importancia de cada grupo. La Figura \ref{capitulo2:grafica-area-apilada} muestra un ejemplo de este tipo de gráficas.
+En el caso que el área entre el *eje X* y la línea este rellena de un color como se ilustra en la Figura \ref{capitulo2:grafica-area} se trataría de una gráfica de área. Por otro lado, una extensión de este tipo es la gráfica de área apilada que consiste en un gráfico de área que muestra la evolución de varios grupos en la misma gráfica. Los valores de cada grupo se muestra encima de cada uno, lo que permite comprobar la evolución del total y la importancia de cada grupo. La Figura \ref{capitulo2:grafica-area-apilada} muestra un ejemplo de este tipo de gráficas.
 
-![Gráfica de área @data-viz\label{capitulo2:grafica-area}](cap2_grafica-area.png){width=50%}
+![Gráfica de área @data-viz\label{capitulo2:grafica-area}](cap2_grafica-area.png)
 
-![Gráfica de área apilada @data-viz\label{capitulo2:grafica-area-apilada}](cap2_grafica-area-apilada.png){width=50%}
+![Gráfica de área apilada @data-viz\label{capitulo2:grafica-area-apilada}](cap2_grafica-area-apilada.png)
 
 Finalmente, una vez presentadas las técnicas utilizadas para conocer la evolución de los datos, en el siguiente punto se detallarán otras técnicas de visualización interesantes.
 
 ### Otras Técnicas
 
-Este grupo abarca diversas técnicas que no se ajustan directamente a las categorías anteriores debido a la gran variedad de enfoques disponibles, un ejemplo son las visualizaciones especializadas para representar datos geoespaciales, como el **mapa** ilustrado en la Figura \ref{capitulo2:mapa}.
+Este grupo abarca diversas técnicas que no se ajustan directamente a las categorías anteriores debido a la gran variedad de enfoques disponibles, un ejemplo son las visualizaciones especializadas para representar datos geoespaciales, como el mapa ilustrado en la Figura \ref{capitulo2:mapa}.
 
-![Mapa @data-viz\label{capitulo2:mapa}](cap2_mapa.png){width=50%}
+![Mapa @data-viz\label{capitulo2:mapa}](cap2_mapa.png)
 
-Otro tipo de visualizaciones que entraría dentro de esta categoría son las visualizaciones de flujo, como el **diagrama de cuerdas**, que representa conexiones entre nodos. Cada nodo se representa mediante un fragmento en la parte exterior del diseño circular, y se trazan arcos entre cada par de entidades. El tamaño de cada arco es proporcional a la importancia del flujo. La Figura \ref{capitulo2:diagrama-cuerdas} muestra un ejemplo de este tipo de diagramas.
+Otro tipo de visualizaciones que entraría dentro de esta categoría son las visualizaciones de flujo, como el diagrama de cuerdas, que representa conexiones entre nodos. Cada nodo se representa mediante un fragmento en la parte exterior del diseño circular, y se trazan arcos entre cada par de entidades. El tamaño de cada arco es proporcional a la importancia del flujo. La Figura \ref{capitulo2:diagrama-cuerdas} muestra un ejemplo de este tipo de diagramas.
 
-![Diagrama de cuerdas @data-viz\label{capitulo2:diagrama-cuerdas}](cap2_diagrama-cuerdas.png){width=50%}
+![Diagrama de cuerdas @data-viz\label{capitulo2:diagrama-cuerdas}](cap2_diagrama-cuerdas.png)
 
-Por último, dentro de este grupo también se incluye la visualización de datos en su forma **individual**, cuando solo se desea mostrar un único dato, así como en **formato de tabla**.
+Por último, dentro de este grupo también se incluye la visualización de datos en su forma individual, cuando solo se desea mostrar un único dato, así como en formato de tabla.
 
 Una vez se han presentado las diferentes técnicas de visualización de datos que existen, es crucial conocer la disciplina de la [IPO](#IPO), concepto que se detallará mejor en el siguiente punto.
 
 ## Interacción Persona-Ordenador 
-Por último, para el desarrollo de una aplicación Web enfocada en el lado del cliente es indispensable detenerse para hablar de la disciplina de [IPO](#IPO), de la usabilidad y de la experiencia de usuario. A continuación, se detallan cada uno de estos conceptos. 
+Por último, para el desarrollo de una aplicación Web enfocada en el lado del cliente es indispensable detenerse para hablar de la disciplina de la [IPO](#IPO), de la experiencia de usuario y de la usabilidad. A continuación, se detallan cada uno de estos conceptos. 
 
 ### Concepto de la IPO
 La [IPO](#IPO) es definida por [SIGCHI](#SIGCHI) como “la disciplina relacionada con el diseño, evaluación e implementación de sistemas informáticos interactivos para el uso de seres humanos, y con el estudio de los fenómenos más importantes con los que está relacionado” @toni-ipo.
@@ -270,9 +296,22 @@ Además, la figura muestra que la persona no está sola, sino que realiza el tra
 
 ![Flujo de la disciplina de la [IPO](#IPO) @toni-ipo\label{capitlo2:interaccion-persona-ordenador}](cap2_flujo-ipo.png){width=75%}
 
-Con todo esto en mente, se puede decir que la disciplina de interacción Persona-Ordenador es la encargada de estudiar la usabilidad de la aplicación Web. Concepto que se detalla más en profundidad en el siguiente punto.
+Con todo esto en mente, se puede decir que la disciplina de la [IPO](#IPO) es la encargada de estudiar la experiencia de usuario de la aplicación Web. Concepto que se detalla más en profundidad en el siguiente punto.
+
+### Experiencia de Usuario
+
+El término de experiencia de usuario no tiene una definición consensuada, sin embargo, una de las más destacadas es la que propone el estándar [ISO](#ISO) DIS 9241-210:2008 en @iso-ux, definiendo este concepto como "las percepciones y respuestas de una persona que resultan del uso y/o uso anticipado de un producto, sistema o servicio".
+
+Además, la experiencia de usuario presenta diferentes facetas a considerar para el diseño o evaluación de un sistema interactivo. Sin embargo, nuevamente al igual que ocurre con su definición, todavía no están consensuadas ni por la comunidad científica ni por ningún organismo de estandarización. A continuación, se mencionan diferentes facetas para diferentes autores:
+
+- El autor Peter Morville en @morville definió la colmena de la UX en la que se incluyen: usable, útil, deseable, valioso, creíble, encontrable y accesible como atributos a considerar para obtener una experiencia de usuario positiva.
+- Autores como Hassenzahl y Tractinsky en @hassenzahl proponen tres facetas: más allá de lo instrumental; experimental; y emociones y afectos.
+- Otros referentes como Hassan Montero y Ortego Santamaría en @hassan-montero señalan a usuario, contexto y contenido como los componentes más importantes dentro de la experiencia de usuario.
+
+Para concluir, Granollers nos sugiere la siguiente definición en @toni-ux cubriendo los diferentes aspectos: “la experiencia de usuario atiende a todos los factores, tanto internos como externos del usuario y del sistema interactivo, que causen alguna sensación a quien esté utilizando un sistema interactivo concreto en un determinado contexto de uso”. Entre estos factores, se encuentra la usabilidad, la cual es explicada en el siguiente punto.
 
 ### Usabilidad
+
 El concepto de usabilidad fue introducido por J. Nielsen en @libro-nielsen, quien concluyó que un sistema software tiene dos componentes: el aspecto funcional y la forma en que los usuarios pueden usar este aspecto. Siendo este último, el que es tratado para mejorar la usabilidad de una aplicación. Por consiguiente, los aspectos que se tienen en mente al hablar de usabilidad serían la facilidad de aprendizaje, la efectividad de uso y la satisfacción con las que las personas son capaces de realizar sus tareas.
 
 Teniendo esto en cuenta, la usabilidad se puede definir coloquialmente como “fácil de usar o de utilizar y de aprender” @toni-usabilidad. Definición que se considera correcta, pero incompleta, ya que el concepto engloba muchos más aspectos, es por ello que el organismo de estandarización [ISO](#ISO) propone dos definiciones:
@@ -288,15 +327,4 @@ El objetivo es lograr una interfaz fácil de usar y aprender, lo cual requiere u
 
 Además, los sistemas interactivos deben centrarse en todos los usuarios, considerando las diferencias individuales, incluso teniendo en cuenta a aquellos con discapacidades. Ignorar a los usuarios o dejar su participación a la fase final del proyecto puede resultar en una interfaz que no cumple con sus necesidades y expectativas. En resumen, el diseño de sistemas interactivos implica hacer del usuario el foco principal desde el inicio del proceso hasta la implementación final, abarcando la diversidad de usuarios y sus características específicas.
 
-Por otro lado, dentro de la disciplina de la [IPO](#IPO), también se puede encontrar el término experiencia de usuario, el cual no debe ser confundido con usabilidad, después de todo este último es una faceta del primero. En el siguiente punto, se explica mejor el concepto de experiencia de usuario.
-
-### Experiencia de Usuario
-El término de experiencia de usuario no tiene una definición consensuada, sin embargo, una de las más destacadas es la que propone el estándar [ISO](#ISO) DIS 9241-210:2008 en @iso-ux, definiendo este concepto como "las percepciones y respuestas de una persona que resultan del uso y/o uso anticipado de un producto, sistema o servicio".
-
-Además, la experiencia de usuario presenta diferentes facetas a considerar para el diseño o evaluación de un sistema interactivo. Sin embargo, nuevamente al igual que ocurre con su definición, todavía no están consensuadas ni por la comunidad científica ni por ningún organismo de estandarización. A continuación, se mencionan diferentes facetas para diferentes autores:
-
-- El autor Peter Morville en @morville definió la colmena de la UX en la que se incluyen: usable, útil, deseable, valioso, creíble, encontrable y accesible como atributos a considerar para obtener una experiencia de usuario positiva.
-- Autores como Hassenzahl y Tractinsky en @hassenzahl proponen tres facetas: más allá de lo instrumental; experimental; y emociones y afectos.
-- Otros referentes como Hassan Montero y Ortego Santamaría en @hassan-montero señalan a usuario, contexto y contenido como los componentes más importantes dentro de la experiencia de usuario.
-
-Para concluir, Granollers nos sugiere la siguiente definición en @toni-ux cubriendo los diferentes aspectos: “la experiencia de usuario atiende a todos los factores, tanto internos como externos del usuario y del sistema interactivo, que causen alguna sensación a quien esté utilizando un sistema interactivo concreto en un determinado contexto de uso” . Entre estos factores, encontramos la usabilidad, la cual ya ha sido explicada en el punto anterior, y será un factor a tener muy en cuenta a la hora de desarrollar la aplicación Web deseada. De la cual se hablará más en detalle en los próximos capítulos.
+Al final, se puede concluir que la usabilidad será un factor a tener muy en cuenta a la hora de desarrollar la aplicación Web deseada. De la cual se hablará más en detalle en los próximos capítulos.
