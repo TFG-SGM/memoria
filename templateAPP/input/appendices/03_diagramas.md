@@ -1,62 +1,14 @@
 # Diagramas
 
-En este anexo se recogen los diferentes diagramas desarrollados para facilitar la implementación del sistema. Dichos diagramas son los siguientes:
+En este anexo se recogen los diagramas diseñados para facilitar la implementación y compresión del sistema desarrollado. A continuación, son explicados en detalle cada uno de ellos.
 
-- Figura \ref{anexo3:diagrama-casos-de-uso}: Diagrama de casos de uso.
-- Figura \ref{anexo3:diagrama-despliegue}: Diagrama de despliegue.
-- Figura \ref{anexo3:diagrama-clases}: Diagrama de clases de controladores y modelos.
-- Figura \ref{anexo3:diagrama-bd}: Diagrama de base de datos.
-- Figura \ref{anexo3:diagrama-secuencia-inicio-sesion}: Diagrama de secuencia de inicio de sesión.
-- Figura \ref{anexo3:diagrama-secuencia-creacion-paciente}: Diagrama de secuencia de creación de paciente.
-- Figura \ref{anexo3:diagrama-actividad-crear-prueba}: Diagrama de actividad para crear una prueba. 
+## Diagrama de Despliegue
 
-```{.plantuml #anexo3:diagrama-casos-de-uso caption="Diagrama de casos de uso" frame=single}
-@startuml
-skinparam actorStyle awesome
-left to right direction
-rectangle Sistema {
-	usecase (Iniciar sesión)
-	usecase (Consultar pacientes)
-	usecase (Añadir paciente)
-	usecase (Editar paciente)
-	usecase (Eliminar paciente)
-	usecase (Consultar médicos)
-	usecase (Añadir médico)
-	usecase (Editar médico)
-	usecase (Eliminar médico)
-	usecase (Consultar pruebas de paciente)
-	usecase (Añadir prueba para paciente)
-	usecase (Eliminar prueba de paciente)
-	usecase (Consultar datos de prueba)
-	usecase (Consultar evolución de paciente)
-}
+El diagrama de la Figura \ref{anexo3:diagrama-despliegue} muestra la disposición física de los diferentes artefactos software de la aplicación Wev en nodos. Se identifican principalmente tres nodos:
 
-Médico --> (Iniciar sesión)
-Médico --> (Consultar pacientes)
-Médico --> (Añadir paciente)
-Médico --> (Editar paciente)
-Médico --> (Eliminar paciente)
-Médico --> (Consultar médicos)
-Médico --> (Añadir médico)
-Médico --> (Editar médico)
-Médico --> (Eliminar médico)
-Médico --> (Consultar pruebas de paciente)
-Médico --> (Añadir prueba para paciente)
-Médico --> (Eliminar prueba de paciente)
-Médico --> (Consultar datos de prueba)
-Médico --> (Consultar evolución de paciente)
-
-(Iniciar sesión) <-- Administrador
-(Consultar pacientes) <-- Administrador
-(Añadir paciente) <-- Administrador
-(Editar paciente) <-- Administrador
-(Eliminar paciente) <-- Administrador
-(Consultar médicos) <-- Administrador
-(Añadir médico) <-- Administrador
-(Editar médico) <-- Administrador
-(Eliminar médico) <-- Administrador
-@enduml
-```
+- El PC del cliente, que contiene el navegador con los archivos del lado del cliente.
+- El servidor Web, que aloja la [API](#API) accedida por el cliente.
+- La base de datos MongoDB Atlas, donde se guardan los diferentes datos de la aplicación Web.
 
 ```{.plantuml #anexo3:diagrama-despliegue caption="Diagrama de despliegue" frame=single}
 @startuml
@@ -83,84 +35,14 @@ database "MongoDB Atlas"
 
 ```
 
-```{.plantuml #anexo3:diagrama-clases caption="Diagrama de clases de controladores y modelos" frame=single}
-@startuml
-AdminController ..> AdminModel
-DoctorController ..> DoctorModel
-PatientController ..> PatientModel
-TestController ..> TestModel
+## Diagrama de Base de Datos
 
-class AdminController {
-	void getAll()
-	void getById()
-	void create()
-	void update()
-	void delete()
-}
+El diagrama de la Figura \ref{anexo3:diagrama-bd} muestra las diferentes entidades de la base de datos.  Es importante recordar que esta base de datos es no relacional y utiliza MongoDB, lo que significa que no es necesario que cada documento tenga la misma estructura exacta. Sin embargo, se diseñó el diagrama para proporcionar una base de los diferentes atributos que pueden tener cada entidad.
 
-class AdminModel {
-	admin[] getAll()
-	admin getById()
-	admin create()
-	void update()
-	void delete()
-}
-
-class DoctorController {
-	void getAll()
-	void getById()
-	void create()
-	void update()
-	void delete()
-}
-
-class DoctorModel {
-	doctor[] getAll()
-	doctor getById()
-	doctor create()
-	void update()
-	void delete()
-}
-
-class PatientController {
-	void getAll()
-	void getById()
-	void create()
-	void update()
-	void delete()
-}
-
-class PatientModel {
-	patient[] getAll()
-	patient getById()
-	patient create()
-	void update()
-	void delete()
-}
-
-class TestController {
-	void getAll()
-	void getById()
-	void create()
-	void update()
-	void delete()
-}
-
-class TestModel {
-	test[] getAll()
-	test getById()
-	patient create()
-	void update()
-	void delete()
-}
-
-
-@enduml
-```
+En el contexto de la aplicación web, se han identificado principalmente cinco entidades: administrador, médico, paciente, prueba y datos de prueba. 
 
 ```{.plantuml #anexo3:diagrama-bd caption="Diagrama de base de datos" frame=single}
 @startuml
-
 
 entity Admin{
 _id : string
@@ -215,6 +97,12 @@ Test *-- TestData
 @enduml
 ```
 
+## Diagrama de Secuencia para Iniciar Sesión
+
+El diagrama de la Figura \ref{anexo3:diagrama-secuencia-inicio-sesion} muestra los diferentes pasos que ocurren al iniciar sesión con exito en la aplicación Web. Se puede observar como la página de inicio de sesión a través de la clase *DataService* ejecuta la operación *PUT* a la [API](#API), la cual empleando el *AuthController* comprueba si existe el correo electronico pedido, seguidamente de verificar si la contraseña es correcta. 
+
+Una vez todo se realiza con exito el *DataService* añade el token obtenido al almacenamiento local, el cual será empleado para verificar la identidad en posteriores operaciones que realice el usuario.
+
 ```{.plantuml #anexo3:diagrama-secuencia-inicio-sesion caption="Diagrama de secuencia de inicio de sesión con exito" frame=single}
 @startuml
 Doctor -> LoginPage: Introduce datos
@@ -245,6 +133,16 @@ LoginPage -> Doctor : navigate(/app)
 
 @enduml
 ```
+
+## Diagrama de Secuencia para Crear un Paciente 
+
+El diagrama de la Figura \ref{anexo3:diagrama-secuencia-creacion-paciente} muestra los diferentes pasos que ocurren al crear un nuevo paciente con exito en la aplicación Web, teniendo en cuenta que el médico ya esta iniciado sesión. 
+
+En el diagrama, se puede observar como nuevamente a través del *DataService* se ejecuta la operación *POST* en la ruta de paciente. Dicho ruta, antes de continuar con las operaciones comprueba si el usuario está autentificado y si tiene el rol correcto, en este caso, si es un médico. Estas comprobaciones son realizadas por los middlewares *userAuth* y *checkRole*.
+
+Una vez completadas las comprobaciones previas, se pasa a la segunda etapa, donde se verifica la validez de los datos del nuevo paciente, así como la existencia previa del correo electrónico en la base de datos. Si todas las verificaciones son exitosas, el nuevo paciente se agrega y el usuario recibe la confirmación en la interfaz.
+
+Es importante destacar que los diagramas de secuencia para la consulta, creación, edición y eliminación de las diferentes entidades de la base de datos seguirían un patrón similar al mostrado en este diagrama.
 
 ```{.plantuml #anexo3:diagrama-secuencia-creacion-paciente caption="Diagrama de secuencia de creación de un paciente con exito" frame=single}
 @startuml
@@ -278,6 +176,10 @@ PatientsListPage -> Doctor : Muestra nuevo paciente
 @enduml
 ```
 
+## Diagrama de Actividad para Crear una Prueba
+
+El diagrama de la Figura \ref{anexo3:diagrama-actividad-crear-prueba} muestra los diferentes pasos que debe seguir un médico para crear una nueva prueba. En el cual, se puede observar que si el paciente no existe, será necesario crearlo antes de agregar la nueva prueba deseada.
+
 ```{.plantuml #anexo3:diagrama-actividad-crear-prueba caption="Diagrama de actividad para crear una prueba" frame=single}
 @startuml
 start
@@ -287,12 +189,12 @@ if (¿Médico registrado?) then (si)
   :Consultar pacientes;
 
   if (¿Paciente existe?) then (si)
-    :Consultar pruebas de paciente;
 
   else (no)
     :Crear paciente;
-    :Consultar pruebas de paciente;
   endif
+
+    :Consultar pruebas de paciente;
 
   :Crear Prueba;
 

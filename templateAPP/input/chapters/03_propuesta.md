@@ -8,7 +8,7 @@ Para llevar a cabo la solución al problema planteado en la introducción, se pr
 
 ### Arquitectura MVC
 
-Con una arquitectura [MVC](#MVC), tal y como explica Hernández en @arquitectura-mvc, se conseguirá fortalecer la robustez y escalabilidad de la aplicación, al dividir el código en tres componentes principales, cada uno con responsabilidades específicas, lo que facilita la organización, el mantenimiento y la expansión esenciales en una aplicación moderna y eficiente. Estos tres componentes consisten en: Modelo, Vista y Controlador.
+Con una arquitectura [MVC](#MVC), tal y como explica Hernández @arquitectura-mvc, se conseguirá fortalecer la robustez y escalabilidad de la aplicación, al dividir el código en tres componentes principales, cada uno con responsabilidades específicas, lo que facilita la organización, el mantenimiento y la expansión esenciales en una aplicación moderna y eficiente. Estos tres componentes consisten en: Modelo, Vista y Controlador.
 
 1. **Modelo:** Encargado de gestionar los datos y la lógica. En el contexto de la aplicación de diagnóstico de fibromialgia, el Modelo podría ser responsable de la manipulación de datos relacionados con los pacientes, resultados de diagnóstico y cualquier información relevante para el proceso de evaluación médica.
 2. **Vista:** Representa la interfaz de usuario y se encarga de la presentación de datos. La Vista en este caso sería responsable de mostrar al usuario la información crucial de manera clara y comprensible, teniendo un gran enfoque en la usabilidad.
@@ -22,7 +22,7 @@ Una vez presentada la arquitectura, resulta fundamental explorar la tecnología 
 
 ### Tecnología SPA
 
-Los [SPA](#SPA), como se detalla en el capítulo anterior y señala BasuMallick en @ventajas-spa, ofrecen la ventaja crucial de posibilitar la interacción del usuario sin tener que recargar la página. Esta característica contribuye de manera significativa a la reducción del tiempo de carga, lo que, a su vez, se traduce en una mejora sustancial en la velocidad de la aplicación. Al prescindir de la recarga de la página, solo es necesario intercambiar datos, mientras que recursos fundamentales como [HTML](#HTML) y [CSS](#CSS) se cargan de manera única al inicio.
+Los [SPA](#SPA), como se detalla en el capítulo anterior y señala BasuMallick @ventajas-spa, ofrecen la ventaja crucial de posibilitar la interacción del usuario sin tener que recargar la página. Esta característica contribuye de manera significativa a la reducción del tiempo de carga, lo que, a su vez, se traduce en una mejora sustancial en la velocidad de la aplicación. Al prescindir de la recarga de la página, solo es necesario intercambiar datos, mientras que recursos fundamentales como [HTML](#HTML) y [CSS](#CSS) se cargan de manera única al inicio.
 
 Además, los [SPA](#SPA) pueden incorporar las funcionalidades de los [PWA](#PWA), permitiendo su uso incluso cuando no hay conexión a internet. Esto lo consiguen los [SPA](#SPA) enviando una única petición al servidor, para luego guardar y almacenar lo que recibe en el caché, permitiendo sincronizar los datos sel servidor cuando la conexión lo permita.
 
@@ -36,7 +36,7 @@ Diseñar una interfaz intuitiva y usable que responda a las necesidades del usua
 
 La creación de una interfaz intuitiva implica la adopción de elementos visuales y de diseño que reflejen la lógica y el flujo de trabajo esperado por el usuario. Se busca minimizar la curva de aprendizaje, permitiendo que tanto profesionales de la salud como pacientes puedan interactuar de manera natural con la aplicación desde el primer momento. La disposición lógica de los elementos, la claridad en las indicaciones y la consistencia en el diseño contribuirán a una experiencia de usuario sin complicaciones.
 
-En paralelo, se plantea la implementación de un *diseño responsive*, como expone Mozilla en @responsive, con el cual se conseguirá una adaptación fluida para los diversos tamaños de pantalla. Después de todo, la gran variabilidad de dispositivos que existen, como ordenadores, tablets y teléfonos móviles, requiere que la interfaz sea flexible y se ajuste de manera óptima a cada contexto. Esta adaptabilidad no solo mejora la accesibilidad, sino que también proporciona una experiencia consistente y agradable independientemente del dispositivo utilizado.
+En paralelo, se plantea la implementación de un *diseño responsive*, como expone Mozilla @responsive, con el cual se conseguirá una adaptación fluida para los diversos tamaños de pantalla. Después de todo, la gran variabilidad de dispositivos que existen, como ordenadores, tablets y teléfonos móviles, requiere que la interfaz sea flexible y se ajuste de manera óptima a cada contexto. Esta adaptabilidad no solo mejora la accesibilidad, sino que también proporciona una experiencia consistente y agradable independientemente del dispositivo utilizado.
 
 En conclusión, la creación de una interfaz intuitiva y responsive es un elemento clave para ofrecer una experiencia de usuario positiva en la aplicación web. Estos aspectos se integran dentro del marco tecnológico propuesto para la creación de la aplicación web, el cual será detallado en el siguiente punto.
 
@@ -161,7 +161,7 @@ En el ámbito de la gestión de proyectos, se han seleccionado las siguientes he
 
 Para la planificación detallada del proyecto, se implementará *GitHub Projects*, una herramienta que simplifica la creación de tableros adaptados al flujo de trabajo de la metodología Scrum, detallada previamente. Esta plataforma será complementada con el uso de Excel, aplicación de hojas de cálculo proporcionada por *Microsoft*, la cual será utilizada para la creación de los diferentes [BC](#BC) destinados a evaluar el trabajo realizado en cada sprint. 
 
-Específicamente, se utilizará la plantilla diseñada siguiendo los pasos expuestos por Swam en @plantilla-bc. La representación visual de esta plantilla se muestra en la Figura \ref{capitulo3:plantilla-bc}, la cual consiste en una tabla que incluye fechas, el peso planificado de las [HU](#HU) a realizar cada día, el peso real de las [HU](#HU) completadas diariamente y el peso "quemado" en relación con el peso total del Sprint.
+Específicamente, se utilizará la plantilla diseñada siguiendo los pasos expuestos por Swam @plantilla-bc. La representación visual de esta plantilla se muestra en la Figura \ref{capitulo3:plantilla-bc}, la cual consiste en una tabla que incluye fechas, el peso planificado de las [HU](#HU) a realizar cada día, el peso real de las [HU](#HU) completadas diariamente y el peso "quemado" en relación con el peso total del Sprint.
 
 ![Plantilla utilizada para la creación del [BC](#BC)\label{capitulo3:plantilla-bc}](cap3_plantilla-bc.png){width=75%}
 

@@ -1,12 +1,14 @@
 # Entrevistas
 
-En este anexo se recogen las distintas entrevistas realizadas con los stakeholders durante el desarrollo del proyecto. Estas entrevistas se enmarcan dentro de un método de evaluación de usabilidad por indagación, tal y como explica Granollers en @metodos-evaluacion-usabilidad. El proceso de indagación se basa en alcanzar el conocimiento a través de la reflexión. En este tipo de métodos, una parte crucial del trabajo implica interactuar con los usuarios y observar detenidamente su uso del sistema en situaciones reales, con el objetivo de obtener respuestas a preguntas planteadas verbalmente o por escrito. A continuación, se detallan cada una de las entrevistas realizadas.
+En este anexo se recogen las entrevistas realizadas con los stakeholders durante el desarrollo del proyecto. Estas entrevistas se enmarcan dentro de un método de evaluación de usabilidad por indagación, tal y como explica Granollers @metodos-evaluacion-usabilidad. El proceso de indagación se basa en alcanzar el conocimiento a través de la reflexión. En este tipo de métodos, una parte crucial del trabajo implica interactuar con los usuarios y observar detenidamente su uso del sistema en situaciones reales, con el objetivo de obtener respuestas a preguntas planteadas verbalmente o por escrito. A continuación, se detallan cada una de las entrevistas realizadas.
 
 ## Primera Entrevista
 
-La primera entrevista tuvo lugar el 16 de febrero de 2024 y contó con la participación de los stakeholders, Cristina y Manuel. Durante el transcurso de la reunión, se plantearon una serie de preguntas que se detallan a continuación.
+La primera entrevista tuvo lugar el 16 de febrero de 2024, llevada a cabo en formato de videoconferencia Contó con la participación de los stakeholders, Cristina y Manuel. A lo largo de la reunión, se abordaron una serie de preguntas que condujeron a unas conclusiones.
 
 ### Guión de Preguntas
+
+En este punto se presenta el guión de preguntas utilizado durante la entrevista. Es fundamental resaltar que, además de obtener información mediante preguntas directas a los interesados, también se sostuvo una conversación con ellos. A continuación, se enumeran las preguntas formuladas durante la entrevista.
 
 **¿Cuál es el propósito principal de la aplicación Web?** 
 

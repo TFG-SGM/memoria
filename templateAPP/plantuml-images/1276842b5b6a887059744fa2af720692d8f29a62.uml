@@ -1,0 +1,23 @@
+@startuml
+start
+:Iniciar sesión;
+
+if (¿Médico registrado?) then (si)
+  :Consultar pacientes;
+
+  if (¿Paciente existe?) then (si)
+
+  else (no)
+    :Crear paciente;
+  endif
+
+    :Consultar pruebas de paciente;
+
+  :Crear Prueba;
+
+else (no)
+  end
+endif
+
+stop
+@enduml

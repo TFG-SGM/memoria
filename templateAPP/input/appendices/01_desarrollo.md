@@ -322,7 +322,7 @@ En esta reunión, se planificaron las tareas a realizar durante el siguiente Spr
 
 Durante el Sprint, se llevaron a cabo las diversas [HU](#HU) planificadas en el Sprint Backlog, incluyendo los cambios propuestos en la última reunión de revisión y la redacción del capítulo de propuesta de solución, entre otras tareas detalladas en la Tabla \ref{anexo1:Sprint-backlog-6}.
 
-Es importante destacar que, en este período, se configuró finalmente el proyecto dentro de GitHub Project, incorporando todas las [HU](#HU) realizadas hasta ese momento. Además, se tomó la decisión definitiva de elaborar el [BC](#BC) utilizando la herramienta de Excel proporcionada por *Microsoft*. Esta elección se debió a las dificultades encontradas al intentar crear el gráfico mediante GitHub Project. Con el uso de Excel, se logró crear una plantilla siguiendo los pasos que explica Swan en @plantilla-bc.
+Es importante destacar que, en este período, se configuró finalmente el proyecto dentro de GitHub Project, incorporando todas las [HU](#HU) realizadas hasta ese momento. Además, se tomó la decisión definitiva de elaborar el [BC](#BC) utilizando la herramienta de Excel proporcionada por *Microsoft*. Esta elección se debió a las dificultades encontradas al intentar crear el gráfico mediante GitHub Project. Con el uso de Excel, se logró crear una plantilla siguiendo los pasos que explica Swan @plantilla-bc.
 
 ### Revisión Sprint
 
@@ -386,13 +386,13 @@ El resultado final del [MVP](#MVP) se presenta en la Figura \ref{anexo1:mvp-spri
 
 Finalmente, durante el Sprint, se llevó a cabo una entrevista con los stakeholders, Cristina y Manuel. Los detalles y conclusiones de esta reunión se encuentran detallados en el segundo anexo.
 
-![[MVP](#MVP) desarrollado durante el Sprint\label{anexo1:mvp-sprint7}](anx1_mvp-sprint7.png)
+![[MVP](#MVP) desarrollado durante el Sprint 7\label{anexo1:mvp-sprint7}](anx1_mvp-sprint7.png)
 
 ![[BD](#BD) del [MVP](#MVP) en la herramienta MongoDB Compass\label{anexo1:mvp-bd}](anx1_mvp-bd.png)
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual los tutores proporcionaron valiosos consejos para mejorar el formato de la memoria. Específicamente, el tutor JEGN sugirió aumentar el tamaño de las imágenes y reducir el uso de negritas, especialmente en el capítulo 2.3.
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual los tutores proporcionaron valiosos consejos para mejorar el formato del documento. Específicamente, el tutor JEGN sugirió aumentar el tamaño de las imágenes y reducir el uso de negritas, especialmente en el capítulo 2.3.
 
 Por otra parte, el tutor FAM destacó la importancia de incluir la fecha de último acceso en las páginas web, aunque señaló que esto debe hacerse manualmente debido a ciertos inconvenientes con la plantilla utilizada. También, recomendó cambiar el título del primer anexo "Resumen de Sprints" por "Desarrollo del Sistema", donde se añadirán capturas de pantalla de la evolución del [MVP](#MVP).
 
@@ -422,7 +422,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-8} se detallan las dife
 | TSGM-23 | Ver que técnicas usar según test usuarios   | 5        |
 | TSGM-30 | Empezar nuevo anexo sobre entrevistas       | 3        |
 | TSGM-31 | Añadir siguiente Sprint en anexo            | 1        |
-| TSGM-32 | Mejorar formato de memoria según revisión   | 1        |
+| TSGM-32 | Mejorar formato de documento según revisión | 1        |
 | TSGM-33 | Revisitar capítulo 2.4                      | 1        |
 | TSGM-34 | Añadir explicación de [AJAX](#AJAX)         | 1        |
 | TSGM-35 | Introducir a los stakeholders en el anexo 1 | 1        |
@@ -439,7 +439,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-8} se detallan las dife
 | TSGM-23 | Ver que técnicas usar según test usuarios   | 5        |
 | TSGM-30 | Empezar nuevo anexo sobre entrevistas       | 3        |
 | TSGM-31 | Añadir siguiente Sprint en anexo            | 1        |
-| TSGM-32 | Mejorar formato de memoria según revisión   | 1        |
+| TSGM-32 | Mejorar formato de documento según revisión | 1        |
 | TSGM-33 | Revisitar capítulo 2.4                      | 1        |
 | TSGM-34 | Añadir explicación de [AJAX](#AJAX)         | 1        |
 | TSGM-35 | Introducir a los stakeholders en el anexo 1 | 1        |
@@ -453,27 +453,70 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-8} se detallan las dife
 
 ### Desarrollo de Sprint 
 
-Durante el Sprint, …
+Durante este Sprint, se avanzó continuamente en el progreso del [MVP](#MVP), logrando la implementación de una funcionalidad fundamental: el inicio de sesión con gestión de roles para administradores y médicos. Además, se desarrolló las páginas de gestión, las cuales abarcan administradores, médicos, pacientes y pruebas, permitiendo tanto la consulta como la creación, edición y eliminación de estos elementos. Sin embargo, el enfoque principal seguía siendo la funcionalidad sobre el diseño, razón por la cual el [CSS](#CSS) no se llegó a implementar en este periodo. En la Figura \ref{anexo1:mvp-lista-pacientes} se muestra la lista de pacientes dentro de la aplicación web, mientras que en la Figura \ref{anexo1:mvp-crear-paciente} se presenta el menú para añadir un nuevo paciente. Es importante destacar que este mismo diseño se aplica a los diferentes roles y elementos de la aplicación web.
+
+![Lista de pacientes del [MVP](#MVP)\label{anexo1:mvp-lista-pacientes}](anx1_mvp-lista-pacientes.png)
+
+![Menú de creación de paciente del [MVP](#MVP)\label{anexo1:mvp-crear-paciente}](anx1_mvp-crear-paciente.png)
+
+Por otro lado, se elaboraron diversos diagramas para la aplicación web, incluyendo diagramas de casos de uso, de despliegue, de clases, de base de datos, de secuencia de inicio de sesión y de secuencia de creación de paciente, así como un diagrama de actividad para crear una prueba.
+
+Además, se diseñó un prototipo no funcional que representa las diferentes páginas y ventanas que podría tener la aplicación web. También se exploraron diferentes técnicas de visualización de datos y se realizaron diseños específicos al respecto.
+
+Finalmente, se continuó mejorando la memoria del proyecto según los comentarios recibidos por parte de los tutores durante la última reunión de revisión.
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
+Tras finalizar el desarrollo del Sprint, se llevó a cabo la reunión de revisión, en la cual se presentó todo el progreso realizado al tutor FAM. Durante esta reunión, se recibieron diversos comentarios para mejorar la memoria, haciendo hincapié en la necesidad de proporcionar explicaciones detalladas sobre los diagramas y prototipos desarrollados. Además, se recibieron opiniones sobre el diseño del prototipo, junto con consejos para su mejora.
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint8}, el cual refleja...
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint8}, el cual refleja que el progreso del trabajo realizado ha ido ligeramente por delante del planificado inicialmente. Sin embargo, al final se dejo sin realizar la [HU](#HU) TSGM-37.
 
 ![[BC](#BC) del Sprint 8\label{anexo1:bc-sprint8}](anx1_bc-sprint8.png)
 
 ## Sprint 9
 
-Este Sprint tiene comienzo el **1 de marzo de 2024 ** con una duración de X semanas. Su objetivo principal era [...]. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **1 de marzo de 2024 ** con una duración de 2 semanas. Su objetivo principal era la continuidad del progreso del [MVP](#MVP). A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
-En esta reunión, ...
+En esta reunión, se establecieron las diversas tareas a llevar a cabo durante el siguiente Sprint. Principalmente, se acordó continuar avanzando en el desarrollo del MVP, así como programar una segunda entrevista con los stakeholders. En la cual, se presentaría el prototipo desarrollado durante el Sprint anterior con el fin de abordar las nuevas inquietudes que surgieron tras su elaboración. Además, se propuso documentar detalladamente el trabajo realizado durante el Sprint anterior. 
 
 A continuación, en la Tabla \ref{anexo1:product-backlog-9} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-9} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+
+| **ID**  | **Tarea**                                    | **Peso** |
+| ------- | :------------------------------------------- | -------- |
+| TSGM-8  | Realizar capítulo de resultados              | 11       |
+| TSGM-9  | Realizar capítulo de evaluación              | 5        |
+| TSGM-10 | Realizar capítulo de conclusiones            | 5        |
+| TSGM-37 | Añadir siguiente Sprint en anexo             | 1        |
+| TSGM-41 | Realizar cambios en documento según revisión | 1        |
+| TSGM-42 | Revisitar capitulo 2.2                       | 5        |
+| TSGM-43 | Realizar segunda entrevista                  | 5        |
+| TSGM-44 | Explicar diagramas                           | 3        |
+| TSGM-45 | Redactar trabajo realizado sobre prototipos  | 7        |
+| TSGM-46 | Añadir siguiente Sprint                      | 1        |
+| TSGM-47 | Mejorar el [MVP](#MVP)                       | 5        |
+| TSGM-48 | Añadir segunda entrevista en anexo           | 3        |
+| TSGM-49 | Empezar capítulo de resultado                | 3        |
+
+: [PB](#PB) del Sprint 9\label{anexo1:product-backlog-9}
+
+| **ID**  | **Tarea**                                    | **Peso** |
+| ------- | :------------------------------------------- | -------- |
+| TSGM-37 | Añadir siguiente Sprint en anexo             | 1        |
+| TSGM-41 | Realizar cambios en documento según revisión | 1        |
+| TSGM-42 | Revisitar capitulo 2.2                       | 5        |
+| TSGM-43 | Realizar segunda entrevista                  | 5        |
+| TSGM-44 | Explicar diagramas                           | 3        |
+| TSGM-45 | Redactar trabajo realizado sobre prototipos  | 7        |
+| TSGM-46 | Añadir siguiente Sprint                      | 1        |
+| TSGM-47 | Mejorar el [MVP](#MVP)                       | 7        |
+| TSGM-48 | Añadir segunda entrevista en anexo           | 3        |
+| TSGM-49 | Empezar capítulo de resultado                | 3        |
+
+: [SB](#SB) del Sprint 9\label{anexo1:product-backlog-9}
 
 ### Desarrollo de Sprint 
 
@@ -488,3 +531,75 @@ Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual 
 Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint9}, el cual refleja...
 
 ![[BC](#BC) del Sprint 9\label{anexo1:bc-sprint9}](anx1_bc-sprint9.png)
+
+## Sprint 10
+
+Este Sprint tiene comienzo el **?? de ?? de 2024 ** con una duración de ?? semanas. Su objetivo principal era ??. A continuación, se detallan las diferentes fases del Sprint. 
+
+### Planificación del Sprint
+
+En esta reunión, ...
+
+A continuación, en la Tabla \ref{anexo1:product-backlog-10} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-10} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+
+### Desarrollo de Sprint 
+
+Durante el Sprint, …
+
+### Revisión Sprint
+
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
+
+### Retrospectiva del Sprint
+
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint10}, el cual refleja...
+
+![[BC](#BC) del Sprint 10\label{anexo1:bc-sprint10}](anx1_bc-sprint10.png)
+
+## Sprint 11
+
+Este Sprint tiene comienzo el **?? de ?? de 2024 ** con una duración de ?? semanas. Su objetivo principal era ??. A continuación, se detallan las diferentes fases del Sprint. 
+
+### Planificación del Sprint
+
+En esta reunión, ...
+
+A continuación, en la Tabla \ref{anexo1:product-backlog-11} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-11} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+
+### Desarrollo de Sprint 
+
+Durante el Sprint, …
+
+### Revisión Sprint
+
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
+
+### Retrospectiva del Sprint
+
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint11}, el cual refleja...
+
+![[BC](#BC) del Sprint 11\label{anexo1:bc-sprint11}](anx1_bc-sprint11.png)
+
+## Sprint 12
+
+Este Sprint tiene comienzo el **?? de ?? de 2024 ** con una duración de ?? semanas. Su objetivo principal era ??. A continuación, se detallan las diferentes fases del Sprint. 
+
+### Planificación del Sprint
+
+En esta reunión, ...
+
+A continuación, en la Tabla \ref{anexo1:product-backlog-12} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-12} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+
+### Desarrollo de Sprint 
+
+Durante el Sprint, …
+
+### Revisión Sprint
+
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
+
+### Retrospectiva del Sprint
+
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint12}, el cual refleja...
+
+![[BC](#BC) del Sprint 12\label{anexo1:bc-sprint12}](anx1_bc-sprint12.png)
