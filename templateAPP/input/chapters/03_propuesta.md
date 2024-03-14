@@ -22,13 +22,15 @@ Una vez presentada la arquitectura, resulta fundamental explorar la tecnología 
 
 ### Tecnología SPA
 
-Los [SPA](#SPA), como se detalla en el capítulo anterior y señala BasuMallick @ventajas-spa, ofrecen la ventaja crucial de posibilitar la interacción del usuario sin tener que recargar la página. Esta característica contribuye de manera significativa a la reducción del tiempo de carga, lo que, a su vez, se traduce en una mejora sustancial en la velocidad de la aplicación. Al prescindir de la recarga de la página, solo es necesario intercambiar datos, mientras que recursos fundamentales como [HTML](#HTML) y [CSS](#CSS) se cargan de manera única al inicio.
+Las [SPA](#SPA), como se detalla en el capítulo anterior y señala BasuMallick @ventajas-spa, ofrecen la ventaja crucial de posibilitar la interacción del usuario sin tener que recargar la página. Esta característica contribuye de manera significativa a la reducción del tiempo de carga, lo que, a su vez, se traduce en una mejora sustancial en la velocidad de la aplicación. Al prescindir de la recarga de la página, solo es necesario intercambiar datos, mientras que recursos fundamentales como [HTML](#HTML) y [CSS](#CSS) se cargan de manera única al inicio.
 
-Además, los [SPA](#SPA) pueden incorporar las funcionalidades de los [PWA](#PWA), permitiendo su uso incluso cuando no hay conexión a internet. Esto lo consiguen los [SPA](#SPA) enviando una única petición al servidor, para luego guardar y almacenar lo que recibe en el caché, permitiendo sincronizar los datos sel servidor cuando la conexión lo permita.
+Además, las [SPA](#SPA) pueden incorporar las funcionalidades de las [PWA](#PWA), permitiendo su uso incluso cuando no hay conexión a internet. Esto lo consiguen las [SPA](#SPA) enviando una única petición al servidor, para luego guardar y almacenar lo que recibe en el caché, permitiendo sincronizar los datos sel servidor cuando la conexión lo permita.
 
-Asimismo, los [SPA](#SPA) permiten crear aplicaciones Web con una compatibilidad multiplataforma, teniendo la posibilidad de utilizar la aplicación en cualquier dispositivo, navegador y sistema operativo. 
+Asimismo, las [SPA](#SPA) permiten crear aplicaciones Web con una compatibilidad multiplataforma, teniendo la posibilidad de utilizar la aplicación en cualquier dispositivo, navegador y sistema operativo. 
 
-Finalmente, con todas estas características se puede concluir que los [SPA](#SPA) mejoran significativamente la experiencia del usuario gracias a la velocidad, la posibilidad de utilizarla offline y en cualquier dispositivo. Sin embargo, para potenciar aún más esta experiencia, es crucial centrarse en la usabilidad de la aplicación, un aspecto que se explorará con más detalle en el próximo punto.
+Finalmente, es importante destacar que en una [SPA](#SPA) se utiliza un enrutamiento en el lado del cliente, lo que implica que, aunque la [URL](#URL) pueda cambiar visualmente, en realidad no se esta cambiando de página, sino que se está renderizando nuevo contenido en la misma página donde se encuentra el usuario. Esta dinámica proporciona un feedback al usuario al cambiar la [URL](#URL). 
+
+En conclusión, con todas estas características, las [SPA](#SPA) mejoran significativamente la experiencia del usuario gracias a la velocidad, la posibilidad de utilizarla offline y en cualquier dispositivo. Sin embargo, para potenciar aún más esta experiencia, es crucial centrarse en la usabilidad de la aplicación, un aspecto que se explorará con más detalle en el próximo punto.
 
 ### Usabilidad como Características Clave
 
@@ -68,7 +70,7 @@ Por otro lado, en el BackEnd, se repite la elección de *TypeScript* dentro del 
 Todas estas tecnologías están interrelacionadas, como se ilustra en la Figura \ref{capitulo3:arquitectura-tecnologica}. Esta figura no solo presenta la implementación de la arquitectura [MVC](#MVC) previamente mencionada, sino que también muestra una clara división en tres secciones: Cliente, Servidor y Base de Datos.
 
 - **Cliente:** En la sección del cliente, se incorpora toda la tecnología presentada anteriormente en el FrontEnd. Además, esta sección representa la Vista en la arquitectura [MVC](#MVC).
-- **Servidor:** En esta sección, se observa la mayoría de la tecnología presentada en el BackEnd. Además, esta sección contiene tanto el Controlador, el cual sería la [API](#API) utilizando el framework *Express*, como el Modelo utilizando el cliente oficial de *MongoDB*. Los datos que son pasados del controlador al modelo se validan empleando la librería *Zod*.
+- **Servidor:** En esta sección, se observa la mayoría de la tecnología presentada en el BackEnd. Además, esta sección contiene tanto el Controlador, el cual sería la [API REST](#API REST) utilizando el framework *Express*, como el Modelo utilizando el cliente oficial de *MongoDB*. Los datos que son pasados del controlador al modelo se validan empleando la librería *Zod*.
 - **Base de Datos:** Aquí se destaca el uso de la base de datos no relacional *MongoDB* empleando la herramienta *MongoDB Atlas*, que sirve como el componente clave para el almacenamiento de datos.
 
 ![Arquitectura tecnológica\label{capitulo3:arquitectura-tecnologica}](cap3_arquitectura-tecnologica.png){width=50%}
@@ -179,11 +181,11 @@ En lo que respecta a las herramientas destinadas a la documentación del proyect
 - **Editor de texto:** Typora @typora
 - **Generación de documento:** Plantilla de Félix Albertos @plantilla-felix
 - **Diagramas:** Diagrams.net @diagramsnet y PlantUML @plant-uml
-- **Diseño de prototipos:** Excalidraw @excalidraw
+- **Diseño de prototipos:** Excalidraw @excalidraw y Figma @figma
 
 Por un lado, la documentación se redacta utilizando el lenguaje de marcado *Markdown*, que simplifica la aplicación de formato a un texto plano mediante caracteres especiales. Para esta tarea, se utiliza el editor *Typora*, elegido por su experiencia de escritura sin distracciones y su fácil manejo. En cuanto a la generación del documento con el formato adecuado, se emplea la plantilla proporcionada por el tutor Félix Albertos. Esta plantilla, diseñada específicamente para la elaboración del [TFG](#TFG), elimina las posibles preocupaciones de formato al utilizar *Markdown* como entrada.
 
-Por otro lado, en el caso de necesitar desarrollar diagramas, se recurrirá a *Diagrams.net* y a la sintaxis de *PlantUML*. Finalmente, para el diseño de los prototipos a implementar, se utilizará *Excalidraw*.
+Por otro lado, en el caso de necesitar desarrollar diagramas, se recurrirá a *Diagrams.net* y a la sintaxis de *PlantUML*. Finalmente, para el diseño de los prototipos a implementar, se utilizará *Excalidraw* para los no interactivo y *Figma*  para los más avanzados e interactivos.
 
 Con la combinación de todas estas herramientas se conseguirá crear un flujo de trabajo documental eficiente y versátil, optimizando la redacción, formato, generación del documento y diseño de interfaces en el proyecto. Sin embargo, una vez se han presentado las herramientas destinadas a la documentación, es esencial pasar a detallar las distintas herramientas específicas utilizadas en el desarrollo del proyecto.
 

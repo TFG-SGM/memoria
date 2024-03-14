@@ -34,10 +34,6 @@ rectangle Sistema {
 }
 
 Médico --> (Iniciar sesión)
-Médico --> (Consultar médicos)
-Médico --> (Añadir médico)
-Médico --> (Editar médico)
-Médico --> (Eliminar médico)
 Médico --> (Consultar pacientes)
 Médico --> (Añadir paciente)
 Médico --> (Editar paciente)
@@ -57,6 +53,10 @@ Médico --> (Consultar evolución de paciente)
 (Añadir médico) <-- Administrador
 (Editar médico) <-- Administrador
 (Eliminar médico) <-- Administrador
+(Consultar pacientes) <-- Administrador
+(Añadir paciente) <-- Administrador
+(Editar paciente) <-- Administrador
+(Eliminar paciente) <-- Administrador
 @enduml
 ```
 
@@ -80,20 +80,23 @@ DataService ..> AdminRouter
 DataService ..> DoctorRouter
 DataService ..> PatientRouter
 DataService ..> TestRouter
+DataService ..> TestTypeRouter
 
 AuthRouter ..> AuthController
 AdminRouter ..> AdminController
 DoctorRouter ..> DoctorController
 PatientRouter ..> PatientController
 TestRouter ..> TestController
+TestTypeRouter ..> TestTypeController
 
 AdminController ..> AdminModel
 DoctorController ..> DoctorModel
 PatientController ..> PatientModel
 TestController ..> TestModel
+TestTypeController ..> TestTypeModel
 
 class DataService {
-      	-void getToken()
+    -void getToken()
 	+data login(enail,password)
 	+void logout()
 	+data getData(endpoint)
@@ -140,6 +143,11 @@ class TestRouter {
 	void delete("/test/:id")
 }
 
+class TestTypeRouter {
+	void get("/testType/")
+	void get("/testType/:id")
+}
+
 
 class AuthController {
 	void validateEmail(email)
@@ -180,6 +188,11 @@ class TestController {
 	void delete(req,res)
 }
 
+class TestTypeController {
+	void getAll(req,res)
+	void getById(req,res)
+}
+
 class AdminModel {
 	admin[] getAll()
 	admin getById()
@@ -210,6 +223,11 @@ class TestModel {
 	patient create()
 	void update()
 	void delete()
+}
+
+class TestTypeModel {
+	testType[] getAll()
+	testType getById()
 }
 
 @enduml

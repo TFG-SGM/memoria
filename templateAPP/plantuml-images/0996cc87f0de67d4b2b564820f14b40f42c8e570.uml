@@ -1,0 +1,13 @@
+@startuml
+Usuario -> Navegador: Escribir URL
+Navegador -> Servidor: Solicita URL
+
+Servidor -> Navegador: Devuelve página
+Navegador -> Usuario: Muestra nueva página
+
+Usuario -> Navegador: Hace click en link
+Navegador -> Servidor: Solicita nueva URL
+
+Servidor -> Navegador: Devuelve nueva página
+Navegador -> Usuario: Muestra nueva página
+@enduml

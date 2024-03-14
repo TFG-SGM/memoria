@@ -4,7 +4,7 @@ En este anexo se recogen las entrevistas realizadas con los stakeholders durante
 
 ## Primera Entrevista
 
-La primera entrevista tuvo lugar el 16 de febrero de 2024, llevada a cabo en formato de videoconferencia Contó con la participación de los stakeholders, Cristina y Manuel. A lo largo de la reunión, se abordaron una serie de preguntas que condujeron a unas conclusiones.
+La primera entrevista tuvo lugar el 16 de febrero de 2024, llevada a cabo en formato de videoconferencia. Contó con la participación de los stakeholders, Cristina y Manuel. A lo largo de la reunión, se abordaron una serie de preguntas que condujeron a unas conclusiones.
 
 ### Guión de Preguntas
 
@@ -46,3 +46,52 @@ Tras la primera entrevista, se logró obtener una comprensión inicial de la vis
 Por otro lado, es relevante mencionar que los requerimientos relacionados con las señales durante la grabación por parte del médico no forman parte del proyecto, ya que se prioriza el desarrollo de técnicas para visualizar los datos.
 
 A pesar de las nuevas preguntas que surgieron tras depurar los distintos requisitos de la entrevista, se logró obtener una visión general que sirvió como base para el desarrollo continuo de la aplicación Web.
+
+## Segunda Entrevista
+
+La segunda entrevista, realizada el 11 de marzo de 2024, se llevó a cabo mediante videoconferencia con la participación de los stakeholders, Cristina y Manuel. Durante la reunión, se abordaron una serie de preguntas que condujeron a conclusiones significativas. Además, se presentó el prototipo no interactivo detallado en el Anexo 4, así como el estudio de técnicas de visualización de datos que se detalla en el Anexo 5.
+
+### Preguntas clave durante la entrevista
+
+A continuación se detallan las preguntas formuladas durante la entrevista, las cuales se presentaron junto con el prototipo no interactivo.
+
+**¿El médico puede gestionar otros médicos o solo a los pacientes?**
+
+La gestión de los médicos debe ser exclusiva de los administradores, permitiendo a los médicos concentrarse en la atención de los pacientes.
+
+**¿El administrador puede gestionar a los pacientes o esta función está reservada solo para los médicos?**
+
+Tanto los médicos como los administradores pueden gestionar a los pacientes en la aplicación Web.
+
+**¿Qué información se debe recopilar al crear un nuevo perfil de paciente?**
+
+Se requiere información básica como nombre, apellidos, edad, ubicación, número de teléfono, correo electrónico, además de datos relevantes como el diagnóstico y tiempo de padecimiento de la fibromialgia, nivel de actividad física y ocupación.
+
+**¿Un paciente puede tener asignados varios médicos?**
+
+No, cada paciente deberá tener asignado un único médico.
+
+**¿Debería una prueba en la aplicación Web contener datos de diferentes pruebas o solo de una?**
+
+Cada prueba debe ser específica y contener sus propios datos individuales.
+
+**¿Es posible añadir nuevos tipos de pruebas?**
+
+Inicialmente, no se considera necesario añadir más tipos de pruebas.
+
+**¿Qué información se debe proporcionar al crear una prueba?**
+
+Al crear una prueba, se solicitará la fecha, tipo de prueba, un vídeo y posiblemente escalas para evaluar el estado del paciente en el momento de la prueba, como por ejemplo la escala EVA para evaluar el dolor del paciente en el momento de realizar la prueba.
+
+También se sugiere la posibilidad de crear múltiples pruebas de diferentes tipos simultáneamente para mejorar la eficiencia del médico. Además, se menciona la necesidad de un filtro para la facilitar la busqueda de las pruebas por fecha o tipo.
+
+**¿Es viable mostrar un "grado de problema" basado en la variación entre el movimiento ideal y el real para cada parte del cuerpo?**
+
+Sí, se propone mostrar un "porcentaje de calidad de movimiento", calculado comparando el movimiento ideal con el movimiento real de cada parte del cuerpo.
+
+### Conclusiones
+
+Tras la segunda entrevista, se obtuvo una comprensión más profunda de los requisitos de la aplicación Web a desarrollar, enfatizando la importancia de la usabilidad para garantizar que los médicos puedan utilizar las funciones de manera sencilla y efectiva.
+
+Además, se identificaron las preferencias de los stakeholders en cuanto a técnicas de visualización de datos, destacando las gráficas de líneas y de barras. Se sugiere, además, representar el desplazamiento en lugar del ángulo de cada parte del cuerpo, ya que esto simplificará su visualización.
+

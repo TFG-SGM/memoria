@@ -39,10 +39,97 @@ Como ya se ha mencionado las metodologías ágiles son las que más destacan en 
 Nuevamente, la elección de la metodología dependerá de las características del proyecto. Siendo en este caso, Scrum la que más destaca entre todas ellas. Sin embargo, una vez se conoce el proceso y las diferentes metodologías del desarrollo de software, es esencial conocer la tecnología Web que se puede utilizar para el desarrollo de dicho software, la cual se detalla en el siguiente punto.
 
 ## Tecnología Web
-En el proceso de implementación de una aplicación Web, resulta esencial no solo seguir una metodología específica, sino también utilizar la diversa tecnología Web disponible. Este campo de estudio abarca un extenso conjunto de herramientas, estándares y prácticas que han sido utilizados en el desarrollo, implementación y mantenimiento de aplicaciones y sitios Web. Desde los aspectos del lado del cliente hasta los del servidor, este panorama tecnológico tiene como objetivo primordial mejorar la experiencia del usuario y optimizar la eficiencia en el desarrollo. A continuación, se profundiza en todas estas áreas.
+En el proceso de implementación de una aplicación Web, resulta esencial no solo seguir una metodología específica, sino también utilizar la diversa tecnología Web disponible. Este campo de estudio abarca un extenso conjunto de herramientas, estándares y prácticas que han sido utilizados en el desarrollo, implementación y mantenimiento de aplicaciones y sitios Web. Desde los aspectos del lado del cliente hasta los del servidor, este panorama tecnológico tiene como objetivo primordial mejorar la experiencia del usuario y optimizar la eficiencia en el desarrollo. A continuación, se profundiza en todas estas tecnologías.
 
-### BackEnd
-En el ámbito del desarrollo BackEnd, se puede encontrar un ecosistema diverso de lenguajes de programación, cada uno acompañado de sus propios frameworks. Este panorama se enriquece aún más con la presencia crucial de bases de datos y la adopción generalizada de contenedores. En este análisis, se explora detenidamente cada una de estas áreas tecnológicas.
+### Tecnología Fundamental en la Web
+
+Dentro del desarrollo Web, los lenguajes de marcado y de programación fundamentales estan compuestos por la tríada formada de [HTML](#HTML), [CSS](#CSS) y JavaScript. Siendo este último extendido mediante *TypeScript*. A continuación, se realiza una breve explicación de cada uno de estos lenguajes, tal y como exponen *Mozilla* @html @css y Cherni @libro-typescript.
+
+- **HTML:** Lenguaje de marcado estándar utilizado para estructurar el contenido de las páginas Web. Define la jerarquía y organización de los elementos en una página.
+- **CSS:** Lenguaje de estilo que complementa a [HTML](#HTML). Permite definir el diseño, la presentación y la apariencia visual de los elementos [HTML](#HTML), proporcionando control sobre colores, tipografías y disposición.
+- **JavaScript:** Se trata del lenguaje de programación del lado del cliente que permite la creación de interactividad en las páginas Web. Es esencial para manipular el [DOM](#DOM) y responder a eventos del usuario.
+- **TypeScript @typescript:** Es un lenguaje de programación fuertemente tipado que se basa en JavaScript. A diferencia de este último, TypeScript añade un sistema de tipos estático, proporcionando beneficios como la detección temprana de errores y una mejor mantenibilidad en proyectos a gran escala. Esta diferencia se puede ver ilustrada en la Figura \ref{capitulo2:circulo-typescript}.
+
+![TypeScript vs JavaScript\label{capitulo2:circulo-typescript}](cap2_circulo-typescript.png){width=40%}
+
+Una vez se conoce la tecnología fundamental en la Web, en el siguiente punto se explica el concepto de las [SPA](#SPA), así como los diferentes frameworks más utilizados para desarrollar dichas aplicaciones. 
+
+### Aplicaciones de una Sola Página
+
+Una [SPA](#SPA), como expone Holmes en @spa, es una aplicación que opera dentro del navegador y no requiere recargar la página durante su uso, a diferencia de una aplicación de múltiples páginas.
+
+Para desarrollar una [SPA](#SPA), se emplea la técnica de desarrollo conocida como [AJAX](#AJAX), como describe *Mozilla* [@ajax].
+
+La técnica [AJAX](#AJAX), ilustrada en la Figura \ref{capitulo2:flujo-spa}, implica que la aplicación Web solicite contenido al servidor mediante peticiones [HTTP](#HTTP) asíncronas, y luego utilice este nuevo contenido para actualizar las secciones relevantes de la página sin necesidad de recargarla por completo, lo que significa que solo se necesita solicitar el [HTML](#HTML) y el [CSS](#CSS) en la petición inicial.
+
+Inicialmente, [AJAX](#AJAX) se implementaba mediante la interfaz *XMLHttpRequest*, pero en la actualidad, son más comunes el uso de la *API fetch* [@api-fetch] y la biblioteca *Axios* [@axios].
+
+![Flujo de una [SPA](#SPA)\label{capitulo2:flujo-spa}](cap3_flujo-spa.png){width=50%}
+
+Por otro lado, como expone Rivera @spa-routers, es importante entender la diferencia entre el enrutado tradicional conocido como "enrutado en el lado del servidor", y el enrutado empleado en una [SPA](#SPA) conocido como "enrutado en el lado del cliente".
+
+En el enrutado en el lado del servidor, cada vez que el usuario hace click en un nuevo enlace, el navegador pide al servidor una página completamente nueva, tal y como se ilustra en la Figura \ref{capitulo2:enrutado-servidor}. 
+
+```{.plantuml #capitulo2:enrutado-servidor caption="Enrutado en el lado del servidor" frame=single}
+@startuml
+Usuario -> Navegador: Escribir URL
+Navegador -> Servidor: Solicita URL
+
+Servidor -> Navegador: Devuelve página
+Navegador -> Usuario: Muestra nueva página
+
+Usuario -> Navegador: Hace click en link
+Navegador -> Servidor: Solicita nueva URL
+
+Servidor -> Navegador: Devuelve nueva página
+Navegador -> Usuario: Muestra nueva página
+@enduml
+```
+
+Por otro lado, en el enrutado en el lado del cliente, cuando el usuario hace click en un nuevo enlace, el navegador renderiza el nuevo contenido en la misma página, pero a la vez simula un cambio en la [URL](#URL) con el fin de otorgar feedback al usuario. La Figura \ref{capitulo2:enrutado-cliente} ilustra este tipo de enrutado.
+
+```{.plantuml #capitulo2:enrutado-cliente caption="Enrutado en el lado del cliente" frame=single}
+@startuml
+Usuario -> Navegador: Escribir URL
+Navegador -> Servidor: Solicita URL
+
+Servidor -> Navegador: Devuelve página
+Navegador -> Usuario: Muestra nueva página
+
+Usuario -> Navegador: Hace click en link
+
+Navegador -> Navegador: Cambia URL
+Navegador -> Navegador: Renderiza nuevo contenido 
+
+Navegador -> Usuario: Muestra nueva página
+@enduml
+```
+
+Finalmente, para desarrollar una [SPA](#SPA), se utilizan frameworks que complementan a la tecnología fundamental de la Web mencionada en el punto anterior. A continuación, se presentan cuatro de estos frameworks, tal y como expone Baryshevskiy @tendencias-tecnologias-web: *React*, *Angular*, *Vue* y *Svelte*.
+
+- **React @react:** Desarrollado por *Facebook*, *React* es una biblioteca de JavaScript que se centra en la construcción de interfaces de usuario reactivas y eficientes. Su enfoque en la creación de componentes modulares y su capacidad para gestionar el estado de manera efectiva lo convierten en una elección popular para aplicaciones dinámicas y escalables.
+- **Angular @angular:** Respaldado por *Google*, es un framework completo de desarrollo que abarca desde la creación de componentes hasta la gestión del estado y el enrutamiento. Su estructura robusta y su integración con *TypeScript* ofrecen un enfoque amplio para el desarrollo de [SPAs](#SPA), siendo especialmente adecuado para proyectos empresariales complejos.
+- **Vue.js @vuejs:** Se trata de un framework progresivo de *JavaScript* que destaca por su simplicidad y flexibilidad. Su diseño modular facilita la integración gradual en proyectos existentes, y su curva de aprendizaje suave lo convierte en una opción popular para desarrolladores que buscan una alternativa accesible y potente.
+- **Svelte @svelte:** Adopta un enfoque diferente al trasladar gran parte del trabajo de construcción a tiempo de compilación. Esto resulta en aplicaciones más livianas y rápidas en tiempo de ejecución. Su sintaxis sencilla y su rendimiento eficiente lo hacen atractivo para desarrolladores que buscan una alternativa innovadora y eficaz en la construcción de [SPAs](#SPA).
+
+Una vez presentadas las [SPA](#SPA) y los diferentes frameworks, en el siguiente punto se detallaran las librerías más utilizadas hoy en día para visualizar datos en la Web.
+
+### Librerías para Visualización de Datos
+
+Diversas librerías han surgido para facilitar la creación de visualizaciones atractivas e interactivas, después de todo la visualización de datos desempeña un papel fundamental en la comprensión y comunicación efectiva de información en entornos Web. A continuación, son presentadas algunas de las librerías más destacadas, tal y como expone Majorek @librerias-visualizacion-datos:
+
+- **D3.js @d3js:** Destaca como una herramienta poderosa para la manipulación basada en datos en documentos . Su capacidad para crear visualizaciones altamente personalizables e interactivas lo convierte en una opción popular para desarrolladores que buscan flexibilidad en la representación gráfica de datos complejos.
+- **Three.js @threejs:** Aunque inicialmente diseñada para gráficos 3D, Three.js puede ser aprovechada para visualizaciones de datos tridimensionales impactantes. Su capacidad para crear experiencias visuales inmersivas lo convierte en una elección interesante para proyectos ambiciosos.
+- **Chart.js @chartjs:** Aporta una solución simple y fácil de usar, ofreciendo una variedad de gráficos, como barras, líneas y radar. Esta librería en JavaScript permite a los desarrolladores incorporar rápidamente visualizaciones atractivas en sus aplicaciones Web.
+- **ECharts @echarts:** Ofrece una amplia variedad de gráficos, incluyendo líneas, barras, dispersión y mapas, entre otros. La capacidad de Echarts para manejar grandes conjuntos de datos y su enfoque en la interactividad hacen que sea una elección sólida para proyectos que requieren visualizaciones dinámicas y atractivas. 
+- **Highcharts @highcharts:** Con una amplia gama de opciones de personalización, Highcharts simplifica la creación de gráficos interactivos. Esta librería en JavaScript es adecuada para proyectos que buscan una solución robusta y fácil de implementar.
+- **React-Vis @reactvis:** Diseñada específicamente para trabajar con *React*, *React-Vis* proporciona componentes listos para usar que facilitan la incorporación de visualizaciones de datos en aplicaciones *React*. Es una elección eficiente para proyectos que utilizan este marco de trabajo.
+
+Una vez se conoce tanto los fundamentos de la Web, las [SPA](#SPA) y las diferentes librerías para visualizar datos, en el siguiente punto se explicará la diversa tecnología que existe en el lado del servidor.
+
+### Tecnología en el Lado del Servidor
+
+En el lado del servidor, se puede encontrar un ecosistema diverso de lenguajes de programación, cada uno acompañado de sus propios frameworks, además de la presencia crucial de las bases de datos. En este análisis, se explora detenidamente cada una de estas áreas tecnológicas.
 
 Por un lado, los lenguajes de programación, los cuales desempeñan un papel significativo, definiendo la estructura y el rendimiento de las aplicaciones. Se destacan principalmente cuatro lenguajes, tal y como expone Osadchuk @tecnologia-backend: *JavaScript*, *Python*, *Ruby* y *PHP*.
 
@@ -53,7 +140,7 @@ Por un lado, los lenguajes de programación, los cuales desempeñan un papel sig
 
 Estos lenguajes, aunque poderosos por sí mismos, se ven potenciados cuando se combinan con frameworks específicos. Cada uno de los mencionados tiene su conjunto de frameworks que agilizan y estructuran el proceso de desarrollo. A continuación, se explora un framework representativo para cada uno de estos lenguajes respectivamente, tal y como expone nuevamente Osadchuk @tecnologia-backend: *Express*, *Django*, *Ruby* on *Rails* y *Laravel*.
 
-- **Express.js @expressjs:** Es un framework para Node.js que simplifica el desarrollo de aplicaciones Web y APIs. Con un enfoque minimalista, permite la creación rápida de servidores y rutas, facilitando la construcción de aplicaciones robustas con *JavaScript* del lado del servidor.
+- **Express.js @expressjs:** Es un framework para Node.js que simplifica el desarrollo de aplicaciones Web y [API](#API)s. Con un enfoque minimalista, permite la creación rápida de servidores y rutas, facilitando la construcción de aplicaciones robustas con *JavaScript* del lado del servidor.
 - **Django @django:** Es un framework de alto nivel para *Python*, diseñado para maximizar la eficiencia y la reutilización del código. Con un conjunto integrado de herramientas y una arquitectura basada en el patrón de diseño [MVC](#MVC), *Django* simplifica la creación de aplicaciones Web complejas al proporcionar una estructura organizativa y características como la administración automática de bases de datos.
 - **Ruby on Rails @rubyonrails:** Es un framework que sigue el principio de convención sobre configuración para el desarrollo rápido de aplicaciones Web en *Ruby*. Facilita la creación de aplicaciones mediante la automatización de tareas repetitivas y la adopción de convenciones predefinidas. *Rails* proporciona un entorno coherente que acelera el proceso de desarrollo y favorece la escritura de código limpio y conciso.
 - **Laravel @laravel:** Es un framework elegante y completo para *PHP* que aborda diversos aspectos del desarrollo Web. Ofrece una sintaxis expresiva, una gestión eficiente de bases de datos, y una amplia gama de herramientas para tareas comunes. *Laravel* fomenta la creación de aplicaciones seguras y modernas, con un énfasis en la legibilidad y mantenimiento del código.
@@ -64,55 +151,32 @@ Por otro lado, en el contexto del desarrollo del lado del servidor es esencial c
 - **MongoDB @mongodb:** Destaca como una [BD](#BD) no relacional orientada a documentos, ofreciendo flexibilidad en el esquema y una capacidad eficaz para manejar grandes volúmenes de datos no estructurados. Esta característica la convierte en una elección popular para aplicaciones que requieren escalabilidad y adaptabilidad a cambios en la estructura de datos.
 - **Neo4j @neo4j:** Como una [BD](#BD) de grafos, está diseñada para almacenar y procesar datos en forma de nodos y relaciones. Esto la convierte en una opción adecuada para aplicaciones que necesiten modelar y analizar redes complejas, como redes sociales, sistemas de recomendación y análisis de relaciones en datos interconectados.
 
-Finalmente, en el lado del servidor, no se debe pasar por alto la importancia de los contenedores, ya que optimizan la implementación, escalabilidad y gestión de aplicaciones. A continuación, se analizan dos tecnologías destacadas, tal y como expone Baryshevskiy @tendencias-tecnologias-web: *Docker* y *Kubernetes*.
+Una vez presentada cada una de las tecnologías del lado del servidor, en el siguiente punto se exponen el concepto de *API REST*, el cual es fundamental en el desarrollo Web hoy en día.
+
+### API REST
+
+Una [API REST](#API REST), como expone *RedHat* @api-rest, es un conjunto de reglas y convenciones para comunicarse con servicios Web de manera eficiente y coherente. Para comprender mejor este concepto, es útil entender tanto qué es una [API](#API) en general como qué significa [REST](#REST).
+
+Por un lado, una [API](#API) es esencialmente un conjunto de definiciones y protocolos que permiten que diferentes aplicaciones se comuniquen entre sí. Funciona como un contrato entre el proveedor de servicios y el usuario, donde se especifica qué puede hacer el usuario con los servicios proporcionados por el proveedor y cómo interactuar con ellos. En el contexto de software, una [API](#API) define las formas en que las distintas partes de un programa pueden interactuar entre sí. En resumen, una [API](#API) proporciona una manera estandarizada y segura para que diferentes aplicaciones se comuniquen y compartan datos.
+
+Por otro lado, [REST](#REST) es un estilo arquitectónico que define una serie de principios para diseñar redes de comunicación, particularmente aplicaciones Web. Se basa en el concepto de recursos, que son identificadores únicos para entidades específicas (como datos o funciones) en una aplicación Web. [REST](#REST) utiliza métodos estándar de [HTTP](#HTTP), como GET, POST, PUT y DELETE, para realizar operaciones en estos recursos. Los recursos son manipulados a través de representaciones, que pueden ser en formatos como [JSON](#JSON), [XML](#XML), [HTML](#HTML), etc. [REST](#REST) promueve una arquitectura basada en el cliente-servidor, donde el servidor proporciona recursos y el cliente los solicita y manipula.
+
+Por lo tanto, una [API REST](#API REST) es una interfaz de programación que sigue los principios y limitaciones de la arquitectura [REST](#REST). Utiliza los métodos estándar de [HTTP](#HTTP) para realizar operaciones en recursos, como leer, crear, actualizar y eliminar datos. Cuando un cliente envía una solicitud a través de una [API REST](#API REST), se le devuelve una representación del estado del recurso solicitado en un formato especificado, como [JSON](#JSON) o [XML](#HML). Siendo [JSON](#JSON) particulmente popular debido a su legibilidad tanto para humanos como para máquinas, y su independencia de cualquier lenguaje de programación específico. En resumen, una [API REST](#API REST) proporciona una forma estándar y eficiente de interactuar con servicios Web basados en [REST](#REST).
+
+Una vez se conoce tanto la tecnología del lado del cliente como del servidor, en el siguiente punto se expone la tecnología emergente en la Web.
+
+### Tecnología Emergente
+
+Por último, dentro del ámbito del desarrollo Web destacan innovaciones particulares: *Docker*, *Kubernetes*, *WebAssemby* y *Progressive Web Apps*. Todas ellas son analizadas más en detalle a continuación, tal y como expone Baryshevskiy @tendencias-tecnologias-web.
 
 - **Docker @docker:** Se trata de plataforma de contenedores que posibilita el empaquetado, la distribución y la ejecución coherente de aplicaciones en diversos entornos. Su enfoque revolucionario ha transformado la consistencia y portabilidad en el despliegue de software, permitiendo una gestión eficaz de dependencias y configuraciones. En la Figura \ref{capitulo2:docker-vs-vm} se puede observar la diferencia entre un despliegue de contenedores que comparten el [SO](#SO) y un despliegue de maquinas virtuales que hacen una copia completa del [SO](#SO) cada una.
 - **Kubernetes @kubernetes:** Consiste en un sistema de orquestación de contenedores, simplificando la administración, escalabilidad y despliegue de aplicaciones contenidas en entornos distribuidos. Su capacidad para coordinar eficientemente la ejecución de contenedores a lo largo de múltiples nodos ha consolidado su posición como una herramienta fundamental en el despliegue de infraestructuras escalables y resilientes. 
-
-![Despliegue con docker vs con maquinas virtuales @imagen-docker-vs-vm\label{capitulo2:docker-vs-vm}](cap2_docker-vs-vm.png){width=75%}
-
-En resumen, la tecnología de BackEnd engloba un conjunto diverso de herramientas y tecnologías esenciales para el desarrollo y funcionamiento de aplicaciones Web y servicios. La elección de tecnologías específicas depende de factores como los requisitos del proyecto, la escala y complejidad de la aplicación, así como las preferencias del equipo de desarrollo. La combinación adecuada de estos elementos contribuye a la creación de sistemas BackEnd robustos, eficientes y escalables. Sin embargo, una vez se conoce el lado del servidor, es vital conocer el otro lado conocido como el FrontEnd, el cual se enfoca más en el cliente. En el siguiente punto, se detalla la diferente tecnología Web dentro de dicha área. 
-
-### FrontEnd
-En el ámbito del Frontend, se pueden encontrar diferentes lenguajes tanto de marcado como de programación. Además, destacan los diferentes frameworks, así como de las diferentes librerías de visualización de datos que desempeñan un papel crucial en la construcción de interfaces de usuario atractivas. Tampoco se puede pasar por alto, la creciente popularidad del WebAssembly y las Progressive Web Apps, innovaciones que están transformando la experiencia del usuario dentro del ámbito del FrontEnd. A continuación, se realizará un análisis de estas tecnologías para comprender su impacto y aplicaciones específicas.
-
-Por un lado, los lenguajes de marcado como de programación fundamentales que encontramos en el desarrollo del FrontEnd son la tríada formada de [HTML](#HTML), [CSS](#CSS) y JavaScript, este último extendido mediante TypeScript. A continuación, se realiza una breve explicación de cada uno de estos lenguajes, tal como exponen *Mozilla* @html @css y Cherni @libro-typescript.
-
-- **HTML:** Lenguaje de marcado estándar utilizado para estructurar el contenido de las páginas Web. Define la jerarquía y organización de los elementos en una página.
-- **CSS:** Lenguaje de estilo que complementa a [HTML](#HTML). Permite definir el diseño, la presentación y la apariencia visual de los elementos [HTML](#HTML), proporcionando control sobre colores, tipografías y disposición.
-- **JavaScript:** Se trata del lenguaje de programación del lado del cliente que permite la creación de interactividad en las páginas Web. Es esencial para manipular el [DOM](#DOM) y responder a eventos del usuario.
-- **TypeScript @typescript:** Es un lenguaje de programación fuertemente tipado que se basa en JavaScript. A diferencia de este último, TypeScript añade un sistema de tipos estático, proporcionando beneficios como la detección temprana de errores y una mejor mantenibilidad en proyectos a gran escala. Esta diferencia se puede ver ilustrada en la Figura \ref{capitulo2:circulo-typescript}.
-
-![TypeScript vs JavaScript\label{capitulo2:circulo-typescript}](cap2_circulo-typescript.png){width=40%}
-
-Además de estos lenguajes fundamentales, los frameworks de [SPA](#SPA) han revolucionado la forma en que se desarrollan las interfaces de usuario. Estos frameworks permiten la creación de experiencias más dinámicas al cargar solo los componentes necesarios a diferencia de recargar toda la página como lo haría una aplicación Web tradicional. Aquí se presentan cuatro de dichos frameworks, tal y como expone Baryshevskiy @tendencias-tecnologias-web: *React*, *Angular*, *Vue* y *Svelte*.
-
-- **React @react:** Desarrollado por *Facebook*, *React* es una biblioteca de JavaScript que se centra en la construcción de interfaces de usuario reactivas y eficientes. Su enfoque en la creación de componentes modulares y su capacidad para gestionar el estado de manera efectiva lo convierten en una elección popular para aplicaciones dinámicas y escalables.
-- **Angular @angular:** Respaldado por *Google*, es un framework completo de desarrollo que abarca desde la creación de componentes hasta la gestión del estado y el enrutamiento. Su estructura robusta y su integración con *TypeScript* ofrecen un enfoque amplio para el desarrollo de [SPAs](#SPA), siendo especialmente adecuado para proyectos empresariales complejos.
-- **Vue.js @vuejs:** Se trata de un framework progresivo de *JavaScript* que destaca por su simplicidad y flexibilidad. Su diseño modular facilita la integración gradual en proyectos existentes, y su curva de aprendizaje suave lo convierte en una opción popular para desarrolladores que buscan una alternativa accesible y potente.
-- **Svelte @svelte:** Adopta un enfoque diferente al trasladar gran parte del trabajo de construcción a tiempo de compilación. Esto resulta en aplicaciones más livianas y rápidas en tiempo de ejecución. Su sintaxis sencilla y su rendimiento eficiente lo hacen atractivo para desarrolladores que buscan una alternativa innovadora y eficaz en la construcción de [SPAs](#SPA).
-
-Para el desarrollo de una [SPA](#SPA) junto con los frameworks mencionados, se emplea la técnica de desarrollo conocida como [AJAX](#AJAX), como describe *Mozilla* @ajax. Esta técnica, implica que la aplicación web solicita contenido al servidor mediante peticiones [HTTP](#HTTP) asíncronas. Posteriormente, utiliza este nuevo contenido para actualizar las secciones relevantes de la página sin necesidad de recargarla por completo, provocando que solo sea necesario pedir tanto el [HTML](#HTML) como el [CSS](#CSS) en la petición inicial, tal y como muestra la Figura \ref{capitulo2:flujo-spa}. Inicialmente, [AJAX](#AJAX) se implementaba mediante la interfaz *XMLHttpRequest*, pero en la actualidad, son más comunes el uso de la *API fetch* @api-fetch y la biblioteca *Axios* @axios.
-
-![Flujo de una [SPA](#SPA)\label{capitulo2:flujo-spa}](cap3_flujo-spa.png){width=50%}
-
-Por otro lado, diversas librerías han surgido para facilitar la creación de visualizaciones atractivas e interactivas, después de todo la visualización de datos desempeña un papel fundamental en la comprensión y comunicación efectiva de información en entornos Web. A continuación, son presentadas algunas de las librerías más destacadas, tal y como expone Majorek @librerias-visualizacion-datos:
-
-- **D3.js @d3js:** Destaca como una herramienta poderosa para la manipulación basada en datos en documentos . Su capacidad para crear visualizaciones altamente personalizables e interactivas lo convierte en una opción popular para desarrolladores que buscan flexibilidad en la representación gráfica de datos complejos.
-- **Three.js @threejs:** Aunque inicialmente diseñada para gráficos 3D, Three.js puede ser aprovechada para visualizaciones de datos tridimensionales impactantes. Su capacidad para crear experiencias visuales inmersivas lo convierte en una elección interesante para proyectos ambiciosos.
-- **Chart.js @chartjs:** Aporta una solución simple y fácil de usar, ofreciendo una variedad de gráficos, como barras, líneas y radar. Esta librería en JavaScript permite a los desarrolladores incorporar rápidamente visualizaciones atractivas en sus aplicaciones Web.
-- **ECharts @echarts:** Ofrece una amplia variedad de gráficos, incluyendo líneas, barras, dispersión y mapas, entre otros. La capacidad de Echarts para manejar grandes conjuntos de datos y su enfoque en la interactividad hacen que sea una elección sólida para proyectos que requieren visualizaciones dinámicas y atractivas. 
-- **Highcharts @highcharts:** Con una amplia gama de opciones de personalización, Highcharts simplifica la creación de gráficos interactivos. Esta librería en JavaScript es adecuada para proyectos que buscan una solución robusta y fácil de implementar.
-- **React-Vis @reactvis:** Diseñada específicamente para trabajar con *React*, *React-Vis* proporciona componentes listos para usar que facilitan la incorporación de visualizaciones de datos en aplicaciones *React*. Es una elección eficiente para proyectos que utilizan este marco de trabajo.
-
-Por último, dentro del ámbito del FrontEnd destacan dos innovaciones particulares: el *WebAssemby* y las *Progressive Web Apps*. Ambas son analizadas más en detalle a continuación, tal y como expone Baryshevskiy @tendencias-tecnologias-web.
-
 - **WebAssembly (Wasm):** Permite la ejecución de código de alto rendimiento, escrito en lenguajes como *C++* o *Rust*, directamente en el navegador. Esto amplía significativamente las posibilidades para construir aplicaciones Web más potentes y rápidas, acercando el rendimiento de las aplicaciones Web al de las aplicaciones nativas.
 - **Progressive Web Apps (PWA):** Ofrecen experiencias avanzadas que combinan lo mejor de las aplicaciones Web y nativas. Su capacidad para funcionar offline permite a los usuarios acceder a contenido incluso en ausencia de conexión a Internet, mejorando la accesibilidad y la continuidad de la experiencia del usuario.
 
-En conclusión, la tecnología del Frontend al igual que el BackEnd abarca un conjunto diverso de herramientas y tecnologías esenciales para la creación y operación de aplicaciones Web y servicios. La selección de tecnologías particulares está condicionada por diversos factores, incluyendo los requisitos específicos del proyecto y la complejidad de la aplicación, así como las preferencias del equipo de desarrollo.
+![Despliegue con docker vs con maquinas virtuales @imagen-docker-vs-vm\label{capitulo2:docker-vs-vm}](cap2_docker-vs-vm.png){width=75%}
 
-Una vez se conoce la diferente tecnología Web que rodea tanto el lado del BackEnd como el lado del FrontEnd, es de gran ayuda conocer los stacks tecnológicos más utilizados y analizarlos. Lo cual se realizará en el siguiente punto.
+Una vez presentada la diferente tecnología Web que rodea tanto el lado del BackEnd como el lado del FrontEnd, es de gran ayuda conocer los stacks tecnológicos más utilizados y analizarlos, lo cual se realiza en el siguiente punto.
 
 ### Stacks Tecnológicos
 En el contexto de los stacks tecnológicos, es decir, la elección de un conjunto específico de tecnologías, se trata de un aspecto crítico dentro del desarrollo Web, ya que afecta directamente la eficiencia del desarrollo, la escalabilidad y el mantenimiento del sistema. A continuación son explicadas brevemente cuatro stacks, tal y como expone Campana @stacks-tecnologicos: *LAMP*, *Python Django*, *MEAN* y *MERN*.
@@ -142,7 +206,7 @@ Como se ha mencionado previamente, el desarrollo de la aplicación Web deseada r
 
 ### Técnicas de Distribución
 
-Las técnicas de distribución se utilizan para comprender cómo se distribuyen los datos en un conjunto. Esto es crucial para comprender la dispersión y la concentración de los valores. Las visualizaciones de distribución permiten identificar patrones, valores atípicos y la forma general de la distribución de los datos. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
+Las técnicas de distribución se utilizan para comprender cómo se distribuyen los datos en un conjunto. Esto es crucial para comprender la dispersión y la concentración de los valores. Las visualizaciones de distribución permiten identificar patrones, valores atípicos y la forma general de la distribución de los datos. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación:
 
 - El histograma.
 - El gráfico de densidad.
@@ -173,7 +237,7 @@ Una vez presentadas las técnicas utilizadas para comprender la distribución de
 
 ### Técnicas de Correlación
 
-Las técnicas de correlación revelan la relación entre dos o más variables. Determinar esta relación entre variables es fundamental para comprender cómo cambian juntas y si existe alguna dependencia entre ellas. Las visualizaciones de correlación ayudan a identificar patrones, tendencias y posibles relaciones causales entre variables. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
+Las técnicas de correlación revelan la relación entre dos o más variables. Determinar esta relación entre variables es fundamental para comprender cómo cambian juntas y si existe alguna dependencia entre ellas. Las visualizaciones de correlación ayudan a identificar patrones, tendencias y posibles relaciones causales entre variables. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación:
 
 - El gráfico de dispersión.
 - El gráfico de burbujas.
@@ -195,7 +259,7 @@ Una vez presentadas las técnicas utilizadas para conocer la relación entre los
 
 ### Técnicas de Ranking
 
-Las técnicas de ranking se centran en comparar y ordenar valores para identificar los más altos, los más bajos o cualquier otro criterio de clasificación. Estas visualizaciones son útiles para comprender la posición relativa de los elementos dentro de un conjunto de datos y para identificar tendencias o patrones de comportamiento. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
+Las técnicas de ranking se centran en comparar y ordenar valores para identificar los más altos, los más bajos o cualquier otro criterio de clasificación. Estas visualizaciones son útiles para comprender la posición relativa de los elementos dentro de un conjunto de datos y para identificar tendencias o patrones de comportamiento. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación:
 
 - La gráfica de barras.
 - El gráfico lollipop.
@@ -224,7 +288,7 @@ Una vez presentadas las técnicas utilizadas para ordenar los diferentes valores
 
 ### Técnicas de Parte de un Todo
 
-Las técnicas de parte de un todo, como indica su nombre, muestran cómo se dividen los datos en partes proporcionales al todo. Son útiles para comprender la composición de un conjunto de datos y para visualizar la distribución de los valores en relación con el conjunto completo. Las visualizaciones de parte de un todo permiten identificar las contribuciones relativas de cada componente y compararlos entre sí. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
+Las técnicas de parte de un todo, como indica su nombre, muestran cómo se dividen los datos en partes proporcionales al todo. Son útiles para comprender la composición de un conjunto de datos y para visualizar la distribución de los valores en relación con el conjunto completo. Las visualizaciones de parte de un todo permiten identificar las contribuciones relativas de cada componente y compararlos entre sí. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación:
 
 - El gráfico de pastel
 - El mapa de árbol
@@ -250,7 +314,7 @@ Una vez presentadas las técnicas utilizadas para conocer las proporciones de lo
 
 ### Técnicas de Evolución
 
-Las técnicas de evolución muestran cómo cambian los datos a lo largo del tiempo o en relación con otra variable. Son esenciales para identificar tendencias, patrones estacionales, ciclos y cambios a largo plazo en los datos. Las visualizaciones de evolución permiten comprender la dinámica temporal de los fenómenos y tomar decisiones informadas basadas en estos cambios. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación, las cuales se detallaran en este punto.
+Las técnicas de evolución muestran cómo cambian los datos a lo largo del tiempo o en relación con otra variable. Son esenciales para identificar tendencias, patrones estacionales, ciclos y cambios a largo plazo en los datos. Las visualizaciones de evolución permiten comprender la dinámica temporal de los fenómenos y tomar decisiones informadas basadas en estos cambios. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación:
 
 - La gráfica de línea.
 - La gráfica de área.

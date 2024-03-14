@@ -1,0 +1,62 @@
+@startuml
+
+entity Admin{
+_id : string
+name : string
+surname : string
+bornDate : date
+address : string 
+email : string
+phone : number
+password : string
+}
+
+entity Doctor{
+_id : string
+name : string
+surname : string
+bornDate : date
+city : string 
+email : string
+phone : number
+password : string
+}
+
+entity Patient{
+_id : string
+name : string
+surname : string
+age : number
+city : string 
+email : string
+phone : number
+isFibro: boolean
+activityLevel: number
+ocupation: string
+doctorId : string
+}
+
+entity Test {
+_id : string
+doctorId : string
+date : date
+typeId : string
+patientId: string
+videoFile : file
+EVAscale: number
+data: {time: string, quality: number, parts: object}
+}
+
+entity TestType {
+_id : string
+name : string
+bodyParts: string[]
+}
+
+
+Patient o-- Doctor
+Patient o-- Test
+Test o-- Doctor
+Test o-- TestType
+
+@enduml

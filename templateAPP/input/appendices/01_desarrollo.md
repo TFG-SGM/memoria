@@ -510,11 +510,12 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-9} se detallan las dife
 | TSGM-42 | Revisitar capitulo 2.2                       | 5        |
 | TSGM-43 | Realizar segunda entrevista                  | 5        |
 | TSGM-44 | Explicar diagramas                           | 3        |
-| TSGM-45 | Redactar trabajo realizado sobre prototipos  | 7        |
+| TSGM-45 | Redactar trabajo realizado sobre prototipos  | 3        |
 | TSGM-46 | Añadir siguiente Sprint                      | 1        |
 | TSGM-47 | Mejorar el [MVP](#MVP)                       | 7        |
 | TSGM-48 | Añadir segunda entrevista en anexo           | 3        |
 | TSGM-49 | Empezar capítulo de resultado                | 3        |
+| TSGM-50 | Realizar prototipo interactivo               | 7        |
 
 : [SB](#SB) del Sprint 9\label{anexo1:product-backlog-9}
 

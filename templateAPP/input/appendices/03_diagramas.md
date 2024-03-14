@@ -60,7 +60,7 @@ _id : string
 name : string
 surname : string
 bornDate : date
-address : string 
+city : string 
 email : string
 phone : number
 password : string
@@ -70,30 +70,39 @@ entity Patient{
 _id : string
 name : string
 surname : string
-bornDate : date
-address : string 
+age : number
+city : string 
 email : string
 phone : number
+isFibro: boolean
+activityLevel: number
+ocupation: string
+doctorId : string
 }
 
 entity Test {
 _id : string
-doctor : Doctor
+doctorId : string
 date : date
-type : string
+typeId : string
 patientId: string
 videoFile : file
+EVAscale: number
+data: {time: string, quality: number, parts: object}
 }
 
-entity TestData{
+entity TestType {
 _id : string
-testId: string
-...data
+name : string
+bodyParts: string[]
 }
 
-Doctor --o Test
+
+Patient o-- Doctor
 Patient o-- Test
-Test *-- TestData
+Test o-- Doctor
+Test o-- TestType
+
 @enduml
 ```
 

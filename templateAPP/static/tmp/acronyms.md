@@ -1,3 +1,19 @@
+<span id='AJAX'>AJAX</span>
+
+: Asynchronous JavaScript and XML (JavaScript y XML asincrónos)
+
+<span id='API'>API</span>
+
+: Application Programming Interface (Interfaz de Programación de Aplicaciones)
+
+<span id='API'>API</span>
+
+: Application Programming Interface (Interfaz de Programación de Aplicaciones)
+
+<span id='API REST'>API REST</span>
+
+: Representational State Transfer Application Programming Interface (Interfaz de Programación de Aplicaciones Representacional del Estado Transferido)
+
 <span id='BC'>BC</span>
 
 : Burndown Chart
@@ -5,6 +21,10 @@
 <span id='BD'>BD</span>
 
 : Base de Datos
+
+<span id='CRUD'>CRUD</span>
+
+: Create, Read, Update and Delete (Crear, Leer, Actualizar, Borrar)
 
 <span id='CSS'>CSS</span>
 
@@ -38,6 +58,10 @@
 
 : Model-View-Controller (Modelo-Vista-Controlador)
 
+<span id='MVP'>MVP</span>
+
+: Minimum Viable Product (Producto Mínimo Viable)
+
 <span id='NoSQL'>NoSQL</span>
 
 : Not Only Structured Query Language (No Solo Lenguaje de Consulta Estructurada)
@@ -49,6 +73,10 @@
 <span id='PWA'>PWA</span>
 
 : Progressive Web Applications (Aplicaciones Web Progresivas)
+
+<span id='REST'>REST</span>
+
+: Representational State Transfer (Representacional del Estado Transferido)
 
 <span id='SB'>SB</span>
 
@@ -70,23 +98,11 @@
 
 : Trabajo Final de Grado
 
+<span id='URL'>URL</span>
+
+: Uniform Resource Locator (Localizador de Recursos Uniforme)
+
 <span id='Wasm'>Wasm</span>
 
 : WebAssembly
-
-<span id='MVP'>MVP</span>
-
-: Minimum Viable Product (Producto Mínimo Viable)
-
-<span id='CRUD'>CRUD</span>
-
-: Create, Read, Update and Delete (Crear, Leer, Actualizar, Borrar)
-
-<span id='API'>API</span>
-
-: Application Programming Interface (Interfaz de Programación de Aplicaciones)
-
-<span id='AJAX'>AJAX</span>
-
-: Asynchronous JavaScript and XML (JavaScript y XML asincrónos)
 
