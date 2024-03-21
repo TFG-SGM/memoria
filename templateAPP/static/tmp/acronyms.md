@@ -106,3 +106,7 @@
 
 : WebAssembly
 
+<span id='EVA'>EVA</span>
+
+: Escala Visual Analógica
+

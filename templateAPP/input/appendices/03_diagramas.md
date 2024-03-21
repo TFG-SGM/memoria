@@ -16,6 +16,7 @@ El diagrama de la Figura \ref{anexo3:diagrama-despliegue} muestra la disposició
 node "PC Cliente" {
 node Camara
 node "Navegador Web" {
+node "CacheStorage"
 artifact index.html
 artifact react_components.tsx
 }
@@ -29,10 +30,10 @@ artifact controllers.ts
 artifact models.ts
 
 }
+node "Servidor Cloud" {
 database "MongoDB Atlas"
-
+}
 @enduml
-
 ```
 
 ## Diagrama de Base de Datos
@@ -48,8 +49,8 @@ entity Admin{
 _id : string
 name : string
 surname : string
-bornDate : date
-address : string 
+age : number
+city : string 
 email : string
 phone : number
 password : string
@@ -59,7 +60,7 @@ entity Doctor{
 _id : string
 name : string
 surname : string
-bornDate : date
+age : number
 city : string 
 email : string
 phone : number
@@ -75,9 +76,10 @@ city : string
 email : string
 phone : number
 isFibro: boolean
+diagnosisYears: number
 activityLevel: number
 ocupation: string
-doctorId : string
+assignedDoctor : string
 }
 
 entity Test {
@@ -87,7 +89,7 @@ date : date
 typeId : string
 patientId: string
 videoFile : file
-EVAscale: number
+evaScale: number
 data: {time: string, quality: number, parts: object}
 }
 
@@ -98,10 +100,10 @@ bodyParts: string[]
 }
 
 
-Patient o-- Doctor
-Patient o-- Test
-Test o-- Doctor
-Test o-- TestType
+Patient "1" o-- "1" Doctor
+Patient "1" o-- "0..*" Test
+Test "1" o-- "1" Doctor
+Test "1" o-- "1" TestType
 
 @enduml
 ```
@@ -114,6 +116,8 @@ Una vez todo se realiza con exito el *DataService* añade el token obtenido al a
 
 ```{.plantuml #anexo3:diagrama-secuencia-inicio-sesion caption="Diagrama de secuencia de inicio de sesión con exito" frame=single}
 @startuml
+actor Doctor
+
 Doctor -> LoginPage: Introduce datos
 Doctor -> LoginPage: Inicia sesión
 
@@ -155,6 +159,8 @@ Es importante destacar que los diagramas de secuencia para la consulta, creació
 
 ```{.plantuml #anexo3:diagrama-secuencia-creacion-paciente caption="Diagrama de secuencia de creación de un paciente con exito" frame=single}
 @startuml
+actor Doctor
+
 Doctor -> PatientsListPage: Pincha en botón de crear
 PatientsListPage -> Doctor : Enseña menú de creación
 Doctor -> PatientsListPage: Introduce los datos necesarios

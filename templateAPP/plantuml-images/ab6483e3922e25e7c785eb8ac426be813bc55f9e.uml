@@ -1,0 +1,30 @@
+@startuml
+actor Doctor
+
+Doctor -> LoginPage: Introduce datos
+Doctor -> LoginPage: Inicia sesión
+
+LoginPage -> DataService: login()
+DataService -> AuthRouter: post("auth/login", {email, password})
+
+AuthRouter -> AuthController : login()
+AuthController -> AdminModel : findByEmail({email})
+AuthController -> DoctorModel : findByEmail({email})
+
+AdminModel -> "MongoDB Atlas" : findOne({email})
+DoctorModel -> "MongoDB Atlas" : findOne({email})
+
+"MongoDB Atlas" -> AuthController : admin/doctor
+
+AuthController -> AuthController : compare(passwords)
+
+AuthController -> AuthController : sign()
+AuthController -> AuthRouter : token
+AuthRouter -> DataService : token
+
+DataService -> localstorage : setItem("token",token)
+DataService -> LoginPage : ok
+
+LoginPage -> Doctor : navigate(/app)
+
+@enduml

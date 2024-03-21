@@ -25,3 +25,4 @@ SPA: Single Page Application (Aplicaciones de una Sola Página)
 TFG: Trabajo Final de Grado
 URL: Uniform Resource Locator (Localizador de Recursos Uniforme)
 Wasm: WebAssembly
+EVA: Escala Visual Analógica

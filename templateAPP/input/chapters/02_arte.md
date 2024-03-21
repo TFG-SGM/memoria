@@ -1,7 +1,30 @@
 # Estado del Arte
-En el contexto del desarrollo de una aplicación Web, es esencial considerar diversos factores, incluyendo la metodología de desarrollo, las herramientas y tecnologías disponibles y la usabilidad de la aplicación. A continuación, es realizado un análisis que abarca todas estas áreas con el propósito de determinar las mejoras prácticas y enfoques para implementar durante el proyecto. 
+En el contexto del desarrollo de una aplicación Web, es esencial considerar diversos factores, incluyendo la metodología de desarrollo, las herramientas y tecnologías disponibles y la usabilidad de la aplicación. En este capítulo, es realizado un análisis que abarca todas estas áreas con el propósito de determinar las mejoras prácticas y enfoques para implementar durante el proyecto. Sin embargo, antes de detallar estos aspectos, es crucial comprender el trastorno de la fibromialgia, el cual es el foco de la aplicación Web que se busca desarrollar.
+
+## Fibromialgia
+
+La fibromialgia, tal y como expone *MayoClinic* @fibromialgia, se trata de un trastorno que se caracteriza por dolor generalizado en los músculos y huesos, acompañado de fatiga y dificultades para dormir, recordar y mantener el estado de ánimo. Además, los expertos creen que este trastorno amplifica la sensación de dolor al afectar la manera en que el cerebro y la médula espinal procesan las señales de dolor y no dolor.
+
+Los síntomas suelen iniciar tras un evento como un trauma físico, cirugía, infección o estrés psicológico significativo. En otros casos, los síntomas se desarrollan gradualmente sin un desencadenante específico.
+
+Las mujeres tienen más probabilidad que los hombres de padecer fibromialgia. Además del dolor, muchas personas con este trastorno experimentan dolores de cabeza tensionales, problemas en la articulación temporomandibular, síndrome de colon irritable, así como ansiedad y depresión.
+
+Aunque no hay una cura definitiva para la fibromialgia, existen varios medicamentos que pueden ayudar a controlar los síntomas. Además, el ejercicio, técnicas de relajación y medidas para reducir el estrés pueden ser beneficiosas en el manejo de esta condición.
+
+Como se ha mencionado previamente, la aplicación Web que se pretende desarrollar durante este proyecto tiene como objetivo analizar el movimiento de las personas para comprobar si presentan este trastorno, además de indicar visualmente la calidad de movimiento de las diferentes partes del cuerpo. Para lograr este objetivo, se requerirá que el paciente realice ciertas pruebas que involucran movimiento. Sin embargo, antes de realizar estas pruebas, el médico evaluará el nivel de dolor del paciente utilizando la escala  [EVA](#EVA).
+
+La escala [EVA](#EVA), tal y como expone Basterrechea @escala-eva, se basa en una escala horizontal, representada por una línea normalmente de 10 centímetros, en la que el paciente debe marcar el lugar que considera que se encuentra su dolor.
+
+Los resultados se evaluan normalmente en tres niveles de dolor según los valores marcados:
+
+- (<4): Los valores inferiores a 4 indican que el dolor es leve o leve-moderado
+- (4-6): En el caso que la medición sea entre 4 y 6 centímetros, el dolor se considerará de moderado a moderado-grave
+- (<6): Si los valores son mayores de 6 se considera un dolor que pasa de grave a insoportable.
+
+Una vez, se conoce el trastorno de la fibromialgia y la escala [EVA](#EVA) utilizada previamente al diagnostico. En el siguiente punto, se pasará a explicar las diferentes metodologías de desarrollo software que se pueden utilizar para implementar la aplicación Web.
 
 ## Metodologías de Desarrollo Software
+
 Para que un software, como es una aplicación Web, llegue a producción debe pasar por un proceso de desarrollo de software, conocido también como “ciclo de vida del desarrollo del software”. A su vez, para organizar este ciclo es necesario utilizar cierta metodología de desarrollo. En este apartado es realizado un análisis de las distintas fases de dicho proceso, además de las metodologías más destacadas.
 
 ### Ciclo de Vida del Desarrollo del Software
@@ -60,11 +83,9 @@ Una [SPA](#SPA), como expone Holmes en @spa, es una aplicación que opera dentro
 
 Para desarrollar una [SPA](#SPA), se emplea la técnica de desarrollo conocida como [AJAX](#AJAX), como describe *Mozilla* [@ajax].
 
-La técnica [AJAX](#AJAX), ilustrada en la Figura \ref{capitulo2:flujo-spa}, implica que la aplicación Web solicite contenido al servidor mediante peticiones [HTTP](#HTTP) asíncronas, y luego utilice este nuevo contenido para actualizar las secciones relevantes de la página sin necesidad de recargarla por completo, lo que significa que solo se necesita solicitar el [HTML](#HTML) y el [CSS](#CSS) en la petición inicial.
+La técnica [AJAX](#AJAX) implica que la aplicación Web solicite contenido al servidor mediante peticiones [HTTP](#HTTP) asíncronas, y luego utilice este nuevo contenido para actualizar las secciones relevantes de la página sin necesidad de recargarla por completo, lo que significa que solo se necesita solicitar el [HTML](#HTML) y el [CSS](#CSS) en la petición inicial.
 
 Inicialmente, [AJAX](#AJAX) se implementaba mediante la interfaz *XMLHttpRequest*, pero en la actualidad, son más comunes el uso de la *API fetch* [@api-fetch] y la biblioteca *Axios* [@axios].
-
-![Flujo de una [SPA](#SPA)\label{capitulo2:flujo-spa}](cap3_flujo-spa.png){width=50%}
 
 Por otro lado, como expone Rivera @spa-routers, es importante entender la diferencia entre el enrutado tradicional conocido como "enrutado en el lado del servidor", y el enrutado empleado en una [SPA](#SPA) conocido como "enrutado en el lado del cliente".
 
@@ -72,17 +93,24 @@ En el enrutado en el lado del servidor, cada vez que el usuario hace click en un
 
 ```{.plantuml #capitulo2:enrutado-servidor caption="Enrutado en el lado del servidor" frame=single}
 @startuml
-Usuario -> Navegador: Escribir URL
-Navegador -> Servidor: Solicita URL
+actor Usuario
 
-Servidor -> Navegador: Devuelve página
-Navegador -> Usuario: Muestra nueva página
+Usuario -> Interfaz: Escribe una URL
+Interfaz -> Controlador: getURL()
+Controlador -> Servidor: getURL()
 
-Usuario -> Navegador: Hace click en link
-Navegador -> Servidor: Solicita nueva URL
+Servidor -> Controlador: page
+Controlador -> Interfaz: page
+Interfaz -> Usuario: showPage()
 
-Servidor -> Navegador: Devuelve nueva página
-Navegador -> Usuario: Muestra nueva página
+Usuario -> Interfaz: Hace click en link
+Interfaz -> Controlador: getURL()
+Controlador -> Servidor: getURL()
+
+Servidor -> Controlador: newPage
+Controlador -> Interfaz: newPage
+Interfaz -> Usuario: showPage()
+
 @enduml
 ```
 
@@ -90,18 +118,27 @@ Por otro lado, en el enrutado en el lado del cliente, cuando el usuario hace cli
 
 ```{.plantuml #capitulo2:enrutado-cliente caption="Enrutado en el lado del cliente" frame=single}
 @startuml
-Usuario -> Navegador: Escribir URL
-Navegador -> Servidor: Solicita URL
+actor Usuario
 
-Servidor -> Navegador: Devuelve página
-Navegador -> Usuario: Muestra nueva página
+Usuario -> Interfaz: Escribe una URL
+Interfaz -> Controlador: getURL()
+Controlador -> Servidor: getURL()
 
-Usuario -> Navegador: Hace click en link
+Servidor -> Controlador: page
+Controlador -> Interfaz: page
+Interfaz -> Usuario: showPage()
 
-Navegador -> Navegador: Cambia URL
-Navegador -> Navegador: Renderiza nuevo contenido 
+Usuario -> Interfaz: Hace click en link
+Interfaz -> Controlador: getURL()
+Controlador -> Controlador: changeURL()
+Controlador -> Interfaz: renderNewContent()
 
-Navegador -> Usuario: Muestra nueva página
+note right
+Se renderiza un nuevo contenido en la 
+misma página con distinta URL
+end note
+
+Interfaz -> Usuario: showPage()
 @enduml
 ```
 

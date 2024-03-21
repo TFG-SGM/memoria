@@ -517,31 +517,66 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-9} se detallan las dife
 | TSGM-49 | Empezar capítulo de resultado                | 3        |
 | TSGM-50 | Realizar prototipo interactivo               | 7        |
 
-: [SB](#SB) del Sprint 9\label{anexo1:product-backlog-9}
+: [SB](#SB) del Sprint 9\label{anexo1:Sprint-backlog-9}
 
 ### Desarrollo de Sprint 
 
-Durante el Sprint, …
+Durante este Sprint, se llevaron a cabo las tareas asignadas en la reunión de planificación con éxito. Se avanzó significativamente en la redacción del documento, además de completarse la segunda entrevista con los stakeholders. Como resultado, se diseñó un prototipo interactivo basado en los comentarios recibidos durante la última reunión con el tutor FAM y la entrevista realizada.
+
+En lo que respecta a la implementación de la aplicación Web, se introdujeron nuevas funcionalidades destacables. Entre ellas, se destaca el desarrollo de diversas gráficas para la visualización de datos con el uso de datos generados automáticamente. Algunos ejemplos de estas gráficas, son el gráfico de líneas y el histograma ilustrados en las Figuras \ref{anexo1:mvp-lineas} y \ref{anexo1:mvp-histograma}, respectivamente. Cabe destacar, que durante el Sprint tomó la decisión de llamar a la aplicación: *DynaViz*.
+
+![Gráfica de líneas del [MVP](#MVP)\label{anexo1:mvp-lineas}](anx1_mvp-lineas.png)
+
+![Histograma del [MVP](#MVP)\label{anexo1:mvp-histograma}](anx1_mvp-histograma.png)
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
+Tras finalizar el desarrollo del Sprint, se llevó a cabo la reunión de revisión, donde los tutores proporcionaron valiosos comentarios para mejorar el documento. Se hizo hincapié en la necesidad de que los diagramas de secuencia en el estado del arte fueran más explicativos y claros. Asimismo, se sugirió una mejor estructuración de las figuras en el Anexo E para mejorar su comprensión.
+
+Por último, se presentó el prototipo interactivo desarrollado durante el Sprint, resaltando la importancia de la consistencia y la estandarización en toda la aplicación. Se hizo especial énfasis en evitar el uso del color rojo, a menos que indique una acción de peligro, para mantener la coherencia visual y evitar confusiones para los usuarios.
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint9}, el cual refleja...
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint9}, el cual refleja que el progreso del trabajo realizado ha ido ligeramente por delante del planificado inicialmente. Sin embargo, al final se dejo sin realizar la [HU](#HU) TSGM-46.
 
 ![[BC](#BC) del Sprint 9\label{anexo1:bc-sprint9}](anx1_bc-sprint9.png)
 
 ## Sprint 10
 
-Este Sprint tiene comienzo el **?? de ?? de 2024 ** con una duración de ?? semanas. Su objetivo principal era ??. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **15 de marzo de 2024 ** con una duración de 3 semanas. Su objetivo principal era continuar con el desarrollo de la aplicación Web. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
-En esta reunión, ...
+En esta reunión, se establecieron las tareas para el próximo Sprint, enfocándonos en dos aspectos principales: enriquecer el estado del arte con información relevante sobre la fibromialgia y avanzar en el desarrollo de la aplicación web. Es crucial destacar que se priorizará la mejora del diseño y la experiencia del usuario, por lo que se prestará especial atención al refinamiento del [CSS](#CSS). A continuación, en la Tabla \ref{anexo1:product-backlog-10} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-10} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
-A continuación, en la Tabla \ref{anexo1:product-backlog-10} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-10} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+| **ID**  | **Tarea**                                  | **Peso** |
+| ------- | :----------------------------------------- | -------- |
+| TSGM-8  | Realizar capítulo de resultados            | 11       |
+| TSGM-9  | Realizar capítulo de evaluación            | 5        |
+| TSGM-10 | Realizar capítulo de conclusiones          | 5        |
+| TSGM-46 | Añadir siguiente Sprint                    | 1        |
+| TSGM-51 | Añadir fibromialgia a estado de arte       | 3        |
+| TSGM-52 | Completar diagramas de secuencia           | 1        |
+| TSGM-53 | Revisar figuras de anexo E                 | 3        |
+| TSGM-54 | Añadir prototipo interactivo en anexo D    | 3        |
+| TSGM-55 | Añadir funcionalidades a la aplicación Web | 11       |
+| TSGM-56 | Añadir [CSS](#CSS) a la aplicación Web     | 11       |
+| TSGM-57 | Añadir siguiente Sprint                    | 1        |
+
+: [SB](#SB) del Sprint 10\label{anexo1:product-backlog-10}
+
+| **ID**  | **Tarea**                                  | **Peso** |
+| ------- | :----------------------------------------- | -------- |
+| TSGM-46 | Añadir siguiente Sprint                    | 1        |
+| TSGM-51 | Añadir fibromialgia a estado de arte       | 3        |
+| TSGM-52 | Completar diagramas de secuencia           | 1        |
+| TSGM-53 | Revisar figuras de anexo E                 | 3        |
+| TSGM-54 | Añadir prototipo interactivo en anexo D    | 3        |
+| TSGM-55 | Añadir funcionalidades a la aplicación Web | 11       |
+| TSGM-56 | Añadir [CSS](#CSS) a la aplicación Web     | 11       |
+| TSGM-57 | Añadir siguiente Sprint                    | 1        |
+
+: [SB](#SB) del Sprint 10\label{anexo1:Sprint-backlog-10}
 
 ### Desarrollo de Sprint 
 

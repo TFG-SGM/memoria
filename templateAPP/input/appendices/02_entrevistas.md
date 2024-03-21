@@ -51,7 +51,7 @@ A pesar de las nuevas preguntas que surgieron tras depurar los distintos requisi
 
 La segunda entrevista, realizada el 11 de marzo de 2024, se llevó a cabo mediante videoconferencia con la participación de los stakeholders, Cristina y Manuel. Durante la reunión, se abordaron una serie de preguntas que condujeron a conclusiones significativas. Además, se presentó el prototipo no interactivo detallado en el Anexo 4, así como el estudio de técnicas de visualización de datos que se detalla en el Anexo 5.
 
-### Preguntas clave durante la entrevista
+### Guión de Preguntas
 
 A continuación se detallan las preguntas formuladas durante la entrevista, las cuales se presentaron junto con el prototipo no interactivo.
 
@@ -81,7 +81,7 @@ Inicialmente, no se considera necesario añadir más tipos de pruebas.
 
 **¿Qué información se debe proporcionar al crear una prueba?**
 
-Al crear una prueba, se solicitará la fecha, tipo de prueba, un vídeo y posiblemente escalas para evaluar el estado del paciente en el momento de la prueba, como por ejemplo la escala EVA para evaluar el dolor del paciente en el momento de realizar la prueba.
+Al crear una prueba, se solicitará la fecha, tipo de prueba, un vídeo y posiblemente escalas para evaluar el estado del paciente en el momento de la prueba, como por ejemplo la escala [EVA](#EVA) para evaluar el dolor del paciente en el momento de realizar la prueba.
 
 También se sugiere la posibilidad de crear múltiples pruebas de diferentes tipos simultáneamente para mejorar la eficiencia del médico. Además, se menciona la necesidad de un filtro para la facilitar la busqueda de las pruebas por fecha o tipo.
 

@@ -1,6 +1,6 @@
-# Resultado
+# Aplicación DynaViz
 
-En este capítulo, se proporcionará un detallado análisis de la aplicación Web desarrollada durante el proyecto, acompañado de diversos diagramas y capturas de pantalla que ilustran su funcionamiento. Se explicará en detalle las funcionalidades y la arquitectura del sistema implementado. También, se ofrecerá una guía completa para su utilización. Además, se examinará las diversas técnicas de visualización de datos empleadas y se detallará la compatibilidad del sistema con los diferentes dispositivos.
+En este capítulo, se proporcionará un detallado análisis de la aplicación Web DynaViz `desarrollada` durante el proyecto, acompañado de diversos diagramas y capturas de pantalla que ilustran su funcionamiento. Se explicará en detalle las funcionalidades y la arquitectura del sistema implementado. También, se ofrecerá una guía completa para su utilización. Además, se examinará las diversas técnicas de visualización de datos empleadas y se detallará la compatibilidad del sistema con los diferentes dispositivos.
 
 ## Funcionalidades del Sistema
 
@@ -68,7 +68,7 @@ Una vez que se comprenden las diversas funcionalidades del sistema, es esencial 
 
 ## Arquitectura del Sistema
 
-Como se explicó en el capítulo anterior, la aplicación Web ha sido implementada empleando una arquitectura [MVC](#MVC), la cual se ilustra en la Figura \ref{capitulo4:diagrama-clases} como un diagrama de clases. Es importante destacar que la aplicación ha sido desarrollada utilizando *TypeScript*, un lenguaje que, si bien no es orientado a objetos, se utiliza el diagrama de clases por su facilidad de comprensión.
+Como se explicó en el capítulo anterior, la aplicación Web ha sido implementada empleando una arquitectura [MVC](#MVC), la cual se ilustra en la Figura \ref{capitulo4:diagrama-clases} como un diagrama de clases. Es importante destacar que la aplicación ha sido desarrollada utilizando *TypeScript*, un lenguaje que permite el desarrollo orientado a objetos.
 
 ```{.plantuml #capitulo4:diagrama-clases caption="Diagrama de clases ilustrando una arquitectura MVC" frame=single}
 @startuml
