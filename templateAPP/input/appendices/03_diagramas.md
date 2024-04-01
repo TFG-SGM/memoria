@@ -54,6 +54,7 @@ city : string
 email : string
 phone : number
 password : string
+uId : string
 }
 
 entity Doctor{
@@ -65,6 +66,7 @@ city : string
 email : string
 phone : number
 password : string
+uId : string
 }
 
 entity Patient{
@@ -75,11 +77,14 @@ age : number
 city : string 
 email : string
 phone : number
+weight : number
+height : number
 isFibro: boolean
 diagnosisYears: number
 activityLevel: number
 ocupation: string
 assignedDoctor : string
+uId : string
 }
 
 entity Test {

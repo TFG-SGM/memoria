@@ -141,6 +141,8 @@ class TestRouter {
 	void get("/test/:id")
 	void put("/test/:id")
 	void delete("/test/:id")
+	void delete("/test/patient/:patientId")
+	void get("/test/attribute")
 }
 
 class TestTypeRouter {
@@ -186,6 +188,8 @@ class TestController {
 	void create(req,res)
 	void update(req,res)
 	void delete(req,res)
+	void deleteByPatient(req, res)
+	void getAttributes(req, res)
 }
 
 class TestTypeController {
@@ -195,39 +199,41 @@ class TestTypeController {
 
 class AdminModel {
 	admin[] getAll()
-	admin getById()
-	admin create()
-	void update()
-	void delete()
+	admin getById({id})
+	admin create({input})
+	admin update({id, input})
+	int delete({id})
 }
 
 class DoctorModel {
 	doctor[] getAll()
-	doctor getById()
-	doctor create()
-	void update()
-	void delete()
+	doctor getById({id})
+	doctor create({input})
+	doctor update({id, input})
+	int delete({id})
 }
 
 class PatientModel {
 	patient[] getAll()
-	patient getById()
-	patient create()
-	void update()
-	void delete()
+	patient getById({id})
+	patient create({input})
+	patient update({id, input})
+	int delete({id})
 }
 
 class TestModel {
-	test[] getAll()
-	test getById()
-	patient create()
-	void update()
-	void delete()
+	test[] getAll({patientId, doctorId, typeId, date})
+	test getById({id})
+	test create({id})
+	tes update({id})
+	int delete({id})
+	int deleteByPatient({patientId})
+	string[] getAttributes({attribute, patientId})
 }
 
 class TestTypeModel {
 	testType[] getAll()
-	testType getById()
+	testType getById({id})
 }
 
 @enduml
