@@ -6,7 +6,7 @@ En este anexo se recogen los diagramas diseñados para facilitar la implementaci
 
 El diagrama de la Figura \ref{anexo3:diagrama-despliegue} muestra la disposición física de los diferentes artefactos software de la aplicación Wev en nodos. Se identifican principalmente tres nodos:
 
-- El PC del cliente, que contiene el navegador con los archivos del lado del cliente.
+- El PC del cliente, que contiene la cámara y el navegador. Este último con los archivos específicos del lado del cliente.
 - El servidor Web, que aloja la [API](#API) accedida por el cliente.
 - La base de datos MongoDB Atlas, donde se guardan los diferentes datos de la aplicación Web.
 
@@ -16,7 +16,7 @@ El diagrama de la Figura \ref{anexo3:diagrama-despliegue} muestra la disposició
 node "PC Cliente" {
 node Camara
 node "Navegador Web" {
-node "CacheStorage"
+node CacheStorage
 artifact index.html
 artifact react_components.tsx
 }
@@ -30,9 +30,16 @@ artifact controllers.ts
 artifact models.ts
 
 }
-node "Servidor Cloud" {
-database "MongoDB Atlas"
-}
+database mongodb as "MongoDB Atlas"
+
+index.html -> react_components.tsx
+react_components.tsx -> API
+API -> app.ts
+app.ts -> routers.ts
+routers.ts -> controllers.ts
+controllers.ts -> models.ts
+models.ts -> mongodb
+
 @enduml
 ```
 

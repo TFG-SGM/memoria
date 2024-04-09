@@ -26,3 +26,4 @@ TFG: Trabajo Final de Grado
 URL: Uniform Resource Locator (Localizador de Recursos Uniforme)
 Wasm: WebAssembly
 EVA: Escala Visual Analógica
+SUS: System usability scale (Sistema de Escalas de Usabilidad)

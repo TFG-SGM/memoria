@@ -110,3 +110,7 @@
 
 : Escala Visual Analógica
 
+<span id='SUS'>SUS</span>
+
+: System usability scale (Sistema de Escalas de Usabilidad)
+

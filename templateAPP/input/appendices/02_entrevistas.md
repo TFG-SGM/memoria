@@ -77,7 +77,7 @@ Cada prueba debe ser específica y contener sus propios datos individuales.
 
 **¿Es posible añadir nuevos tipos de pruebas?**
 
-Inicialmente, no se considera necesario añadir más tipos de pruebas.
+Inicialmente, no se considera necesario añadir más tipos de pruebas. Además, es importante considerar que los puntos de interés para cada tipo de prueba han sido seleccionados cualitativamente.
 
 **¿Qué información se debe proporcionar al crear una prueba?**
 

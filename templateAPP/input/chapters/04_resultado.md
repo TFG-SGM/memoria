@@ -1,4 +1,4 @@
-# Aplicación DynaViz
+# DynaViz
 
 En este capítulo, se proporcionará un detallado análisis de la aplicación Web DynaViz `desarrollada` durante el proyecto, acompañado de diversos diagramas y capturas de pantalla que ilustran su funcionamiento. Se explicará en detalle las funcionalidades y la arquitectura del sistema implementado. También, se ofrecerá una guía completa para su utilización. Además, se examinará las diversas técnicas de visualización de datos empleadas y se detallará la compatibilidad del sistema con los diferentes dispositivos.
 
@@ -257,11 +257,11 @@ Ahora que se conoce la arquitectura de la aplicación Web desarrollada, en el si
 
 ### Instalación
 
+(Recuerda: Hablar sobre el script de autogenerar datos)
+
 ### Rol de Administrador
 
 ### Rol de Médico
-
-## Análisis de Técnicas de Visualización Utilizadas
 
 ## Compatibilidad del Sistema
 

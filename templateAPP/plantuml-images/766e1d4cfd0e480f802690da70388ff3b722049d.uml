@@ -1,0 +1,30 @@
+@startuml
+
+node "PC Cliente" {
+node Camara
+node "Navegador Web" {
+node CacheStorage
+artifact index.html
+artifact react_components.tsx
+}
+}
+node "Servidor Web" {
+node API
+
+artifact app.ts
+artifact routers.ts
+artifact controllers.ts
+artifact models.ts
+
+}
+database mongodb as "MongoDB Atlas"
+
+index.html -> react_components.tsx
+react_components.tsx -> API
+API -> app.ts
+app.ts -> routers.ts
+routers.ts -> controllers.ts
+controllers.ts -> models.ts
+models.ts -> mongodb
+
+@enduml

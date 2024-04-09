@@ -120,8 +120,8 @@ En esta reunión, se realizó el anteproyecto, además se dio un repaso a los di
 | TSGM-5  | Realizar capítulo de introducción          | 5      |
 | TSGM-6  | Realizar capítulo de estado de arte        | 7        |
 | TSGM-7  | Realizar capítulo de propuesta de solución | 7       |
-| TSGM-8  | Realizar capítulo de resultados            | 11       |
-| TSGM-9  | Realizar capítulo de evaluación            | 5        |
+| TSGM-8  | Empezar capítulo de resultados     | 3       |
+| TSGM-9  | Empezar capítulo de evaluación     | 5        |
 | TSGM-10 | Realizar capítulo de conclusiones          | 5        |
 
 : [PB](#PB) del Sprint 3\label{anexo1:product-backlog-3}
@@ -161,8 +161,8 @@ Además, se tomó la decisión que el Sprint duraría tan solo dos semanas, para
 | -------- | ------------------------------------------------------ | -------- |
 | TSGM-6  | Realizar capítulo de estado de arte                   | 7        |
 | TSGM-7  | Realizar capítulo de propuesta de solución             | 7       |
-| TSGM-8  | Realizar capítulo de resultados                        | 11       |
-| TSGM-9  | Realizar capítulo de evaluación                        | 5        |
+| TSGM-8  | Empezar capítulo de resultados                 | 3       |
+| TSGM-9  | Empezar capítulo de evaluación                 | 5        |
 | TSGM-10 | Realizar capítulo de conclusiones                      | 5        |
 | TSGM-11 | Completar información de Sprints previos               | 3        |
 | TSGM-12 | Añadir siguiente Sprint en anexo                       | 1        |
@@ -212,8 +212,8 @@ En esta reunión, se decidió que en el siguiente Sprint se terminaría de refin
 | **ID**  | **Tarea**                                              | **Peso** |
 | -------- | ------------------------------------------------------ | -------- |
 | TSGM-7  | Realizar capítulo de propuesta de solución             | 7        |
-| TSGM-8  | Realizar capítulo de resultados                        | 11       |
-| TSGM-9  | Realizar capítulo de evaluación                        | 5        |
+| TSGM-8  | Empezar capítulo de resultado                 | 3       |
+| TSGM-9  | Empezar capítulo de evaluación                 | 5        |
 | TSGM-10 | Realizar capítulo de conclusiones                      | 5        |
 | TSGM-15 | Configurar “GitHub Project” para la gestión de Sprints | 1        |
 | TSGM-16 | Refinar anexo Sprints                                  | 3        |
@@ -289,8 +289,8 @@ En esta reunión, se planificaron las tareas a realizar durante el siguiente Spr
 | **ID**  | **Tarea**                                              | **Peso** |
 | -------- | :----------------------------------------------------- | -------- |
 | TSGM-7  | Realizar capítulo de propuesta de solución             | 7        |
-| TSGM-8  | Realizar capítulo de resultados                        | 11       |
-| TSGM-9  | Realizar capítulo de evaluación                        | 5        |
+| TSGM-8  | Empezar capítulo de resultado                 | 3       |
+| TSGM-9  | Empezar capítulo de evaluación                 | 5        |
 | TSGM-10 | Realizar capítulo de conclusiones                      | 5        |
 | TSGM-15 | Configurar “GitHub Project” para la gestión de Sprints | 1 > 3   |
 | TSGM-20 | Realizar cambios según revisión                        | 5        |
@@ -346,8 +346,8 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-7} se detallan las dife
 
 | **ID**  | **Tarea**                                            | **Peso** |
 | --------- | :--------------------------------------------------- | -------- |
-| TSGM-8  | Realizar capítulo de resultados                      | 11       |
-| TSGM-9  | Realizar capítulo de evaluación                      | 5        |
+| TSGM-8  | Empezar capítulo de resultado               | 3      |
+| TSGM-9  | Empezar capítulo de evaluación               | 5        |
 | TSGM-10 | Realizar capítulo de conclusiones                    | 5        |
 | TSGM-23 | Ver que técnicas usar según test usuarios            | 5        |
 | TSGM-24 | Realizar cambios según revisión                      | 1        |
@@ -382,13 +382,13 @@ Una vez completadas las tareas relacionadas con el documento, se dio inicio al d
 
 Para simplificar la gestión de la base de datos durante el proceso de desarrollo, se empleó MongoDB Compass, una herramienta que facilita la administración de datos de manera local. Sin embargo, el objetivo a largo plazo es migrar esta base de datos a la nube utilizando MongoDB Atlas.
 
-El resultado final del [MVP](#MVP) se presenta en la Figura \ref{anexo1:mvp-sprint7}, mientras que la estructura de la base de datos en MongoDB Compass se muestra en la Figura \ref{anexo1:mvp-bd}.
+El resultado final del [MVP](#MVP) se presenta en la Figura \ref{anexo1:mvp1}, mientras que la estructura de la base de datos en MongoDB Compass se muestra en la Figura \ref{anexo1:mvp1_bd}.
 
 Finalmente, durante el Sprint, se llevó a cabo una entrevista con los stakeholders, Cristina y Manuel. Los detalles y conclusiones de esta reunión se encuentran detallados en el segundo anexo.
 
-![[MVP](#MVP) desarrollado durante el Sprint 7\label{anexo1:mvp-sprint7}](anx1_mvp-sprint7.png)
+![[MVP](#MVP) desarrollado durante el Sprint 7\label{anexo1:mvp1}](anx1_mvp1.png)
 
-![[BD](#BD) del [MVP](#MVP) en la herramienta MongoDB Compass\label{anexo1:mvp-bd}](anx1_mvp-bd.png)
+![[BD](#BD) del [MVP](#MVP) en la herramienta MongoDB Compass\label{anexo1:mvp1_bd}](anx1_mvp1_bd.png)
 
 ### Revisión Sprint
 
@@ -416,8 +416,8 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-8} se detallan las dife
 
 | **ID**  | **Tarea**                                   | **Peso** |
 | ------- | :------------------------------------------ | -------- |
-| TSGM-8  | Realizar capítulo de resultados             | 11       |
-| TSGM-9  | Realizar capítulo de evaluación             | 5        |
+| TSGM-8  | Empezar capítulo de resultado               | 3        |
+| TSGM-9  | Empezar capítulo de evaluación              | 5        |
 | TSGM-10 | Realizar capítulo de conclusiones           | 5        |
 | TSGM-23 | Ver que técnicas usar según test usuarios   | 5        |
 | TSGM-30 | Empezar nuevo anexo sobre entrevistas       | 3        |
@@ -453,11 +453,15 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-8} se detallan las dife
 
 ### Desarrollo de Sprint 
 
-Durante este Sprint, se avanzó continuamente en el progreso del [MVP](#MVP), logrando la implementación de una funcionalidad fundamental: el inicio de sesión con gestión de roles para administradores y médicos. Además, se desarrolló las páginas de gestión, las cuales abarcan administradores, médicos, pacientes y pruebas, permitiendo tanto la consulta como la creación, edición y eliminación de estos elementos. Sin embargo, el enfoque principal seguía siendo la funcionalidad sobre el diseño, razón por la cual el [CSS](#CSS) no se llegó a implementar en este periodo. En la Figura \ref{anexo1:mvp-lista-pacientes} se muestra la lista de pacientes dentro de la aplicación web, mientras que en la Figura \ref{anexo1:mvp-crear-paciente} se presenta el menú para añadir un nuevo paciente. Es importante destacar que este mismo diseño se aplica a los diferentes roles y elementos de la aplicación web.
+Durante este Sprint, se avanzó continuamente en el progreso del [MVP](#MVP), logrando la implementación de una funcionalidad fundamental: el inicio de sesión con gestión de roles para administradores y médicos. Además, se implementó una encriptación de contraseñas en la base de datos. 
 
-![Lista de pacientes del [MVP](#MVP)\label{anexo1:mvp-lista-pacientes}](anx1_mvp-lista-pacientes.png)
+También, se desarrolló las páginas de gestión, las cuales abarcan administradores, médicos, pacientes y pruebas, permitiendo tanto la consulta como la creación, edición y eliminación de estos elementos. Sin embargo, el enfoque principal seguía siendo la funcionalidad sobre el diseño, razón por la cual el [CSS](#CSS) no se llegó a implementar en este periodo. 
 
-![Menú de creación de paciente del [MVP](#MVP)\label{anexo1:mvp-crear-paciente}](anx1_mvp-crear-paciente.png)
+En la Figura \ref{anexo1:mvp2_lista-pacientes} se muestra la lista de pacientes dentro de la aplicación web, mientras que en la Figura \ref{anexo1:mvp2_crear-paciente} se presenta el menú para añadir un nuevo paciente. Es importante destacar que este mismo diseño se aplica a los diferentes roles y elementos de la aplicación web.
+
+![Lista de pacientes del [MVP](#MVP)\label{anexo1:mvp2_lista-pacientes}](anx1_mvp2_lista-pacientes.png)
+
+![Menú de creación de paciente del [MVP](#MVP)\label{anexo1:mvp2_crear-paciente}](anx1_mvp2_crear-paciente.png)
 
 Por otro lado, se elaboraron diversos diagramas para la aplicación web, incluyendo diagramas de casos de uso, de despliegue, de clases, de base de datos, de secuencia de inicio de sesión y de secuencia de creación de paciente, así como un diagrama de actividad para crear una prueba.
 
@@ -487,8 +491,8 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-9} se detallan las dife
 
 | **ID**  | **Tarea**                                    | **Peso** |
 | ------- | :------------------------------------------- | -------- |
-| TSGM-8  | Realizar capítulo de resultados              | 11       |
-| TSGM-9  | Realizar capítulo de evaluación              | 5        |
+| TSGM-8  | Empezar capítulo de resultado                | 3        |
+| TSGM-9  | Empezar capítulo de evaluación               | 5        |
 | TSGM-10 | Realizar capítulo de conclusiones            | 5        |
 | TSGM-37 | Añadir siguiente Sprint en anexo             | 1        |
 | TSGM-41 | Realizar cambios en documento según revisión | 1        |
@@ -499,12 +503,13 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-9} se detallan las dife
 | TSGM-46 | Añadir siguiente Sprint                      | 1        |
 | TSGM-47 | Mejorar el [MVP](#MVP)                       | 5        |
 | TSGM-48 | Añadir segunda entrevista en anexo           | 3        |
-| TSGM-49 | Empezar capítulo de resultado                | 3        |
+| TSGM-49 | Realizar prototipo interactivo               | 7        |
 
 : [PB](#PB) del Sprint 9\label{anexo1:product-backlog-9}
 
 | **ID**  | **Tarea**                                    | **Peso** |
 | ------- | :------------------------------------------- | -------- |
+| TSGM-8  | Empezar capítulo de resultado                | 3        |
 | TSGM-37 | Añadir siguiente Sprint en anexo             | 1        |
 | TSGM-41 | Realizar cambios en documento según revisión | 1        |
 | TSGM-42 | Revisitar capitulo 2.2                       | 5        |
@@ -514,8 +519,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-9} se detallan las dife
 | TSGM-46 | Añadir siguiente Sprint                      | 1        |
 | TSGM-47 | Mejorar el [MVP](#MVP)                       | 7        |
 | TSGM-48 | Añadir segunda entrevista en anexo           | 3        |
-| TSGM-49 | Empezar capítulo de resultado                | 3        |
-| TSGM-50 | Realizar prototipo interactivo               | 7        |
+| TSGM-49 | Realizar prototipo interactivo               | 7        |
 
 : [SB](#SB) del Sprint 9\label{anexo1:Sprint-backlog-9}
 
@@ -523,11 +527,11 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-9} se detallan las dife
 
 Durante este Sprint, se llevaron a cabo las tareas asignadas en la reunión de planificación con éxito. Se avanzó significativamente en la redacción del documento, además de completarse la segunda entrevista con los stakeholders. Como resultado, se diseñó un prototipo interactivo basado en los comentarios recibidos durante la última reunión con el tutor FAM y la entrevista realizada.
 
-En lo que respecta a la implementación de la aplicación Web, se introdujeron nuevas funcionalidades destacables. Entre ellas, se destaca el desarrollo de diversas gráficas para la visualización de datos con el uso de datos generados automáticamente. Algunos ejemplos de estas gráficas, son el gráfico de líneas y el histograma ilustrados en las Figuras \ref{anexo1:mvp-lineas} y \ref{anexo1:mvp-histograma}, respectivamente. Cabe destacar, que durante el Sprint tomó la decisión de llamar a la aplicación: *DynaViz*.
+En lo que respecta a la implementación de la aplicación Web, se introdujeron nuevas funcionalidades destacables. Entre ellas, se destaca el desarrollo de diversas gráficas para la visualización de datos con el uso de datos generados automáticamente. Algunos ejemplos de estas gráficas, son el gráfico de líneas y el histograma ilustrados en las Figuras \ref{anexo1:mvp2_lineas} y \ref{anexo1:mvp2_histograma}, respectivamente. Cabe destacar, que durante el Sprint tomó la decisión de llamar a la aplicación: *DynaViz*.
 
-![Gráfica de líneas del [MVP](#MVP)\label{anexo1:mvp-lineas}](anx1_mvp-lineas.png)
+![Gráfica de líneas del [MVP](#MVP)\label{anexo1:mvp2_lineas}](anx1_mvp2_lineas.png)
 
-![Histograma del [MVP](#MVP)\label{anexo1:mvp-histograma}](anx1_mvp-histograma.png)
+![Histograma del [MVP](#MVP)\label{anexo1:mvp2_histograma}](anx1_mvp2_histograma.png)
 
 ### Revisión Sprint
 
@@ -551,10 +555,10 @@ En esta reunión, se establecieron las tareas para el próximo Sprint, enfocánd
 
 | **ID**  | **Tarea**                                  | **Peso** |
 | ------- | :----------------------------------------- | -------- |
-| TSGM-8  | Realizar capítulo de resultados            | 11       |
-| TSGM-9  | Realizar capítulo de evaluación            | 5        |
+| TSGM-9  | Empezar capítulo de evaluación             | 5        |
 | TSGM-10 | Realizar capítulo de conclusiones          | 5        |
 | TSGM-46 | Añadir siguiente Sprint                    | 1        |
+| TSGM-50 | Terminar capítulo de resultado             | 5        |
 | TSGM-51 | Añadir fibromialgia a estado de arte       | 3        |
 | TSGM-52 | Completar diagramas de secuencia           | 1        |
 | TSGM-53 | Revisar figuras de anexo E                 | 3        |
@@ -580,15 +584,52 @@ En esta reunión, se establecieron las tareas para el próximo Sprint, enfocánd
 
 ### Desarrollo de Sprint 
 
-Durante el Sprint, …
+Durante el Sprint, se continuo avanzando el desarrollo de la aplicación Web, llegando a conseguir una versión muy avanzada. A continuación, se muestran algunas capturas de pantalla de como termino la aplicación Web al finalizar este Sprint:
+
+- Figura \ref{anexo1:mvp3_inicio-sesion}: Inicio de sesión.
+- Figura \ref{anexo1:mvp3_inicio-admin}: Pantalla de inicio como administrador.
+- Figura \ref{anexo1:mvp3_inicio-medico}: Pantalla de inicio como médico.
+- Figura \ref{anexo1:mvp3_lista-pacientes}: Lista de pacientes. 
+- Figura \ref{anexo1:mvp3_detalles-paciente}: Detalles de paciente.
+- Figura \ref{anexo1:mvp3_nuevo-paciente}: Nuevo paciente.
+- Figura \ref{anexo1:mvp3_lista-pruebas}: Lista de pruebas.
+- Figura \ref{anexo1:mvp3_nueva-prueba}: Nueva prueba.
+- Figura \ref{anexo1:mvp3_prueba}: Pantalla de análisis de prueba. 
+- Figura \ref{anexo1:mvp3_detalles-prueba}: Detalles de prueba. 
+
+![Inicio de sesión del [MVP](#MVP)\label{anexo1:mvp3_inicio-sesion}](anx1_mvp3_inicio-sesion.png)
+
+![Ventana de inicio como admin del [MVP](#MVP)\label{anexo1:mvp3_inicio-admin}](anx1_mvp3_inicio-admin.png)
+
+![Ventana de inicio como médico del [MVP](#MVP)\label{anexo1:mvp3_inicio-medico}](anx1_mvp3_inicio-medico.png)
+
+![Lista de pacientes del [MVP](#MVP)\label{anexo1:mvp3_lista-pacientes}](anx1_mvp3_lista-pacientes.png)
+
+![Detalles de paciente del [MVP](#MVP)\label{anexo1:mvp3_detalles-paciente}](anx1_mvp3_detalles-paciente.png)
+
+![Nuevo paciente del [MVP](#MVP)\label{anexo1:mvp3_nuevo-paciente}](anx1_mvp3_nuevo-paciente.png)
+
+![Lista de pruebas del [MVP](#MVP)\label{anexo1:mvp3_lista-pruebas}](anx1_mvp3_lista-pruebas.png)
+
+![Nueva prueba del [MVP](#MVP)\label{anexo1:mvp3_nueva-prueba}](anx1_mvp3_nueva-prueba.png)
+
+![Análisis de prueba del [MVP](#MVP)\label{anexo1:mvp3_prueba}](anx1_mvp3_prueba.png)
+
+![Detalles de prueba del [MVP](#MVP)\label{anexo1:mvp3_detalles-prueba}](anx1_mvp3_detalles-prueba.png)
+
+Cabe destacar que todas estas Figuras se centran en el paciente, ya que los usuarios de administrador y médico tienen sus propias ventanas muy similares a las mostradas previamente. 
+
+Además, durante este Sprint también se conecto la aplicación Web a la base de datos MongoDB Atlas y se creo un script para autogenerar los datos de los diferentes administradores, médicos y pacientes. 
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, donde los tutores proporcionaron retroalimentación sobre la aplicación web. Entre los puntos mencionados se incluyen sugerencias para mejorar la disposición de algunos elementos con el fin de ofrecer una experiencia de usuario más fluida, la recomendación de seleccionar una paleta de colores más atractiva, y la propuesta de eliminar la pantalla de inicio para el rol de médico si su única función es consultar a los pacientes.
+
+Asimismo, se planteó la idea de crear un logotipo específico para la aplicación web para elevar su calidad percibida. Además, se destacó la importancia de garantizar que los vídeos grabados dentro de la aplicación web se almacenen correctamente en la base de datos para su posterior visualización.
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint10}, el cual refleja...
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint10}, el cual refleja que el progreso del trabajo realizado ha ido a la par con el planificado inicialmente. Sin embargo, al final se dejo sin realizar la [HU](#HU) TSGM-57.
 
 ![[BC](#BC) del Sprint 10\label{anexo1:bc-sprint10}](anx1_bc-sprint10.png)
 
@@ -598,9 +639,35 @@ Este Sprint tiene comienzo el **?? de ?? de 2024 ** con una duración de ?? sema
 
 ### Planificación del Sprint
 
-En esta reunión, ...
+En esta reunión, se planifico las tareas a realizar en el siguiente sprint, las cuales tratarían principalmente de añadir las diferentes mejoras a la aplicación Web comentadas en la reunión de revisión. Así como, la realización de la primera prueba de usabilidad usando [SUS](#SUS).
 
 A continuación, en la Tabla \ref{anexo1:product-backlog-11} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-11} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+
+| **ID**  | **Tarea**                                    | **Peso** |
+| ------- | :------------------------------------------- | -------- |
+| TSGM-9  | Empezar capítulo de evaluación               | 5        |
+| TSGM-10 | Realizar capítulo de conclusiones            | 5        |
+| TSGM-50 | Terminar capítulo de resultados              | 5        |
+| TSGM-57 | Añadir siguiente Sprint                      | 3        |
+| TSGM-58 | Crear logo de DynaViz                        | 3        |
+| TSGM-59 | Realizar cambios en documento según revisión | 1        |
+| TSGM-60 | Mejorar la aplicación Web                    | 11       |
+| TSGM-61 | Realizar la prueba de evaluación             | 5        |
+| TSGM-62 | Añadir siguiente Sprint                      | 1        |
+
+: [SB](#SB) del Sprint 11\label{anexo1:product-backlog-11}
+
+| **ID**  | **Tarea**                                    | **Peso** |
+| ------- | :------------------------------------------- | -------- |
+| TSGM-9  | Empezar capítulo de evaluación               | 5        |
+| TSGM-57 | Añadir siguiente Sprint                      | 3        |
+| TSGM-58 | Crear logo de DynaViz                        | 3        |
+| TSGM-59 | Realizar cambios en documento según revisión | 1        |
+| TSGM-60 | Mejorar la aplicación Web                    | 11       |
+| TSGM-61 | Realizar la prueba de evaluación             | 5        |
+| TSGM-62 | Añadir siguiente Sprint                      | 1        |
+
+: [SB](#SB) del Sprint 11\label{anexo1:Sprint-backlog-11}
 
 ### Desarrollo de Sprint 
 
