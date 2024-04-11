@@ -27,3 +27,4 @@ URL: Uniform Resource Locator (Localizador de Recursos Uniforme)
 Wasm: WebAssembly
 EVA: Escala Visual Analógica
 SUS: System usability scale (Sistema de Escalas de Usabilidad)
+Transport Layer Security: Transport Layer Security (Seguridad de la Capa de Transporte)

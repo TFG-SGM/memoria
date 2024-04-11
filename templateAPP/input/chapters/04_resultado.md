@@ -74,6 +74,7 @@ Como se explicó en el capítulo anterior, la aplicación Web ha sido implementa
 @startuml
 
 Views ..> DataService
+Views ..> TestService
 
 DataService ..> AuthRouter
 DataService ..> AdminRouter
@@ -81,6 +82,7 @@ DataService ..> DoctorRouter
 DataService ..> PatientRouter
 DataService ..> TestRouter
 DataService ..> TestTypeRouter
+DataService ..> VideoRouter
 
 AuthRouter ..> AuthController
 AdminRouter ..> AdminController
@@ -88,6 +90,7 @@ DoctorRouter ..> DoctorController
 PatientRouter ..> PatientController
 TestRouter ..> TestController
 TestTypeRouter ..> TestTypeController
+VideoRouter ..> VideoController
 
 AdminController ..> AdminModel
 DoctorController ..> DoctorModel
@@ -95,15 +98,30 @@ PatientController ..> PatientModel
 TestController ..> TestModel
 TestTypeController ..> TestTypeModel
 
+class TestService {
+	+number[] getRealMovements(parts,actualPart)
+    +number[] getIdealMovements(parts,actualPart)
+    +string[] getBodyParts(parts)
+    +object getBodyPartsForRadial(parts)
+    +number[] getBodyPartRestriction(parts)
+    +number[] getUniqueVariations(parts,actualPart)
+    +number[] getVariationsCount(parts,actualPart,uniqueVariations)
+    +number[] getBoxPlotData(movements)
+    +any[][] getCorrelatedVariations(parts,parts1,parts2)
+    -number findQuartile(sortedData,quartile)
+}
+
 class DataService {
-    -void getToken()
+    +string getToken()
 	+data login(enail,password)
 	+void logout()
 	+data getData(endpoint)
 	+data createData(endpoint,newData) 
+	+data createTestData(endpoin,newData)
 	+data deleteData(endpoint) 
 	+data updateData(endpoint,newData) 
 	+data getUserData() 
+	-FormData getFormDataFromObject(data) 
 }
 
 class AuthRouter {
@@ -150,6 +168,10 @@ class TestTypeRouter {
 	void get("/testType/:id")
 }
 
+class VideoRouter {
+	void get("/video/:id")
+	void delete("/video/:id")
+}
 
 class AuthController {
 	void validateEmail(email)
@@ -195,6 +217,11 @@ class TestController {
 class TestTypeController {
 	void getAll(req,res)
 	void getById(req,res)
+}
+
+class VideoController {
+	void getById(req,res)
+	void delete(req,res)
 }
 
 class AdminModel {
@@ -245,6 +272,7 @@ En el diagrama, se pueden observar las diferentes clases distribuidas de abajo h
 - **Controladores**: Utilizan los diferentes modelos para responder a las diversas solicitudes.
 - **Rutas**: Son fundamentales para el desarrollo de la [API](#API) de la aplicación Web. Cuando se solicita un recurso asignado a ellas, invocan al controlador correspondiente.
 - **DataService**: Esta clase del lado del cliente se encarga de solicitar los diferentes recursos a la [API](#API) a través de las rutas.
+- **TestService**: Esta clase del lado del cliente es utilizada por las diferentes gráficas para obtener los datos.
 - **Vistas**: Representan las distintas páginas y ventanas modales de la aplicación Web. Utilizan la clase *DataService* para acceder a los recursos de la base de datos.
 
 Además de emplear la arquitectura [MVC](#MVP), la aplicación Web se trata de una [SPA](#SPA). Como se explicó en capítulos anteriores, esto implica un enrutado en el lado del cliente, lo que hace que la aplicación Web simule el movimiento entre páginas, a pesar de que en realidad sea una única página.

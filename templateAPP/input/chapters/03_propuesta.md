@@ -195,10 +195,13 @@ Finalmente, dentro de las herramientas de desarrollo, se contemplan las que se e
 
 - **Editor de código:** Visual Studio Code @vscode
 - **Extesión destacada:** Rest Client @rest-client
+- **Herramienta de despliegue:** Render @render
 - **Gestión de bases de datos:** MongoDB Compass @mongodb-compass y MongoDB Atlas @mongodb-atlas
 - **Gestor de paquetes:** pnpm @pnpm
 
 Se destaca la elección de *Visual Studio Code* como editor de código, una decisión respaldada por su extraordinaria popularidad, su extensibilidad y sus potentes características que impulsan la productividad del desarrollador. Además, para facilitar el desarrollo de la aplicación Web, se hará uso de varias extensiones, destacando especialmente la extensión *REST Client*, que permite probar los distintos endpoints de la [API](#API).
+
+Por otro lado, para desplegar la aplicación Web se utilizará la herramienta *Render*, la cual consiste en una nube unificada para crear y ejecutar aplicaciones y sitios Web con certificados [TLS](#TLS) gratuitos
 
 En cuanto a la gestión de la base de datos de *MongoDB*, se empleará *MongoDB Compass* para administrar los datos en local y *MongoDB Atlas* para gestionarlos en la nube, aprovechando los 512 MB gratuitos que proporciona.  
 

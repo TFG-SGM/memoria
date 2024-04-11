@@ -654,6 +654,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-11} se detallan las dif
 | TSGM-60 | Mejorar la aplicación Web                    | 11       |
 | TSGM-61 | Realizar la prueba de evaluación             | 5        |
 | TSGM-62 | Añadir siguiente Sprint                      | 1        |
+| TSGM-63 | Desplegar aplicación Web                     | 3        |
 
 : [SB](#SB) del Sprint 11\label{anexo1:product-backlog-11}
 
@@ -666,6 +667,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-11} se detallan las dif
 | TSGM-60 | Mejorar la aplicación Web                    | 11       |
 | TSGM-61 | Realizar la prueba de evaluación             | 5        |
 | TSGM-62 | Añadir siguiente Sprint                      | 1        |
+| TSGM-63 | Desplegar aplicación Web                     | 3        |
 
 : [SB](#SB) del Sprint 11\label{anexo1:Sprint-backlog-11}
 

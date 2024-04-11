@@ -52,8 +52,8 @@ En el contexto de la aplicación web, se han identificado principalmente cinco e
 ```{.plantuml #anexo3:diagrama-bd caption="Diagrama de base de datos" frame=single}
 @startuml
 
-entity Admin{
-_id : string
+entity admins{
+_id : ObjectId
 name : string
 surname : string
 age : number
@@ -64,8 +64,8 @@ password : string
 uId : string
 }
 
-entity Doctor{
-_id : string
+entity doctors{
+_id : ObjectId
 name : string
 surname : string
 age : number
@@ -76,8 +76,8 @@ password : string
 uId : string
 }
 
-entity Patient{
-_id : string
+entity patients{
+_id : ObjectId
 name : string
 surname : string
 age : number
@@ -94,28 +94,46 @@ assignedDoctor : string
 uId : string
 }
 
-entity Test {
-_id : string
+entity tests {
+_id : ObjectId
 doctorId : string
 date : date
 typeId : string
 patientId: string
-videoFile : file
+videoFile : {name: string, id: string}
 evaScale: number
 data: {time: string, quality: number, parts: object}
 }
 
-entity TestType {
-_id : string
+entity testTypes {
+_id : ObjectId
 name : string
 bodyParts: string[]
 }
 
 
-Patient "1" o-- "1" Doctor
-Patient "1" o-- "0..*" Test
-Test "1" o-- "1" Doctor
-Test "1" o-- "1" TestType
+entity fs.files {
+_id : ObjectId
+lenght : number
+chunkSize : number
+uploadDate : date
+filename : string
+contentType : string
+}
+
+entity fs.chunks {
+_id : ObjectId
+files_id : ObjectId
+n : number
+data : BinData
+}
+
+patients "1" o-- "1" doctors
+patients "1" o-- "0..*" tests
+tests "1" o-- "1" doctors
+tests "1" o-- "1" testTypes
+tests "1" o-- "0..*" fs.files
+fs.files "1" o-- "1..*" fs.chunks
 
 @enduml
 ```

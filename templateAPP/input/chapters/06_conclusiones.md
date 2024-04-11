@@ -7,6 +7,7 @@
 ## Trabajo Futuro
 
 - Integrar con IA
+- Conectar cámara de móvil con web app
 - Mejorar responsive
 - Añadir más gráficas y explicaciones de gráficas para usuario
 - Añadir cambio de contraseña (teniendo en cuenta el encriptamiento)

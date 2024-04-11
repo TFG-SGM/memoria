@@ -114,3 +114,7 @@
 
 : System usability scale (Sistema de Escalas de Usabilidad)
 
+<span id='Transport Layer Security'>Transport Layer Security</span>
+
+: Transport Layer Security (Seguridad de la Capa de Transporte)
+
