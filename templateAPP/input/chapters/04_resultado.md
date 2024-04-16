@@ -210,8 +210,8 @@ class TestController {
 	void create(req,res)
 	void update(req,res)
 	void delete(req,res)
-	void deleteByPatient(req, res)
-	void getAttributes(req, res)
+	void deleteByPatient(req,res)
+	void getAttributes(req,res)
 }
 
 class TestTypeController {
@@ -228,7 +228,7 @@ class AdminModel {
 	admin[] getAll()
 	admin getById({id})
 	admin create({input})
-	admin update({id, input})
+	admin update({id,input})
 	int delete({id})
 }
 
@@ -236,7 +236,7 @@ class DoctorModel {
 	doctor[] getAll()
 	doctor getById({id})
 	doctor create({input})
-	doctor update({id, input})
+	doctor update({id,input})
 	int delete({id})
 }
 
@@ -244,17 +244,17 @@ class PatientModel {
 	patient[] getAll()
 	patient getById({id})
 	patient create({input})
-	patient update({id, input})
+	patient update({id,input})
 	int delete({id})
 }
 
 class TestModel {
-	test[] getAll({patientId, doctorId, typeId, date})
+	test[] getAll({patientId,doctorId,typeId,date,order})
 	test getById({id})
 	test create({id})
 	tes update({id})
 	int delete({id})
-	int deleteByPatient({patientId})
+	string[] deleteByPatient({patientId})
 	string[] getAttributes({attribute, patientId})
 }
 
