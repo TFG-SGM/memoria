@@ -6,13 +6,12 @@ En este anexo se recopilan las diferentes técnicas de visualización propuestas
 
 Los datos que se han identificado para visualizar en la aplicación Web son los que se enumeran a continuación:
 
-- Tiempo del vídeo en segundos para un análisis más detallado.
-- Partes del cuerpo de interés para cada tipo de prueba.
-- Desplazamiento ideal de cada parte del cuerpo en cada segundo del vídeo.
-- Desplazamiento real de cada parte del cuerpo en cada segundo del vídeo.
-- Variación entre desplazamiento ideal y real en cada segundo del vídeo.
-- Restricción de movimiento para cada parte del cuerpo. Dicho problema irá del 0 al 100.
-- Restricción de movimiento total tras la prueba. Al igual que el dato anterior, irá del 0 al 100.
+- **Duración del vídeo en segundos**: Permite un análisis detallado.
+- **Partes del cuerpo de interés para cada tipo de prueba**: Identifica las áreas relevantes para cada evaluación.
+- **Desplazamiento ideal y real de cada parte del cuerpo**: Se registra el movimiento óptimo y el movimiento real en cada segundo del vídeo en los ejes *x* e *y*.
+- **Variación entre desplazamiento ideal y real**: Se analiza la discrepancia entre el movimiento deseado y el observado en cada parte del cuerpo y en cada segundo del vídeo, en los ejes *x* e *y*.
+- **Restricción de movimiento por parte del cuerpo**: Se asigna un valor del 0 al 100 que representa la limitación de movimiento para cada parte del cuerpo. Este cálculo se basa en las variaciones de movimiento observadas en los ejes *x* e *y* entre todos los pacientes, siendo el valor máximo (100) la media de las cinco peores situaciones.
+- **Restricción de movimiento total después de la prueba**: Al igual que el dato anterior, se asigna un valor del 0 al 100 que indica la restricción de movimiento total tras la prueba. Este valor se calcula considerando las restricciones individuales de movimiento para cada parte del cuerpo entre todos los pacientes, siendo el valor máximo (100) la media de las cinco peores situaciones.
 
 Una vez identificados los diferentes datos a visualizar, en los siguientes puntos se detallarán las diferentes técnicas de visualización de datos para distintos casos.
 

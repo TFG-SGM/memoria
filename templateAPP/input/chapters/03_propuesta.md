@@ -182,10 +182,13 @@ En lo que respecta a las herramientas destinadas a la documentación del proyect
 - **Generación de documento:** Plantilla de Félix Albertos @plantilla-felix
 - **Diagramas:** Diagrams.net @diagramsnet y PlantUML @plant-uml
 - **Diseño de prototipos:** Excalidraw @excalidraw y Figma @figma
+- **Creación de cuestionarios:** Google Forms @google-forms
 
 Por un lado, la documentación se redacta utilizando el lenguaje de marcado *Markdown*, que simplifica la aplicación de formato a un texto plano mediante caracteres especiales. Para esta tarea, se utiliza el editor *Typora*, elegido por su experiencia de escritura sin distracciones y su fácil manejo. En cuanto a la generación del documento con el formato adecuado, se emplea la plantilla proporcionada por el tutor Félix Albertos. Esta plantilla, diseñada específicamente para la elaboración del [TFG](#TFG), elimina las posibles preocupaciones de formato al utilizar *Markdown* como entrada.
 
-Por otro lado, en el caso de necesitar desarrollar diagramas, se recurrirá a *Diagrams.net* y a la sintaxis de *PlantUML*. Finalmente, para el diseño de los prototipos a implementar, se utilizará *Excalidraw* para los no interactivo y *Figma*  para los más avanzados e interactivos.
+Por otro lado, en el caso de necesitar desarrollar diagramas, se recurrirá a *Diagrams.net* y a la sintaxis de *PlantUML*. Además, para el diseño de los prototipos a implementar, se utilizará *Excalidraw* para los no interactivo y *Figma*  para los más avanzados e interactivos.
+
+Finalmente, se optará por utilizar *Google Forms* en el caso de necesitar crear algún formulario, en especial a la hora de evaluar la aplicación Web.
 
 Con la combinación de todas estas herramientas se conseguirá crear un flujo de trabajo documental eficiente y versátil, optimizando la redacción, formato, generación del documento y diseño de interfaces en el proyecto. Sin embargo, una vez se han presentado las herramientas destinadas a la documentación, es esencial pasar a detallar las distintas herramientas específicas utilizadas en el desarrollo del proyecto.
 
@@ -198,14 +201,17 @@ Finalmente, dentro de las herramientas de desarrollo, se contemplan las que se e
 - **Herramienta de despliegue:** Render @render
 - **Gestión de bases de datos:** MongoDB Compass @mongodb-compass y MongoDB Atlas @mongodb-atlas
 - **Gestor de paquetes:** pnpm @pnpm
+- **Diseño de logotipo:** Canva @canva
 
 Se destaca la elección de *Visual Studio Code* como editor de código, una decisión respaldada por su extraordinaria popularidad, su extensibilidad y sus potentes características que impulsan la productividad del desarrollador. Además, para facilitar el desarrollo de la aplicación Web, se hará uso de varias extensiones, destacando especialmente la extensión *REST Client*, que permite probar los distintos endpoints de la [API](#API).
 
-Por otro lado, para desplegar la aplicación Web se utilizará la herramienta *Render*, la cual consiste en una nube unificada para crear y ejecutar aplicaciones y sitios Web con certificados [TLS](#TLS) gratuitos
+Por otro lado, para desplegar la aplicación Web se utilizará la herramienta *Render*, la cual consiste en una nube unificada para crear y ejecutar aplicaciones y sitios Web con certificados [TLS](#TLS) gratuitos.
 
 En cuanto a la gestión de la base de datos de *MongoDB*, se empleará *MongoDB Compass* para administrar los datos en local y *MongoDB Atlas* para gestionarlos en la nube, aprovechando los 512 MB gratuitos que proporciona.  
 
-Finalmente, se optará por *pnpm* como gestor de paquetes. La elección de pnpm se fundamenta en su capacidad para mejorar la eficiencia en la gestión de dependencias, posibilitando una instalación y actualización más rápida y coherente de bibliotecas y herramientas.
+Además, se optará por *pnpm* como gestor de paquetes. La elección de pnpm se fundamenta en su capacidad para mejorar la eficiencia en la gestión de dependencias, posibilitando una instalación y actualización más rápida y coherente de bibliotecas y herramientas.
+
+Finalmente, se utilizará Canva para el diseño del logotipo de la aplicación Web.
 
 La integración de todas estas herramientas está diseñada para potenciar de manera significativa el desarrollo de la aplicación Web, estableciendo así una base sólida y eficiente que respaldará el logro exitoso de los objetivos del proyecto. 
 

@@ -236,6 +236,25 @@ Finalmente, en la Tabla \ref{capitulo2:tabla-tecnologia} se puede observar una v
 
 :Tecnología en relación al capítulo 2.2\label{capitulo2:tabla-tecnologia}
 
+Una vez se conoce la tecnología para construir una aplicación Web, en el siguiente punto se explicará los proveedores de hosting para poder desplegar dicha aplicación. 
+
+### Proveedores de Hosting
+
+Como se ha mencionado anteriormente, es importante comprender cómo publicar una aplicación Web en Internet, para lo cual se recurre a proveedores de hosting.
+
+Un proveedor de hosting, tal y como expone *Google* @hosting-providers posee servidores y ofrece espacio a sus clientes, quienes utilizan ese espacio para almacenar sus páginas Web, haciéndolas accesibles a cualquier persona en Internet. Para elegir un proveedor de hosting es crucial entender la diferencia entre sitios estáticos y dinámicos como expone Spilotro @dynamic-vs-static.
+
+Por un lado, un sitio estático permanece igual en todo momento, es decir, su contenido no cambia. Por otro lado, un sitio dinámico, como una aplicación Web, presenta un contenido variable según el usuario **que** lo visite. Para crear estos últimos, se requiere un servidor backend y una base de datos, utilizando la tecnología mencionada previamente.
+
+Existen varios proveedores de hosting para sitios dinámicos, siendo uno de los más populares y fáciles de usar las [PaaS](#PaaS). Estas plataformas, tal y como expone Chai @paas, gestionan muchos detalles a bajo nivel, permitiendo a los desarrolladores concentrarse más en la construcción de aplicaciones en lugar de configurar y administrar el servidor.
+
+En el pasado, la elección de un proveedor [PaaS](#PaaS) era más sencilla debido a la existencia de *Heroku* @heroku, que ofrecía un plan gratuito muy favorable para el despliegue de aplicaciones Web. Sin embargo, a partir de 2022, esta versión gratuita dejó de existir, y hoy en día es más difícil elegir un proveedor [PaaS](#PaaS) entre la multitud disponible, tal y como expone Batschinski @heroku-alternatives. A continuación, se detallan los planes gratuitos que ofrecen algunos de los más populares:
+
+- **Fly.io @flyio:** Permite alojar tres aplicaciones de forma gratuita antes de tener que empezar a pagar. Sin embargo, requiere tarjeta de crédito.
+- **Railway app @railway:** Ofrece una subvención única y gratuita de 5 euros, aunque la longevidad de su aplicación depende de los recursos que consuma.
+- **Adaptable.io @adaptable:** Permite alojar un número ilimitado de aplicaciones de forma gratuita, pero al igual que Fly.io, requiere tarjeta de crédito.
+- **Render @render:** Ofrece 750 horas de uso gratuito al mes, suficientes para desplegar una aplicación Web con poco tráfico. Como desventaja, las aplicaciones se desconectan automáticamente después de 15 minutos de inactividad.
+
 Una vez se conoce toda la tecnología que se puede utilizar a la hora de construir una aplicación Web. Es fundamental, tener en mente las diferentes técnicas de visualización que existen para asegurar que el usuario entienda los datos que se muestran con dicha aplicación. Estas técnicas son analizadas en el siguiente punto. 
 
 ## Técnicas de Visualización de Datos

@@ -8,37 +8,47 @@ El diagrama de la Figura \ref{anexo3:diagrama-despliegue} muestra la disposició
 
 - El PC del cliente, que contiene la cámara y el navegador. Este último con los archivos específicos del lado del cliente.
 - El servidor Web, que aloja la [API](#API) accedida por el cliente.
-- La base de datos MongoDB Atlas, donde se guardan los diferentes datos de la aplicación Web.
+- La base de datos MongoDB Atlas, donde se guardan los datos de la aplicación Web en las diferentes colecciones.
 
 ```{.plantuml #anexo3:diagrama-despliegue caption="Diagrama de despliegue" frame=single}
 @startuml
 
-node "PC Cliente" {
-node Camara
-node "Navegador Web" {
-node CacheStorage
-artifact index.html
-artifact react_components.tsx
+node "Client PC" {
+    node Camera
+    node "Web Browser" {
+        node CacheStorage
+        artifact index.html
+        artifact react_components.tsx
+    }
 }
+
+node "Web Server (Node.js)" {  
+    node API
+    artifact app.ts
+    artifact routers.ts
+    artifact controllers.ts
+    artifact models.ts
 }
-node "Servidor Web" {
-node API
 
-artifact app.ts
-artifact routers.ts
-artifact controllers.ts
-artifact models.ts
-
+database "MongoDB Atlas" as mongodb {
+    folder "Collections" {
+        frame "admins"
+        frame "doctors"
+        frame "fs.chunks"
+        frame "fs.files"
+        frame "patients"
+        frame "testTypes"
+        frame "tests"
+    }
 }
-database mongodb as "MongoDB Atlas"
 
-index.html -> react_components.tsx
-react_components.tsx -> API
-API -> app.ts
-app.ts -> routers.ts
-routers.ts -> controllers.ts
-controllers.ts -> models.ts
-models.ts -> mongodb
+index.html --> react_components.tsx 
+react_components.tsx --> API : REST API Requests
+API --> app.ts 
+app.ts --> routers.ts 
+routers.ts --> controllers.ts 
+controllers.ts --> models.ts 
+models.ts --> mongodb : Database Operations
 
 @enduml
 ```
@@ -59,7 +69,7 @@ surname : string
 age : number
 city : string 
 email : string
-phone : number
+phone : string
 password : string
 uId : string
 }
@@ -71,7 +81,7 @@ surname : string
 age : number
 city : string 
 email : string
-phone : number
+phone : string
 password : string
 uId : string
 }
@@ -83,7 +93,7 @@ surname : string
 age : number
 city : string 
 email : string
-phone : number
+phone : string
 weight : number
 height : number
 isFibro: boolean

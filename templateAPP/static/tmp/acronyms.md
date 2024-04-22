@@ -114,7 +114,11 @@
 
 : System usability scale (Sistema de Escalas de Usabilidad)
 
-<span id='Transport Layer Security'>Transport Layer Security</span>
+<span id='TLS'>TLS</span>
 
 : Transport Layer Security (Seguridad de la Capa de Transporte)
+
+<span id='PaaS'>PaaS</span>
+
+: Platform as a Service (Plataforma como Servicio)
 

@@ -1,0 +1,40 @@
+@startuml
+
+node "Client PC" {
+    node Camera
+    node "Web Browser" {
+        node CacheStorage
+        artifact index.html
+        artifact react_components.tsx
+    }
+}
+
+node "Web Server (Node.js)" {  
+    node API
+    artifact app.ts
+    artifact routers.ts
+    artifact controllers.ts
+    artifact models.ts
+}
+
+database "MongoDB Atlas" as mongodb {
+    folder "Collections" {
+        frame "admins"
+        frame "doctors"
+        frame "fs.chunks"
+        frame "fs.files"
+        frame "patients"
+        frame "testTypes"
+        frame "tests"
+    }
+}
+
+index.html --> react_components.tsx 
+react_components.tsx --> API : REST API Requests
+API --> app.ts 
+app.ts --> routers.ts 
+routers.ts --> controllers.ts 
+controllers.ts --> models.ts 
+models.ts --> mongodb : Database Operations
+
+@enduml

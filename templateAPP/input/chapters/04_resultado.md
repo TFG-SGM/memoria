@@ -1,6 +1,6 @@
 # DynaViz
 
-En este capítulo, se proporcionará un detallado análisis de la aplicación Web DynaViz `desarrollada` durante el proyecto, acompañado de diversos diagramas y capturas de pantalla que ilustran su funcionamiento. Se explicará en detalle las funcionalidades y la arquitectura del sistema implementado. También, se ofrecerá una guía completa para su utilización. Además, se examinará las diversas técnicas de visualización de datos empleadas y se detallará la compatibilidad del sistema con los diferentes dispositivos.
+En este capítulo, se proporcionará un detallado análisis de la aplicación Web DynaViz desarrollada durante el proyecto, acompañado de diversos diagramas y capturas de pantalla que ilustran su funcionamiento. Se explicará en detalle las funcionalidades y la arquitectura del sistema implementado. También, se ofrecerá una guía completa para su utilización. Además, se examinará las diversas técnicas de visualización de datos empleadas y se detallará la compatibilidad del sistema con los diferentes dispositivos.
 
 ## Funcionalidades del Sistema
 
