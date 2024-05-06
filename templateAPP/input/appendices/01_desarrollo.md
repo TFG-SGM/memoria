@@ -675,7 +675,13 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-11} se detallan las dif
 
 Durante el sprint, se llevaron a cabo mejoras significativas en la aplicación web. Entre estos cambios, sobresale la implementación de la funcionalidad para almacenar videos en la base de datos y la capacidad de visualizarlos una vez guardados. Asimismo, se destaca la creación del logotipo de *DynaViz*.
 
-Además, se logró desplegar exitosamente la aplicación web utilizando la plataforma *Render*. En la Figura \ref{anexo1:render}, se puede apreciar el despliegue tanto del servidor como del cliente.
+Además, se logró desplegar exitosamente la aplicación web utilizando la plataforma *Render*. Para ello, se desplegó inicialmente un servicio web completando el formulario que se muestra en la Figura \ref{anexo1:render-process}. En este proceso, se asignó un nombre, se seleccionó la carpeta "server" y se optó por la instancia gratuita. Además, se configuraron las variables de entorno correspondientes para la autenticación de usuarios, la [URL](#URL) de la base de datos de *MongoDB Atlas* y el puerto de conexión.
+
+Una vez que el servidor fue desplegado, se procedió a desplegar la parte visual siguiendo un proceso similar, pero en esta ocasión seleccionando la carpeta "client" y añadiendo únicamente la [URL](#URL) del servidor desplegado previamente como variable de entorno.
+
+Finalmente, en la Figura \ref{anexo1:render}, se puede observar el despliegue tanto del servidor como del cliente.
+
+![Formulario de despliegue de servicio Web en *Render*\label{anexo1:render-process}](anx1_render-process.png)
 
 ![Aplicación Web desplegada en *Render*\label{anexo1:render}](anx1_render.png)
 
@@ -702,53 +708,88 @@ se planificaron diversas tareas para llevar a cabo durante el sprint. Entre ella
 A continuación, en la Tabla \ref{anexo1:product-backlog-12} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-12} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
 | **ID**  | **Tarea**                                                    | **Peso** |
-| --------- | :----------------------------------------------------------- | -------- |
+| ----------- | :----------------------------------------------------------- | -------- |
 | TSGM-10 | Empezar capítulo de conclusiones                             | 5        |
 | TSGM-50 | Terminar capítulo de resultados                              | 5        |
 | TSGM-62 | Añadir siguiente Sprint                                      | 1        |
-| TSGM-63 | Mejorar la aplicación Web                                    | 11       |
+| TSGM-63 | Mejorar la aplicación Web                                    | 7       |
 | TSGM-64 | Añadir plataformas de despliegue en estado de arte           | 3        |
 | TSGM-65 | Añadir nuevo anexo de resultados de cuestionarios [SUS](#SUS) | 3        |
 | TSGM-66 | Mejorar el capítulo de evaluación según revisión             | 3        |
-| TSGM-67 | Añadir siguiente Sprint                                      | 1        |
+| TSGM-67 | Implementar tests para la aplicación Web | 3 |
+| TSGM-68 | Añadir siguiente Sprint                                      | 1        |
 
 : [PB](#PB) del Sprint 12\label{anexo1:product-backlog-12}
 
 | **ID**  | **Tarea**                                                    | **Peso** |
-| --------- | :----------------------------------------------------------- | -------- |
+| ----------- | :----------------------------------------------------------- | -------- |
 | TSGM-10 | Empezar capítulo de conclusiones                             | 5        |
 | TSGM-62 | Añadir siguiente Sprint                                      | 1        |
-| TSGM-63 | Mejorar la aplicación Web                                    | 11       |
+| TSGM-63 | Mejorar la aplicación Web                                    | 7      |
 | TSGM-64 | Añadir plataformas de despliegue en estado de arte           | 3        |
 | TSGM-65 | Añadir nuevo anexo de resultados de cuestionarios [SUS](#SUS) | 3        |
 | TSGM-66 | Mejorar el capítulo de evaluación según revisión             | 3        |
-| TSGM-67 | Añadir siguiente Sprint                                      | 1        |
+| TSGM-67 | Implementar tests para la aplicación Web | 3 |
+| TSGM-68 | Añadir siguiente Sprint | 1 |
 
 : [SB](#SB) del Sprint 12\label{anexo1:Sprint-backlog-12}
 
 ### Desarrollo de Sprint 
 
-Durante el Sprint, …
+Durante el Sprint, se inició el capítulo de conclusiones, donde se realizó una revisión exhaustiva de los objetivos establecidos al inicio del proyecto y se evaluó cómo se han ido cumpliendo a lo largo de los diferentes Sprints. Además, se agregó un nuevo apartado sobre plataformas de despliegue en el estado del arte y el anexo de los resultados de los cuestionarios [SUS](#SUS).
+
+En cuanto a las mejoras implementadas en la aplicación web, se destacan varias mejoras significativas. En primer lugar, se habilitó la funcionalidad para que los usuarios puedan cambiar su contraseña una vez iniciada la sesión. También se introdujo un sistema de "migas de pan" para mejorar la navegación dentro de la aplicación Web, facilitando a los usuarios ubicarse en la estructura del sitio. Además, se llevaron a cabo diversas optimizaciones en el diseño responsive para garantizar una experiencia de usuario fluida y consistente en diferentes dispositivos y tamaños de pantalla.
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual el tutor FAM ofreció algunos consejos para mejorar la memoria. Sugirió reemplazar las gráficas de pastel por gráficas de barras en el anexo que muestra los resultados de la evaluación. Además, recomendó la inclusión de un identificador único para cada participante que completó la prueba de evaluación. Por último, sugirió agregar una tabla comparativa en el capítulo de proveedores de hosting.
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint12}, el cual refleja...
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint12}, el cual refleja que el progreso del trabajo realizado ha ido ligeramente por delante respecto al planificado inicialmente.
 
 ![[BC](#BC) del Sprint 12\label{anexo1:bc-sprint12}](anx1_bc-sprint12.png)
 
 ## Sprint 13
 
-Este Sprint tiene comienzo el **?? de ?? de 2024 ** con una duración de ?? semanas. Su objetivo principal era ??. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **3 de mayo de 2024 ** con una duración de ?? semanas. Su objetivo principal era la mejora de la memoria y la implementación de los tests en la aplicación DynaViz. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
-En esta reunión, ...
+En esta reunión, se acordó implementar las mejoras discutidas en la reunión de revisión, así como añadir una nueva sección que detallará el coste final de desplegar la aplicación DynaViz. Además, se planteó la posibilidad de continuar mejorando la aplicación web mediante la búsqueda de sugerencias por parte de los stakeholders.
 
 A continuación, en la Tabla \ref{anexo1:product-backlog-13} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-13} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+
+| **ID**  | **Tarea**                                                   | **Peso** |
+| ---------- | :---------------------------------------------------------- | ------- |
+| TSGM-50 | Terminar capítulo de resultados                             | 5        |
+| TSGM-69 | Añadir competencias adquiridas en conclusiones              | 3        |
+| TSGM-70 | Añadir trabajo futuro en conclusiones                       | 3        |
+| TSGM-71 | Mejorar el capítulo de evaluación según revisión            | 3        |
+| TSGM-72 | Mejorar el anexo de resultados de evaluación según revisión | 3        |
+| TSGM-73 | Añadir tabla en plataformas de despliegue                   | 1        |
+| TSGM-74 | Añadir proceso de configuración de render                   | 1        |
+| TSGM-75 | Añadir nuevo anexo de un despliegue real de DynaViz         | 5        |
+| TSGM-76 | Mejorar la aplicación Web                                   | 3        |
+| TSGM-77 | Mejorar tests de aplicación Web                             | 7        |
+| TSGM-78 | Añadir anexo de tests                                       | 5        |
+| TSGM-79 | Añadir siguiente Sprint                                     | 1        |
+
+: [PB](#PB) del Sprint 13\label{anexo1:product-backlog-13}
+
+| **ID**  | **Tarea**                                                   | **Peso** |
+| ---------- | :---------------------------------------------------------- | ------- |
+| TSGM-71 | Mejorar el capítulo de evaluación según revisión            | 3        |
+| TSGM-72 | Mejorar el anexo de resultados de evaluación según revisión | 3        |
+| TSGM-73 | Añadir tabla de plataformas de despliegue                  | 1        |
+| TSGM-74 | Añadir proceso de configuración de render                   | 1        |
+| TSGM-75 | Añadir nuevo anexo de un despliegue real de DynaViz         | 5        |
+| TSGM-76 | Mejorar la aplicación Web                                   | 3        |
+| TSGM-77 | Mejorar tests de aplicación Web                             | 7        |
+| TSGM-78 | Añadir anexo de tests                                       | 5        |
+| TSGM-79 | Añadir siguiente Sprint                                     | 1        |
+
+: [SB](#SB) del Sprint 13\label{anexo1:Sprint-backlog-13}
 
 ### Desarrollo de Sprint 
 

@@ -15,13 +15,13 @@ Como se ha mencionado previamente, la aplicación Web que se pretende desarrolla
 
 La escala [EVA](#EVA), tal y como expone Basterrechea @escala-eva, se basa en una escala horizontal, representada por una línea normalmente de 10 centímetros, en la que el paciente debe marcar el lugar que considera que se encuentra su dolor.
 
-Los resultados se evaluan normalmente en tres niveles de dolor según los valores marcados:
+Los resultados se evalúan normalmente en tres niveles de dolor según los valores marcados:
 
 - (<4): Los valores inferiores a 4 indican que el dolor es leve o leve-moderado
 - (4-6): En el caso que la medición sea entre 4 y 6 centímetros, el dolor se considerará de moderado a moderado-grave
-- (<6): Si los valores son mayores de 6 se considera un dolor que pasa de grave a insoportable.
+- (>6): Si los valores son mayores de 6 se considera un dolor que pasa de grave a insoportable.
 
-Una vez, se conoce el trastorno de la fibromialgia y la escala [EVA](#EVA) utilizada previamente al diagnostico. En el siguiente punto, se pasará a explicar las diferentes metodologías de desarrollo software que se pueden utilizar para implementar la aplicación Web.
+Una vez, se conoce el trastorno de la fibromialgia y la escala [EVA](#EVA) utilizada previamente al diagnóstico. En el siguiente punto, se pasará a explicar las diferentes metodologías de desarrollo software que se pueden utilizar para implementar la aplicación Web.
 
 ## Metodologías de Desarrollo Software
 
@@ -244,16 +244,20 @@ Como se ha mencionado anteriormente, es importante comprender cómo publicar una
 
 Un proveedor de hosting, tal y como expone *Google* @hosting-providers posee servidores y ofrece espacio a sus clientes, quienes utilizan ese espacio para almacenar sus páginas Web, haciéndolas accesibles a cualquier persona en Internet. Para elegir un proveedor de hosting es crucial entender la diferencia entre sitios estáticos y dinámicos como expone Spilotro @dynamic-vs-static.
 
-Por un lado, un sitio estático permanece igual en todo momento, es decir, su contenido no cambia. Por otro lado, un sitio dinámico, como una aplicación Web, presenta un contenido variable según el usuario **que** lo visite. Para crear estos últimos, se requiere un servidor backend y una base de datos, utilizando la tecnología mencionada previamente.
+Por un lado, un sitio estático permanece igual en todo momento, es decir, su contenido no cambia. Por otro lado, un sitio dinámico, como una aplicación Web, presenta un contenido variable según el usuario que lo visite. Para crear estos últimos, se requiere un servidor backend y una base de datos, utilizando la tecnología mencionada previamente.
 
 Existen varios proveedores de hosting para sitios dinámicos, siendo uno de los más populares y fáciles de usar las [PaaS](#PaaS). Estas plataformas, tal y como expone Chai @paas, gestionan muchos detalles a bajo nivel, permitiendo a los desarrolladores concentrarse más en la construcción de aplicaciones en lugar de configurar y administrar el servidor.
 
-En el pasado, la elección de un proveedor [PaaS](#PaaS) era más sencilla debido a la existencia de *Heroku* @heroku, que ofrecía un plan gratuito muy favorable para el despliegue de aplicaciones Web. Sin embargo, a partir de 2022, esta versión gratuita dejó de existir, y hoy en día es más difícil elegir un proveedor [PaaS](#PaaS) entre la multitud disponible, tal y como expone Batschinski @heroku-alternatives. A continuación, se detallan los planes gratuitos que ofrecen algunos de los más populares:
+En el pasado, la elección de un proveedor [PaaS](#PaaS) era más sencilla debido a la existencia de *Heroku* @heroku, que ofrecía un plan gratuito muy favorable para el despliegue de aplicaciones Web. Sin embargo, a partir de 2022, esta versión gratuita dejó de existir, y hoy en día es más difícil elegir un proveedor [PaaS](#PaaS) entre la multitud disponible, tal y como expone Batschinski @heroku-alternatives. En la Figura \ref{capitulo2:planes-gratuitos-paas}, se detallan los planes gratuitos que ofrecen algunas de las plataformas más populares.
 
-- **Fly.io @flyio:** Permite alojar tres aplicaciones de forma gratuita antes de tener que empezar a pagar. Sin embargo, requiere tarjeta de crédito.
-- **Railway app @railway:** Ofrece una subvención única y gratuita de 5 euros, aunque la longevidad de su aplicación depende de los recursos que consuma.
-- **Adaptable.io @adaptable:** Permite alojar un número ilimitado de aplicaciones de forma gratuita, pero al igual que Fly.io, requiere tarjeta de crédito.
-- **Render @render:** Ofrece 750 horas de uso gratuito al mes, suficientes para desplegar una aplicación Web con poco tráfico. Como desventaja, las aplicaciones se desconectan automáticamente después de 15 minutos de inactividad.
+| **Plataforma**          | **Nº Apps** | **Horas de Uso**      | **Desconexión**           | **Tarjeta** |
+| ------------------ | --------- | ----------------------- | ----------------------------- | ------- |
+| **Fly.io @flyio**       | Tres      | Ilimitado             | Nunca                     | Si      |
+| **Railway app @railway** | Ilimitado | Subvención de 5€ | Nunca                     | No      |
+| **Adaptable.io @adaptable** | Ilimitado | Ilimitado             | Nunca                     | Si      |
+| **Render @render**      | Ilimitado | 750 al mes            | 15 minutos de inactividad | No      |
+
+: Planes gratuitos de [PaaS](#PaaS)\label{capitulo2:planes-gratuitos-paas}
 
 Una vez se conoce toda la tecnología que se puede utilizar a la hora de construir una aplicación Web. Es fundamental, tener en mente las diferentes técnicas de visualización que existen para asegurar que el usuario entienda los datos que se muestran con dicha aplicación. Estas técnicas son analizadas en el siguiente punto. 
 

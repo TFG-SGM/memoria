@@ -21,4 +21,3 @@ Una vez revisados los diferentes objetivos alcanzados durante el desarrollo del 
 ## Trabajo Futuro
 
 - Integrar con IA
-- Mejorar responsive

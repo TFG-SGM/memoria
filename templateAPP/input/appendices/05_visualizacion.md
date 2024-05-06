@@ -11,13 +11,13 @@ Los datos que se han identificado para visualizar en la aplicación Web son los 
 - **Desplazamiento ideal y real de cada parte del cuerpo**: Se registra el movimiento óptimo y el movimiento real en cada segundo del vídeo en los ejes *x* e *y*.
 - **Variación entre desplazamiento ideal y real**: Se analiza la discrepancia entre el movimiento deseado y el observado en cada parte del cuerpo y en cada segundo del vídeo, en los ejes *x* e *y*.
 - **Restricción de movimiento por parte del cuerpo**: Se asigna un valor del 0 al 100 que representa la limitación de movimiento para cada parte del cuerpo. Este cálculo se basa en las variaciones de movimiento observadas en los ejes *x* e *y* entre todos los pacientes, siendo el valor máximo (100) la media de las cinco peores situaciones.
-- **Restricción de movimiento total después de la prueba**: Al igual que el dato anterior, se asigna un valor del 0 al 100 que indica la restricción de movimiento total tras la prueba. Este valor se calcula considerando las restricciones individuales de movimiento para cada parte del cuerpo entre todos los pacientes, siendo el valor máximo (100) la media de las cinco peores situaciones.
+- **Restricción de movimiento total después de la prueba**: Al igual que el dato anterior, se asigna un valor del 0 al 100 que indica la restricción de movimiento total tras la prueba. Este valor se calcula considerando la media de las restricciones individuales de movimiento para cada parte del cuerpo entre todos los pacientes, siendo el valor máximo (100) la media de las cinco peores situaciones.
 
 Una vez identificados los diferentes datos a visualizar, en los siguientes puntos se detallarán las diferentes técnicas de visualización de datos para distintos casos.
 
 ## Visualización del Tiempo de Vídeo
 
-La Figura \ref{anexo5:lineas} muestra una gráfica de línea que representa el desplazamiento de una parte específica del cuerpo en cada fotograma del vídeo de la prueba. Esta visualización permite comparar el desplazamiento observado con el desplazamiento ideal.
+La Figura \ref{anexo5:lineas} muestra una gráfica de línea que representa el desplazamiento de una parte específica del cuerpo en un eje concreto en cada fotograma del vídeo de la prueba. Esta visualización permite comparar el desplazamiento observado con el desplazamiento ideal.
 
 ![Gráfica de línea según tiempo de vídeo\label{anexo5:lineas}](anx5_lineas.png)
 
@@ -39,13 +39,15 @@ Para abordar el análisis integral de la restricción del movimiento, se emplean
 
 ## Distribución de Datos
 
-Para analizar la distribución de los datos, específicamente la variación entre el desplazamiento real y el ideal de las distintas partes del cuerpo, se emplean técnicas de visualización como el histograma, representado en la Figura \ref{anexo5:histograma}, y el diagrama de cajas y bigotes, ejemplificado en las Figuras \ref{anexo5:caja-1} y \ref{anexo5:caja-2}. 
+Para analizar la distribución de los datos, específicamente la variación entre el desplazamiento real y el ideal de las distintas partes del cuerpo en un eje específico, se emplean técnicas de visualización como el histograma, representado en la Figura \ref{anexo5:histograma}, y el diagrama de cajas y bigotes, ejemplificado en la Figura \ref{anexo5:caja-2}. 
 
 ![Histogramas comparando la distribución de variaciones entre el desplazamiento real e ideal \label{anexo5:histograma}](anx5_histograma.png)
 
-![Diagrama de cajas y bigotes comparando la distribución del desplazamiento real e ideal de una parte del cuerpo\label{anexo5:caja-1}](anx5_caja-1.png)
-
 ![Diagrama de cajas y bigotes comparando la distribución de variaciones de varias partes del cuerpo\label{anexo5:caja-2}](anx5_caja-2.png)
+
+Además, el diagrama de cajas y bigotes puede ser usado para comparar la distribución del desplazamiento real e ideal de una parte del cuerpo específica. Aunque, en este caso será necesario un división de cuando empieza y acaba una repetición del movimiento pedido durante la prueba.
+
+![Diagrama de cajas y bigotes comparando la distribución del desplazamiento real e ideal de una parte del cuerpo\label{anexo5:caja-1}](anx5_caja-1.png)
 
 ## Correlación entre Partes del Cuerpo
 
@@ -57,7 +59,7 @@ Para observar la correlación entre las diferentes partes del cuerpo, se propone
 
 ## Evolución del Paciente
 
-Finalmente, para analizar la evolución del paciente se emplean diversas técnicas de visualización que muestren como mejora o empeora la restricción de movimiento de las diferentes partes del cuerpo del paciente. Entre estas técnicas se pueden utilizar las gráficas de líneas tanto normales como acumuladas, tal y como muestra la Figura \ref{anexo5:evolucion-lineas}, las de barras ilustradas en la Figura \ref{anexo5:evolucion-barras} y varios diagramas radiales como se observa en la Figura \ref{anexo5:evolucion-radar}.
+Finalmente, para analizar la evolución del paciente se emplean diversas técnicas de visualización que muestren como mejora o empeora la restricción de movimiento de las diferentes partes del cuerpo del paciente. Entre estas técnicas se pueden utilizar las gráficas de líneas, tal y como muestra la Figura \ref{anexo5:evolucion-lineas}, las de barras ilustradas en la Figura \ref{anexo5:evolucion-barras} y varios diagramas radiales como se observa en la Figura \ref{anexo5:evolucion-radar}.
 
 Se sugiere además emplear técnicas de análisis de distribución para examinar la manera en que las restricciones de movimiento se distribuyen en distintas partes del cuerpo a lo largo del tiempo. Igualmente, se propone utilizar métodos de correlación para identificar momentos en los que dos regiones corporales presenten restricciones de movimiento similares.
 

@@ -8,13 +8,20 @@ La primera evaluación se realizó el 15 de abril de 2024 con el objetivo de rec
 
 ### Participantes
 
-La evaluación se llevó a cabo con la participación de dos fisioterapeutas especializados, específicamente Cristina Bravo y Manuel Trinidad. Aunque el número de participantes pueda parecer reducido, el objetivo principal era asegurar la aceptación del sistema por parte de expertos en el campo. Además, al finalizar la prueba de evaluación, los participantes pudieron proporcionar un feedback muy relevante gracias a su experiencia y conocimiento especializado.
+La evaluación se llevó a cabo con la participación de dos fisioterapeutas especializados. Aunque el número de participantes pueda parecer reducido, el objetivo principal era asegurar la aceptación del sistema por parte de expertos en el campo. Además, al finalizar la prueba de evaluación, los participantes pudieron proporcionar un feedback muy relevante gracias a su experiencia y conocimiento especializado. Los datos de los participantes se muestran en la Tabla \ref{capitulo5:datos-participantes}.
+
+| **ID** | **Edad** | **Profesión** | **Conocimiento tecnológico** | [SO](#SO) | **Navegador** |
+| ----- | -------- | ------------ | ---------------------------- | ------------- | ------------ |
+| P1               | 48       | Fisioterapeuta | Bajo                         | Windows   | Edge          |
+| P2               | 31       | Fisioterapeuta | Medio                        | Mac OS    | Chrome |
+
+: Participantes de la primera prueba de evaluación\label{capitulo5:datos-participantes}
 
 Una vez presentados los participantes, en el siguiente punto se describe el contexto de uso de la prueba de evaluación.
 
 ### Contexto de Uso
 
-La evaluación se llevó a cabo mediante videoconferencia con la aplicación *Microsoft Teams* @teams, lo que permitió que cada participante utilizara su propio hardware. Específicamente, Cristina utilizó el sistema operativo *Windows* y Manuel *MacOS*.
+La evaluación se llevó a cabo mediante videoconferencia con la aplicación *Microsoft Teams* @teams, lo que permitió que cada participante utilizara su propio hardware, tal y como se observa en la Tabla \ref{capitulo5:datos-participantes}.
 
 Es importante destacar que la aplicación web se desplegó en *Render* @render y la base de datos en *MongoDB Atlas* @mongodb-atlas. Dado que ambas plataformas fueron utilizadas en una versión gratuita, se presentaron algunas limitaciones, siendo la principal la imposibilidad de finalizar la creación de una prueba y desconexiones temporales del servidor en algunos casos.
 

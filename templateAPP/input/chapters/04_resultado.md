@@ -99,15 +99,15 @@ TestController ..> TestModel
 TestTypeController ..> TestTypeModel
 
 class TestService {
-	+number[] getRealMovements(parts,actualPart)
-    +number[] getIdealMovements(parts,actualPart)
+	+number[] getRealMovements(parts,axis,actualPart)
+    +number[] getIdealMovements(parts,axis,actualPart)
     +string[] getBodyParts(parts)
     +object getBodyPartsForRadial(parts)
     +number[] getBodyPartRestriction(parts)
-    +number[] getUniqueVariations(parts,actualPart)
-    +number[] getVariationsCount(parts,actualPart,uniqueVariations)
+    +number[] getUniqueVariations(parts,axis,actualPart)
+    +number[] getVariationsCount(parts,axis,actualPart,uniqueVariations)
     +number[] getBoxPlotData(movements)
-    +any[][] getCorrelatedVariations(parts,parts1,parts2)
+    +any[][] getCorrelatedVariations(parts,axis,parts1,parts2)
     -number findQuartile(sortedData,quartile)
 }
 
@@ -134,6 +134,7 @@ class AdminRouter {
 	void post("/admin/")
 	void get("/admin/:id")
 	void put("/admin/:id")
+	void put("/admin/password/:id")
 	void delete("/admin/:id")
 }
 
@@ -142,6 +143,7 @@ class DoctorRouter {
 	void post("/doctor/")
 	void get("/doctor/:id")
 	void put("/doctor/:id")
+	void put("/doctor/password/:id")
 	void delete("/doctor/:id")
 }
 
@@ -185,6 +187,7 @@ class AdminController {
 	void getById(req,res)
 	void create(req,res)
 	void update(req,res)
+	void updatePass(req,res)
 	void delete(req,res)
 }
 
@@ -193,6 +196,7 @@ class DoctorController {
 	void getById(req,res)
 	void create(req,res)
 	void update(req,res)
+	void updatePass(req,res)
 	void delete(req,res)
 }
 
