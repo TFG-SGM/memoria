@@ -621,6 +621,8 @@ Cabe destacar que todas estas Figuras se centran en el paciente, ya que los usua
 
 Además, durante este Sprint también se conecto la aplicación Web a la base de datos MongoDB Atlas y se creo un script para autogenerar los datos de los diferentes administradores, médicos y pacientes. 
 
+Finalmente, junto con los stakeholders, se optó por modificar la representación de la 'calidad del movimiento' en las gráficas a 'restricción del movimiento', con el objetivo de destacar de manera más clara el problema que el paciente necesita corregir.
+
 ### Revisión Sprint
 
 Tras el desarrollo del Sprint, se realizó la reunión de revisión, donde los tutores proporcionaron retroalimentación sobre la aplicación web. Entre los puntos mencionados se incluyen sugerencias para mejorar la disposición de algunos elementos con el fin de ofrecer una experiencia de usuario más fluida, la recomendación de seleccionar una paleta de colores más atractiva, y la propuesta de eliminar la pantalla de inicio para el rol de médico si su única función es consultar a los pacientes.

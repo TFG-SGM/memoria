@@ -122,3 +122,23 @@
 
 : Platform as a Service (Plataforma como Servicio)
 
+<span id='RAM'>RAM</span>
+
+: Random Access Memory (Memoria de Acceso Aleatorio)
+
+<span id='vCPUs'>vCPUs</span>
+
+: Virtual Representation of Physical Central Processing Unit (Representación Virtual de la Unidad Central de Procesamiento Física)
+
+<span id='CDN'>CDN</span>
+
+: Content Delivery Network (Red de Entrega de Contenidos)
+
+<span id='RPU'>RPU</span>
+
+: Read Processing Unit (Unidad de Procesamiento de Lectura)
+
+<span id='WPU'>WPU</span>
+
+: Write Processing Unit (Unidad de Procesamiento de Escritura)
+

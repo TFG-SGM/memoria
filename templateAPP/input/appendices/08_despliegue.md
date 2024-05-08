@@ -1,22 +1,83 @@
 # Despliegue de DynaViz
 
-En este anexo, se detalla lo necesario para desplegar la aplicación DynaViz en un entorno real, además de indicar el coste final del despliegue. Para desplegar una aplicación Web, es indisplensable tener un dominio y desplegar el lado del cliente, el servidor que recibe las peticiones del cliente y la base de datos. A continuación, se detallan cada uno de estos puntos
+Este anexo proporciona un detallado proceso para desplegar la aplicación *DynaViz* en un entorno real, junto con la estimación del coste final del despliegue. Para implementar una aplicación web de manera efectiva, se requiere configurar un dominio y desplegar tanto el lado del cliente como el servidor, además de la base de datos correspondiente. A continuación, se presenta una descripción detallada de cada uno de estos elementos.
 
-## Proveedores de Dominio
+## Proveedor de Dominio
 
-https://www.forbes.com/advisor/business/software/best-domain-registrar/
+Un proveedor de dominio, como lo describe Balkhi @domain-providers, es una empresa que facilita la compra y registro de nombres de dominio. Esto permite acceder a las páginas web utilizando palabras fáciles de recordar en lugar de direcciones IP.
 
-## Base de datos 
+Los precios de los dominios varían según los servicios ofrecidos y la extensión del dominio. La Figura \ref{anexo8:domain-providers} muestra algunos de los proveedores de dominios más populares, junto con sus precios, como se detalla en *domcomp* @domain-pricing.
 
-En el caso de la base de datos, la elección no es muy complicada después de todo simplemente habría que seguir utilizando MongoDB Atlas y pagar por una versión que otorge los beneficios que se busquen.
+Para *DynaViz*, una opción recomendada es utilizar *NameCheap*, ya que ofrece precios competitivos y es ampliamente reconocido en la actualidad.
 
-## Server
+Una vez seleccionado el proveedor de dominios, en el siguiente punto se procederá a analizar el proveedor de hosting.
 
+| **Servicio**         | **Nuevo dominio** | **Renovación anual** |
+| -------------------- | ----------------- | -------------------- |
+| z.com @zcom          | $5.90             | $10.18               |
+| namecheap @namecheap | $5.98             | $11.88               |
+| spaceship @spaceship | $8.06             | $8.06                |
+| dynadot @dynadot     | $10.19            | $10.19               |
 
+: Comparativa de precios de prooveedores de dominio\label{anexo8:domain-providers}
 
-## FrontEnd
+## Proveedor de Hosting
 
+En cuanto al hosting, una opción viable para *DynaViz* es continuar utilizando *Render*, donde los pagos se ajustan según el uso de la aplicación web.
 
+*Render* ofrece planes mensuales con diversos beneficios, así como opciones basadas en el uso, como se detalla en su página oficial @render-pricing. Los planes mensuales disponibles se presentan en la Figura \ref{anexo8:render-plans}. Además, para *DynaViz*, se requieren dos componentes: un "sitio estático" para el lado del cliente y un "servicio web" para el lado del servidor.
 
-## Despliegue Final
+| **Caracteristicas**        | **Individual** | **Team**        | **Organization** | **Enterprise** |
+| ----------------------- | --------- | ---------------- | ----------------- | ------- |
+| Precio                     | Gratis     | $19/usuario-mes | $29/usuario-mes | Custom     |
+| Minutos de pipeline gratis | 500/mes    | 500/usuario-mes | 500/usuario-mes | Custom     |
+| Ancho de banda gratis      | 100 GB     | 500 GB          | 1 TB            | Custom     |
+| Autoescalado               | No         | Si              | Si              | Si         |
 
+: Planes mensuales de *Render*\label{anexo8:render-plans}
+
+El "sitio estático" ofrece ventajas como un [CDN](#CDN) ultrarrápido, implementaciones automáticas continuas desde Git, invalidación instantánea de caché y dominios personalizados con [TLS](#TLS) completamente administrado, todo ello de forma gratuita.
+
+El coste del "servicio web" depende de la instancia seleccionada, como se muestra en la Figura \ref{anexo8:render-web-services}. Estas instancias se pueden adaptar según las necesidades de la aplicación.
+
+Una vez elegido el proveedor de hosting, el siguiente paso será analizar la opción más adecuada para la base de datos.
+
+![Instancias de servicios web de *Render* @render-pricing\label{anexo8:render-web-services}](anx8_render-web-service.png)
+
+## Proveedor de Base de Datos
+
+Para la base de datos, al igual que con el hosting, *MongoDB Atlas* sigue siendo una opción sólida. Este servicio ofrece tres planes distintos, como se detalla en su página oficial @mongodb-pricing:
+
+- **Compartido:** es el plan más económico y el que actualmente se utiliza. Los diferentes precios de este plan se muestran en la Figura \ref{anexo8:mongodb-shared}.
+- **Dedicado:** ofrece características mejoradas a cambio de un coste mayor. Los precios de este plan se muestran en la Figura \ref{anexo8:mongodb-dedicated}.
+- **Serverless:** este plan ofrece un servicio de pago según el uso. Las características y los precios de este plan se detallan en la Figura \ref{anexo8:mongodb-serverless}.
+
+Para *DynaViz*, una opción recomendada es utilizar el plan Serverless. De esta manera, la base de datos podrá escalar junto con la aplicación web conforme se le vaya dando uso con el tiempo.
+
+| **Almacenamiento** | **[RAM](#RAM)** | **[vCPUs](#vCPU)** | **Precio** |
+| ------------------ | --------------- | ------------------ | ---------- |
+| 512 MB             | Compartido      | Compartido         | Gratis     |
+| 2 GB               | Compartido      | Compartido         | $9/mes     |
+| 5 GB               | Compartido      | Compartido         | $25/mes    |
+
+: Plan compartido de *MongoDB Atlas*\label{anexo8:mongodb-shared}
+
+| **Almacenamiento** | **[RAM](#RAM)** | **[vCPUs](#vCPUs)** | **Precio**  |
+| ------------------ | --------------- | ------------------- | ----------- |
+| 10 GB              | 2 GB            | 2                   | $0.08/hora  |
+| 1000 GB            | 192 GB          | 48                  | $10.99/hora |
+| 4000 GB            | 768 GB          | 96                  | $33.26/hora |
+
+: Plan dedicado de *MongoDB Atlas*\label{anexo8:mongodb-dedicated}
+
+| **Item**               | **Descripción**                    | **Precio**                                     |
+| ---------------------- | ---------------------------------- | -------------------------- |
+| [RPU](#RPU)            | Número de operaciones de lectura   | $0.10/millón [^anexo8:rpu]                     |
+| [WPU](#WPU)            | Número de operaciones de escritura | $1.00/millón                                   |
+| Almacenamiento         | Datos guardados                    | $0.25 / GB-mes                                 |
+| Transferencia de datos | Datos entrantes y salientes        | $0.01 - $0.20/GB [^anexo8:transferencia-datos] |
+
+: Plan serverless de *MongoDB Atlas*\label{anexo8:mongodb-serverless}
+
+[^anexo8:rpu]: Para los primeros 50 millones por día
+[^anexo8:transferencia-datos]: Dependiendo del tráfico de la fuente y del destino

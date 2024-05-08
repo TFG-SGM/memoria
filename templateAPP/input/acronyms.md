@@ -29,3 +29,8 @@ EVA: Escala Visual Analógica
 SUS: System usability scale (Sistema de Escalas de Usabilidad)
 TLS: Transport Layer Security (Seguridad de la Capa de Transporte)
 PaaS: Platform as a Service (Plataforma como Servicio)
+RAM: Random Access Memory (Memoria de Acceso Aleatorio)
+vCPUs: Virtual Representation of Physical Central Processing Unit (Representación Virtual de la Unidad Central de Procesamiento Física)
+CDN: Content Delivery Network (Red de Entrega de Contenidos)
+RPU: Read Processing Unit (Unidad de Procesamiento de Lectura)
+WPU: Write Processing Unit (Unidad de Procesamiento de Escritura)

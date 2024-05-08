@@ -23,7 +23,7 @@ La Figura \ref{anexo5:lineas} muestra una gráfica de línea que representa el d
 
 ## Evaluación de Restricción de Movimiento
 
-Para evaluar la restricción de movimiento de las distintas partes del cuerpo, se recurre a técnicas de visualización tipo ranking. Estas pueden ser representadas tanto mediante un diagrama radial, como se ilustra en la Figura \ref{anexo5:radar}, o mediante un gráfico de barras, como se muestra en la Figura \ref{anexo5:barras}. Sin embargo, se sugiere preferir el uso del gráfico de barras debido a su capacidad para diferenciar de manera más clara entre los datos.
+Para evaluar la restricción de movimiento de las distintas partes del cuerpo, se recurre a técnicas de visualización tipo ranking. Estas pueden ser representadas tanto mediante un diagrama radial, como se ilustra en la Figura \ref{anexo5:radar}, o mediante un gráfico de barras, como se muestra en la Figura \ref{anexo5:barras}. Sin embargo, se sugiere preferir el uso del gráfico de barras debido a su capacidad para diferenciar de manera más clara entre los datos. Además, es relevante señalar que otra alternativa válida es el uso del gráfico de lollipop en lugar del de barras, como se describe en el capítulo del estado del arte.
 
 ![Diagrama radial para evaluar restricción de movimiento\label{anexo5:radar}](anx5_radar.png)
 
@@ -39,7 +39,7 @@ Para abordar el análisis integral de la restricción del movimiento, se emplean
 
 ## Distribución de Datos
 
-Para analizar la distribución de los datos, específicamente la variación entre el desplazamiento real y el ideal de las distintas partes del cuerpo en un eje específico, se emplean técnicas de visualización como el histograma, representado en la Figura \ref{anexo5:histograma}, y el diagrama de cajas y bigotes, ejemplificado en la Figura \ref{anexo5:caja-2}. 
+Para analizar la distribución de los datos, específicamente la variación entre el desplazamiento real y el ideal de las distintas partes del cuerpo en un eje específico, se emplean técnicas de visualización como el histograma, representado en la Figura \ref{anexo5:histograma}, y el diagrama de cajas y bigotes, ejemplificado en la Figura \ref{anexo5:caja-2}. Además, es relevante señalar que otras alternativas válidas son el uso de los gráficos de densidad y de violín en lugar de los histogramas y los diagramas de caja y bigotes, respectivamente, tal como se describe en el capítulo del estado del arte.
 
 ![Histogramas comparando la distribución de variaciones entre el desplazamiento real e ideal \label{anexo5:histograma}](anx5_histograma.png)
 

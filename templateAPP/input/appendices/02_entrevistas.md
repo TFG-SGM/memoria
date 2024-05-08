@@ -83,7 +83,7 @@ Inicialmente, no se considera necesario añadir más tipos de pruebas. Además, 
 
 Al crear una prueba, se solicitará la fecha, tipo de prueba, un vídeo y posiblemente escalas para evaluar el estado del paciente en el momento de la prueba, como por ejemplo la escala [EVA](#EVA) para evaluar el dolor del paciente en el momento de realizar la prueba.
 
-También se sugiere la posibilidad de crear múltiples pruebas de diferentes tipos simultáneamente para mejorar la eficiencia del médico. Además, se menciona la necesidad de un filtro para la facilitar la busqueda de las pruebas por fecha o tipo.
+También se sugiere la posibilidad de crear múltiples pruebas de diferentes tipos simultáneamente para mejorar la eficiencia del médico. Además, se menciona la necesidad de un filtro para la facilitar la búsqueda de las pruebas por fecha o tipo.
 
 **¿Es viable mostrar un "grado de problema" basado en la variación entre el movimiento ideal y el real para cada parte del cuerpo?**
 

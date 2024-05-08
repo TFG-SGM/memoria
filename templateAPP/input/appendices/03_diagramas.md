@@ -66,7 +66,7 @@ entity admins{
 _id : ObjectId
 name : string
 surname : string
-age : number
+date : date
 city : string 
 email : string
 phone : string
@@ -78,7 +78,7 @@ entity doctors{
 _id : ObjectId
 name : string
 surname : string
-age : number
+date : date
 city : string 
 email : string
 phone : string
@@ -90,7 +90,7 @@ entity patients{
 _id : ObjectId
 name : string
 surname : string
-age : number
+date : date
 city : string 
 email : string
 phone : string
