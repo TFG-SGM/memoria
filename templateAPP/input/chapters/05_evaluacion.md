@@ -35,7 +35,7 @@ Las tareas realizadas por los participantes durante la evaluación fueron las si
 
 - **Tarea 1:** Añadir un nuevo paciente. Editar la edad de dicho nuevo paciente. Eliminar el paciente recién creado.
 - **Tarea 2:** Consultar pruebas del primer paciente. Filtrar por fecha la lista de pruebas. Analizar la gráfica de línea, pastel y burbuja de una de las pruebas. De esa misma prueba consultar los detalles.
-- **Tarea 3:** Consultar evolución del primer paciente. Filtrar gráfica de evolución por un tipo de prueba y observar la evolución de dos partes del cuerpo específicas.
+- **Tarea 3:** Consultar la evolución del primer paciente. Filtrar gráfica de evolución por un tipo de prueba y observar la evolución de dos partes del cuerpo específicas.
 - **Tarea 4:** Hacer uso del menú de añadir prueba (pero sin acabar de añadir la prueba).
 
 Una vez presentadas las tareas, en el siguiente punto se describe el diseño experimental de la prueba de evaluación.

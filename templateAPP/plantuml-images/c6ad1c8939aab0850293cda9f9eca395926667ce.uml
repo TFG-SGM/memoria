@@ -1,0 +1,200 @@
+@startuml
+
+Views ..> DataService
+Views ..> TestService
+
+DataService ..> AuthRouter
+DataService ..> AdminRouter
+DataService ..> DoctorRouter
+DataService ..> PatientRouter
+DataService ..> TestRouter
+DataService ..> TestTypeRouter
+DataService ..> FileRouter
+
+AuthRouter ..> AuthController
+AdminRouter ..> AdminController
+DoctorRouter ..> DoctorController
+PatientRouter ..> PatientController
+TestRouter ..> TestController
+TestTypeRouter ..> TestTypeController
+FileRouter ..> FileController
+
+AdminController ..> AdminModel
+DoctorController ..> DoctorModel
+PatientController ..> PatientModel
+TestController ..> TestModel
+TestTypeController ..> TestTypeModel
+
+class TestService {
+    +number[] getRealMovements(parts,axis,actualPart)
+    +number[] getIdealMovements(parts,axis,actualPart)
+    +string[] getBodyParts(parts)
+    +object getBodyPartsForRadial(parts)
+    +number[] getBodyPartRestriction(parts)
+    +number[] getUniqueVariations(parts,axis,actualPart)
+    +number[] getVariationsCount(parts,axis,actualPart,uniqueVariations)
+    +number[] getBoxPlotData(movements)
+    +any[][] getCorrelatedVariations(parts,axis,parts1,parts2)
+    +object getProcessDataForBarChart(data)
+    +object getProcessDataForChartEvolution(tests)
+    -number findQuartile(sortedData,quartile)
+}
+
+class DataService {
+    +string getToken()
+    +data login(email,password)
+    +void logout()
+    +data getData(endpoint)
+    +data createData(endpoint,newData) 
+    +data createFormData(endpoint,newData) 
+    +data deleteData(endpoint) 
+    +data updateData(endpoint,newData) 
+    +data updateFormData(endpoint,newData) 
+    +data getUserData() 
+    -FormData getFormDataFromObject(data) 
+}
+
+class AuthRouter {
+    void get("/auth/login")
+    void post("/auth/user-data")
+}
+
+class AdminRouter {
+    void get("/admin/")
+    void post("/admin/")
+    void get("/admin/:id")
+    void put("/admin/:id")
+    void put("/admin/password/:id")
+    void delete("/admin/:id")
+}
+
+class DoctorRouter {
+    void get("/doctor/")
+    void post("/doctor/")
+    void get("/doctor/:id")
+    void put("/doctor/:id")
+    void put("/doctor/password/:id")
+    void delete("/doctor/:id")
+}
+
+class PatientRouter {
+    void get("/patient/")
+    void post("/patient/")
+    void get("/patient/:id")
+    void put("/patient/:id")
+    void delete("/patient/:id")
+}
+
+class TestRouter {
+    void get("/test/")
+    void post("/test/")
+    void get("/test/:id")
+    void put("/test/:id")
+    void delete("/test/:id")
+    void delete("/test/patient/:patientId")
+    void get("/test/attribute")
+}
+
+class TestTypeRouter {
+    void get("/testType/")
+    void get("/testType/:id")
+}
+
+class FileRouter {
+    void get("/file/:id")
+    void delete("/file/:id")
+}
+
+class AuthController {
+    void validateEmail(email)
+    void hasPassword(password)
+    void getUserData(req,res)
+    void login(req,res)
+}
+
+class AdminController {
+    void getAll(req,res)
+    void getById(req,res)
+    void create(req,res)
+    void update(req,res)
+    void updatePass(req,res)
+    void delete(req,res)
+}
+
+class DoctorController {
+    void getAll(req,res)
+    void getById(req,res)
+    void create(req,res)
+    void update(req,res)
+    void updatePass(req,res)
+    void delete(req,res)
+}
+
+class PatientController {
+    void getAll(req,res)
+    void getById(req,res)
+    void create(req,res)
+    void update(req,res)
+    void delete(req,res)
+}
+
+class TestController {
+    void getAll(req,res)
+    void getById(req,res)
+    void create(req,res)
+    void update(req,res)
+    void delete(req,res)
+    void deleteByPatient(req,res)
+    void getAttributes(req,res)
+}
+
+class TestTypeController {
+    void getAll(req,res)
+    void getById(req,res)
+}
+
+class FileController {
+    void getById(req,res)
+    void delete(req,res)
+}
+
+class AdminModel {
+    admin[] getAll()
+    admin getById({id})
+    admin create({input})
+    admin update({id,input})
+    int delete({id})
+}
+
+class DoctorModel {
+    doctor[] getAll()
+    doctor getById({id})
+    doctor create({input})
+    doctor update({id,input})
+    int delete({id})
+}
+
+class PatientModel {
+    patient[] getAll()
+    patient getById({id})
+    patient create({input})
+    patient update({id,input})
+    int delete({id})
+}
+
+class TestModel {
+    test[] getAll({patientId,doctorId,typeId,date,order})
+    test getById({id})
+    test create({id})
+    tes update({id})
+    int delete({id})
+    string[] deleteByPatient({patientId})
+    string[] getAttributes({attribute, patientId})
+}
+
+class TestTypeModel {
+    testType[] getAll()
+    testType getById({id})
+}
+
+@enduml

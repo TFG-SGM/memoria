@@ -53,6 +53,7 @@ Dentro del marco tecnológico, se distinguen diversas tecnologías agrupadas en 
   - **Framework:** React @react
   - **Herramienta:** Vite @vite
   - **Librería destacada:** ECharts @echarts
+  - **Pruebas de componentes:** Cypress @cypress
 - **BackEnd**
   - **Lenguaje de programación:** TypeScript @typescript
   - **Entorno de desarrollo:** Node.js @nodejs
@@ -63,7 +64,7 @@ Dentro del marco tecnológico, se distinguen diversas tecnologías agrupadas en 
 
 Estas tecnologías han sido seleccionadas cuidadosamente con el objetivo de implementar el stack *MERN* utilizando *TypeScript* como lenguaje central. El propósito es lograr el desarrollo de una aplicación Web moderna y eficiente que abarque tanto el lado del cliente como el del servidor. A continuación, se detallan a fondo cada una de estas tecnologías.
 
-Por un lado, en el FrontEnd, se opta por tecnologías líderes en la industria, como [HTML](#HTML), [CSS](#CSS), *TypeScript* y *React*. Estas elecciones proporcionan una estructura sólida para la creación de interfaces de usuario dinámicas y atractivas. Además, se utilizará *Vite* como herramienta de construcción, ofreciendo un entorno de desarrollo rápido y liviano que contribuye a la eficiencia del proceso de desarrollo. Finalmente, en el lado del cliente, se resalta la elección de la librería *ECharts* para la visualización de datos.
+Por un lado, en el FrontEnd, se opta por tecnologías líderes en la industria, como [HTML](#HTML), [CSS](#CSS), *TypeScript* y *React*. Estas elecciones proporcionan una estructura sólida para la creación de interfaces de usuario dinámicas y atractivas. Además, se utilizará *Vite* como herramienta de construcción, ofreciendo un entorno de desarrollo rápido y liviano que contribuye a la eficiencia del proceso de desarrollo. Finalmente, en el lado del cliente, se resalta la elección de la librería *ECharts* para la visualización de datos y del framework *Cypress* para probar los diferentes componentes. 
 
 Por otro lado, en el BackEnd, se repite la elección de *TypeScript* dentro del entorno de *Node.js*. Este último será respaldado por *Express.js* como framework, proporcionando un entorno ágil y escalable para la gestión eficiente de las operaciones del servidor. El stack *MERN* se solidifica al optar por *MongoDB* como base de datos, destacándose por su capacidad de almacenamiento flexible y escalable. La interfaz con esta base de datos se simplifica mediante el uso de la librería *Zod*, que ofrece una manera eficiente de definir y validar los esquemas de datos en *TypeScript*, facilitando así el acceso y la manipulación de los datos de manera eficaz.
 

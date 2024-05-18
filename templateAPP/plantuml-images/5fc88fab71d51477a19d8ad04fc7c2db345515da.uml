@@ -1,0 +1,51 @@
+@startuml
+skinparam actorStyle awesome
+left to right direction
+rectangle Sistema {
+    usecase (Iniciar sesión)
+    usecase (Consultar administradores)
+    usecase (Añadir administrador)
+    usecase (Editar administrador)
+    usecase (Eliminar administrador)
+    usecase (Consultar médicos)
+    usecase (Añadir médico)
+    usecase (Editar médico)
+    usecase (Eliminar médico)
+    usecase (Consultar pacientes)
+    usecase (Añadir paciente)
+    usecase (Editar paciente)
+    usecase (Eliminar paciente)
+    usecase (Consultar pruebas de paciente)
+    usecase (Añadir prueba para paciente)
+    usecase (Eliminar prueba de paciente)
+    usecase (Consultar datos de prueba)
+    usecase (Exportar datos de prueba)
+    usecase (Consultar evolución de paciente)
+}
+
+Médico --> (Iniciar sesión)
+Médico --> (Consultar pacientes)
+Médico --> (Añadir paciente)
+Médico --> (Editar paciente)
+Médico --> (Eliminar paciente)
+Médico --> (Consultar pruebas de paciente)
+Médico --> (Añadir prueba para paciente)
+Médico --> (Eliminar prueba de paciente)
+Médico --> (Consultar datos de prueba)
+Médico --> (Exportar datos de prueba)
+Médico --> (Consultar evolución de paciente)
+
+(Iniciar sesión) <-- Administrador
+(Consultar administradores) <-- Administrador
+(Añadir administrador) <-- Administrador
+(Editar administrador) <-- Administrador
+(Eliminar administrador) <-- Administrador
+(Consultar médicos) <-- Administrador
+(Añadir médico) <-- Administrador
+(Editar médico) <-- Administrador
+(Eliminar médico) <-- Administrador
+(Consultar pacientes) <-- Administrador
+(Añadir paciente) <-- Administrador
+(Editar paciente) <-- Administrador
+(Eliminar paciente) <-- Administrador
+@enduml

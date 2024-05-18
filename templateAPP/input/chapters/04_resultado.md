@@ -30,6 +30,7 @@ rectangle Sistema {
 	usecase (Añadir prueba para paciente)
 	usecase (Eliminar prueba de paciente)
 	usecase (Consultar datos de prueba)
+	usecase (Exportar datos de prueba)
 	usecase (Consultar evolución de paciente)
 }
 
@@ -42,6 +43,7 @@ Médico --> (Consultar pruebas de paciente)
 Médico --> (Añadir prueba para paciente)
 Médico --> (Eliminar prueba de paciente)
 Médico --> (Consultar datos de prueba)
+Médico --> (Exportar datos de prueba)
 Médico --> (Consultar evolución de paciente)
 
 (Iniciar sesión) <-- Administrador
@@ -82,7 +84,7 @@ DataService ..> DoctorRouter
 DataService ..> PatientRouter
 DataService ..> TestRouter
 DataService ..> TestTypeRouter
-DataService ..> VideoRouter
+DataService ..> FileRouter
 
 AuthRouter ..> AuthController
 AdminRouter ..> AdminController
@@ -90,7 +92,7 @@ DoctorRouter ..> DoctorController
 PatientRouter ..> PatientController
 TestRouter ..> TestController
 TestTypeRouter ..> TestTypeController
-VideoRouter ..> VideoController
+FileRouter ..> FileController
 
 AdminController ..> AdminModel
 DoctorController ..> DoctorModel
@@ -108,18 +110,21 @@ class TestService {
     +number[] getVariationsCount(parts,axis,actualPart,uniqueVariations)
     +number[] getBoxPlotData(movements)
     +any[][] getCorrelatedVariations(parts,axis,parts1,parts2)
+    +object getProcessDataForBarChart(data)
+    +object getProcessDataForChartEvolution(tests)
     -number findQuartile(sortedData,quartile)
 }
 
 class DataService {
     +string getToken()
-	+data login(enail,password)
+	+data login(email,password)
 	+void logout()
 	+data getData(endpoint)
 	+data createData(endpoint,newData) 
-	+data createTestData(endpoin,newData)
+	+data createFormData(endpoint,newData) 
 	+data deleteData(endpoint) 
 	+data updateData(endpoint,newData) 
+	+data updateFormData(endpoint,newData) 
 	+data getUserData() 
 	-FormData getFormDataFromObject(data) 
 }
@@ -170,9 +175,9 @@ class TestTypeRouter {
 	void get("/testType/:id")
 }
 
-class VideoRouter {
-	void get("/video/:id")
-	void delete("/video/:id")
+class FileRouter {
+	void get("/file/:id")
+	void delete("/file/:id")
 }
 
 class AuthController {
@@ -223,7 +228,7 @@ class TestTypeController {
 	void getById(req,res)
 }
 
-class VideoController {
+class FileController {
 	void getById(req,res)
 	void delete(req,res)
 }
@@ -289,11 +294,27 @@ Ahora que se conoce la arquitectura de la aplicación Web desarrollada, en el si
 
 ### Instalación
 
-(Recuerda: Hablar sobre el script de autogenerar datos)
+En el caso de querer usar la aplicación Web de manera local, se deberan seguir los siguientes pasos:
+
+1. Iniciar la aplicación Web con `pnpm install`, seguido de `pnpm run dev`.
+2. Generar los datos aleatorios con `pnpm run generate`.
+3. Iniciar sesión con el correo del administrador o doctor (el cual se puede ver en la [BD](#BD) de *MongoDB Compass*) y usando la contraseña "admin" o "doctor" según el rol con el que se quiera iniciar sesión.
+
+Es importante destacar, que para el adecuado despliegue local es necesario tener instalado el gestor de paquetes *pnpm* y el gestor de base de datos *MongoDB Compass*. 
+
+En los siguientes puntos, se mostrarán los diferentes menús tanto para el rol de administrador como para el rol de médico.
 
 ### Rol de Administrador
 
 ### Rol de Médico
 
+## Pruebas de Componentes
+
+Entre los 55 componentes implementados para el desarrollo de *DynaViz*, se han conseguido probar 20 de ellos utilizando la herramienta *Cypress* @cypress, tal y como se observa en la Figura \ref{capitulo4:tests-cases}
+
+![Lista de componentes probados usando *Cypress*\label{capitulo4:tests-cases}](cap4_tests-cases.png){height=50%}
+
 ## Compatibilidad del Sistema
+
+
 

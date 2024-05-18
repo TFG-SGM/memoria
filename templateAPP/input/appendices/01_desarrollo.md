@@ -677,7 +677,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-11} se detallan las dif
 
 Durante el sprint, se llevaron a cabo mejoras significativas en la aplicación web. Entre estos cambios, sobresale la implementación de la funcionalidad para almacenar videos en la base de datos y la capacidad de visualizarlos una vez guardados. Asimismo, se destaca la creación del logotipo de *DynaViz*.
 
-Además, se logró desplegar exitosamente la aplicación web utilizando la plataforma *Render*. Para ello, se desplegó inicialmente un servicio web completando el formulario que se muestra en la Figura \ref{anexo1:render-process}. En este proceso, se asignó un nombre, se seleccionó la carpeta "server" y se optó por la instancia gratuita. Además, se configuraron las variables de entorno correspondientes para la autenticación de usuarios, la [URL](#URL) de la base de datos de *MongoDB Atlas* y el puerto de conexión.
+Además, se logró desplegar exitosamente la aplicación web utilizando la plataforma *Render*. Para ello, se desplegó inicialmente un servicio web completando el formulario que se muestra en la Figura \ref{anexo1:render-process}. En este proceso, se asignó un nombre, se seleccionó la carpeta "server" y se optó por la instancia gratuita. Además, se configuraron las variables de entorno correspondientes para la autentificación de usuarios, la [URL](#URL) de la base de datos de *MongoDB Atlas* y el puerto de conexión.
 
 Una vez que el servidor fue desplegado, se procedió a desplegar la parte visual siguiendo un proceso similar, pero en esta ocasión seleccionando la carpeta "client" y añadiendo únicamente la [URL](#URL) del servidor desplegado previamente como variable de entorno.
 
@@ -754,7 +754,7 @@ Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc
 
 ## Sprint 13
 
-Este Sprint tiene comienzo el **3 de mayo de 2024 ** con una duración de ?? semanas. Su objetivo principal era la mejora de la memoria y la implementación de los tests en la aplicación DynaViz. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **3 de mayo de 2024 ** con una duración de 17 días. Su objetivo principal era la mejora de la memoria y la implementación de los tests en la aplicación DynaViz. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
@@ -774,8 +774,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-13} se detallan las dif
 | TSGM-75 | Añadir nuevo anexo de un despliegue real de DynaViz         | 5        |
 | TSGM-76 | Mejorar la aplicación Web                                   | 3        |
 | TSGM-77 | Mejorar tests de aplicación Web                             | 7        |
-| TSGM-78 | Añadir anexo de tests                                       | 5        |
-| TSGM-79 | Añadir siguiente Sprint                                     | 1        |
+| TSGM-78 | Añadir siguiente Sprint                                     | 1        |
 
 : [PB](#PB) del Sprint 13\label{anexo1:product-backlog-13}
 
@@ -788,14 +787,17 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-13} se detallan las dif
 | TSGM-75 | Añadir nuevo anexo de un despliegue real de DynaViz         | 5        |
 | TSGM-76 | Mejorar la aplicación Web                                   | 3        |
 | TSGM-77 | Mejorar tests de aplicación Web                             | 7        |
-| TSGM-78 | Añadir anexo de tests                                       | 5        |
-| TSGM-79 | Añadir siguiente Sprint                                     | 1        |
+| TSGM-78 | Añadir siguiente Sprint                                     | 1        |
 
 : [SB](#SB) del Sprint 13\label{anexo1:Sprint-backlog-13}
 
 ### Desarrollo de Sprint 
 
-Durante el Sprint, …
+Durante el Sprint, se mejoró la memoria siguiendo los comentarios de los tutores en la reunión de revisión. Entre las mejoras se incluyeron la actualización del capítulo de evaluación, la mejora del anexo de resultados de evaluación, y la adición de una tabla de plataformas de despliegue, entre otros cambios.
+
+Por otro lado, se consultó a los stakeholders si echaban en falta alguna funcionalidad extra en *DynaViz*. Y tras la solicitud de abrir la aplicación Web para realizar una prueba libre y comprobar si necesitaban alguna funcionalidad adicional, realizaron la petición de añadir una opción para exportar los datos del paciente en un documento. Esta funcionalidad fue implementada durante el Sprint junto con otras mejoras, como la adición de un menú de ayuda para entender las gráficas y la posibilidad de añadir una foto para médicos y administradores.
+
+Finalmente, se continuaron realizando diversas pruebas a los componentes de la aplicación Web.
 
 ### Revisión Sprint
 
