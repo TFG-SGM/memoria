@@ -72,8 +72,13 @@ Una vez que se comprenden las diversas funcionalidades del sistema, es esencial 
 
 Como se explicó en el capítulo anterior, la aplicación Web ha sido implementada empleando una arquitectura [MVC](#MVC), la cual se ilustra en la Figura \ref{capitulo4:diagrama-clases} como un diagrama de clases. Es importante destacar que la aplicación ha sido desarrollada utilizando *TypeScript*, un lenguaje que permite el desarrollo orientado a objetos.
 
-```{.plantuml #capitulo4:diagrama-clases caption="Diagrama de clases ilustrando una arquitectura MVC" frame=single}
+```{.plantuml #capitulo4:diagrama-clases caption="Diagrama de clases ilustrando una arquitectura" frame=single}
 @startuml
+
+skinparam class {
+    BorderColor black
+}
+skinparam ArrowColor black
 
 Views ..> DataService
 Views ..> TestService
@@ -100,41 +105,43 @@ PatientController ..> PatientModel
 TestController ..> TestModel
 TestTypeController ..> TestTypeModel
 
-class TestService {
-	+number[] getRealMovements(parts,axis,actualPart)
-    +number[] getIdealMovements(parts,axis,actualPart)
-    +string[] getBodyParts(parts)
-    +object getBodyPartsForRadial(parts)
-    +number[] getBodyPartRestriction(parts)
-    +number[] getUniqueVariations(parts,axis,actualPart)
-    +number[] getVariationsCount(parts,axis,actualPart,uniqueVariations)
-    +number[] getBoxPlotData(movements)
-    +any[][] getCorrelatedVariations(parts,axis,parts1,parts2)
-    +object getProcessDataForBarChart(data)
-    +object getProcessDataForChartEvolution(tests)
-    -number findQuartile(sortedData,quartile)
+class Views #Plum {}
+
+class TestService #Wheat {
+    +number[] getRealMovements(parts: TestPartsData, axis: axisData, actualPart: string)
+    +number[] getIdealMovements(parts: TestPartsData, axis: axisData, actualPart: string)
+    +string[] getBodyParts(parts: TestPartsData)
+    +object getBodyPartsForRadial(parts: TestPartsData)
+    +number[] getBodyPartRestriction(parts: TestPartsData)
+    +number[] getUniqueVariations(parts: TestPartsData, axis: axisData, actualPart: string)
+    +number[] getVariationsCount(parts: TestPartsData, axis: axisData, actualPart: string, uniqueVariations: number[])
+    +number[] getBoxPlotData(movements: number[])
+    +any[][] getCorrelatedVariations(parts: TestPartsData, axis: axisData, parts1: string, parts2: string)
+    +object getProcessDataForBarChart(data: TestSubData)
+    +object getProcessDataForChartEvolution(tests: TestData[])
+    -number findQuartile(sortedData: number[], quartile: number)
 }
 
-class DataService {
+class DataService #Wheat {
     +string getToken()
-	+data login(email,password)
+	+data login(email: string, password: string)
 	+void logout()
-	+data getData(endpoint)
-	+data createData(endpoint,newData) 
-	+data createFormData(endpoint,newData) 
-	+data deleteData(endpoint) 
-	+data updateData(endpoint,newData) 
-	+data updateFormData(endpoint,newData) 
+	+data getData(endpoint: string)
+	+data createData(endpoint: string, newData: T) 
+	+data createFormData(endpoint: string, newData: T) 
+	+data deleteData(endpoint: string) 
+	+data updateData(endpoint: string, newData: T) 
+	+data updateFormData(endpoint: string, newData: T) 
 	+data getUserData() 
-	-FormData getFormDataFromObject(data) 
+	-FormData getFormDataFromObject(data: T) 
 }
 
-class AuthRouter {
+class AuthRouter #LightGrey {
 	void get("/auth/login")
 	void post("/auth/user-data")
 }
 
-class AdminRouter {
+class AdminRouter #LightGrey {
 	void get("/admin/")
 	void post("/admin/")
 	void get("/admin/:id")
@@ -143,7 +150,7 @@ class AdminRouter {
 	void delete("/admin/:id")
 }
 
-class DoctorRouter {
+class DoctorRouter #LightGrey {
 	void get("/doctor/")
 	void post("/doctor/")
 	void get("/doctor/:id")
@@ -152,7 +159,7 @@ class DoctorRouter {
 	void delete("/doctor/:id")
 }
 
-class PatientRouter {
+class PatientRouter #LightGrey {
 	void get("/patient/")
 	void post("/patient/")
 	void get("/patient/:id")
@@ -160,7 +167,7 @@ class PatientRouter {
 	void delete("/patient/:id")
 }
 
-class TestRouter {
+class TestRouter #LightGrey {
 	void get("/test/")
 	void post("/test/")
 	void get("/test/:id")
@@ -170,106 +177,106 @@ class TestRouter {
 	void get("/test/attribute")
 }
 
-class TestTypeRouter {
+class TestTypeRouter #LightGrey {
 	void get("/testType/")
 	void get("/testType/:id")
 }
 
-class FileRouter {
+class FileRouter #LightGrey {
 	void get("/file/:id")
 	void delete("/file/:id")
 }
 
-class AuthController {
-	void validateEmail(email)
-	void hasPassword(password)
-	void getUserData(req,res)
-	void login(req,res)
+class AuthController #LightSkyBlue {
+	void validateEmail(email: string)
+	void hasPassword(password: string)
+	void getUserData(req: Request, res: Response)
+	void login(req: Request, res: Response)
 }
 
-class AdminController {
-	void getAll(req,res)
-	void getById(req,res)
-	void create(req,res)
-	void update(req,res)
-	void updatePass(req,res)
-	void delete(req,res)
+class AdminController #LightSkyBlue {
+	void getAll(req: Request, res: Response)
+	void getById(req: Request, res: Response)
+	void create(req: Request, res: Response)
+	void update(req: Request, res: Response)
+	void updatePass(req: Request, res: Response)
+	void delete(req: Request, res: Response)
 }
 
-class DoctorController {
-	void getAll(req,res)
-	void getById(req,res)
-	void create(req,res)
-	void update(req,res)
-	void updatePass(req,res)
-	void delete(req,res)
+class DoctorController #LightSkyBlue {
+	void getAll(req: Request, res: Response)
+	void getById(req: Request, res: Response)
+	void create(req: Request, res: Response)
+	void update(req: Request, res: Response)
+	void updatePass(req: Request, res: Response)
+	void delete(req: Request, res: Response)
 }
 
-class PatientController {
-	void getAll(req,res)
-	void getById(req,res)
-	void create(req,res)
-	void update(req,res)
-	void delete(req,res)
+class PatientController #LightSkyBlue {
+	void getAll(req: Request, res: Response)
+	void getById(req: Request, res: Response)
+	void create(req: Request, res: Response)
+	void update(req: Request, res: Response)
+	void delete(req: Request, res: Response)
 }
 
-class TestController {
-	void getAll(req,res)
-	void getById(req,res)
-	void create(req,res)
-	void update(req,res)
-	void delete(req,res)
-	void deleteByPatient(req,res)
-	void getAttributes(req,res)
+class TestController #LightSkyBlue {
+	void getAll(req: Request, res: Response)
+	void getById(req: Request, res: Response)
+	void create(req: Request, res: Response)
+	void update(req: Request, res: Response)
+	void delete(req: Request, res: Response)
+	void deleteByPatient(req: Request, res: Response)
+	void getAttributes(req: Request, res: Response)
 }
 
-class TestTypeController {
-	void getAll(req,res)
-	void getById(req,res)
+class TestTypeController #LightSkyBlue {
+	void getAll(req: Request, res: Response)
+	void getById(req: Request, res: Response)
 }
 
-class FileController {
-	void getById(req,res)
-	void delete(req,res)
+class FileController #LightSkyBlue {
+	void getById(req: Request, res: Response)
+	void delete(req: Request, res: Response)
 }
 
-class AdminModel {
+class AdminModel #LightGreen {
 	admin[] getAll()
-	admin getById({id})
-	admin create({input})
-	admin update({id,input})
-	int delete({id})
+	admin getById({id: string})
+	admin create({input: User})
+	admin update({id: string, input: User})
+	int delete({id: string})
 }
 
-class DoctorModel {
+class DoctorModel #LightGreen{
 	doctor[] getAll()
-	doctor getById({id})
-	doctor create({input})
-	doctor update({id,input})
+	doctor getById({id: string})
+	doctor create({input: User})
+	doctor update({id: string , input: User})
 	int delete({id})
 }
 
-class PatientModel {
+class PatientModel #LightGreen{
 	patient[] getAll()
-	patient getById({id})
-	patient create({input})
-	patient update({id,input})
-	int delete({id})
+	patient getById({id: string})
+	patient create({input: Patient})
+	patient update({id: string, input: Patient})
+	int delete({id: string})
 }
 
-class TestModel {
-	test[] getAll({patientId,doctorId,typeId,date,order})
-	test getById({id})
-	test create({id})
-	tes update({id})
-	int delete({id})
-	string[] deleteByPatient({patientId})
-	string[] getAttributes({attribute, patientId})
+class TestModel #LightGreen {
+	test[] getAll({patientId: string, doctorId: string, typeId: string, date: string, order: string})
+	test getById({id: string})
+	test create({id: string})
+	tes update({id: string})
+	int delete({id: string})
+	string[] deleteByPatient({patientId: string})
+	string[] getAttributes({attribute: string, patientId: string})
 }
 
-class TestTypeModel {
+class TestTypeModel #LightGreen{
 	testType[] getAll()
-	testType getById({id})
+	testType getById({id: string})
 }
 
 @enduml
@@ -292,13 +299,15 @@ Ahora que se conoce la arquitectura de la aplicación Web desarrollada, en el si
 
 ## Guía de Utilización
 
+Una vez presentada la arquitectura de la aplicación DynaViz, en este punto se detallará la guía de utilización de la misma, enfocandose en la instalación de la aplicación y el uso de la misma con el rol tanto del administrador como de médico.
+
 ### Instalación
 
-En el caso de querer usar la aplicación Web de manera local, se deberan seguir los siguientes pasos:
+En el caso de querer usar *DynaViz* de manera local, se deberan seguir los siguientes pasos:
 
 1. Iniciar la aplicación Web con `pnpm install`, seguido de `pnpm run dev`.
 2. Generar los datos aleatorios con `pnpm run generate`.
-3. Iniciar sesión con el correo del administrador o doctor (el cual se puede ver en la [BD](#BD) de *MongoDB Compass*) y usando la contraseña "admin" o "doctor" según el rol con el que se quiera iniciar sesión.
+3. Iniciar sesión con el correo del administrador o médico (el cual se puede ver en la [BD](#BD) de *MongoDB Compass*) y usando la contraseña "admin" o "doctor" según el rol con el que se este iniciando sesión.
 
 Es importante destacar, que para el adecuado despliegue local es necesario tener instalado el gestor de paquetes *pnpm* y el gestor de base de datos *MongoDB Compass*. 
 
@@ -306,15 +315,129 @@ En los siguientes puntos, se mostrarán los diferentes menús tanto para el rol 
 
 ### Rol de Administrador
 
+Por un lado, como administrador se puede administrar los tres tipos de identidades: administradores, médicos y pacientes.
+
+Antes de poder usar *DynaViz*, el administrador debe iniciar sesión desde la ventana mostrada en la Figura \ref{capitulo4:inicio-sesion}. Una vez completado el inicio de sesión, el usuario será dirigido a la ventana de la Figura \ref{capitulo4:inicio-admin}, donde podrá elegir entre consultar administradores, médicos o pacientes.
+
+Dado que la administración de los tres tipos de identidades es similar, se explicará únicamente la administración de médicos. Por lo tanto, al seleccionar la opción de consultar médicos, el administrador será dirigido a la ventana de lista de médicos mostrada en la Figura \ref{capitulo4:lista-medicos}.
+
+En esta ventana, el administrador puede añadir un nuevo médico o seleccionar un médico existente, lo que abrirá una ventana modal (Figura \ref{capitulo4:detalles-medico}) en la que se pueden consultar los detalles, editar o eliminar el médico seleccionado.
+
+Las ventanas modales para crear y editar son similares. En la Figura \ref{capitulo4:nuevo-medico} se muestra la ventana modal de creación, donde se destaca que la imagen es el único campo no obligatorio. Además, el campo de contraseña no se solicita al editar un médico, permitiendo que solo el usuario pueda cambiar su propia contraseña.
+
+Finalmente, el administrador puede consultar y administrar los datos de su cuenta seleccionando el icono en la cabecera de la aplicación web, lo que abrirá la ventana modal mostrada en la Figura \ref{capitulo4:mi-cuenta}. En dicho menú, el usuario puede editar sus datos tal y como se observa en las Figuras \ref{capitulo4:editar-mi-cuenta} y \ref{capitulo4:editar-contraseña}.
+
+![Ventana de inicio de sesión\label{capitulo4:inicio-sesion}](cap4_inicio-sesion.png)
+
+![Ventana de inicio como administrador\label{capitulo4:inicio-admin}](cap4_inicio-admin.png)
+
+![Ventana de lista de médicos\label{capitulo4:lista-medicos}](cap4_lista-medicos.png)
+
+![Ventana modal de detallas de administrador\label{capitulo4:detalles-medico}](cap4_detalles-medico.png)
+
+![Ventana modal de nuevo médico\label{capitulo4:nuevo-medico}](cap4_nuevo-medico.png)
+
+![Ventana modal de "Mi cuenta"\label{capitulo4:mi-cuenta}](cap4_mi-cuenta.png)
+
+![Ventana modal de edición de datos de cuenta\label{capitulo4:editar-mi-cuenta}](cap4_editar-mi-cuenta.png)
+
+![Ventana modal de edición de contraseña\label{capitulo4:editar-contraseña}](cap4_editar-contraseña.png)
+
 ### Rol de Médico
 
-## Pruebas de Componentes
+Por otro lado, como médico se puede administrar únicamente pacientes, pero de una manera más avanzada que los administradores, teniendo la posibilidad de gestionar las pruebas de dichos pacientes.
 
-Entre los 55 componentes implementados para el desarrollo de *DynaViz*, se han conseguido probar 20 de ellos utilizando la herramienta *Cypress* @cypress, tal y como se observa en la Figura \ref{capitulo4:tests-cases}
+Al igual que los administradores, el médico debe iniciar sesión para usar *DynaViz* desde la ventana de la Figura \ref{capitulo4:inicio-sesion}. Una vez iniciada la sesión, el médico será dirigido directamente a la ventana de lista de pacientes, donde solo se listan los pacientes asignados al médico que ha iniciado sesión.
+
+En esta ventana, el médico puede añadir un nuevo paciente, desde la ventana modal mostrada en la Figura \ref{capitulo4:nuevo-paciente} o consultar los detalles de uno existente. Similar al rol de administrador, en la ventana modal de los detalles del paciente, se puede editar o eliminar al paciente. Sin embargo, al iniciar sesión como médico, habrá un tercer botón para consultar las pruebas del paciente, tal como se muestra en la Figura \ref{capitulo4:detalles-paciente}.
+
+En la ventana de la lista de pruebas mostrada en la Figura \ref{capitulo4:lista-pruebas}, el médico puede elegir entre añadir una nueva prueba, consultar una prueba existente o consultar la evolución del paciente.
+
+Por un lado, si el médico decide añadir una nueva prueba, aparecerá la ventana modal de la Figura \ref{capitulo4:nueva-prueba}, donde puede o bien usar un vídeo grabado previamente o bien grabar un vídeo desde *DynaViz*, tal como se muestra en la Figura \ref{capitulo4:grabando-video}.
+
+Por otro lado, si el médico decide consultar una prueba existente, se dirigirá a una nueva ventana para analizar la prueba (Figura \ref{capitulo4:grafica-lineas}). En dicha ventana, el médico puede consultar los detalles de la prueba, donde, como se muestra en la Figura \ref{capitulo4:detalles-prueba}, se puede eliminar la prueba; exportar los datos a un documento PDF, como se muestra en las Figuras \ref{capitulo4:exportar-datos} y \ref{capitulo4:documento-prueba}; y elegir entre las diferentes gráficas para visualizar los datos. A continuación, se listan todas las gráficas que existen en *DynaViz*:
+
+- Gráfico de líneas mostrado en la Figura \ref{capitulo4:grafica-lineas}
+- Gráfico de barras mostrado en la Figura \ref{capitulo4:grafica-barras}
+- Gráfico radial mostrado en la Figura \ref{capitulo4:grafica-radar}
+- Gráfico de pastel mostrado en la Figura \ref{capitulo4:grafica-pastel}
+- Mapa de árbol mostrado en la Figura \ref{capitulo4:grafica-arbol}
+- Histograma mostrado en la Figura \ref{capitulo4:grafica-histograma}
+- Diagrama de cajas y bigotes mostrado en las Figuras \ref{capitulo4:grafica-cajas1} y Figura \ref{capitulo4:grafica-cajas2}
+- Gráfico de burbujas mostrado en la Figura \ref{capitulo4:grafica-burbujas}
+- Mapa de calor mostrado en la Figura \ref{capitulo4:grafica-calor}
+
+Por último, en el caso de consultar la evolución, el médico será dirigido a la ventana de la Figura \ref{capitulo4:grafica-evolucion}, donde, como se puede observar, el médico puede filtrar el análisis de la evolución tanto por el tipo de prueba como por la parte del cuerpo específica. A continuación, se listan los tres tipos de gráficas de evolución que existen en *DynaViz*:
+
+- Gráfico de líneas mostrada en la Figura \ref{capitulo4:grafica-evolucion-lineas}
+- Gráfico de barras mostrada en la Figura \ref{capitulo4:grafica-evolucion-barras}
+- Gráfico radial mostrada en la Figura \ref{capitulo4:grafica-evolucion-radar}
+
+Además, cabe destacar que cada una de las gráficas viene acompañada de un botón de ayuda, el cual hace aparecer una ventana modal similar a la Figura \ref{capitulo4:grafica-ayuda}.
+
+Finalmente, al igual que el rol de administrador, el médico puede consultar y administrar los datos de su cuenta en las mismas ventanas modales mostradas en las Figuras \ref{capitulo4:mi-cuenta}, \ref{capitulo4:editar-mi-cuenta} y \ref{capitulo4:editar-contraseña}.
+
+Una vez, presentada la guía de utilización, en los siguientes puntos se detallaran las pruebas unitarias realizadas durante el desarrollo así como la compatibilidad de *DynaViz*.
+
+![Ventana de lista de pacientes como médico\label{capitulo4:lista-pacientes-medico}](cap4_lista-pacientes-medico.png)
+
+![Ventana modal de nuevo paciente\label{capitulo4:nuevo-paciente}](cap4_nuevo-paciente.png)
+
+![Ventana modal de detalles de paciente\label{capitulo4:detalles-paciente}](cap4_detalles-paciente.png)
+
+![Ventana de lista de pruebas\label{capitulo4:lista-pruebas}](cap4_lista-pruebas.png)
+
+![Ventana modal de nueva prueba\label{capitulo4:nueva-prueba}](cap4_nueva-prueba.png)
+
+![Venatana modal grabando vídeo de prueba\label{capitulo4:grabando-video}](cap4_grabando-video.png)
+
+![Ventana modal de detalles de prueba\label{capitulo4:detalles-prueba}](cap4_detalles-prueba.png)
+
+![Venatana modal para exportar datos de prueba\label{capitulo4:exportar-datos}](cap4_exportar-datos.png)
+
+![Documento PDF generado al exportar datos de prueba\label{capitulo4:documento-prueba}](cap4_documento-prueba.png)
+
+![Gráfico de líneas\label{capitulo4:grafica-lineas}](cap4_grafica-lineas.png)
+
+![Gráfico de barras\label{capitulo4:grafica-barras}](cap4_grafica-barras.png)
+
+![Gráfico radial\label{capitulo4:grafica-radar}](cap4_grafica-radar.png)
+
+![Gráfico de pastel\label{capitulo4:grafica-pastel}](cap4_grafica-pastel.png)
+
+![Mapa de árbol\label{capitulo4:grafica-arbol}](cap4_grafica-arbol.png)
+
+![Histograma\label{capitulo4:grafica-histograma}](cap4_grafica-histograma.png)
+
+![Diagrama de cajas y bigotes de desplazamientos\label{capitulo4:grafica-cajas1}](cap4_grafica-cajas1.png)
+
+![Diagrama de cajas y bigotes de variaciones\label{capitulo4:grafica-cajas2}](cap4_grafica-cajas2.png)
+
+![Gráfico de burbujas\label{capitulo4:grafica-burbujas}](cap4_grafica-burbujas.png)
+
+![Mapa de calor\label{capitulo4:grafica-calor}](cap4_grafica-calor.png)
+
+![Ventana de análisis de evolución\label{capitulo4:grafica-evolucion}](cap4_grafica-evolucion.png)
+
+![Gráfico de líneas de evolución\label{capitulo4:grafica-evolucion-lineas}](cap4_grafica-evolucion-lineas.png)
+
+![Gráfico de barras de evolución\label{capitulo4:grafica-evolucion-barras}](cap4_grafica-evolucion-barras.png)
+
+![Gráfico radial de evolución\label{capitulo4:grafica-evolucion-radar}](cap4_grafica-evolucion-radar.png)
+
+![Ventana modal de ayuda\label{capitulo4:grafica-ayuda}](cap4_grafica-ayuda.png)
+
+## Pruebas Unitarias
+
+Durante el desarrollo de DynaViz, se realizaron varias pruebas unitarias con el objetivo de probar los diferentes componentes de *React*. Al final, de los 55 componentes implementados, se han conseguido probar 20 de ellos utilizando la herramienta *Cypress* @cypress, tal y como se observa en la Figura \ref{capitulo4:tests-cases}.
 
 ![Lista de componentes probados usando *Cypress*\label{capitulo4:tests-cases}](cap4_tests-cases.png){height=50%}
 
 ## Compatibilidad del Sistema
 
+Finalmente, *DynaViz*, al ser una aplicación web, es compatible con cualquier navegador, ya sea *Google Chrome*, *Firefox*, *Safari*, entre otros. Además, la aplicación es *responsive*, lo que significa que se adapta a las pantallas de dispositivos móviles, como se muestra en la Figura \ref{capitulo4:diseño-responsive}, en la cual se observa la ventana de lista de pacientes, la ventana modal de detalles del paciente y la gráfica de líneas, respectivamente.
 
+Una vez se ha presentado la aplicación web implementada, en el siguiente capítulo se detallará la evaluación de dicho sistema.
+
+![Diseño responsive\label{capitulo4:diseño-responsive}](cap4_diseño-responsive.png)
 

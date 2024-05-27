@@ -1,10 +1,8 @@
 # Resultados de Evaluaciones
 
-En este anexo se recogen los resultados de los diferentes cuestionarios [SUS](#SUS) realizados por los participantes tras completar las tareas de la prueba de evaluación. Además, se detalla el proceso que se llevó a cabo para calcular el resultado final.
+En este anexo se recogen los resultados del cuestionario [SUS](#SUS) realizado por los participantes tras completar las tareas de la primera prueba de evaluación. Además, se detalla el proceso que se llevó a cabo para calcular el resultado final.
 
-## Resultados de Cuestionarios SUS
-
-### Primera Evaluación
+## Resultados de Cuestionario SUS
 
 Los resultados del cuestionario [SUS](#SUS) de la primera evaluación se muestran en las siguientes Figuras:
 
@@ -19,25 +17,25 @@ Los resultados del cuestionario [SUS](#SUS) de la primera evaluación se muestra
 - Figura \ref{anexo6:sus1-ask9}: Me sentí muy seguro al usar el sistema
 - Figura \ref{anexo6:sus1-ask10}: Necesitaba aprender muchas cosas antes de poder empezar a utilizar este sistema
 
-![Creo que me gustaría utilizar este sistema con frecuencia\label{anexo6:sus1-ask1}](anx6_sus1-ask1.png)
+![Creo que me gustaría utilizar este sistema con frecuencia\label{anexo6:sus1-ask1}](anx6_sus1-ask1.png){width=50%}
 
-![El sistema me pareció innecesariamente complejo\label{anexo6:sus1-ask2}](anx6_sus1-ask2.png)
+![El sistema me pareció innecesariamente complejo\label{anexo6:sus1-ask2}](anx6_sus1-ask2.png){width=50%}
 
-![Pensé que el sistema era fácil de usar\label{anexo6:sus1-ask3}](anx6_sus1-ask3.png)
+![Pensé que el sistema era fácil de usar\label{anexo6:sus1-ask3}](anx6_sus1-ask3.png){width=50%}
 
-![Creo que necesitaría el apoyo de un técnico para poder utilizar este sistema\label{anexo6:sus1-ask4}](anx6_sus1-ask4.png)
+![Creo que necesitaría el apoyo de un técnico para poder utilizar este sistema\label{anexo6:sus1-ask4}](anx6_sus1-ask4.png){width=50%}
 
-![Encontré que las diversas funciones de este sistema estaban bien integradas\label{anexo6:sus1-ask5}](anx6_sus1-ask5.png)
+![Encontré que las diversas funciones de este sistema estaban bien integradas\label{anexo6:sus1-ask5}](anx6_sus1-ask5.png){width=50%}
 
-![Pensé que había demasiada inconsistencia en este sistema\label{anexo6:sus1-ask6}](anx6_sus1-ask6.png)
+![Pensé que había demasiada inconsistencia en este sistema\label{anexo6:sus1-ask6}](anx6_sus1-ask6.png){width=50%}
 
-![Me imagino que la mayoría de la gente aprendería a utilizar este sistema muy rápidamente\label{anexo6:sus1-ask7}](anx6_sus1-ask7.png)
+![Me imagino que la mayoría de la gente aprendería a utilizar este sistema muy rápidamente\label{anexo6:sus1-ask7}](anx6_sus1-ask7.png){width=50%}
 
-![El sistema me pareció muy complicado de utilizar\label{anexo6:sus1-ask8}](anx6_sus1-ask8.png)
+![El sistema me pareció muy complicado de utilizar\label{anexo6:sus1-ask8}](anx6_sus1-ask8.png){width=50%}
 
-![Me sentí muy seguro al usar el sistema\label{anexo6:sus1-ask9}](anx6_sus1-ask9.png)
+![Me sentí muy seguro al usar el sistema\label{anexo6:sus1-ask9}](anx6_sus1-ask9.png){width=50%}
 
-![Necesitaba aprender muchas cosas antes de poder empezar a utilizar este sistema\label{anexo6:sus1-ask10}](anx6_sus1-ask10.png)
+![Necesitaba aprender muchas cosas antes de poder empezar a utilizar este sistema\label{anexo6:sus1-ask10}](anx6_sus1-ask10.png){width=50%}
 
 ## Puntuación del SUS
 

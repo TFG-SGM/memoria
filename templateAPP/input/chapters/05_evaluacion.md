@@ -62,7 +62,7 @@ Tras la primera prueba de evaluación, se recibió un valioso feedback por parte
 
 Mediante las técnicas de *pensamiento en voz alta* y *observación* durante la realización de las tareas, se confirmó que la aplicación web es fácil de utilizar. Sin embargo, se observó que el entendimiento de las gráficas que muestran los datos de las pruebas puede resultar confuso para algunos usuarios, lo que podría requerir la asistencia de un profesional para su interpretación.
 
-Por otro lado, en la Figura \ref{capitulo5:resultados-sus1} se presentan los resultados del cuestionario [SUS](#SUS) de cada participante, los cuales muestran una evaluación muy positiva de la aplicación. Después de todo, según Sauro @sauro la media de resultados [SUS](#SUS) de 500 estudios es de 68, por lo que un resultado mayor se considera mejor que la media.
+Por otro lado, en la Figura \ref{capitulo5:resultados-sus1} se presentan los resultados del cuestionario [SUS](#SUS) de cada participante, los cuales muestran una evaluación muy positiva de la aplicación. Después de todo, según Sauro @sauro la media de resultados [SUS](#SUS) de 500 estudios es de 68, representada en la Figura \ref{capitulo5:resultados-sus1} con una línea verde.
 
 Además, Sauro proporciona la gráfica que se muestra en la Figura \ref{capitulo5:grafica-sauro}, donde se asocian los rangos percentiles con las puntuaciones del [SUS](#SUS) y las calificaciones con letras. Esta gráfica revela que los resultados de ambos participantes se encuentran en el rango A, ya que superan los 80,3 puntos.
 
@@ -70,5 +70,17 @@ Además, Sauro proporciona la gráfica que se muestra en la Figura \ref{capitulo
 
 ![Asociación entre rangos percentiles con puntuaciones [SUS](#SUS)\label{capitulo5:grafica-sauro}](cap5_grafica-sauro.png){width=75%}
 
-## Resumen de las Evaluaciones
+## Segunda Evaluación
 
+
+Tras la primera evaluación, se llevó a cabo una segunda adaptando el método de *recorrido cognitivo*, tal y como expone Salazar @cognitive-walk. En esta fase, los mismos stakeholders probaron la aplicación *DynaViz* durante una semana sin asignar tareas específicas, con el objetivo principal de identificar nuevas funcionalidades que pudieran ser útiles para los usuarios.
+
+Durante esta evaluación, se solicitó una única funcionalidad adicional: permitir a los médicos exportar los datos de una prueba a formato PDF, lo que les permitiría proporcionar al paciente un documento de la misma.
+
+Una vez presentadas ambas evaluaciones, en el siguiente punto se expondrán las conclusiones derivadas de las mismas.
+
+## Conclusión de las Evaluaciones
+
+Tras las dos pruebas de evaluación, se puede concluir que la aplicación *DynaViz* es tanto fácil de usar como de aprender, respaldado por los resultados obtenidos en la primera evaluación.
+
+Además, la segunda prueba permitió comprobar si los stakeholders echaban en falta alguna funcionalidad. En la cual, solo se identificó una carencia y que fue implementada posteriormente, confirmando de esta manera que la aplicación cumple con las expectativas de los usuarios.

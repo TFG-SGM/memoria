@@ -235,7 +235,7 @@ PatientsListPage -> Doctor : Muestra nuevo paciente
 
 El diagrama de la Figura \ref{anexo3:diagrama-actividad-crear-prueba} muestra los diferentes pasos que debe seguir un médico para crear una nueva prueba. En el cual, se puede observar que si el paciente no existe, será necesario crearlo antes de agregar la nueva prueba deseada.
 
-```{.plantuml #anexo3:diagrama-actividad-crear-prueba caption="Diagrama de actividad para crear una prueba" frame=single}
+```{.plantuml #anexo3:diagrama-actividad-crear-prueba caption="Diagrama de actividad para crear una prueba" frame=single width=75%}
 @startuml
 start
 :Iniciar sesión;

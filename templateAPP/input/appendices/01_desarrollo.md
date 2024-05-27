@@ -649,7 +649,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-11} se detallan las dif
 | ------- | :------------------------------------------- | -------- |
 | TSGM-9  | Empezar capítulo de evaluación               | 5        |
 | TSGM-10 | Empezar capítulo de conclusiones             | 5        |
-| TSGM-50 | Terminar capítulo de resultados              | 5        |
+| TSGM-50 | Terminar capítulo de resultado               | 5        |
 | TSGM-57 | Añadir siguiente Sprint                      | 3        |
 | TSGM-58 | Crear logo de DynaViz                        | 3        |
 | TSGM-59 | Realizar cambios en documento según revisión | 1        |
@@ -675,7 +675,9 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-11} se detallan las dif
 
 ### Desarrollo de Sprint 
 
-Durante el sprint, se llevaron a cabo mejoras significativas en la aplicación web. Entre estos cambios, sobresale la implementación de la funcionalidad para almacenar videos en la base de datos y la capacidad de visualizarlos una vez guardados. Asimismo, se destaca la creación del logotipo de *DynaViz*.
+Durante el sprint, se llevaron a cabo mejoras significativas en la aplicación web. Entre estos cambios, sobresale la implementación de la funcionalidad para almacenar videos en la base de datos y la capacidad de visualizarlos una vez guardados. Asimismo, se destaca la creación del logotipo de *DynaViz* ilustrado en la Figura \ref{anexo1:logotipo}.
+
+![Logotipo de *DynaViz*\label{anexo1:logotipo}](anx1_logotipo.png){width=25%}
 
 Además, se logró desplegar exitosamente la aplicación web utilizando la plataforma *Render*. Para ello, se desplegó inicialmente un servicio web completando el formulario que se muestra en la Figura \ref{anexo1:render-process}. En este proceso, se asignó un nombre, se seleccionó la carpeta "server" y se optó por la instancia gratuita. Además, se configuraron las variables de entorno correspondientes para la autentificación de usuarios, la [URL](#URL) de la base de datos de *MongoDB Atlas* y el puerto de conexión.
 
@@ -712,7 +714,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-12} se detallan las dif
 | **ID**  | **Tarea**                                                    | **Peso** |
 | ----------- | :----------------------------------------------------------- | -------- |
 | TSGM-10 | Empezar capítulo de conclusiones                             | 5        |
-| TSGM-50 | Terminar capítulo de resultados                              | 5        |
+| TSGM-50 | Terminar capítulo de resultado                              | 5        |
 | TSGM-62 | Añadir siguiente Sprint                                      | 1        |
 | TSGM-63 | Mejorar la aplicación Web                                    | 7       |
 | TSGM-64 | Añadir plataformas de despliegue en estado de arte           | 3        |
@@ -764,9 +766,9 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-13} se detallan las dif
 
 | **ID**  | **Tarea**                                                   | **Peso** |
 | ---------- | :---------------------------------------------------------- | ------- |
-| TSGM-50 | Terminar capítulo de resultados                             | 5        |
-| TSGM-69 | Añadir competencias adquiridas en conclusiones              | 3        |
-| TSGM-70 | Añadir trabajo futuro en conclusiones                       | 3        |
+| TSGM-50 | Terminar capítulo de resultado                             | 5        |
+| TSGM-69 | Añadir competencias adquiridas en conclusiones              | 1       |
+| TSGM-70 | Añadir trabajo futuro en conclusiones                       | 1       |
 | TSGM-71 | Mejorar el capítulo de evaluación según revisión            | 3        |
 | TSGM-72 | Mejorar el anexo de resultados de evaluación según revisión | 3        |
 | TSGM-73 | Añadir tabla en plataformas de despliegue                   | 1        |
@@ -797,7 +799,56 @@ Durante el Sprint, se mejoró la memoria siguiendo los comentarios de los tutore
 
 Por otro lado, se consultó a los stakeholders si echaban en falta alguna funcionalidad extra en *DynaViz*. Y tras la solicitud de abrir la aplicación Web para realizar una prueba libre y comprobar si necesitaban alguna funcionalidad adicional, realizaron la petición de añadir una opción para exportar los datos del paciente en un documento. Esta funcionalidad fue implementada durante el Sprint junto con otras mejoras, como la adición de un menú de ayuda para entender las gráficas y la posibilidad de añadir una foto para médicos y administradores.
 
-Finalmente, se continuaron realizando diversas pruebas a los componentes de la aplicación Web.
+Finalmente, se continuaron realizando diversas pruebas unitarias a los componentes de la aplicación Web.
+
+### Revisión Sprint
+
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual los tutores propusieron algunas mejoras mínimas al documento, entre ellas se destaca la adicción de la segunda prueba de evaluación en el capítulo 5. 
+
+### Retrospectiva del Sprint
+
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint13}, el cual refleja que el progreso del trabajo realizado ha ido a la par con el planificado inicialmente.
+
+![[BC](#BC) del Sprint 13\label{anexo1:bc-sprint13}](anx1_bc-sprint13.png)
+
+## Sprint 14
+
+Este Sprint tiene comienzo el **20 de mayo de 2024 ** con una duración de 1 semana. Su objetivo principal era el cierre tanto de la aplicación Web como del documento. A continuación, se detallan las diferentes fases del Sprint. 
+
+### Planificación del Sprint
+
+En esta reunión, se acordó finalizar durante el siguiente Sprint tanto el documento, completando el capítulo de resultados, evaluación y conclusiones, como el desarrollo de la aplicación Web. 
+
+A continuación, en la Tabla \ref{anexo1:product-backlog-14} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-14} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+
+| **ID**  | **Tarea**                                      | **Peso** |
+| ------- | :--------------------------------------------- | -------- |
+| TSGM-50 | Terminar capítulo de resultado                 | 5        |
+| TSGM-69 | Añadir competencias adquiridas en conclusiones | 1        |
+| TSGM-70 | Añadir trabajo futuro en conclusiones          | 1        |
+| TSGM-71 | Terminar capítulo de evaluación                | 3        |
+| TSGM-72 | Mejorar documento según revisión               | 3        |
+| TSGM-73 | Terminar de retocar aplicación DynaViz         | 3        |
+| TSGM-74 | Añadir siguiente Sprint                        | 1        |
+| TSGM-75 | Mejorar formato de memoria según revisión      | 5        |
+
+: [PB](#PB) del Sprint 14\label{anexo1:product-backlog-14}
+
+| **ID**  | **Tarea**                                      | **Peso** |
+| ------- | :--------------------------------------------- | -------- |
+| TSGM-50 | Terminar capítulo de resultado                 | 5        |
+| TSGM-69 | Añadir competencias adquiridas en conclusiones | 1        |
+| TSGM-70 | Añadir trabajo futuro en conclusiones          | 1        |
+| TSGM-71 | Terminar capítulo de evaluación                | 3        |
+| TSGM-72 | Mejorar documento según revisión               | 3        |
+| TSGM-73 | Terminar de retocar aplicación DynaViz         | 3        |
+| TSGM-74 | Añadir siguiente Sprint                        | 1        |
+
+: [SB](#SB) del Sprint 14\label{anexo1:Sprint-backlog-14}
+
+### Desarrollo de Sprint 
+
+Durante el Sprint, se completaron los capítulos de resultados, evaluación y conclusiones. Además, se corrigieron algunos pequeños errores en la aplicación *DynaViz*, dejándola finalmente terminada.
 
 ### Revisión Sprint
 
@@ -805,19 +856,19 @@ Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual 
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint13}, el cual refleja...
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint14}, el cual refleja...
 
-![[BC](#BC) del Sprint 12\label{anexo1:bc-sprint13}](anx1_bc-sprint13.png)
+![[BC](#BC) del Sprint 14\label{anexo1:bc-sprint14}](anx1_bc-sprint14.png)
 
-## Sprint 14
+## Sprint 15
 
-Este Sprint tiene comienzo el **?? de ?? de 2024 ** con una duración de ?? semanas. Su objetivo principal era ??. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **27 de mayo de 2024 ** con una duración de X semanas. Su objetivo principal era la mejora del formato del documento según revisión de los tutores. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
 En esta reunión, ...
 
-A continuación, en la Tabla \ref{anexo1:product-backlog-14} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-14} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+A continuación, en la Tabla \ref{anexo1:product-backlog-15} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-15} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
 ### Desarrollo de Sprint 
 
@@ -829,6 +880,6 @@ Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual 
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint14}, el cual refleja...
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint15}, el cual refleja...
 
-![[BC](#BC) del Sprint 12\label{anexo1:bc-sprint14}](anx1_bc-sprint12.png)
+![[BC](#BC) del Sprint 15\label{anexo1:bc-sprint15}](anx1_bc-sprint15.png)

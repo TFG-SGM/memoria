@@ -29,10 +29,10 @@ En cuanto al hosting, una opción viable para *DynaViz* es continuar utilizando 
 
 | **Caracteristicas**        | **Individual** | **Team**        | **Organization** | **Enterprise** |
 | ----------------------- | --------- | ---------------- | ----------------- | ------- |
-| Precio                     | Gratis     | $19/usuario-mes | $29/usuario-mes | Custom     |
-| Minutos de pipeline gratis | 500/mes    | 500/usuario-mes | 500/usuario-mes | Custom     |
-| Ancho de banda gratis      | 100 GB     | 500 GB          | 1 TB            | Custom     |
-| Autoescalado               | No         | Si              | Si              | Si         |
+| **Precio**                 | Gratis     | $19/usuario-mes | $29/usuario-mes | Custom     |
+| **Minutos de pipeline gratis** | 500/mes    | 500/usuario-mes | 500/usuario-mes | Custom     |
+| **Ancho de banda gratis**  | 100 GB     | 500 GB          | 1 TB            | Custom     |
+| **Autoescalado**           | No         | Si              | Si              | Si         |
 
 : Planes mensuales de *Render*\label{anexo7:render-plans}
 
@@ -42,7 +42,18 @@ El coste del "servicio web" depende de la instancia seleccionada, como se muestr
 
 Una vez elegido el proveedor de hosting, el siguiente paso será analizar la opción más adecuada para la base de datos.
 
-![Instancias de servicios web de *Render* @render-pricing\label{anexo7:render-web-services}](anx7_render-web-service.png)
+| **Tipo de Instancia** | **Precio** | **RAM** | **CPU** |
+| --------------------- | ---------- | ------- | ------- |
+| Free                  | $0/mes     | 512 MB  | 0.1     |
+| Starter               | $7/mes     | 512 MB  | 0.5     |
+| Standard              | $25/mes    | 2 GB    | 1       |
+| Pro                   | $85/mes    | 4 GB    | 2       |
+| Pro Plus              | $175/mes   | 8 GB    | 4       |
+| Pro Max               | $225/mes   | 16 GB   | 4       |
+| Pro Ultra             | $450/mes   | 32 GB   | 8       |
+| Custom                | Contacto   | +512 GB | +64     |
+
+: Instancias de servicios web de *Render* @render-pricing\label{anexo7:render-web-services}
 
 ## Proveedor de Base de Datos
 

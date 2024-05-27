@@ -10,14 +10,20 @@ Para lograr esto, se fueron cumpliendo los distintos objetivos propuestos al ini
 
 Posteriormente, en las entrevistas realizadas tanto en el Sprint 7 como en el Sprint 9, se logró el O3 al obtener las diferentes necesidades de los stakeholders del sistema.
 
-Por otro lado, el alcance del O4 se logró desde el Sprint 7 al X, donde se desarrolló la aplicación web de soporte. Durante el desarrollo de esta aplicación, se implementaron las técnicas de visualización propuestas y estudiadas en el Anexo 5 durante el Sprint 8, alcanzando así el O5.
+Por otro lado, el alcance del O4 se logró desde el Sprint 7 al Sprint 14, donde se desarrolló la aplicación web de soporte. Durante el desarrollo de esta aplicación, se implementaron las técnicas de visualización propuestas y estudiadas en el Anexo 5 durante el Sprint 8, alcanzando así el O5.
 
-Finalmente, los objetivos O6 y O7 se alcanzaron en las pruebas de evaluación del Sprint 11 y X, validando la aplicación y evaluando las técnicas de visualización.
+Finalmente, los objetivos O6 y O7 se alcanzaron en las pruebas de evaluación del Sprint 11 y Sprint 13, validando la aplicación y evaluando las técnicas de visualización.
 
 Una vez revisados los diferentes objetivos alcanzados durante el desarrollo del proyecto, a continuación se detallan las competencias adquiridas.
 
 ## Competencias Adquiridas
 
+Al finalizar el proyecto, también se ha logrado adquirir las competencias previstas en el capítulo de la introducción. Estas competencias corresponden a BA5, CO8, C013 y C016 de la intensificación de "Ingeniería Informática de Sistemas de Información" según lo indicado en la memoria oficial del grado @memoria-oficial-grado.
+
+Por último, en el siguiente punto se mencionará el trabajo futuro del proyecto.
+
 ## Trabajo Futuro
 
-- Integrar con IA
+Para la implementación de la aplicación DynaViz, se han recorrido diversas fases del ciclo de vida del desarrollo de software, desde la obtención de requisitos y el diseño de prototipos, hasta el desarrollo y las pruebas unitarias y de evaluación. No obstante, la aplicación aún no ha sido desplegada en un entorno real, como se detalla en el Anexo G, donde se estudian los costos asociados a esta etapa.
+
+Además, en el futuro, la aplicación final deberá integrarse con una inteligencia artificial capaz de analizar el vídeo y procesar los diferentes datos. Esto permitirá presentar la información utilizando las diversas técnicas de visualización estudiadas durante el proyecto.
