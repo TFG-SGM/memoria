@@ -8,7 +8,7 @@ Antes de profundizar en los detalles del proyecto, es crucial presentar el conte
 ## Contexto y Motivación
 Como estudiante de Ingeniería Informática, mi experiencia previa ha abarcado diversas herramientas y lenguajes de programación, pero he sentido un particular interés por el desarrollo interactivo en el FrontEnd, un área en la que he tenido menos oportunidades de trabajar hasta este último año de la carrera.
 
-La motivación para este proyecto surge no solo de mi interés en el desarrollo web, sino también de la relevancia social y médica que aborda. Después de todo, la fibromialgia es un trastorno, el cual puede tener un impacto significativo en la calidad de vida de millones de personas en todo el mundo. Los síntomas debilitantes pueden afectar la capacidad de llevar a cabo actividades diarias, influenciando también la salud mental y emocional de quienes la padecen. 
+La motivación para este proyecto surge no solo de mi interés en el desarrollo Web, sino también de la relevancia social y médica que aborda. Después de todo, la fibromialgia es un trastorno, el cual puede tener un impacto significativo en la calidad de vida de millones de personas en todo el mundo. Los síntomas debilitantes pueden afectar la capacidad de llevar a cabo actividades diarias, influenciando también la salud mental y emocional de quienes la padecen. 
 
 Es en este contexto, donde se origina el proyecto DiPAMIA (Sistema de Gestión y Diagnóstico de Patologías basado en el Análisis de Movimiento a través de Inteligencia Artificial). Como indica su nombre, la premisa fundamental de este sistema es utilizar la inteligencia artificial para detectar patologías mediante el análisis del movimiento, ofreciendo una herramienta eficaz y no invasiva para el diagnóstico y seguimiento de condiciones de salud mental.
 
@@ -38,7 +38,7 @@ Además de los objetivos mencionados previamente, también se pretende hacer uso
 Para concluir este primer capítulo de introducción, se presenta a continuación la estructura detallada del documento:
 
 1. **Introducción:** Se brinda una visión inicial del proyecto, donde se presenta la motivación que impulsó su desarrollo, así como los objetivos y competencias del mismo.
-2. **Estado del arte:** Se lleva a cabo un análisis exhaustivo de las diferentes metodologías de desarrollo, tecnologías web y técnicas de visualización relevantes en el campo.
+2. **Estado del arte:** Se lleva a cabo un análisis exhaustivo de las diferentes metodologías de desarrollo, tecnologías Web y técnicas de visualización relevantes en el campo.
 3. **Propuesta de solución:** Se presenta la propuesta para la creación de la aplicación Web, detallando la metodología a seguir, las herramientas a utilizar en su desarrollo, así como las técnicas de visualización.
 4. **Resultado:** Se muestra el producto final de la creación de la aplicación Web, acompañado de distintas capturas de pantalla que muestran su funcionalidad y diseño.
 5. **Evaluación del sistema:** Se realiza una evaluación crítica del resultado final de la aplicación Web, analizando su usabilidad y eficacia.

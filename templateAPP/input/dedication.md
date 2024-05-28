@@ -1,2 +1,1 @@
-Dedicado a mi familia y a todos
-aquellos ...
+A mi familia

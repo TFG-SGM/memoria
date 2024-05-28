@@ -4,7 +4,7 @@ En este capítulo se presentan las distintas evaluaciones llevadas a cabo durant
 
 ## Primera Evaluación
 
-La primera evaluación se realizó el 15 de abril de 2024 con el objetivo de recopilar las impresiones iniciales de usuarios reales y evaluar su satisfacción al utilizar la aplicación web. A continuación, se detallan los participantes, el contexto de uso, las tareas asignadas, el diseño experimental empleado, las métricas de usabilidad aplicadas y los resultados obtenidos en esta prueba de evaluación.
+La primera evaluación se realizó el 15 de abril de 2024 con el objetivo de recopilar las impresiones iniciales de usuarios reales y evaluar su satisfacción al utilizar la aplicación Web. A continuación, se detallan los participantes, el contexto de uso, las tareas asignadas, el diseño experimental empleado, las métricas de usabilidad aplicadas y los resultados obtenidos en esta prueba de evaluación.
 
 ### Participantes
 
@@ -23,7 +23,7 @@ Una vez presentados los participantes, en el siguiente punto se describe el cont
 
 La evaluación se llevó a cabo mediante videoconferencia con la aplicación *Microsoft Teams* @teams, lo que permitió que cada participante utilizara su propio hardware, tal y como se observa en la Tabla \ref{capitulo5:datos-participantes}.
 
-Es importante destacar que la aplicación web se desplegó en *Render* @render y la base de datos en *MongoDB Atlas* @mongodb-atlas. Dado que ambas plataformas fueron utilizadas en una versión gratuita, se presentaron algunas limitaciones, siendo la principal la imposibilidad de finalizar la creación de una prueba y desconexiones temporales del servidor en algunos casos.
+Es importante destacar que la aplicación Web se desplegó en *Render* @render y la base de datos en *MongoDB Atlas* @mongodb-atlas. Dado que ambas plataformas fueron utilizadas en una versión gratuita, se presentaron algunas limitaciones, siendo la principal la imposibilidad de finalizar la creación de una prueba y desconexiones temporales del servidor en algunos casos.
 
 Al finalizar la evaluación, los participantes completaron el cuestionario [SUS](#SUS) para proporcionar retroalimentación sobre su experiencia. Este cuestionario fue realizado utilizando un formulario de *Google Forms* @google-forms.
 
@@ -44,7 +44,7 @@ Una vez presentadas las tareas, en el siguiente punto se describe el diseño exp
 
 El proceso de evaluación siguió los siguientes pasos:
 
-1. **Explicación previa:** Antes de comenzar la evaluación, se proporcionó a cada participante un documento que detallaba las tareas a realizar y el proceso para iniciar sesión en la aplicación web.
+1. **Explicación previa:** Antes de comenzar la evaluación, se proporcionó a cada participante un documento que detallaba las tareas a realizar y el proceso para iniciar sesión en la aplicación Web.
 2. **Realización de tareas:** Se asignó a cada participante una lista de tareas específicas que debían completar. Durante este proceso, se implementó la técnica de *pensamiento en voz alta*, permitiendo a los participantes expresar sus opiniones mientras interactuaban con la aplicación. También se utilizó la técnica de *observación* para analizar cómo los participantes se desenvolvían durante la prueba.
 3. **Test de evaluación:** Una vez completadas las tareas, cada participante completó el cuestionario [SUS](#SUS). El objetivo de este paso era recopilar más información y opiniones sobre la aplicación desde la perspectiva de los usuarios.
 
@@ -60,7 +60,7 @@ Finalmente, en el siguiente punto se describen los resultados obtenidos tras la 
 
 Tras la primera prueba de evaluación, se recibió un valioso feedback por parte de ambos fisioterapeutas.
 
-Mediante las técnicas de *pensamiento en voz alta* y *observación* durante la realización de las tareas, se confirmó que la aplicación web es fácil de utilizar. Sin embargo, se observó que el entendimiento de las gráficas que muestran los datos de las pruebas puede resultar confuso para algunos usuarios, lo que podría requerir la asistencia de un profesional para su interpretación.
+Mediante las técnicas de *pensamiento en voz alta* y *observación* durante la realización de las tareas, se confirmó que la aplicación Web es fácil de utilizar. Sin embargo, se observó que el entendimiento de las gráficas que muestran los datos de las pruebas puede resultar confuso para algunos usuarios, lo que podría requerir la asistencia de un profesional para su interpretación.
 
 Por otro lado, en la Figura \ref{capitulo5:resultados-sus1} se presentan los resultados del cuestionario [SUS](#SUS) de cada participante, los cuales muestran una evaluación muy positiva de la aplicación. Después de todo, según Sauro @sauro la media de resultados [SUS](#SUS) de 500 estudios es de 68, representada en la Figura \ref{capitulo5:resultados-sus1} con una línea verde.
 

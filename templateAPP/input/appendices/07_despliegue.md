@@ -1,10 +1,10 @@
 # Despliegue de DynaViz
 
-Este anexo proporciona un detallado proceso para desplegar la aplicación *DynaViz* en un entorno real, junto con la estimación del coste final del despliegue. Para implementar una aplicación web de manera efectiva, se requiere configurar un dominio y desplegar tanto el lado del cliente como el servidor, además de la base de datos correspondiente. A continuación, se presenta una descripción detallada de cada uno de estos elementos.
+Este anexo proporciona un detallado proceso para desplegar la aplicación *DynaViz* en un entorno real, junto con la estimación del coste final del despliegue. Para implementar una aplicación Web de manera efectiva, se requiere configurar un dominio y desplegar tanto el lado del cliente como el servidor, además de la base de datos correspondiente. A continuación, se presenta una descripción detallada de cada uno de estos elementos.
 
 ## Proveedor de Dominio
 
-Un proveedor de dominio, como lo describe Balkhi @domain-providers, es una empresa que facilita la compra y registro de nombres de dominio. Esto permite acceder a las páginas web utilizando palabras fáciles de recordar en lugar de direcciones IP.
+Un proveedor de dominio, como lo describe Balkhi @domain-providers, es una empresa que facilita la compra y registro de nombres de dominio. Esto permite acceder a las páginas Web utilizando palabras fáciles de recordar en lugar de direcciones IP.
 
 Los precios de los dominios varían según los servicios ofrecidos y la extensión del dominio. La Figura \ref{anexo7:domain-providers} muestra algunos de los proveedores de dominios más populares, junto con sus precios, como se detalla en *domcomp* @domain-pricing.
 
@@ -23,9 +23,9 @@ Una vez seleccionado el proveedor de dominios, en el siguiente punto se proceder
 
 ## Proveedor de Hosting
 
-En cuanto al hosting, una opción viable para *DynaViz* es continuar utilizando *Render*, donde los pagos se ajustan según el uso de la aplicación web.
+En cuanto al hosting, una opción viable para *DynaViz* es continuar utilizando *Render*, donde los pagos se ajustan según el uso de la aplicación Web.
 
-*Render* ofrece planes mensuales con diversos beneficios, así como opciones basadas en el uso, como se detalla en su página oficial @render-pricing. Los planes mensuales disponibles se presentan en la Figura \ref{anexo7:render-plans}. Además, para *DynaViz*, se requieren dos componentes: un "sitio estático" para el lado del cliente y un "servicio web" para el lado del servidor.
+*Render* ofrece planes mensuales con diversos beneficios, así como opciones basadas en el uso, como se detalla en su página oficial @render-pricing. Los planes mensuales disponibles se presentan en la Figura \ref{anexo7:render-plans}. Además, para *DynaViz*, se requieren dos componentes: un "sitio estático" para el lado del cliente y un "servicio Web" para el lado del servidor.
 
 | **Caracteristicas**        | **Individual** | **Team**        | **Organization** | **Enterprise** |
 | ----------------------- | --------- | ---------------- | ----------------- | ------- |
@@ -38,7 +38,7 @@ En cuanto al hosting, una opción viable para *DynaViz* es continuar utilizando 
 
 El "sitio estático" ofrece ventajas como un [CDN](#CDN) ultrarrápido, implementaciones automáticas continuas desde Git, invalidación instantánea de caché y dominios personalizados con [TLS](#TLS) completamente administrado, todo ello de forma gratuita.
 
-El coste del "servicio web" depende de la instancia seleccionada, como se muestra en la Figura \ref{anexo7:render-web-services}. Estas instancias se pueden adaptar según las necesidades de la aplicación.
+El coste del "servicio Web" depende de la instancia seleccionada, como se muestra en la Figura \ref{anexo7:render-web-services}. Estas instancias se pueden adaptar según las necesidades de la aplicación.
 
 Una vez elegido el proveedor de hosting, el siguiente paso será analizar la opción más adecuada para la base de datos.
 
@@ -53,7 +53,7 @@ Una vez elegido el proveedor de hosting, el siguiente paso será analizar la opc
 | Pro Ultra             | $450/mes   | 32 GB   | 8       |
 | Custom                | Contacto   | +512 GB | +64     |
 
-: Instancias de servicios web de *Render* @render-pricing\label{anexo7:render-web-services}
+: Instancias de servicios Web de *Render* @render-pricing\label{anexo7:render-web-services}
 
 ## Proveedor de Base de Datos
 
@@ -63,7 +63,7 @@ Para la base de datos, al igual que con el hosting, *MongoDB Atlas* sigue siendo
 - **Dedicado:** ofrece características mejoradas a cambio de un coste mayor. Los precios de este plan se muestran en la Figura \ref{anexo7:mongodb-dedicated}.
 - **Serverless:** este plan ofrece un servicio de pago según el uso. Las características y los precios de este plan se detallan en la Figura \ref{anexo7:mongodb-serverless}.
 
-Para *DynaViz*, una opción recomendada es utilizar el plan Serverless. De esta manera, la base de datos podrá escalar junto con la aplicación web conforme se le vaya dando uso con el tiempo.
+Para *DynaViz*, una opción recomendada es utilizar el plan Serverless. De esta manera, la base de datos podrá escalar junto con la aplicación Web conforme se le vaya dando uso con el tiempo.
 
 | **Almacenamiento** | **[RAM](#RAM)** | **[vCPUs](#vCPU)** | **Precio** |
 | ------------------ | --------------- | ------------------ | ---------- |

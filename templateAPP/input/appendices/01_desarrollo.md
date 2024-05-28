@@ -11,10 +11,10 @@ Antes de detallar cada uno de los Sprints realizados, se identifican a continuac
 Los principales stakeholders identificados en este sistema son:
 
 - **Sergio García Muñoz:** Autor del proyecto, completamente involucrado en su desarrollo. Se encarga de implementar la aplicación Web y participa en todas las reuniones de los Sprints.
-- **Félix Albertos Marcos (FAM) y Juan Enrique Garrido Navarro (JEGN):** Tutores del autor del proyecto, involucrados en su desarrollo. Participan activamente en las reuniones de planificación, revisión y retrospectiva.
+- **Félix Albertos Marco (FAM) y Juan Enrique Garrido Navarro (JEGN):** Tutores del autor del proyecto, involucrados en su desarrollo. Participan activamente en las reuniones de planificación, revisión y retrospectiva.
 - **Cristina Bravo Navarro y Manuel Trinidad Fernandez:** Fisioterapeutas encargados de la elaboración y diseño del proyecto, así como de la recopilación de datos y la redacción de resultados.
-- **Médicos:** Usuarios finales de la aplicación web en desarrollo. Se beneficiarán de ella para ayudar en el diagnóstico temprano y el manejo de la fibromialgia.
-- **Pacientes con síntomas de fibromialgia:** Usuarios finales que experimentan los síntomas y se someterán a la evaluación a través de la aplicación web para obtener información sobre su condición y un diagnóstico más preciso.
+- **Médicos:** Usuarios finales de la aplicación Web en desarrollo. Se beneficiarán de ella para ayudar en el diagnóstico temprano y el manejo de la fibromialgia.
+- **Pacientes con síntomas de fibromialgia:** Usuarios finales que experimentan los síntomas y se someterán a la evaluación a través de la aplicación Web para obtener información sobre su condición y un diagnóstico más preciso.
 
 Una vez identificados los diferentes stakeholders, a continuación se explica brevemente la fase inicial que tuvo lugar antes del comienzo del primer Sprint.
 
@@ -378,7 +378,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-7} se detallan las dife
 
 Durante el Sprint, se inició con la revisión y aplicación de los cambios sugeridos en el documento, basándose en la retroalimentación recibida durante el Sprint anterior. Posteriormente, se procedió a revisar y reescribir detalladamente el capítulo 2.3, con el objetivo de mejorar su claridad y comprensión de las técnicas de visualización de datos, complementando la explicación con imágenes ilustrativas.
 
-Una vez completadas las tareas relacionadas con el documento, se dio inicio al desarrollo de un [MVP](#MVP) para la aplicación web. Este [MVP](#MVP) se construyó utilizando el stack MERN junto con TypeScript, como tecnología principal. Se optó por una arquitectura [MVC](#MVC) para organizar el código de manera eficiente.
+Una vez completadas las tareas relacionadas con el documento, se dio inicio al desarrollo de un [MVP](#MVP) para la aplicación Web. Este [MVP](#MVP) se construyó utilizando el stack MERN junto con TypeScript, como tecnología principal. Se optó por una arquitectura [MVC](#MVC) para organizar el código de manera eficiente.
 
 Para simplificar la gestión de la base de datos durante el proceso de desarrollo, se empleó MongoDB Compass, una herramienta que facilita la administración de datos de manera local. Sin embargo, el objetivo a largo plazo es migrar esta base de datos a la nube utilizando MongoDB Atlas.
 
@@ -394,7 +394,7 @@ Finalmente, durante el Sprint, se llevó a cabo una entrevista con los stakehold
 
 Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual los tutores proporcionaron valiosos consejos para mejorar el formato del documento. Específicamente, el tutor JEGN sugirió aumentar el tamaño de las imágenes y reducir el uso de negritas, especialmente en el capítulo 2.3.
 
-Por otra parte, el tutor FAM destacó la importancia de incluir la fecha de último acceso en las páginas web, aunque señaló que esto debe hacerse manualmente debido a ciertos inconvenientes con la plantilla utilizada. También, recomendó cambiar el título del primer anexo "Resumen de Sprints" por "Desarrollo del Sistema", donde se añadirán capturas de pantalla de la evolución del [MVP](#MVP).
+Por otra parte, el tutor FAM destacó la importancia de incluir la fecha de último acceso en las páginas Web, aunque señaló que esto debe hacerse manualmente debido a ciertos inconvenientes con la plantilla utilizada. También, recomendó cambiar el título del primer anexo "Resumen de Sprints" por "Desarrollo del Sistema", donde se añadirán capturas de pantalla de la evolución del [MVP](#MVP).
 
 Además, se presentó el ([MVP](#MVP)) desarrollado durante el Sprint a los tutores. Finalmente, al final de la reunión, se llevó a cabo una revisión general de los puntos clave discutidos durante la entrevista realizada.
 
@@ -457,15 +457,15 @@ Durante este Sprint, se avanzó continuamente en el progreso del [MVP](#MVP), lo
 
 También, se desarrolló las páginas de gestión, las cuales abarcan administradores, médicos, pacientes y pruebas, permitiendo tanto la consulta como la creación, edición y eliminación de estos elementos. Sin embargo, el enfoque principal seguía siendo la funcionalidad sobre el diseño, razón por la cual el [CSS](#CSS) no se llegó a implementar en este periodo. 
 
-En la Figura \ref{anexo1:mvp2_lista-pacientes} se muestra la lista de pacientes dentro de la aplicación web, mientras que en la Figura \ref{anexo1:mvp2_crear-paciente} se presenta el menú para añadir un nuevo paciente. Es importante destacar que este mismo diseño se aplica a los diferentes roles y elementos de la aplicación web.
+En la Figura \ref{anexo1:mvp2_lista-pacientes} se muestra la lista de pacientes dentro de la aplicación Web, mientras que en la Figura \ref{anexo1:mvp2_crear-paciente} se presenta el menú para añadir un nuevo paciente. Es importante destacar que este mismo diseño se aplica a los diferentes roles y elementos de la aplicación Web.
 
 ![Lista de pacientes del [MVP](#MVP)\label{anexo1:mvp2_lista-pacientes}](anx1_mvp2_lista-pacientes.png)
 
 ![Menú de creación de paciente del [MVP](#MVP)\label{anexo1:mvp2_crear-paciente}](anx1_mvp2_crear-paciente.png)
 
-Por otro lado, se elaboraron diversos diagramas para la aplicación web, incluyendo diagramas de casos de uso, de despliegue, de clases, de base de datos, de secuencia de inicio de sesión y de secuencia de creación de paciente, así como un diagrama de actividad para crear una prueba.
+Por otro lado, se elaboraron diversos diagramas para la aplicación Web, incluyendo diagramas de casos de uso, de despliegue, de clases, de base de datos, de secuencia de inicio de sesión y de secuencia de creación de paciente, así como un diagrama de actividad para crear una prueba.
 
-Además, se diseñó un prototipo no funcional que representa las diferentes páginas y ventanas que podría tener la aplicación web. También se exploraron diferentes técnicas de visualización de datos y se realizaron diseños específicos al respecto.
+Además, se diseñó un prototipo no funcional que representa las diferentes páginas y ventanas que podría tener la aplicación Web. También se exploraron diferentes técnicas de visualización de datos y se realizaron diseños específicos al respecto.
 
 Finalmente, se continuó mejorando la memoria del proyecto según los comentarios recibidos por parte de los tutores durante la última reunión de revisión.
 
@@ -551,7 +551,7 @@ Este Sprint tiene comienzo el **15 de marzo de 2024 ** con una duración de 3 se
 
 ### Planificación del Sprint
 
-En esta reunión, se establecieron las tareas para el próximo Sprint, enfocándonos en dos aspectos principales: enriquecer el estado del arte con información relevante sobre la fibromialgia y avanzar en el desarrollo de la aplicación web. Es crucial destacar que se priorizará la mejora del diseño y la experiencia del usuario, por lo que se prestará especial atención al refinamiento del [CSS](#CSS). A continuación, en la Tabla \ref{anexo1:product-backlog-10} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-10} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+En esta reunión, se establecieron las tareas para el próximo Sprint, enfocándonos en dos aspectos principales: enriquecer el estado del arte con información relevante sobre la fibromialgia y avanzar en el desarrollo de la aplicación Web. Es crucial destacar que se priorizará la mejora del diseño y la experiencia del usuario, por lo que se prestará especial atención al refinamiento del [CSS](#CSS). A continuación, en la Tabla \ref{anexo1:product-backlog-10} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-10} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
 | **ID**  | **Tarea**                                  | **Peso** |
 | ------- | :----------------------------------------- | -------- |
@@ -625,9 +625,9 @@ Finalmente, junto con los stakeholders, se optó por modificar la representació
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, donde los tutores proporcionaron retroalimentación sobre la aplicación web. Entre los puntos mencionados se incluyen sugerencias para mejorar la disposición de algunos elementos con el fin de ofrecer una experiencia de usuario más fluida, la recomendación de seleccionar una paleta de colores más atractiva, y la propuesta de eliminar la pantalla de inicio para el rol de médico si su única función es consultar a los pacientes.
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, donde los tutores proporcionaron retroalimentación sobre la aplicación Web. Entre los puntos mencionados se incluyen sugerencias para mejorar la disposición de algunos elementos con el fin de ofrecer una experiencia de usuario más fluida, la recomendación de seleccionar una paleta de colores más atractiva, y la propuesta de eliminar la pantalla de inicio para el rol de médico si su única función es consultar a los pacientes.
 
-Asimismo, se planteó la idea de crear un logotipo específico para la aplicación web para elevar su calidad percibida. Además, se destacó la importancia de garantizar que los vídeos grabados dentro de la aplicación web se almacenen correctamente en la base de datos para su posterior visualización.
+Asimismo, se planteó la idea de crear un logotipo específico para la aplicación Web para elevar su calidad percibida. Además, se destacó la importancia de garantizar que los vídeos grabados dentro de la aplicación Web se almacenen correctamente en la base de datos para su posterior visualización.
 
 ### Retrospectiva del Sprint
 
@@ -675,11 +675,11 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-11} se detallan las dif
 
 ### Desarrollo de Sprint 
 
-Durante el sprint, se llevaron a cabo mejoras significativas en la aplicación web. Entre estos cambios, sobresale la implementación de la funcionalidad para almacenar videos en la base de datos y la capacidad de visualizarlos una vez guardados. Asimismo, se destaca la creación del logotipo de *DynaViz* ilustrado en la Figura \ref{anexo1:logotipo}.
+Durante el sprint, se llevaron a cabo mejoras significativas en la aplicación Web. Entre estos cambios, sobresale la implementación de la funcionalidad para almacenar videos en la base de datos y la capacidad de visualizarlos una vez guardados. Asimismo, se destaca la creación del logotipo de *DynaViz* ilustrado en la Figura \ref{anexo1:logotipo}.
 
 ![Logotipo de *DynaViz*\label{anexo1:logotipo}](anx1_logotipo.png){width=25%}
 
-Además, se logró desplegar exitosamente la aplicación web utilizando la plataforma *Render*. Para ello, se desplegó inicialmente un servicio web completando el formulario que se muestra en la Figura \ref{anexo1:render-process}. En este proceso, se asignó un nombre, se seleccionó la carpeta "server" y se optó por la instancia gratuita. Además, se configuraron las variables de entorno correspondientes para la autentificación de usuarios, la [URL](#URL) de la base de datos de *MongoDB Atlas* y el puerto de conexión.
+Además, se logró desplegar exitosamente la aplicación Web utilizando la plataforma *Render*. Para ello, se desplegó inicialmente un servicio Web completando el formulario que se muestra en la Figura \ref{anexo1:render-process}. En este proceso, se asignó un nombre, se seleccionó la carpeta "server" y se optó por la instancia gratuita. Además, se configuraron las variables de entorno correspondientes para la autentificación de usuarios, la [URL](#URL) de la base de datos de *MongoDB Atlas* y el puerto de conexión.
 
 Una vez que el servidor fue desplegado, se procedió a desplegar la parte visual siguiendo un proceso similar, pero en esta ocasión seleccionando la carpeta "client" y añadiendo únicamente la [URL](#URL) del servidor desplegado previamente como variable de entorno.
 
@@ -742,7 +742,7 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-12} se detallan las dif
 
 Durante el Sprint, se inició el capítulo de conclusiones, donde se realizó una revisión exhaustiva de los objetivos establecidos al inicio del proyecto y se evaluó cómo se han ido cumpliendo a lo largo de los diferentes Sprints. Además, se agregó un nuevo apartado sobre plataformas de despliegue en el estado del arte y el anexo de los resultados de los cuestionarios [SUS](#SUS).
 
-En cuanto a las mejoras implementadas en la aplicación web, se destacan varias mejoras significativas. En primer lugar, se habilitó la funcionalidad para que los usuarios puedan cambiar su contraseña una vez iniciada la sesión. También se introdujo un sistema de "migas de pan" para mejorar la navegación dentro de la aplicación Web, facilitando a los usuarios ubicarse en la estructura del sitio. Además, se llevaron a cabo diversas optimizaciones en el diseño responsive para garantizar una experiencia de usuario fluida y consistente en diferentes dispositivos y tamaños de pantalla.
+En cuanto a las mejoras implementadas en la aplicación Web, se destacan varias mejoras significativas. En primer lugar, se habilitó la funcionalidad para que los usuarios puedan cambiar su contraseña una vez iniciada la sesión. También se introdujo un sistema de "migas de pan" para mejorar la navegación dentro de la aplicación Web, facilitando a los usuarios ubicarse en la estructura del sitio. Además, se llevaron a cabo diversas optimizaciones en el diseño responsive para garantizar una experiencia de usuario fluida y consistente en diferentes dispositivos y tamaños de pantalla.
 
 ### Revisión Sprint
 
@@ -760,7 +760,7 @@ Este Sprint tiene comienzo el **3 de mayo de 2024 ** con una duración de 17 dí
 
 ### Planificación del Sprint
 
-En esta reunión, se acordó implementar las mejoras discutidas en la reunión de revisión, así como añadir una nueva sección que detallará el coste final de desplegar la aplicación DynaViz. Además, se planteó la posibilidad de continuar mejorando la aplicación web mediante la búsqueda de sugerencias por parte de los stakeholders.
+En esta reunión, se acordó implementar las mejoras discutidas en la reunión de revisión, así como añadir una nueva sección que detallará el coste final de desplegar la aplicación DynaViz. Además, se planteó la posibilidad de continuar mejorando la aplicación Web mediante la búsqueda de sugerencias por parte de los stakeholders.
 
 A continuación, en la Tabla \ref{anexo1:product-backlog-13} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-13} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
@@ -776,7 +776,8 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-13} se detallan las dif
 | TSGM-75 | Añadir nuevo anexo de un despliegue real de DynaViz         | 5        |
 | TSGM-76 | Mejorar la aplicación Web                                   | 3        |
 | TSGM-77 | Mejorar tests de aplicación Web                             | 7        |
-| TSGM-78 | Añadir siguiente Sprint                                     | 1        |
+| TSGM-78 | Realizar segunda prueba de evaluación | 3 |
+| TSGM-79 | Añadir siguiente Sprint                                     | 1        |
 
 : [PB](#PB) del Sprint 13\label{anexo1:product-backlog-13}
 
@@ -789,7 +790,8 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-13} se detallan las dif
 | TSGM-75 | Añadir nuevo anexo de un despliegue real de DynaViz         | 5        |
 | TSGM-76 | Mejorar la aplicación Web                                   | 3        |
 | TSGM-77 | Mejorar tests de aplicación Web                             | 7        |
-| TSGM-78 | Añadir siguiente Sprint                                     | 1        |
+| TSGM-78 | Realizar segunda prueba de evaluación                       | 3        |
+| TSGM-79 | Añadir siguiente Sprint                                     | 1        |
 
 : [SB](#SB) del Sprint 13\label{anexo1:Sprint-backlog-13}
 
@@ -825,12 +827,12 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-14} se detallan las dif
 | ------- | :--------------------------------------------- | -------- |
 | TSGM-50 | Terminar capítulo de resultado                 | 5        |
 | TSGM-69 | Añadir competencias adquiridas en conclusiones | 1        |
-| TSGM-70 | Añadir trabajo futuro en conclusiones          | 1        |
-| TSGM-71 | Terminar capítulo de evaluación                | 3        |
-| TSGM-72 | Mejorar documento según revisión               | 3        |
-| TSGM-73 | Terminar de retocar aplicación DynaViz         | 3        |
-| TSGM-74 | Añadir siguiente Sprint                        | 1        |
-| TSGM-75 | Mejorar formato de memoria según revisión      | 5        |
+| TSGM-80 | Añadir trabajo futuro en conclusiones          | 1        |
+| TSGM-81 | Terminar capítulo de evaluación                | 3        |
+| TSGM-82 | Mejorar documento según revisión               | 3        |
+| TSGM-83 | Terminar de retocar aplicación DynaViz         | 3        |
+| TSGM-84 | Añadir siguiente Sprint                        | 1        |
+| TSGM-85 | Mejorar formato de memoria según revisión      | 5        |
 
 : [PB](#PB) del Sprint 14\label{anexo1:product-backlog-14}
 
@@ -838,11 +840,11 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-14} se detallan las dif
 | ------- | :--------------------------------------------- | -------- |
 | TSGM-50 | Terminar capítulo de resultado                 | 5        |
 | TSGM-69 | Añadir competencias adquiridas en conclusiones | 1        |
-| TSGM-70 | Añadir trabajo futuro en conclusiones          | 1        |
-| TSGM-71 | Terminar capítulo de evaluación                | 3        |
-| TSGM-72 | Mejorar documento según revisión               | 3        |
-| TSGM-73 | Terminar de retocar aplicación DynaViz         | 3        |
-| TSGM-74 | Añadir siguiente Sprint                        | 1        |
+| TSGM-80 | Añadir trabajo futuro en conclusiones          | 1        |
+| TSGM-81 | Terminar capítulo de evaluación                | 3        |
+| TSGM-82 | Mejorar documento según revisión               | 3        |
+| TSGM-83 | Terminar de retocar aplicación DynaViz         | 3        |
+| TSGM-84 | Añadir siguiente Sprint                        | 1        |
 
 : [SB](#SB) del Sprint 14\label{anexo1:Sprint-backlog-14}
 
@@ -852,17 +854,17 @@ Durante el Sprint, se completaron los capítulos de resultados, evaluación y co
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
+Tras el desarrollo del Sprint, se llevó a cabo la reunión de revisión, en la cual se analizaron los cambios realizados en la memoria durante el Sprint. El tutor FAM proporcionó su feedback durante esta reunión.
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint14}, el cual refleja...
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint14}, el cual refleja que el progreso del trabajo realizado ha ido por delante respecto al planificado inicialmente.
 
 ![[BC](#BC) del Sprint 14\label{anexo1:bc-sprint14}](anx1_bc-sprint14.png)
 
-## Sprint 15
+## Sprint 15 (en proceso)
 
-Este Sprint tiene comienzo el **27 de mayo de 2024 ** con una duración de X semanas. Su objetivo principal era la mejora del formato del documento según revisión de los tutores. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **28 de mayo de 2024 ** con una duración de X semanas. Su objetivo principal era la mejora del formato del documento según revisión de los tutores. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 

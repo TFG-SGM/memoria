@@ -40,7 +40,7 @@ La creación de una interfaz intuitiva implica la adopción de elementos visuale
 
 En paralelo, se plantea la implementación de un *diseño responsive*, como expone Mozilla @responsive, con el cual se conseguirá una adaptación fluida para los diversos tamaños de pantalla. Después de todo, la gran variabilidad de dispositivos que existen, como ordenadores, tablets y teléfonos móviles, requiere que la interfaz sea flexible y se ajuste de manera óptima a cada contexto. Esta adaptabilidad no solo mejora la accesibilidad, sino que también proporciona una experiencia consistente y agradable independientemente del dispositivo utilizado.
 
-En conclusión, la creación de una interfaz intuitiva y responsive es un elemento clave para ofrecer una experiencia de usuario positiva en la aplicación web. Estos aspectos se integran dentro del marco tecnológico propuesto para la creación de la aplicación web, el cual será detallado en el siguiente punto.
+En conclusión, la creación de una interfaz intuitiva y responsive es un elemento clave para ofrecer una experiencia de usuario positiva en la aplicación Web. Estos aspectos se integran dentro del marco tecnológico propuesto para la creación de la aplicación Web, el cual será detallado en el siguiente punto.
 
 ### Marco Tecnológico
 

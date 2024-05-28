@@ -1,0 +1,207 @@
+@startuml
+
+skinparam class {
+    BorderColor black
+}
+skinparam ArrowColor black
+
+Views ..> DataService
+Views ..> TestService
+
+DataService ..> AuthRouter
+DataService ..> AdminRouter
+DataService ..> DoctorRouter
+DataService ..> PatientRouter
+DataService ..> TestRouter
+DataService ..> TestTypeRouter
+DataService ..> FileRouter
+
+AuthRouter ..> AuthController
+AdminRouter ..> AdminController
+DoctorRouter ..> DoctorController
+PatientRouter ..> PatientController
+TestRouter ..> TestController
+TestTypeRouter ..> TestTypeController
+FileRouter ..> FileController
+
+AdminController ..> AdminModel
+DoctorController ..> DoctorModel
+PatientController ..> PatientModel
+TestController ..> TestModel
+TestTypeController ..> TestTypeModel
+
+class Views #Plum {}
+
+class TestService #Wheat {
+    +number[] getRealMovements(parts: TestPartsData, axis: axisData, actualPart: string)
+    +number[] getIdealMovements(parts: TestPartsData, axis: axisData, actualPart: string)
+    +string[] getBodyParts(parts: TestPartsData)
+    +object getBodyPartsForRadial(parts: TestPartsData)
+    +number[] getBodyPartRestriction(parts: TestPartsData)
+    +number[] getUniqueVariations(parts: TestPartsData, axis: axisData, actualPart: string)
+    +number[] getVariationsCount(parts: TestPartsData, axis: axisData, actualPart: string, uniqueVariations: number[])
+    +number[] getBoxPlotData(movements: number[])
+    +any[][] getCorrelatedVariations(parts: TestPartsData, axis: axisData, parts1: string, parts2: string)
+    +object getProcessDataForBarChart(data: TestSubData)
+    +object getProcessDataForChartEvolution(tests: TestData[])
+    -number findQuartile(sortedData: number[], quartile: number)
+}
+
+class DataService #Wheat {
+    +string getToken()
+    +data login(email: string, password: string)
+    +void logout()
+    +data getData(endpoint: string)
+    +data createData(endpoint: string, newData: T) 
+    +data createFormData(endpoint: string, newData: T) 
+    +data deleteData(endpoint: string) 
+    +data updateData(endpoint: string, newData: T) 
+    +data updateFormData(endpoint: string, newData: T) 
+    +data getUserData() 
+    -FormData getFormDataFromObject(data: T) 
+}
+
+class AuthRouter #LightGrey {
+    void get("/auth/login")
+    void post("/auth/user-data")
+}
+
+class AdminRouter #LightGrey {
+    void get("/admin/")
+    void post("/admin/")
+    void get("/admin/:id")
+    void put("/admin/:id")
+    void put("/admin/password/:id")
+    void delete("/admin/:id")
+}
+
+class DoctorRouter #LightGrey {
+    void get("/doctor/")
+    void post("/doctor/")
+    void get("/doctor/:id")
+    void put("/doctor/:id")
+    void put("/doctor/password/:id")
+    void delete("/doctor/:id")
+}
+
+class PatientRouter #LightGrey {
+    void get("/patient/")
+    void post("/patient/")
+    void get("/patient/:id")
+    void put("/patient/:id")
+    void delete("/patient/:id")
+}
+
+class TestRouter #LightGrey {
+    void get("/test/")
+    void post("/test/")
+    void get("/test/:id")
+    void put("/test/:id")
+    void delete("/test/:id")
+    void delete("/test/patient/:patientId")
+    void get("/test/attribute")
+}
+
+class TestTypeRouter #LightGrey {
+    void get("/testType/")
+    void get("/testType/:id")
+}
+
+class FileRouter #LightGrey {
+    void get("/file/:id")
+    void delete("/file/:id")
+}
+
+class AuthController #LightSkyBlue {
+    void validateEmail(email: string)
+    void hasPassword(password: string)
+    void getUserData(req: Request, res: Response)
+    void login(req: Request, res: Response)
+}
+
+class AdminController #LightSkyBlue {
+    void getAll(req: Request, res: Response)
+    void getById(req: Request, res: Response)
+    void create(req: Request, res: Response)
+    void update(req: Request, res: Response)
+    void updatePass(req: Request, res: Response)
+    void delete(req: Request, res: Response)
+}
+
+class DoctorController #LightSkyBlue {
+    void getAll(req: Request, res: Response)
+    void getById(req: Request, res: Response)
+    void create(req: Request, res: Response)
+    void update(req: Request, res: Response)
+    void updatePass(req: Request, res: Response)
+    void delete(req: Request, res: Response)
+}
+
+class PatientController #LightSkyBlue {
+    void getAll(req: Request, res: Response)
+    void getById(req: Request, res: Response)
+    void create(req: Request, res: Response)
+    void update(req: Request, res: Response)
+    void delete(req: Request, res: Response)
+}
+
+class TestController #LightSkyBlue {
+    void getAll(req: Request, res: Response)
+    void getById(req: Request, res: Response)
+    void create(req: Request, res: Response)
+    void update(req: Request, res: Response)
+    void delete(req: Request, res: Response)
+    void deleteByPatient(req: Request, res: Response)
+    void getAttributes(req: Request, res: Response)
+}
+
+class TestTypeController #LightSkyBlue {
+    void getAll(req: Request, res: Response)
+    void getById(req: Request, res: Response)
+}
+
+class FileController #LightSkyBlue {
+    void getById(req: Request, res: Response)
+    void delete(req: Request, res: Response)
+}
+
+class AdminModel #LightGreen {
+    admin[] getAll()
+    admin getById({id: string})
+    admin create({input: User})
+    admin update({id: string, input: User})
+    int delete({id: string})
+}
+
+class DoctorModel #LightGreen{
+    doctor[] getAll()
+    doctor getById({id: string})
+    doctor create({input: User})
+    doctor update({id: string , input: User})
+    int delete({id})
+}
+
+class PatientModel #LightGreen{
+    patient[] getAll()
+    patient getById({id: string})
+    patient create({input: Patient})
+    patient update({id: string, input: Patient})
+    int delete({id: string})
+}
+
+class TestModel #LightGreen {
+    test[] getAll({patientId: string, doctorId: string, typeId: string, date: string, order: string})
+    test getById({id: string})
+    test create({id: string})
+    tes update({id: string})
+    int delete({id: string})
+    string[] deleteByPatient({patientId: string})
+    string[] getAttributes({attribute: string, patientId: string})
+}
+
+class TestTypeModel #LightGreen{
+    testType[] getAll()
+    testType getById({id: string})
+}
+
+@enduml

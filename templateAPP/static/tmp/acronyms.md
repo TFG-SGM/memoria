@@ -22,6 +22,10 @@
 
 : Base de Datos
 
+<span id='CDN'>CDN</span>
+
+: Content Delivery Network (Red de Entrega de Contenidos)
+
 <span id='CRUD'>CRUD</span>
 
 : Create, Read, Update and Delete (Crear, Leer, Actualizar, Borrar)
@@ -33,6 +37,10 @@
 <span id='DOM'>DOM</span>
 
 : Document Object Model (Modelo de Objeto de Documento)
+
+<span id='EVA'>EVA</span>
+
+: Escala Visual Analógica
 
 <span id='HTML'>HTML</span>
 
@@ -66,6 +74,10 @@
 
 : Not Only Structured Query Language (No Solo Lenguaje de Consulta Estructurada)
 
+<span id='PaaS'>PaaS</span>
+
+: Platform as a Service (Plataforma como Servicio)
+
 <span id='PB'>PB</span>
 
 : Product Backlog
@@ -74,9 +86,17 @@
 
 : Progressive Web Applications (Aplicaciones Web Progresivas)
 
+<span id='RAM'>RAM</span>
+
+: Random Access Memory (Memoria de Acceso Aleatorio)
+
 <span id='REST'>REST</span>
 
 : Representational State Transfer (Representacional del Estado Transferido)
+
+<span id='RPU'>RPU</span>
+
+: Read Processing Unit (Unidad de Procesamiento de Lectura)
 
 <span id='SB'>SB</span>
 
@@ -94,49 +114,29 @@
 
 : Single Page Application (Aplicaciones de una Sola Página)
 
-<span id='TFG'>TFG</span>
-
-: Trabajo Final de Grado
-
-<span id='URL'>URL</span>
-
-: Uniform Resource Locator (Localizador de Recursos Uniforme)
-
-<span id='Wasm'>Wasm</span>
-
-: WebAssembly
-
-<span id='EVA'>EVA</span>
-
-: Escala Visual Analógica
-
 <span id='SUS'>SUS</span>
 
 : System usability scale (Sistema de Escalas de Usabilidad)
+
+<span id='TFG'>TFG</span>
+
+: Trabajo Final de Grado
 
 <span id='TLS'>TLS</span>
 
 : Transport Layer Security (Seguridad de la Capa de Transporte)
 
-<span id='PaaS'>PaaS</span>
+<span id='URL'>URL</span>
 
-: Platform as a Service (Plataforma como Servicio)
-
-<span id='RAM'>RAM</span>
-
-: Random Access Memory (Memoria de Acceso Aleatorio)
+: Uniform Resource Locator (Localizador de Recursos Uniforme)
 
 <span id='vCPUs'>vCPUs</span>
 
 : Virtual Representation of Physical Central Processing Unit (Representación Virtual de la Unidad Central de Procesamiento Física)
 
-<span id='CDN'>CDN</span>
+<span id='Wasm'>Wasm</span>
 
-: Content Delivery Network (Red de Entrega de Contenidos)
-
-<span id='RPU'>RPU</span>
-
-: Read Processing Unit (Unidad de Procesamiento de Lectura)
+: WebAssembly
 
 <span id='WPU'>WPU</span>
 

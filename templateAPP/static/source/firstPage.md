@@ -7,7 +7,7 @@
 
 \includegraphics[trim={13.5cm 0 0 0},clip,width=12cm]{static/images/logo_ccssttii_talavera.jpg}
 
-\vspace{3cm}
+\vspace{2cm}
 
 \Large
 UNIVERSIDAD DE CASTILLA-LA MANCHA
@@ -32,7 +32,7 @@ TRABAJO FIN DE GRADO
 
 \Large
 
-\vspace{0.50cm}
+\vspace{0.25cm}
 
 <+placeholder_firstPage_author+> \Name
 

@@ -57,7 +57,7 @@ models.ts --> mongodb : Database Operations
 
 El diagrama de la Figura \ref{anexo3:diagrama-bd} muestra las diferentes entidades de la base de datos.  Es importante recordar que esta base de datos es no relacional y utiliza MongoDB, lo que significa que no es necesario que cada documento tenga la misma estructura exacta. Sin embargo, se diseñó el diagrama para proporcionar una base de los diferentes atributos que pueden tener cada entidad.
 
-En el contexto de la aplicación web, se han identificado principalmente cinco entidades: administrador, médico, paciente, prueba y datos de prueba. 
+En el contexto de la aplicación Web, se han identificado principalmente cinco entidades: administrador, médico, paciente, prueba y datos de prueba. 
 
 ```{.plantuml #anexo3:diagrama-bd caption="Diagrama de base de datos" frame=single}
 @startuml

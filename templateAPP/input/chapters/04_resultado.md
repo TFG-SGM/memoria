@@ -325,7 +325,7 @@ En esta ventana, el administrador puede añadir un nuevo médico o seleccionar u
 
 Las ventanas modales para crear y editar son similares. En la Figura \ref{capitulo4:nuevo-medico} se muestra la ventana modal de creación, donde se destaca que la imagen es el único campo no obligatorio. Además, el campo de contraseña no se solicita al editar un médico, permitiendo que solo el usuario pueda cambiar su propia contraseña.
 
-Finalmente, el administrador puede consultar y administrar los datos de su cuenta seleccionando el icono en la cabecera de la aplicación web, lo que abrirá la ventana modal mostrada en la Figura \ref{capitulo4:mi-cuenta}. En dicho menú, el usuario puede editar sus datos tal y como se observa en las Figuras \ref{capitulo4:editar-mi-cuenta} y \ref{capitulo4:editar-contraseña}.
+Finalmente, el administrador puede consultar y administrar los datos de su cuenta seleccionando el icono en la cabecera de la aplicación Web, lo que abrirá la ventana modal mostrada en la Figura \ref{capitulo4:mi-cuenta}. En dicho menú, el usuario puede editar sus datos tal y como se observa en las Figuras \ref{capitulo4:editar-mi-cuenta} y \ref{capitulo4:editar-contraseña}.
 
 ![Ventana de inicio de sesión\label{capitulo4:inicio-sesion}](cap4_inicio-sesion.png)
 
@@ -435,9 +435,11 @@ Durante el desarrollo de DynaViz, se realizaron varias pruebas unitarias con el 
 
 ## Compatibilidad del Sistema
 
-Finalmente, *DynaViz*, al ser una aplicación web, es compatible con cualquier navegador, ya sea *Google Chrome*, *Firefox*, *Safari*, entre otros. Además, la aplicación es *responsive*, lo que significa que se adapta a las pantallas de dispositivos móviles, como se muestra en la Figura \ref{capitulo4:diseño-responsive}, en la cual se observa la ventana de lista de pacientes, la ventana modal de detalles del paciente y la gráfica de líneas, respectivamente.
+Finalmente, *DynaViz* ha sido probado en los navegadores *Google Chrome v125.0.6422.112*, *Firefox v126.0*, y *Brave v1.66.113*, obteniendo un funcionamiento correcto en todos ellos. Al tratarse de una aplicación Web, se espera que también sea compatible con otros navegadores modernos como *Edge* y *Safari*.
 
-Una vez se ha presentado la aplicación web implementada, en el siguiente capítulo se detallará la evaluación de dicho sistema.
+Además, la aplicación es *responsive*, lo que significa que se adapta a las pantallas de dispositivos móviles. Esto se puede apreciar en la Figura \ref{capitulo4:diseño-responsive}, que muestra la ventana de lista de pacientes, la ventana modal de detalles del paciente y la gráfica de líneas, respectivamente.
+
+Una vez se ha presentado la aplicación Web implementada, en el siguiente capítulo se detallará la evaluación de dicho sistema.
 
 ![Diseño responsive\label{capitulo4:diseño-responsive}](cap4_diseño-responsive.png)
 
