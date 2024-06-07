@@ -2,7 +2,7 @@
 
 En este capítulo se presentan las distintas evaluaciones llevadas a cabo durante el desarrollo del proyecto, detallando los participantes involucrados, el contexto de uso, las tareas realizadas, el diseño experimental empleado, las métricas de usabilidad aplicadas y los resultados obtenidos en cada una de ellas. Como referencia, se ha seguido el estándar internacional ISO/IEC 25062 @iso-usabilidad para evaluar la calidad en el uso del sistema, complementado con el uso del cuestionario [SUS](#SUS), tal y como expone Sauro @sauro. Este cuestionario consta de diez preguntas diseñadas para evaluar la experiencia del usuario con el sistema, las cuales deben responderse indicando el grado de acuerdo o desacuerdo en una escala de cinco puntos.
 
-## Primera Evaluación
+## Evaluación de Usabilidad
 
 La primera evaluación se realizó el 15 de abril de 2024 con el objetivo de recopilar las impresiones iniciales de usuarios reales y evaluar su satisfacción al utilizar la aplicación Web. A continuación, se detallan los participantes, el contexto de uso, las tareas asignadas, el diseño experimental empleado, las métricas de usabilidad aplicadas y los resultados obtenidos en esta prueba de evaluación.
 
@@ -21,7 +21,7 @@ Una vez presentados los participantes, en el siguiente punto se describe el cont
 
 ### Contexto de Uso
 
-La evaluación se llevó a cabo mediante videoconferencia con la aplicación *Microsoft Teams* @teams, lo que permitió que cada participante utilizara su propio hardware, tal y como se observa en la Tabla \ref{capitulo5:datos-participantes}.
+La evaluación se llevó a cabo mediante videoconferencia con la aplicación *Microsoft Teams* @teams, lo que permitió que cada participante utilizara su propio hardware, como se observa en la Tabla \ref{capitulo5:datos-participantes}.
 
 Es importante destacar que la aplicación Web se desplegó en *Render* @render y la base de datos en *MongoDB Atlas* @mongodb-atlas. Dado que ambas plataformas fueron utilizadas en una versión gratuita, se presentaron algunas limitaciones, siendo la principal la imposibilidad de finalizar la creación de una prueba y desconexiones temporales del servidor en algunos casos.
 
@@ -70,7 +70,7 @@ Además, Sauro proporciona la gráfica que se muestra en la Figura \ref{capitulo
 
 ![Asociación entre rangos percentiles con puntuaciones [SUS](#SUS)\label{capitulo5:grafica-sauro}](cap5_grafica-sauro.png){width=75%}
 
-## Segunda Evaluación
+## Evaluación de Recorrido Cognitivo
 
 
 Tras la primera evaluación, se llevó a cabo una segunda adaptando el método de *recorrido cognitivo*, tal y como expone Salazar @cognitive-walk. En esta fase, los mismos stakeholders probaron la aplicación *DynaViz* durante una semana sin asignar tareas específicas, con el objetivo principal de identificar nuevas funcionalidades que pudieran ser útiles para los usuarios.
@@ -79,7 +79,7 @@ Durante esta evaluación, se solicitó una única funcionalidad adicional: permi
 
 Una vez presentadas ambas evaluaciones, en el siguiente punto se expondrán las conclusiones derivadas de las mismas.
 
-## Conclusión de las Evaluaciones
+## Conclusiones
 
 Tras las dos pruebas de evaluación, se puede concluir que la aplicación *DynaViz* es tanto fácil de usar como de aprender, respaldado por los resultados obtenidos en la primera evaluación.
 

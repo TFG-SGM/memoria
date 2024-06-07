@@ -1,5 +1,5 @@
 # Estado del Arte
-En el contexto del desarrollo de una aplicación Web, es esencial considerar diversos factores, incluyendo la metodología de desarrollo, las herramientas y tecnologías disponibles y la usabilidad de la aplicación. En este capítulo, es realizado un análisis que abarca todas estas áreas con el propósito de determinar las mejoras prácticas y enfoques para implementar durante el proyecto. Sin embargo, antes de detallar estos aspectos, es crucial comprender el trastorno de la fibromialgia, el cual es el foco de la aplicación Web que se busca desarrollar.
+En el contexto del desarrollo de una aplicación Web, consideramos esenciales diversos factores, incluyendo el  metodología de desarrollo, las herramientas y tecnologías disponibles y la usabilidad de la aplicación. En este capítulo, es realizado un análisis que abarca todas estas áreas con el propósito de determinar las mejoras prácticas y enfoques para implementar durante el proyecto. Sin embargo, antes de detallar estos aspectos, es crucial comprender el trastorno de la fibromialgia, el cual es el foco de la aplicación Web que se busca desarrollar.
 
 ## Fibromialgia
 
@@ -21,11 +21,11 @@ Los resultados se evalúan normalmente en tres niveles de dolor según los valor
 - (4-6): En el caso que la medición sea entre 4 y 6 centímetros, el dolor se considerará de moderado a moderado-grave
 - (>6): Si los valores son mayores de 6 se considera un dolor que pasa de grave a insoportable.
 
-Una vez, se conoce el trastorno de la fibromialgia y la escala [EVA](#EVA) utilizada previamente al diagnóstico. En el siguiente punto, se pasará a explicar las diferentes metodologías de desarrollo software que se pueden utilizar para implementar la aplicación Web.
+Una vez presentado el trastorno de la fibromialgia y la escala [EVA](#EVA), en el siguiente punto se pasará a explicar las diferentes metodologías de desarrollo software que se pueden utilizar para implementar la aplicación Web.
 
 ## Metodologías de Desarrollo Software
 
-Para que un software, como es una aplicación Web, llegue a producción debe pasar por un proceso de desarrollo de software, conocido también como “ciclo de vida del desarrollo del software”. A su vez, para organizar este ciclo es necesario utilizar cierta metodología de desarrollo. En este apartado es realizado un análisis de las distintas fases de dicho proceso, además de las metodologías más destacadas.
+El desarrollo de software es un proceso fundamental en la creación de aplicaciones web y otros sistemas informáticos. Este proceso, conocido como "ciclo de vida del desarrollo del software", implica una serie de etapas que van desde la concepción de la idea hasta la implementación y mantenimiento del producto final. Para gestionar eficientemente este ciclo, es crucial adoptar una metodología de desarrollo adecuada. En este punto, se realiza un análisis de las distintas fases de dicho proceso, además de las metodologías más destacadas.
 
 ### Ciclo de Vida del Desarrollo del Software
 El ciclo de vida del desarrollo de software es un proceso estructurado que abarca desde la concepción de un proyecto hasta su despliegue y mantenimiento. A lo largo de este ciclo, se llevan a cabo una serie de fases y actividades. Cada fase del ciclo de vida del desarrollo de software tiene sus propios objetivos y entregables específicos. Este normalmente está dividido en las siguientes fases, tal y como expone Clark @ciclo-vida-desarrollo-software.
@@ -38,7 +38,7 @@ El ciclo de vida del desarrollo de software es un proceso estructurado que abarc
 - **Despliegue:** Se entrega al usuario final.
 - **Mantenimiento:** Se arreglan los diferentes errores que encuentren los usuarios, teniendo que volver a la primera fase del ciclo si fuera necesario.
 
-Una vez se conoce el ciclo de desarrollo, es esencial saber cómo organizar el mismo. Para ello, en el siguiente punto se analizan las diferentes metodologías de desarrollo.
+Una vez presentado el ciclo de desarrollo, es esencial saber cómo organizar el mismo. Para ello, en el siguiente punto se analizan las diferentes metodologías de desarrollo.
 
 ### Metodologías de Desarrollo
 Para organizar cada una de las fases, como se ha mencionado previamente, es necesario implementar una metodología de desarrollo, con el fin de aumentar la productividad y la calidad del software. A continuación, se detallan algunas de las metodologías más destacadas, tal y como expone Alona @metodologias-desarrollo.
@@ -59,23 +59,23 @@ Como ya se ha mencionado las metodologías ágiles son las que más destacan en 
 - **Kanban:** Con origen en la manufactura, esta metodología ágil se ha conseguido aplicar con éxito al desarrollo de software. Se basa principalmente en la visualización del flujo de trabajo mediante el uso de tableros Kanban, representando cada tarea mediante tarjetas que se mueven a través de columnas que representan diferentes estados del proceso. A pesar de la mejora continua y flexibilidad que ofrece, se puede notar la ausencia de una estructura para roles y eventos, lo que dificulta la gestión de proyectos más grandes.
 - **Scrum:** Muy conocido y usado en la actualidad. En Scrum, los ciclos de desarrollo se llaman “sprints”, que generalmente duran entre dos y cuatro semanas. Además, utiliza roles definidos claramente como el Scrum Master, el Product Owner y el equipo de desarrollo. También, se enfoca en la entrega iterativa de incrementos de software y gracias a su énfasis en la comunicación constante y adaptabilidad al cambio se ha convertido en una elección popular en el desarrollo de proyectos software, como es el caso de la implementación de una aplicación Web.
 
-Nuevamente, la elección de la metodología dependerá de las características del proyecto. Siendo en este caso, Scrum la que más destaca entre todas ellas. Sin embargo, una vez se conoce el proceso y las diferentes metodologías del desarrollo de software, es esencial conocer la tecnología Web que se puede utilizar para el desarrollo de dicho software, la cual se detalla en el siguiente punto.
+Al final, la elección de la metodología dependerá de las características del proyecto. Siendo, en este caso, Scrum la que más destaca entre todas ellas debido a su enfoque iterativo e incremental, que permite una mayor flexibilidad y adaptabilidad a los cambios en el proyecto. Sin embargo, una vez presentado el proceso y las diferentes metodologías del desarrollo de software, es esencial conocer la tecnología Web que se puede utilizar para el desarrollo de dicho software, la cual se detalla en el siguiente punto.
 
 ## Tecnología Web
 En el proceso de implementación de una aplicación Web, resulta esencial no solo seguir una metodología específica, sino también utilizar la diversa tecnología Web disponible. Este campo de estudio abarca un extenso conjunto de herramientas, estándares y prácticas que han sido utilizados en el desarrollo, implementación y mantenimiento de aplicaciones y sitios Web. Desde los aspectos del lado del cliente hasta los del servidor, este panorama tecnológico tiene como objetivo primordial mejorar la experiencia del usuario y optimizar la eficiencia en el desarrollo. A continuación, se profundiza en todas estas tecnologías.
 
 ### Tecnología Fundamental en la Web
 
-Dentro del desarrollo Web, los lenguajes de marcado y de programación fundamentales estan compuestos por la tríada formada de [HTML](#HTML), [CSS](#CSS) y JavaScript. Siendo este último extendido mediante *TypeScript*. A continuación, se realiza una breve explicación de cada uno de estos lenguajes, tal y como exponen *Mozilla* @html @css y Cherni @libro-typescript.
+Dentro del desarrollo Web, los lenguajes de marcado y de programación fundamentales estan compuestos por la tríada formada de [HTML](#HTML), [CSS](#CSS) y JavaScript, siendo este último extendido mediante *TypeScript*. A continuación, se realiza una breve explicación de cada uno de estos lenguajes, tal y como exponen *Mozilla* @html @css y Cherni @libro-typescript.
 
 - **HTML:** Lenguaje de marcado estándar utilizado para estructurar el contenido de las páginas Web. Define la jerarquía y organización de los elementos en una página.
 - **CSS:** Lenguaje de estilo que complementa a [HTML](#HTML). Permite definir el diseño, la presentación y la apariencia visual de los elementos [HTML](#HTML), proporcionando control sobre colores, tipografías y disposición.
-- **JavaScript:** Se trata del lenguaje de programación del lado del cliente que permite la creación de interactividad en las páginas Web. Es esencial para manipular el [DOM](#DOM) y responder a eventos del usuario.
-- **TypeScript @typescript:** Es un lenguaje de programación fuertemente tipado que se basa en JavaScript. A diferencia de este último, TypeScript añade un sistema de tipos estático, proporcionando beneficios como la detección temprana de errores y una mejor mantenibilidad en proyectos a gran escala. Esta diferencia se puede ver ilustrada en la Figura \ref{capitulo2:circulo-typescript}.
+- **JavaScript:** Se trata del lenguaje de programación del lado del cliente que permite la creación de interactividad en las páginas Web. Es esencial para manipular el [DOM](#DOM) y responder a eventos.
+- **TypeScript @typescript:** Es un lenguaje de programación fuertemente tipado que extiende JavaScript. A diferencia de este último, TypeScript añade un sistema de tipos estático, proporcionando beneficios como la detección temprana de errores y una mejor mantenibilidad en proyectos a gran escala. Esta diferencia se puede ver ilustrada en la Figura \ref{capitulo2:circulo-typescript}.
 
 ![TypeScript vs JavaScript\label{capitulo2:circulo-typescript}](cap2_circulo-typescript.png){width=40%}
 
-Una vez se conoce la tecnología fundamental en la Web, en el siguiente punto se explica el concepto de las [SPA](#SPA), así como los diferentes frameworks más utilizados para desarrollar dichas aplicaciones. 
+Una vez presentada la tecnología fundamental en la Web, en el siguiente punto se explica el concepto de las [SPA](#SPA), así como los diferentes frameworks más utilizados para desarrollar dichas aplicaciones. 
 
 ### Aplicaciones de una Sola Página
 
@@ -91,7 +91,7 @@ Por otro lado, como expone Rivera @spa-routers, es importante entender la difere
 
 En el enrutado en el lado del servidor, cada vez que el usuario hace click en un nuevo enlace, el navegador pide al servidor una página completamente nueva, tal y como se ilustra en la Figura \ref{capitulo2:enrutado-servidor}. 
 
-```{.plantuml #capitulo2:enrutado-servidor caption="Enrutado en el lado del servidor" frame=single width=75%}
+```{.plantuml #capitulo2:enrutado-servidor caption="Enrutado en el lado del servidor" frame=single width=50%}
 @startuml
 actor Usuario
 
@@ -144,7 +144,7 @@ Interfaz -> Usuario: showPage()
 
 Finalmente, para desarrollar una [SPA](#SPA), se utilizan frameworks que complementan a la tecnología fundamental de la Web mencionada en el punto anterior. A continuación, se presentan cuatro de estos frameworks, tal y como expone Baryshevskiy @tendencias-tecnologias-web: *React*, *Angular*, *Vue* y *Svelte*.
 
-- **React @react:** Desarrollado por *Facebook*, *React* es una biblioteca de JavaScript que se centra en la construcción de interfaces de usuario reactivas y eficientes. Su enfoque en la creación de componentes modulares y su capacidad para gestionar el estado de manera efectiva lo convierten en una elección popular para aplicaciones dinámicas y escalables.
+- **React @react:** Desarrollado por *Facebook*, *React* es una biblioteca de *JavaScript* que se centra en la construcción de interfaces de usuario reactivas y eficientes. Su enfoque en la creación de componentes modulares y su capacidad para gestionar el estado de manera efectiva lo convierten en una elección popular para aplicaciones dinámicas y escalables.
 - **Angular @angular:** Respaldado por *Google*, es un framework completo de desarrollo que abarca desde la creación de componentes hasta la gestión del estado y el enrutamiento. Su estructura robusta y su integración con *TypeScript* ofrecen un enfoque amplio para el desarrollo de [SPAs](#SPA), siendo especialmente adecuado para proyectos empresariales complejos.
 - **Vue.js @vuejs:** Se trata de un framework progresivo de *JavaScript* que destaca por su simplicidad y flexibilidad. Su diseño modular facilita la integración gradual en proyectos existentes, y su curva de aprendizaje suave lo convierte en una opción popular para desarrolladores que buscan una alternativa accesible y potente.
 - **Svelte @svelte:** Adopta un enfoque diferente al trasladar gran parte del trabajo de construcción a tiempo de compilación. Esto resulta en aplicaciones más livianas y rápidas en tiempo de ejecución. Su sintaxis sencilla y su rendimiento eficiente lo hacen atractivo para desarrolladores que buscan una alternativa innovadora y eficaz en la construcción de [SPAs](#SPA).
@@ -156,13 +156,13 @@ Una vez presentadas las [SPA](#SPA) y los diferentes frameworks, en el siguiente
 Diversas librerías han surgido para facilitar la creación de visualizaciones atractivas e interactivas, después de todo la visualización de datos desempeña un papel fundamental en la comprensión y comunicación efectiva de información en entornos Web. A continuación, son presentadas algunas de las librerías más destacadas, tal y como expone Majorek @librerias-visualizacion-datos:
 
 - **D3.js @d3js:** Destaca como una herramienta poderosa para la manipulación basada en datos en documentos . Su capacidad para crear visualizaciones altamente personalizables e interactivas lo convierte en una opción popular para desarrolladores que buscan flexibilidad en la representación gráfica de datos complejos.
-- **Three.js @threejs:** Aunque inicialmente diseñada para gráficos 3D, Three.js puede ser aprovechada para visualizaciones de datos tridimensionales impactantes. Su capacidad para crear experiencias visuales inmersivas lo convierte en una elección interesante para proyectos ambiciosos.
-- **Chart.js @chartjs:** Aporta una solución simple y fácil de usar, ofreciendo una variedad de gráficos, como barras, líneas y radar. Esta librería en JavaScript permite a los desarrolladores incorporar rápidamente visualizaciones atractivas en sus aplicaciones Web.
-- **ECharts @echarts:** Ofrece una amplia variedad de gráficos, incluyendo líneas, barras, dispersión y mapas, entre otros. La capacidad de Echarts para manejar grandes conjuntos de datos y su enfoque en la interactividad hacen que sea una elección sólida para proyectos que requieren visualizaciones dinámicas y atractivas. 
-- **Highcharts @highcharts:** Con una amplia gama de opciones de personalización, Highcharts simplifica la creación de gráficos interactivos. Esta librería en JavaScript es adecuada para proyectos que buscan una solución robusta y fácil de implementar.
+- **Three.js @threejs:** Aunque inicialmente diseñada para gráficos 3D, *Three.js* puede ser aprovechada para visualizaciones de datos tridimensionales impactantes. Su capacidad para crear experiencias visuales inmersivas lo convierte en una elección interesante para proyectos ambiciosos.
+- **Chart.js @chartjs:** Aporta una solución simple y fácil de usar, ofreciendo una variedad de gráficos, como barras, líneas y radar. Esta librería en *JavaScript* permite a los desarrolladores incorporar rápidamente visualizaciones atractivas en sus aplicaciones Web.
+- **ECharts @echarts:** Ofrece una amplia variedad de gráficos, incluyendo líneas, barras, dispersión y mapas, entre otros. La capacidad de *Echarts* para manejar grandes conjuntos de datos y su enfoque en la interactividad hacen que sea una elección sólida para proyectos que requieren visualizaciones dinámicas y atractivas. 
+- **Highcharts @highcharts:** Con una amplia gama de opciones de personalización, *Highcharts* simplifica la creación de gráficos interactivos. Esta librería en *JavaScript* es adecuada para proyectos que buscan una solución robusta y fácil de implementar.
 - **React-Vis @reactvis:** Diseñada específicamente para trabajar con *React*, *React-Vis* proporciona componentes listos para usar que facilitan la incorporación de visualizaciones de datos en aplicaciones *React*. Es una elección eficiente para proyectos que utilizan este marco de trabajo.
 
-Una vez se conoce tanto los fundamentos de la Web, las [SPA](#SPA) y las diferentes librerías para visualizar datos, en el siguiente punto se explicará la diversa tecnología que existe en el lado del servidor.
+Una vez presentados los fundamentos de la Web, las [SPA](#SPA) y las diferentes librerías para visualizar datos, en el siguiente punto se explicará la diversa tecnología que existe en el lado del servidor.
 
 ### Tecnología en el Lado del Servidor
 
@@ -200,7 +200,7 @@ Por otro lado, [REST](#REST) es un estilo arquitectónico que define una serie d
 
 Por lo tanto, una [API REST](#API REST) es una interfaz de programación que sigue los principios y limitaciones de la arquitectura [REST](#REST). Utiliza los métodos estándar de [HTTP](#HTTP) para realizar operaciones en recursos, como leer, crear, actualizar y eliminar datos. Cuando un cliente envía una solicitud a través de una [API REST](#API REST), se le devuelve una representación del estado del recurso solicitado en un formato especificado, como [JSON](#JSON) o [XML](#HML). Siendo [JSON](#JSON) particulmente popular debido a su legibilidad tanto para humanos como para máquinas, y su independencia de cualquier lenguaje de programación específico. En resumen, una [API REST](#API REST) proporciona una forma estándar y eficiente de interactuar con servicios Web basados en [REST](#REST).
 
-Una vez se conoce tanto la tecnología del lado del cliente como del servidor, en el siguiente punto se expone la tecnología emergente en la Web.
+Una vez presentada tanto la tecnología del lado del cliente como del servidor, en el siguiente punto se expone la tecnología emergente en la Web.
 
 ### Tecnología Emergente
 
@@ -223,7 +223,7 @@ En el contexto de los stacks tecnológicos, es decir, la elección de un conjunt
 - **MEAN (MongoDB, Express.js, Angular, Node.js):** Es un stack tecnológico basado completamente en *JavaScript*. *MongoDB* es la base de datos [NoSQL](#NoSQL), *Express.js* actúa como el framework del lado del servidor, *Angular* es el framework del lado del cliente y Node.js proporciona el entorno de ejecución del servidor. Este stack ha ganado popularidad por su coherencia en el uso de un solo lenguaje de programación (*JavaScript* / *TypeScript*) en todo el flujo de desarrollo, lo que simplifica la colaboración entre los equipos de desarrollo y permite una transición más fluida de los datos entre el servidor y el cliente.
 - **MERN (MongoDB, Express.js, React, Node.js):** Similar a *MEAN*, pero reemplaza *Angular* con *React* en el lado del cliente. *React* ha ganado una enorme popularidad por su enfoque declarativo y su capacidad para construir interfaces de usuario altamente interactivas. *MERN* comparte las ventajas de *MEAN*, pero además permite a los desarrolladores aprovechar las características distintivas de *React* para crear experiencias de usuario más dinámicas y eficientes.
 
-Con todo esto en mente, se puede concluir que la elección entre los diferentes stacks tecnológicos que existen depende de las necesidades específicas del proyecto y las preferencias del equipo de desarrollo. Teniendo cada stack sus propias ventajas y pudiendo ser la elección correcta según los requisitos particulares de la aplicación que se esté construyendo.
+A raiz de esto, se puede concluir que la elección entre los diferentes stacks tecnológicos que existen depende de las necesidades específicas del proyecto y las preferencias del equipo de desarrollo. Teniendo cada stack sus propias ventajas y pudiendo ser la elección correcta según los requisitos particulares de la aplicación que se esté construyendo.
 
 Finalmente, en la Tabla \ref{capitulo2:tabla-tecnologia} se puede observar una visualización detallada de la tecnología abordada en este capítulo. Siendo destacable como cada stack tecnológico está compuesto por diferentes tipos de tecnologías, demostrando así la diversidad y complejidad de las soluciones presentadas.
 
@@ -234,9 +234,9 @@ Finalmente, en la Tabla \ref{capitulo2:tabla-tecnologia} se puede observar una v
 | **MEAN**          |       -       |      -       |    MongoDB    |   JavaScript    | Express.js  |   Angular    |
 | **MERN**          |       -       |      -       |    MongoDB    |   JavaScript    | Express.js  |    React     |
 
-:Tecnología en relación al capítulo 2.2\label{capitulo2:tabla-tecnologia}
+:Tecnología presentada en el capítulo 2.2\label{capitulo2:tabla-tecnologia}
 
-Una vez se conoce la tecnología para construir una aplicación Web, en el siguiente punto se explicará los proveedores de hosting para poder desplegar dicha aplicación. 
+Una vez presentada la tecnología para construir una aplicación Web, en el siguiente punto se explicará los proveedores de hosting para poder desplegar dicha aplicación. 
 
 ### Proveedores de Hosting
 
@@ -259,7 +259,7 @@ En el pasado, la elección de un proveedor [PaaS](#PaaS) era más sencilla debid
 
 : Planes gratuitos de [PaaS](#PaaS)\label{capitulo2:planes-gratuitos-paas}
 
-Una vez se conoce toda la tecnología que se puede utilizar a la hora de construir una aplicación Web. Es fundamental, tener en mente las diferentes técnicas de visualización que existen para asegurar que el usuario entienda los datos que se muestran con dicha aplicación. Estas técnicas son analizadas en el siguiente punto. 
+Una vez presentada toda la tecnología que se puede utilizar a la hora de construir una aplicación Web. Es fundamental, tener en cuenta las diferentes técnicas de visualización que existen para asegurar que el usuario entienda los datos que se muestran con dicha aplicación. Estas técnicas son analizadas en el siguiente punto. 
 
 ## Técnicas de Visualización de Datos
 Como se ha mencionado previamente, el desarrollo de la aplicación Web deseada requiere la presentación atractiva de datos para los usuarios, lo que implica el uso de técnicas de visualización de datos existentes. En esencia, esto implica la transformación de una gran cantidad de información en un formato visual comprensible mediante elementos gráficos. Esto permite comunicar relaciones complejas entre los datos para mejorar la comprensión por parte de los usuarios. A continuación, se realiza un análisis de las diversas técnicas, según lo expuesto por Wilke @fundamentals-data-visualization, Yi y Restori @chartio, y Holtz @data-viz, perteneciendo a este último la mayoría de las imágenes que se utilizan en este capítulo. Estas técnicas se agrupan en seis categorías principales: distribución, correlación, ranking, parte de un todo, evolución y otras técnicas. 
@@ -268,10 +268,10 @@ Como se ha mencionado previamente, el desarrollo de la aplicación Web deseada r
 
 Las técnicas de distribución se utilizan para comprender cómo se distribuyen los datos en un conjunto. Esto es crucial para comprender la dispersión y la concentración de los valores. Las visualizaciones de distribución permiten identificar patrones, valores atípicos y la forma general de la distribución de los datos. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación:
 
-- El histograma.
-- El gráfico de densidad.
-- El diagrama de caja y bigotes.
-- El diagrama de violín.
+- El histograma
+- El gráfico de densidad
+- El diagrama de caja y bigotes
+- El diagrama de violín
 
 Por un lado, el histograma toma como entrada únicamente una variable numérica. Esta variable se divide en varios intervalos, y el número de observaciones por intervalo se representa mediante la altura de las barras, tal y como se ilustra en la Figura \ref{capitulo2:histograma}. Utilizando esta técnica, es posible representar la distribución de varias variables en el mismo *eje Y* de esta forma compararlas.
 
@@ -299,9 +299,9 @@ Una vez presentadas las técnicas utilizadas para comprender la distribución de
 
 Las técnicas de correlación revelan la relación entre dos o más variables. Determinar esta relación entre variables es fundamental para comprender cómo cambian juntas y si existe alguna dependencia entre ellas. Las visualizaciones de correlación ayudan a identificar patrones, tendencias y posibles relaciones causales entre variables. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación:
 
-- El gráfico de dispersión.
-- El gráfico de burbujas.
-- El mapa de calor. 
+- El gráfico de dispersión
+- El gráfico de burbujas
+- El mapa de calor
 
 El diagrama de dispersión muestra la relación entre 2 variables numéricas. Para cada punto de datos, el valor de su primera variable se representa en el *eje X* y el de la segunda en el *eje Y*, tal y como se ilustra en la Figura \ref{capitulo2:diagrama-dispersion}.
 
@@ -321,10 +321,10 @@ Una vez presentadas las técnicas utilizadas para conocer la relación entre los
 
 Las técnicas de ranking se centran en comparar y ordenar valores para identificar los más altos, los más bajos o cualquier otro criterio de clasificación. Estas visualizaciones son útiles para comprender la posición relativa de los elementos dentro de un conjunto de datos y para identificar tendencias o patrones de comportamiento. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación:
 
-- La gráfica de barras.
-- El gráfico lollipop.
-- El gráfico de barras circular.
-- El gráfico radial. 
+- La gráfica de barras
+- El gráfico lollipop
+- El gráfico de barras circular
+- El gráfico radial
 
 El gráfico de barras es una herramienta visual ampliamente empleada para la representación de datos, siendo su función principal la de mostrar la relación entre una variable numérica y una variable categórica. Siendo cada categoría representada mediante una barra, y el valor numérico mediante la longitud de dicha barra.
 
@@ -352,7 +352,7 @@ Las técnicas de parte de un todo, como indica su nombre, muestran cómo se divi
 
 - El gráfico de pastel
 - El mapa de árbol
-- El diagrama de sol. 
+- El diagrama de sol
 
 El gráfico de pastel caracterizado por un círculo dividido en secciones que representan proporciones del total, se emplea comúnmente para visualizar porcentajes, donde la suma total alcanza el 100%. A pesar de su popularidad, este tipo de representación resulta difícil de interpretar debido a la baja capacidad humana para percibir con precisión ángulos. Esta dificultad se evidencia al intentar determinar cuál de las secciones es la más grande en diferentes gráficos como el mostrado en la Figura \ref{capitulo2:grafico-tarta}, seguido de la comparación con la Figura \ref{capitulo2:grafico-barras-apiladas}, que presenta los mismos datos pero en un formato de barras.
 
@@ -376,9 +376,9 @@ Una vez presentadas las técnicas utilizadas para conocer las proporciones de lo
 
 Las técnicas de evolución muestran cómo cambian los datos a lo largo del tiempo o en relación con otra variable. Son esenciales para identificar tendencias, patrones estacionales, ciclos y cambios a largo plazo en los datos. Las visualizaciones de evolución permiten comprender la dinámica temporal de los fenómenos y tomar decisiones informadas basadas en estos cambios. Dentro de este grupo se encuentran las técnicas que se enumeran a continuación:
 
-- La gráfica de línea.
-- La gráfica de área.
-- La gráfica de área apilada. 
+- La gráfica de línea
+- La gráfica de área
+- La gráfica de área apilada
 
 La gráfica de línea es una herramienta visual que representa la evolución de una o varias variables numéricas a lo largo del tiempo. En este tipo de gráfica, los puntos de datos se disponen en orden según su valor en el *eje X* y se conectan mediante segmentos de línea recta, como se muestra en la Figura \ref{capitulo2:grafica-linea}. Además, de representar la evolución temporal de una única variable, las gráficas de línea también pueden utilizarse para comparar la evolución de varias variables simultáneamente. 
 
@@ -416,11 +416,11 @@ La [IPO](#IPO) es definida por [SIGCHI](#SIGCHI) como “la disciplina relaciona
 
 Dentro de esta disciplina, se pueden encontrar distintos aspectos, los cuales se pueden ver reflejados en la Figura \ref{capitlo2:interaccion-persona-ordenador}. Por un lado, se observa una persona con sus características de procesamiento de la información, tanto las de comunicación como las físicas que interactúa con un ordenador. El cual también tiene sus propias características. Por otro lado, en medio se encuentran los dispositivos de entrada y salida que relacionan a la persona con el ordenador, comunicándose mediante diferentes elementos de diseño.
 
-Además, la figura muestra que la persona no está sola, sino que realiza el trabajo dentro de una organización social, siendo posible gracias a un proceso de desarrollo en el que cada uno de estos componentes debe ser abordado con igual grado de implicación y no caer en el error de obviar la parte humana, centrándose solamente en la parte tecnológica.
+Además, la Figura \ref{capitlo2:interaccion-persona-ordenador} muestra que la persona no está sola, sino que realiza el trabajo dentro de una organización social, siendo posible gracias a un proceso de desarrollo en el que cada uno de estos componentes debe ser abordado con igual grado de implicación y no caer en el error de obviar la parte humana, centrándose solamente en la parte tecnológica.
 
 ![Flujo de la disciplina de la [IPO](#IPO) @toni-ipo\label{capitlo2:interaccion-persona-ordenador}](cap2_flujo-ipo.png){width=75%}
 
-Con todo esto en mente, se puede decir que la disciplina de la [IPO](#IPO) es la encargada de estudiar la experiencia de usuario de la aplicación Web. Concepto que se detalla más en profundidad en el siguiente punto.
+A raíz de todo esto, se puede decir que la disciplina de la [IPO](#IPO) es la encargada de estudiar la experiencia de usuario de la aplicación Web. Concepto que se detalla más en profundidad en el siguiente punto.
 
 ### Experiencia de Usuario
 
@@ -436,7 +436,7 @@ Para concluir, Granollers sugiere la siguiente definición @toni-ux cubriendo lo
 
 ### Usabilidad
 
-El concepto de usabilidad fue introducido por J. Nielsen @libro-nielsen, quien concluyó que un sistema software tiene dos componentes: el aspecto funcional y la forma en que los usuarios pueden usar este aspecto. Siendo este último, el que es tratado para mejorar la usabilidad de una aplicación. Por consiguiente, los aspectos que se tienen en mente al hablar de usabilidad serían la facilidad de aprendizaje, la efectividad de uso y la satisfacción con las que las personas son capaces de realizar sus tareas.
+El concepto de usabilidad fue introducido por J. Nielsen @libro-nielsen, quien concluyó que un sistema software tiene dos componentes: el aspecto funcional y la forma en que los usuarios pueden usar este aspecto, siendo este último el que es tratado para mejorar la usabilidad de una aplicación. Por consiguiente, los aspectos que se tienen en cuenta al hablar de usabilidad serían la facilidad de aprendizaje, la efectividad de uso y la satisfacción con las que las personas son capaces de realizar sus tareas.
 
 Teniendo esto en cuenta, la usabilidad se puede definir coloquialmente como “fácil de usar o de utilizar y de aprender” @toni-usabilidad. Definición que se considera correcta, pero incompleta, ya que el concepto engloba muchos más aspectos, es por ello que el organismo de estandarización [ISO](#ISO) propone dos definiciones:
 
@@ -451,4 +451,4 @@ El objetivo es lograr una interfaz fácil de usar y aprender, lo cual requiere u
 
 Además, los sistemas interactivos deben centrarse en todos los usuarios, considerando las diferencias individuales, incluso teniendo en cuenta a aquellos con discapacidades. Ignorar a los usuarios o dejar su participación a la fase final del proyecto puede resultar en una interfaz que no cumple con sus necesidades y expectativas. En resumen, el diseño de sistemas interactivos implica hacer del usuario el foco principal desde el inicio del proceso hasta la implementación final, abarcando la diversidad de usuarios y sus características específicas.
 
-Al final, se puede concluir que la usabilidad será un factor a tener muy en cuenta a la hora de desarrollar la aplicación Web deseada. De la cual se hablará más en detalle en los próximos capítulos.
+A raíz de todo esto, se puede concluir que la usabilidad será un factor a tener muy en cuenta a la hora de desarrollar la aplicación Web deseada, tema que será abordado con mayor detalle en los próximos capítulos.

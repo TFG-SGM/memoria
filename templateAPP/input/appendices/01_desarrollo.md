@@ -42,7 +42,7 @@ Este Sprint tiene comienzo el **29 de septiembre de 2023** con una duración de 
 
 ### Planificación del Sprint
 
-En esta reunión, se tomó la decisión que el proyecto tendría un mayor enfoque en el lado del FrontEnd, abstrayéndose del lado del servidor y la parte de la inteligencia artificial. Finalmente, con esto en mente, se consiguió establecer un título tentativo para el proyecto, así como un primer esbozo de los diferentes objetivos principales. A continuación, en la Tabla \ref{anexo1:product-backlog-1} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-1} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
+En esta reunión, se tomó la decisión que el proyecto tendría un mayor enfoque en el lado del FrontEnd, abstrayéndose del lado del servidor y la parte de la inteligencia artificial. Finalmente, teniendo en cuenta esto, se consiguió establecer un título tentativo para el proyecto, así como un primer esbozo de los diferentes objetivos principales. A continuación, en la Tabla \ref{anexo1:product-backlog-1} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-1} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
 | **ID** | **Tarea**                                          | **Peso** |
 | ------- | -------------------------------------------------- | -------- |
@@ -832,7 +832,8 @@ A continuación, en la Tabla \ref{anexo1:product-backlog-14} se detallan las dif
 | TSGM-82 | Mejorar documento según revisión               | 3        |
 | TSGM-83 | Terminar de retocar aplicación DynaViz         | 3        |
 | TSGM-84 | Añadir siguiente Sprint                        | 1        |
-| TSGM-85 | Mejorar formato de memoria según revisión      | 5        |
+| TSGM-85 | Mejorar formato de documento según revisión    | 11       |
+| TSGM-86 | Preparar la presentación                       | 11       |
 
 : [PB](#PB) del Sprint 14\label{anexo1:product-backlog-14}
 
@@ -862,26 +863,38 @@ Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc
 
 ![[BC](#BC) del Sprint 14\label{anexo1:bc-sprint14}](anx1_bc-sprint14.png)
 
-## Sprint 15 (en proceso)
+## Sprint 15
 
-Este Sprint tiene comienzo el **28 de mayo de 2024 ** con una duración de X semanas. Su objetivo principal era la mejora del formato del documento según revisión de los tutores. A continuación, se detallan las diferentes fases del Sprint. 
+Este Sprint tiene comienzo el **28 de mayo de 2024 ** con una duración de 2 semanas. Su objetivo principal era la mejora del formato del documento según revisión de los tutores. A continuación, se detallan las diferentes fases del Sprint. 
 
 ### Planificación del Sprint
 
-En esta reunión, ...
+En esta reunión, se planifico mejorar el formato del documento según la revisión de los tutores, además de trabajar en la preparación de la presentación.
 
 A continuación, en la Tabla \ref{anexo1:product-backlog-15} se detallan las diferentes [HU](#HU) incluidas en el [PB](#PB). Por otro lado, en la Tabla \ref{anexo1:Sprint-backlog-15} se presentan las [HU](#HU) trasladadas al [SB](#SB), indicando así su planificación para ser ejecutadas durante el desarrollo del Sprint.
 
-### Desarrollo de Sprint 
+| **ID**  | **Tarea**                                   | **Peso** |
+| ------- | :------------------------------------------ | -------- |
+| TSGM-85 | Mejorar formato de documento según revisión | 11       |
+| TSGM-86 | Preparar la presentación                    | 11       |
 
-Durante el Sprint, …
+: [PB](#PB) del Sprint 15\label{anexo1:product-backlog-15}
+
+| **ID**  | **Tarea**                                   | **Peso** |
+| ------- | :------------------------------------------ | -------- |
+| TSGM-85 | Mejorar formato de documento según revisión | 11       |
+| TSGM-86 | Preparar la presentación                    | 11       |
+
+: [SB](#SB) del Sprint 15\label{anexo1:Sprint-backlog-15}
+
+Durante el Sprint, se realizó la presentación, la cual va acompañada de un video de la demostración de la aplicación *DynaViz*. Una vez los tutores terminaron de revisar el documento, se procedió a concluirlo, tomando en consideración sus comentarios.
 
 ### Revisión Sprint
 
-Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual …
+Tras el desarrollo del Sprint, se realizó la reunión de revisión, en la cual finalmente se dio por concluido el documento.
 
 ### Retrospectiva del Sprint
 
-Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint15}, el cual refleja...
+Una vez terminado el Sprint podemos ver el [BC](#BC) en la Figura \ref{anexo1:bc-sprint15}, el cual refleja que el progreso del trabajo realizado ha ido a la par con el planificado inicialmente.
 
 ![[BC](#BC) del Sprint 15\label{anexo1:bc-sprint15}](anx1_bc-sprint15.png)

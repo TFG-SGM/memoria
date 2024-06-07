@@ -43,7 +43,8 @@ database "MongoDB Atlas" as mongodb {
 }
 
 index.html --> react_components.tsx 
-react_components.tsx --> API : REST API Requests
+react_components.tsx --> API : REST API Request
+API --> react_components.tsx  : REST API Response
 API --> app.ts 
 app.ts --> routers.ts 
 routers.ts --> controllers.ts 
@@ -235,7 +236,7 @@ PatientsListPage -> Doctor : Muestra nuevo paciente
 
 El diagrama de la Figura \ref{anexo3:diagrama-actividad-crear-prueba} muestra los diferentes pasos que debe seguir un médico para crear una nueva prueba. En el cual, se puede observar que si el paciente no existe, será necesario crearlo antes de agregar la nueva prueba deseada.
 
-```{.plantuml #anexo3:diagrama-actividad-crear-prueba caption="Diagrama de actividad para crear una prueba" frame=single width=75%}
+```{.plantuml #anexo3:diagrama-actividad-crear-prueba caption="Diagrama de actividad para crear una prueba" frame=single width=50%}
 @startuml
 start
 :Iniciar sesión;

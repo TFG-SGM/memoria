@@ -6,10 +6,6 @@
 
 : Application Programming Interface (Interfaz de Programación de Aplicaciones)
 
-<span id='API'>API</span>
-
-: Application Programming Interface (Interfaz de Programación de Aplicaciones)
-
 <span id='API REST'>API REST</span>
 
 : Representational State Transfer Application Programming Interface (Interfaz de Programación de Aplicaciones Representacional del Estado Transferido)
@@ -53,6 +49,10 @@
 <span id='HU'>HU</span>
 
 : Historia de Usuario
+
+<span id='IA'>IA</span>
+
+: Inteligencia Artificial
 
 <span id='IPO'>IPO</span>
 
@@ -125,6 +125,14 @@
 <span id='TLS'>TLS</span>
 
 : Transport Layer Security (Seguridad de la Capa de Transporte)
+
+<span id='UCLM'>UCLM</span>
+
+: Universidad de Castilla-La Mancha
+
+<span id='UdL'>UdL</span>
+
+: Universidad de Lérida
 
 <span id='URL'>URL</span>
 

@@ -1,6 +1,6 @@
 # Prototipos
 
-En este anexo se recogen los prototipos diseñados para comprender y validar los requisitos de la aplicación Web, así como para facilitar la implementación mediante un diseño definido. Se han desarrollado dos prototipos, uno no interactivo y otro interactivo. 
+En este anexo se recogen los prototipos diseñados para comprender y validar las necesidades de la aplicación Web, así como para facilitar la implementación mediante un diseño definido. Se han desarrollado dos prototipos, uno no interactivo y otro interactivo. 
 
 ## Prototipo No Interactivo
 

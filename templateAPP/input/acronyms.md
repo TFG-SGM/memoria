@@ -1,6 +1,5 @@
 AJAX: Asynchronous JavaScript and XML (JavaScript y XML asincrónos)
 API: Application Programming Interface (Interfaz de Programación de Aplicaciones)
-API: Application Programming Interface (Interfaz de Programación de Aplicaciones)
 API REST: Representational State Transfer Application Programming Interface (Interfaz de Programación de Aplicaciones Representacional del Estado Transferido)
 BC: Burndown Chart 
 BD: Base de Datos
@@ -12,6 +11,7 @@ EVA: Escala Visual Analógica
 HTML: HyperText Markup Language (Lenguaje de Marcas de Hypertexto)
 HTTP: Hypertext Transfer Protocol (Protocolo de Transferencia de Hipertexto)
 HU: Historia de Usuario
+IA: Inteligencia Artificial
 IPO: Interacción Persona-Ordenador
 ISO: International Organization for Standardization (Organización Internacional de Normalización)
 MVC: Model-View-Controller (Modelo-Vista-Controlador)
@@ -30,6 +30,8 @@ SPA: Single Page Application (Aplicaciones de una Sola Página)
 SUS: System usability scale (Sistema de Escalas de Usabilidad)
 TFG: Trabajo Final de Grado
 TLS: Transport Layer Security (Seguridad de la Capa de Transporte)
+UCLM: Universidad de Castilla-La Mancha
+UdL: Universidad de Lérida
 URL: Uniform Resource Locator (Localizador de Recursos Uniforme)
 vCPUs: Virtual Representation of Physical Central Processing Unit (Representación Virtual de la Unidad Central de Procesamiento Física)
 Wasm: WebAssembly

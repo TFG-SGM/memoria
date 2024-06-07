@@ -82,7 +82,7 @@ Para *DynaViz*, una opción recomendada es utilizar el plan Serverless. De esta 
 : Plan dedicado de *MongoDB Atlas*\label{anexo7:mongodb-dedicated}
 
 | **Item**               | **Descripción**                    | **Precio**                                     |
-| ---------------------- | ---------------------------------- | ---------------------------------------------- |
+| ------------------------- | ---------------------------------- | ----------------- |
 | [RPU](#RPU)            | Número de operaciones de lectura   | $0.10/millón [^anexo7:rpu]                     |
 | [WPU](#WPU)            | Número de operaciones de escritura | $1.00/millón                                   |
 | Almacenamiento         | Datos guardados                    | $0.25 / GB-mes                                 |
@@ -90,7 +90,39 @@ Para *DynaViz*, una opción recomendada es utilizar el plan Serverless. De esta 
 
 : Plan serverless de *MongoDB Atlas*\label{anexo7:mongodb-serverless}
 
-En conclusión, con un proveedor de dominios como *namecheap*, un proveedor de hosting como *Render* y un proveedor de bases de datos como *MongoDB Atlas* se conseguirá desplegar la aplicación *DynaViz* de manera que el coste dependerá del uso que se le de.
+## Conclusiones
+
+En conclusión, con un proveedor de dominios, un proveedor de hosting como *Render* y un proveedor de bases de datos como *MongoDB Atlas* se conseguirá desplegar la aplicación *DynaViz* de manera que el coste dependerá del uso que se le de.
+
+A modo de ilustración, en la Tabla \ref{anexo7:suposiciones-mongodb} se realiza una estimación basada en un uso promedio de la aplicación Web en relación con la base de datos, dando como resultado un precio final de $40 al mes. Además, en la Tabla \ref{anexo7:suposiciones-servicios} se opta por utilizar *Namecheap* para el dominio, el plan *Individual* de *Render* y la instancia *Standard* del servicio Web proporcionado por *Render*.
+
+Con base en lo anterior, se llega a las conclusiones presentadas en la Tabla \ref{anexo7:precios-finales}. El primer mes implicaría un coste de $70.98 debido al pago inicial de *Namecheap*. Posteriormente, cada mes tendría un coste de $65, y cada primer mes del año requeriría $76.88 para renovar el dominio en *Namecheap*.
+
+| **Item**               | **Suposición de uso**                         | **Precio** |
+| ---------------------- | --------------------------------------------- | ---------- |
+| [RPU](#RPU)            | 25 millones                                   | $2.50      |
+| [WPU](#WPU)            | 5 millones                                    | $5.00      |
+| Almacenamiento         | 100 GB                                        | $25        |
+| Transferencia de datos | 150 GB (a un precio promedio de $0.05 por GB) | $7.50      |
+
+: Suposiciones de uso de *MongoDB Atlas*\label{anexo7:suposiciones-mongodb}
+
+| **Servicios**                   | **Elección**  | **Precio** | **Renovación anual** |
+| ------------------------------- | ------------------ | ---------- | -------------------- |
+| Proveedor de dominios           | Namecheap     | $5.98      | $11.88               |
+| Render - Plan mensual           | Individual    | $0         | -                    |
+| Render - Instancia Servicio Web | Standard      | $25/mes    | -                    |
+| Base de datos                   | MongoDB Atlas | $40/mes    | -                    |
+
+: Suposiciones de uso de servicios\label{anexo7:suposiciones-servicios}
+
+| **Concepto**        | **Coste** |
+| ------------------- | --------- |
+| Primer mes          | $70.98    |
+| Meses subsiguientes | $65       |
+| Renovación anual    | $76.88    |
+
+: Precios finales de suposiciones\label{anexo7:precios-finales}
 
 [^anexo7:rpu]: Para los primeros 50 millones por día
 [^anexo7:transferencia-datos]: Dependiendo del tráfico de la fuente y del destino

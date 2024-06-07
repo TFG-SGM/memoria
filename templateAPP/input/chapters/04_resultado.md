@@ -4,7 +4,7 @@ En este capítulo, se proporcionará un detallado análisis de la aplicación We
 
 ## Funcionalidades del Sistema
 
-Antes de pasar a explicar el resultado final de la aplicación Web es fundamental detallar las diferentes funcionalidades que se han implementado. Para ello, se debe comprender que la aplicación Web tenía como objetivo el diagnostico de la fibormialgía a través del movimiento. No obstante, este proyecto se concentra en la parte visual del lado del cliente, es decir, en la representación de los datos recopilados, los cuales se analizarán para comprender mejor el problema de la fibromialgia.
+Antes de pasar a explicar el resultado final de la aplicación Web es fundamental detallar las diferentes funcionalidades que se han implementado. Para ello, es muy importante tener en cuenta que la aplicación Web tenía como objetivo el diagnostico de la fibormialgía a través del movimiento. No obstante, este proyecto se concentra en la parte visual del lado del cliente, es decir, en la representación de los datos recopilados, los cuales se analizarán para comprender mejor el problema de la fibromialgia.
 
 Para que este sistema pueda lograr dicho objetivo, es esencial que cumpla con los diferentes casos de uso que muestra la Figura \ref{capitulo4:diagrama-casos-uso}. Los cuales son repartidas en dos roles: administradores y médicos.
 
@@ -70,7 +70,7 @@ Una vez que se comprenden las diversas funcionalidades del sistema, es esencial 
 
 ## Arquitectura del Sistema
 
-Como se explicó en el capítulo anterior, la aplicación Web ha sido implementada empleando una arquitectura [MVC](#MVC), la cual se ilustra en la Figura \ref{capitulo4:diagrama-clases} como un diagrama de clases. Es importante destacar que la aplicación ha sido desarrollada utilizando *TypeScript*, un lenguaje que permite el desarrollo orientado a objetos.
+Como se explicó en el capítulo anterior, la aplicación Web ha sido implementada empleando una arquitectura [MVC](#MVC), la cual se ilustra en la Figura \ref{capitulo4:diagrama-clases} como un diagrama de clases. Es importante destacar que la aplicación ha sido desarrollada utilizando *TypeScript*, un lenguaje que permite el paradigma orientado a objetos, lo que facilita la estructuración del código y la implementación de dicha arquitectura [MVC](#MVC).
 
 ```{.plantuml #capitulo4:diagrama-clases caption="Diagrama de clases ilustrando una arquitectura" frame=single}
 @startuml
@@ -282,34 +282,35 @@ class TestTypeModel #LightGreen{
 @enduml
 ```
 
-En el diagrama, se pueden observar las diferentes clases distribuidas de abajo hacia arriba, principalmente en los siguientes grupos:
+En el diagrama se pueden observar las diferentes clases distribuidas de arriba hacia abajo, divididas en cinco grupos, cada uno marcado con un color distinto. Estos grupos se detallan a continuación:
 
-- **Modelos**: Estas clases acceden a la base de datos.
-- **Controladores**: Utilizan los diferentes modelos para responder a las diversas solicitudes.
-- **Rutas**: Son fundamentales para el desarrollo de la [API](#API) de la aplicación Web. Cuando se solicita un recurso asignado a ellas, invocan al controlador correspondiente.
-- **DataService**: Esta clase del lado del cliente se encarga de solicitar los diferentes recursos a la [API](#API) a través de las rutas.
-- **TestService**: Esta clase del lado del cliente es utilizada por las diferentes gráficas para obtener los datos.
 - **Vistas**: Representan las distintas páginas y ventanas modales de la aplicación Web. Utilizan la clase *DataService* para acceder a los recursos de la base de datos.
+- **Servicios:** Formado por dos clases que apoyan a las Vistas.
+  - **TestService**: Esta clase del lado del cliente es utilizada por las diferentes gráficas para obtener los datos.
+  - **DataService**: Esta clase del lado del cliente se encarga de solicitar los diferentes recursos a la [API](#API) a través de las rutas.
+- **Rutas**: Son fundamentales para el desarrollo de la [API](#API) de la aplicación Web. Cuando se solicita un recurso asignado a ellas, invocan al controlador correspondiente.
+- **Controladores**: Utilizan los diferentes modelos para responder a las diversas solicitudes.
+- **Modelos**: Estas clases acceden a la base de datos.
 
 Además de emplear la arquitectura [MVC](#MVP), la aplicación Web se trata de una [SPA](#SPA). Como se explicó en capítulos anteriores, esto implica un enrutado en el lado del cliente, lo que hace que la aplicación Web simule el movimiento entre páginas, a pesar de que en realidad sea una única página.
 
-Por último, se anima a leer el Anexo C, donde se muestran los diferentes diagramas diseñados durante el desarrollo del sistema y se profundiza más en la arquitectura del sistema.
+Por último, el Anexo C contiene información complementaria que muestra diagramas diseñados durante el desarrollo del sistema, profundizando más en la arquitectura del mismo.
 
 Ahora que se conoce la arquitectura de la aplicación Web desarrollada, en el siguiente punto se proporcionará una guía para su utilización.
 
-## Guía de Utilización
+## Guía de Instalación y Uso
 
-Una vez presentada la arquitectura de la aplicación DynaViz, en este punto se detallará la guía de utilización de la misma, enfocandose en la instalación de la aplicación y el uso de la misma con el rol tanto del administrador como de médico.
+Una vez presentada la arquitectura de la aplicación *DynaViz*, en este punto se detallará la guía de instalación y uso tanto con el rol del administrador como de médico.
 
-### Instalación
+### Prerrequisitos e Instalación
 
-En el caso de querer usar *DynaViz* de manera local, se deberan seguir los siguientes pasos:
+Para utilizar *DynaViz* de manera local, es necesario contar con la instalación previa del gestor de paquetes *pnpm* y el gestor de base de datos *MongoDB Compass*.
+
+Una vez completada la instalación de la tecnología requerida, se podrá seguir los siguientes pasos para desplegar la aplicación:
 
 1. Iniciar la aplicación Web con `pnpm install`, seguido de `pnpm run dev`.
 2. Generar los datos aleatorios con `pnpm run generate`.
 3. Iniciar sesión con el correo del administrador o médico (el cual se puede ver en la [BD](#BD) de *MongoDB Compass*) y usando la contraseña "admin" o "doctor" según el rol con el que se este iniciando sesión.
-
-Es importante destacar, que para el adecuado despliegue local es necesario tener instalado el gestor de paquetes *pnpm* y el gestor de base de datos *MongoDB Compass*. 
 
 En los siguientes puntos, se mostrarán los diferentes menús tanto para el rol de administrador como para el rol de médico.
 
@@ -317,7 +318,7 @@ En los siguientes puntos, se mostrarán los diferentes menús tanto para el rol 
 
 Por un lado, como administrador se puede administrar los tres tipos de identidades: administradores, médicos y pacientes.
 
-Antes de poder usar *DynaViz*, el administrador debe iniciar sesión desde la ventana mostrada en la Figura \ref{capitulo4:inicio-sesion}. Una vez completado el inicio de sesión, el usuario será dirigido a la ventana de la Figura \ref{capitulo4:inicio-admin}, donde podrá elegir entre consultar administradores, médicos o pacientes.
+Antes de poder usar *DynaViz*, el administrador debe iniciar sesión desde la ventana mostrada en la Figura \ref{capitulo4:inicio-sesion}, la cual se encuentra en [http://localhost:5173/](http://localhost:5173/). Una vez completado el inicio de sesión, el usuario será dirigido a la ventana de la Figura \ref{capitulo4:inicio-admin}, donde podrá elegir entre consultar administradores, médicos o pacientes.
 
 Dado que la administración de los tres tipos de identidades es similar, se explicará únicamente la administración de médicos. Por lo tanto, al seleccionar la opción de consultar médicos, el administrador será dirigido a la ventana de lista de médicos mostrada en la Figura \ref{capitulo4:lista-medicos}.
 
@@ -325,7 +326,7 @@ En esta ventana, el administrador puede añadir un nuevo médico o seleccionar u
 
 Las ventanas modales para crear y editar son similares. En la Figura \ref{capitulo4:nuevo-medico} se muestra la ventana modal de creación, donde se destaca que la imagen es el único campo no obligatorio. Además, el campo de contraseña no se solicita al editar un médico, permitiendo que solo el usuario pueda cambiar su propia contraseña.
 
-Finalmente, el administrador puede consultar y administrar los datos de su cuenta seleccionando el icono en la cabecera de la aplicación Web, lo que abrirá la ventana modal mostrada en la Figura \ref{capitulo4:mi-cuenta}. En dicho menú, el usuario puede editar sus datos tal y como se observa en las Figuras \ref{capitulo4:editar-mi-cuenta} y \ref{capitulo4:editar-contraseña}.
+Finalmente, el administrador puede consultar y administrar los datos de su cuenta seleccionando el icono en la cabecera de la aplicación Web, lo que abrirá la ventana modal mostrada en la Figura \ref{capitulo4:mi-cuenta}. En dicho menú, el usuario puede editar sus datos como se observa en las Figuras \ref{capitulo4:editar-mi-cuenta} y \ref{capitulo4:editar-contraseña}.
 
 ![Ventana de inicio de sesión\label{capitulo4:inicio-sesion}](cap4_inicio-sesion.png)
 
@@ -333,7 +334,7 @@ Finalmente, el administrador puede consultar y administrar los datos de su cuent
 
 ![Ventana de lista de médicos\label{capitulo4:lista-medicos}](cap4_lista-medicos.png)
 
-![Ventana modal de detallas de administrador\label{capitulo4:detalles-medico}](cap4_detalles-medico.png)
+![Ventana modal de detallas de médico\label{capitulo4:detalles-medico}](cap4_detalles-medico.png)
 
 ![Ventana modal de nuevo médico\label{capitulo4:nuevo-medico}](cap4_nuevo-medico.png)
 
@@ -347,7 +348,7 @@ Finalmente, el administrador puede consultar y administrar los datos de su cuent
 
 Por otro lado, como médico se puede administrar únicamente pacientes, pero de una manera más avanzada que los administradores, teniendo la posibilidad de gestionar las pruebas de dichos pacientes.
 
-Al igual que los administradores, el médico debe iniciar sesión para usar *DynaViz* desde la ventana de la Figura \ref{capitulo4:inicio-sesion}. Una vez iniciada la sesión, el médico será dirigido directamente a la ventana de lista de pacientes, donde solo se listan los pacientes asignados al médico que ha iniciado sesión.
+Al igual que los administradores, el médico debe iniciar sesión para usar *DynaViz* desde la ventana de la Figura \ref{capitulo4:inicio-sesion}, la cual se encuentra en [http://localhost:5173/](http://localhost:5173/). Una vez iniciada la sesión, el médico será dirigido directamente a la ventana de lista de pacientes que muestra la Figura \ref{capitulo4:lista-pacientes-medico}, donde solo se listan los pacientes asignados al médico que ha iniciado sesión.
 
 En esta ventana, el médico puede añadir un nuevo paciente, desde la ventana modal mostrada en la Figura \ref{capitulo4:nuevo-paciente} o consultar los detalles de uno existente. Similar al rol de administrador, en la ventana modal de los detalles del paciente, se puede editar o eliminar al paciente. Sin embargo, al iniciar sesión como médico, habrá un tercer botón para consultar las pruebas del paciente, tal como se muestra en la Figura \ref{capitulo4:detalles-paciente}.
 
@@ -429,15 +430,31 @@ Una vez, presentada la guía de utilización, en los siguientes puntos se detall
 
 ## Pruebas Unitarias
 
-Durante el desarrollo de DynaViz, se realizaron varias pruebas unitarias con el objetivo de probar los diferentes componentes de *React*. Al final, de los 55 componentes implementados, se han conseguido probar 20 de ellos utilizando la herramienta *Cypress* @cypress, tal y como se observa en la Figura \ref{capitulo4:tests-cases}.
+Durante el desarrollo de DynaViz, se realizaron varias pruebas unitarias con el objetivo de probar los diferentes componentes de *React*. Al final, de los 55 componentes implementados, se han probado 20 de ellos utilizando la herramienta *Cypress* @cypress. A continuación se listan los componentes probados:
 
-![Lista de componentes probados usando *Cypress*\label{capitulo4:tests-cases}](cap4_tests-cases.png){height=50%}
+- CrossButton
+- DeleteUserButton
+- EvolutionButtons
+- TestButtons
+- UserCard
+- PatientDataElement
+- TestDataElement
+- UserDataElement
+- PatientForm
+- UserForm
+- UsersList
+- DeleteMenu
+- Inform
+- SimpleComponents
+- SelectDate
+- SelectDoctor
+- SelectType
 
 ## Compatibilidad del Sistema
 
 Finalmente, *DynaViz* ha sido probado en los navegadores *Google Chrome v125.0.6422.112*, *Firefox v126.0*, y *Brave v1.66.113*, obteniendo un funcionamiento correcto en todos ellos. Al tratarse de una aplicación Web, se espera que también sea compatible con otros navegadores modernos como *Edge* y *Safari*.
 
-Además, la aplicación es *responsive*, lo que significa que se adapta a las pantallas de dispositivos móviles. Esto se puede apreciar en la Figura \ref{capitulo4:diseño-responsive}, que muestra la ventana de lista de pacientes, la ventana modal de detalles del paciente y la gráfica de líneas, respectivamente.
+Además, la aplicación es *responsive*, lo que significa que se adapta a las pantallas de dispositivos móviles. Esto se puede apreciar en la Figura \ref{capitulo4:diseño-responsive}, que muestra la ventana de lista de pacientes, la ventana modal de detalles del paciente y la gráfica de líneas, respectivamente. Estas tres ventanas corresponden a las Figuras \ref{capitulo4:lista-pacientes-medico}, \ref{capitulo4:detalles-paciente} y \ref{capitulo4:grafica-lineas}, mostradas anteriormente.
 
 Una vez se ha presentado la aplicación Web implementada, en el siguiente capítulo se detallará la evaluación de dicho sistema.
 

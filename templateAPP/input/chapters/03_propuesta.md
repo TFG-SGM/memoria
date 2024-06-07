@@ -1,18 +1,18 @@
 # Propuesta de Solución
 
-En este capítulo se proporciona la propuesta diseñada para abordar el problema presentado en el capítulo de introducción. Asimismo, se presenta una explicación detallada de la metodología de desarrollo seleccionada y las herramientas empleadas a lo largo del proyecto.
+En este capítulo se presenta la propuesta de este trabajo, junto con una explicación detallada de la metodología de desarrollo seleccionada y las herramientas empleadas a lo largo del proyecto.
 
 ## Aplicación Web
 
-Para llevar a cabo la solución al problema planteado en la introducción, se propone el desarrollo de una aplicación Web moderna y eficiente con el fin de brindar una buena experiencia de usuario. Para conseguir esto se plantea la creación de una [SPA](#SPA) siguiendo una arquitectura [MVC](#MVC) y prestando especial atención a la usabilidad. A continuación, se profundizará en todos estos aspectos, así como el marco tecnológico que se sugiere utilizar.
+Para llevar a cabo la solución al problema planteado en la introducción, se propone el desarrollo de una aplicación Web moderna y usable con el fin de brindar una buena experiencia de usuario. Para conseguir esto se plantea la creación de una [SPA](#SPA) siguiendo una arquitectura [MVC](#MVC) y prestando especial atención a la usabilidad. A continuación, se profundizará en todos estos aspectos, así como el marco tecnológico que se sugiere utilizar.
 
 ### Arquitectura MVC
 
-Con una arquitectura [MVC](#MVC), tal y como explica Hernández @arquitectura-mvc, se conseguirá fortalecer la robustez y escalabilidad de la aplicación, al dividir el código en tres componentes principales, cada uno con responsabilidades específicas, lo que facilita la organización, el mantenimiento y la expansión esenciales en una aplicación moderna y eficiente. Estos tres componentes consisten en: Modelo, Vista y Controlador.
+Con una arquitectura [MVC](#MVC), tal y como explica Hernández @arquitectura-mvc, se conseguirá fortalecer la robustez y escalabilidad de la aplicación, al dividir el código en tres componentes principales, cada uno con responsabilidades específicas, lo que facilita la organización, el mantenimiento y la expansión esenciales en una aplicación moderna. Estos tres componentes consisten en: Modelo, Vista y Controlador.
 
-1. **Modelo:** Encargado de gestionar los datos y la lógica. En el contexto de la aplicación de diagnóstico de fibromialgia, el Modelo podría ser responsable de la manipulación de datos relacionados con los pacientes, resultados de diagnóstico y cualquier información relevante para el proceso de evaluación médica.
-2. **Vista:** Representa la interfaz de usuario y se encarga de la presentación de datos. La Vista en este caso sería responsable de mostrar al usuario la información crucial de manera clara y comprensible, teniendo un gran enfoque en la usabilidad.
-3. **Controlador:** Gestiona la interacción del usuario y actúa como intermediario entre el Modelo y la Vista. El Controlador sería responsable de procesar las acciones del usuario, actualizar el Modelo según sea necesario y coordinar la presentación actualizada a través de la Vista.
+1. **Modelo:** Encargado de gestionar los datos y la lógica. En el contexto de la aplicación de diagnóstico de fibromialgia, el Modelo sería el responsable de la manipulación de datos relacionados con los pacientes, resultados de diagnóstico y cualquier información relevante para el proceso de evaluación médica.
+2. **Vista:** Representa la interfaz de usuario y se encarga de la presentación de datos. La Vista en este caso sería el responsable de mostrar al usuario la información crucial de manera clara y comprensible, teniendo un gran enfoque en la usabilidad.
+3. **Controlador:** Gestiona la interacción del usuario y actúa como intermediario entre el Modelo y la Vista. El Controlador sería el responsable de procesar las acciones del usuario, actualizar el Modelo según sea necesario y coordinar la presentación actualizada a través de la Vista.
 
 Esta división clara de responsabilidades, que se puede ver en la Figura \ref{capitulo3:arquitectura-mvc}, no solo facilita el desarrollo y la mantenibilidad del código, sino que también proporciona una base sólida para futuras expansiones y mejoras en la aplicación.
 
@@ -26,7 +26,7 @@ Las [SPA](#SPA), como se detalla en el capítulo anterior y señala BasuMallick 
 
 Además, las [SPA](#SPA) pueden incorporar las funcionalidades de las [PWA](#PWA), permitiendo su uso incluso cuando no hay conexión a internet. Esto lo consiguen las [SPA](#SPA) enviando una única petición al servidor, para luego guardar y almacenar lo que recibe en el caché, permitiendo sincronizar los datos sel servidor cuando la conexión lo permita.
 
-Asimismo, las [SPA](#SPA) permiten crear aplicaciones Web con una compatibilidad multiplataforma, teniendo la posibilidad de utilizar la aplicación en cualquier dispositivo, navegador y sistema operativo. 
+Asimismo, las [SPA](#SPA) permiten crear aplicaciones Web con una compatibilidad multiplataforma, teniendo la posibilidad de utilizar la aplicación en cualquier dispositivo, navegador y sistema operativo moderno. 
 
 Finalmente, es importante destacar que en una [SPA](#SPA) se utiliza un enrutamiento en el lado del cliente, lo que implica que, aunque la [URL](#URL) pueda cambiar visualmente, en realidad no se esta cambiando de página, sino que se está renderizando nuevo contenido en la misma página donde se encuentra el usuario. Esta dinámica proporciona un feedback al usuario al cambiar la [URL](#URL). 
 
@@ -62,7 +62,7 @@ Dentro del marco tecnológico, se distinguen diversas tecnologías agrupadas en 
   - **Librerías destacadas:** Zod @zod
 
 
-Estas tecnologías han sido seleccionadas cuidadosamente con el objetivo de implementar el stack *MERN* utilizando *TypeScript* como lenguaje central. El propósito es lograr el desarrollo de una aplicación Web moderna y eficiente que abarque tanto el lado del cliente como el del servidor. A continuación, se detallan a fondo cada una de estas tecnologías.
+Estas tecnologías han sido seleccionadas cuidadosamente con el objetivo de implementar el stack *MERN* utilizando *TypeScript* como lenguaje central. El propósito es lograr el desarrollo de una aplicación Web moderna y usable que abarque tanto el lado del cliente como el del servidor. A continuación, se detallan a fondo cada una de estas tecnologías.
 
 Por un lado, en el FrontEnd, se opta por tecnologías líderes en la industria, como [HTML](#HTML), [CSS](#CSS), *TypeScript* y *React*. Estas elecciones proporcionan una estructura sólida para la creación de interfaces de usuario dinámicas y atractivas. Además, se utilizará *Vite* como herramienta de construcción, ofreciendo un entorno de desarrollo rápido y liviano que contribuye a la eficiencia del proceso de desarrollo. Finalmente, en el lado del cliente, se resalta la elección de la librería *ECharts* para la visualización de datos y del framework *Cypress* para probar los diferentes componentes. 
 
@@ -80,7 +80,7 @@ En resumen, la combinación de la tecnología presentada, respaldada por una arq
 
 ## Metodología de Desarrollo
 
-En el contexto de la metodología de desarrollo a seguir, se ha optado por adoptar la metodología ágil, específicamente Scrum. En este apartado, se proporcionará una justificación exhaustiva de la elección de Scrum como marco de trabajo. Además, se explorará el flujo de trabajo característico de esta metodología, y se detallarán las adaptaciones específicas realizadas para asegurar la alineación con los objetivos y características particulares del proyecto.
+En el contexto de la metodología de desarrollo a seguir, se ha optado por adoptar la metodología ágil, específicamente Scrum. En este punto, se proporcionará una justificación exhaustiva de la elección de Scrum como marco de trabajo. Además, se explorará el flujo de trabajo característico de esta metodología, y se detallarán las adaptaciones específicas realizadas para asegurar la alineación con los objetivos y características particulares del proyecto.
 
 ### Justificación 
 
@@ -100,7 +100,7 @@ Sin embargo, como se ha mencionado previamente, dentro de las metodologías ági
 
 En conclusión, la elección de Scrum como metodología ágil para el desarrollo de la aplicación Web se fundamenta en sus principios sólidos, su enfoque estructurado y su capacidad para adaptarse a las complejidades del desarrollo de software en el entorno dinámico de la Web. 
 
-Una vez se conoce la justificación de la elección de Scrum, es esencial conocer exactamente cómo es el flujo de dicha metodología, lo cual se explicará en el siguiente punto.
+Una vez presentada la justificación de la elección de Scrum, es esencial conocer exactamente cómo es el flujo de dicha metodología, lo cual se explicará en el siguiente punto.
 
 ### Scrum
 
@@ -133,7 +133,7 @@ La información presentada anteriormente se ha obtenido de "La Guía de Scrum" @
 
 ![Flujo de la metodología Scrum @imagen-scrum\label{capitulo3:scrum}](cap3_scrum.png)
 
-No obstante, para la ejecución de este proyecto, ha sido esencial realizar adaptaciones específicas de la metodología, las cuales se detallan en el siguiente apartado.
+No obstante, para la ejecución de este proyecto, ha sido esencial realizar adaptaciones específicas de la metodología, las cuales se detallan en el siguiente punto.
 
 ### Adaptación
 
@@ -148,7 +148,7 @@ Por otro lado, otra consideración del proyecto es la **limitación de disponibi
 
 Estas adaptaciones han sido cuidadosamente diseñadas para mantener la integridad del marco de trabajo Scrum mientras se ajusta a las circunstancias particulares del proyecto. Aunque las modificaciones se han realizado por necesidad, se busca preservar los principios fundamentales de Scrum, como la transparencia, la inspección y la adaptación, para lograr un desarrollo efectivo y un producto final de alta calidad.
 
-Una vez se conoce la metodología que guiará el desarrollo del proyecto, resulta esencial conocer las herramientas que serán utilizadas durante el mismo. Estas herramientas serán expuestas en la siguiente sección.
+Una vez presentada la metodología que guiará el desarrollo del proyecto, resulta esencial conocer las herramientas que serán utilizadas durante el mismo. Estas herramientas serán expuestas en el siguiente punto.
 
 ## Herramientas
 
@@ -158,7 +158,7 @@ Existe una amplia variedad de herramientas disponibles para facilitar el desarro
 
 En el ámbito de la gestión de proyectos, se han seleccionado las siguientes herramientas:
 
-- **Planificación del proyecto:** GitHub Projects y Excel @excel
+- **Planificación del proyecto:** GitHub Projects @github-projects y Excel @excel
 - **Comunicación y reuniones:** Outlook @outlook, Microsoft Teams @teams y OneDrive @onedrive
 - **Control de versiones:** Git @git y GitHub @github
 
@@ -166,13 +166,13 @@ Para la planificación detallada del proyecto, se implementará *GitHub Projects
 
 Específicamente, se utilizará la plantilla diseñada siguiendo los pasos expuestos por Swam @plantilla-bc. La representación visual de esta plantilla se muestra en la Figura \ref{capitulo3:plantilla-bc}, la cual consiste en una tabla que incluye fechas, el peso planificado de las [HU](#HU) a realizar cada día, el peso real de las [HU](#HU) completadas diariamente y el peso "quemado" en relación con el peso total del Sprint.
 
-![Plantilla utilizada para la creación del [BC](#BC)\label{capitulo3:plantilla-bc}](cap3_plantilla-bc.png){width=75%}
+![Plantilla utilizada para la creación del [BC](#BC)\label{capitulo3:plantilla-bc}](cap3_plantilla-bc.png)
 
 En términos de comunicación y reuniones entre los miembros del equipo, se aprovechará el entorno proporcionado por *Microsoft*. Esto incluye el uso de *Outlook* para el envío de correos electrónicos, *Microsoft Teams* para facilitar reuniones virtuales y *OneDrive* para la compartición de archivos.
 
 Finalmente, para gestionar el control de versiones tanto de la documentación como de la aplicación Web, se empleará *Git* junto con *GitHub*. En esta última, se creará una organización, la cual estará configurada con los distintos miembros del equipo, permitiendo la gestión de repositorios, así como del proyecto a través de la herramienta *GitHub Projects* mencionada anteriormente.
 
-En conjunto, todas estas herramientas permitirán tener una gestión del proyecto adecuada desde la fase de planificación hasta el despliegue. No obstante, el éxito en el desarrollo de un proyecto no solo depende del uso adecuado de herramientas para gestionarlo, sino también de la correcta documentación. A continuación, en la siguiente sección, se detallarán las herramientas específicas utilizadas para documentar de manera efectiva cada aspecto del proyecto.
+En conjunto, todas estas herramientas permiten tener una gestión del proyecto adecuada desde la fase de planificación hasta el despliegue. No obstante, el éxito en el desarrollo de un proyecto no solo depende del uso adecuado de herramientas para gestionarlo, sino también de la correcta documentación. A continuación, en el siguiente punto, se detallarán las herramientas específicas utilizadas para documentar de manera efectiva cada aspecto del proyecto.
 
 ### Documentación
 
@@ -180,7 +180,7 @@ En lo que respecta a las herramientas destinadas a la documentación del proyect
 
 - **Lenguaje de marcado:** Markdown @markdown
 - **Editor de texto:** Typora @typora
-- **Generación de documento:** Plantilla de Félix Albertos @plantilla-felix
+- **Generación de documento:** Plantilla Trabajo Final de Grado de Félix Albertos @plantilla-felix
 - **Diagramas:** Diagrams.net @diagramsnet y PlantUML @plant-uml
 - **Diseño de prototipos:** Excalidraw @excalidraw y Figma @figma
 - **Creación de cuestionarios:** Google Forms @google-forms
@@ -210,10 +210,10 @@ Por otro lado, para desplegar la aplicación Web se utilizará la herramienta *R
 
 En cuanto a la gestión de la base de datos de *MongoDB*, se empleará *MongoDB Compass* para administrar los datos en local y *MongoDB Atlas* para gestionarlos en la nube, aprovechando los 512 MB gratuitos que proporciona.  
 
-Además, se optará por *pnpm* como gestor de paquetes. La elección de pnpm se fundamenta en su capacidad para mejorar la eficiencia en la gestión de dependencias, posibilitando una instalación y actualización más rápida y coherente de bibliotecas y herramientas.
+Además, se opta por *pnpm* como gestor de paquetes. La elección de pnpm se fundamenta en su capacidad para mejorar la eficiencia en la gestión de dependencias, posibilitando una instalación y actualización más rápida y coherente de bibliotecas y herramientas.
 
 Finalmente, se utilizará Canva para el diseño del logotipo de la aplicación Web.
 
-La integración de todas estas herramientas está diseñada para potenciar de manera significativa el desarrollo de la aplicación Web, estableciendo así una base sólida y eficiente que respaldará el logro exitoso de los objetivos del proyecto. 
+La integración de todas estas herramientas contribuyen a facilitar el desarrollo de la aplicación Web, estableciendo así una base sólida y eficiente que respaldará el logro exitoso de los objetivos del proyecto. 
 
-Con la presentación detallada de las diversas herramientas seleccionadas para el proyecto, junto con la metodología propuesta y la solución planteada, el próximo capítulo abordará el resultado final de la aplicación Web.
+Una vez presentada la propuesta, el próximo capítulo abordará el resultado final de la aplicación Web.
