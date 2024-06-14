@@ -4,7 +4,7 @@ En este anexo se recogen los prototipos diseñados para comprender y validar las
 
 ## Prototipo No Interactivo
 
-En esta sección se presentan capturas de pantalla del primer prototipo, que no era interactivo y estaba más alejado del diseño definitivo. A continuación, se enumeran las diferentes ventanas presentadas:
+En esta sección se presentan capturas de pantalla del primer prototipo que no era interactivo y estaba más alejado del diseño definitivo. A continuación, se enumeran las diferentes ventanas presentadas:
 
 - La Figura \ref{anexo4:pr1_inicio-sesion} muestra la ventana de inicio de sesión.
 - La Figura \ref{anexo4:pr1_inicio-medicos} muestra la ventana de inicio del médico. Es importante destacar que esta ventana sería similar para los administradores, con acciones específicas para dicho rol.
@@ -33,7 +33,7 @@ En esta sección se presentan capturas de pantalla del primer prototipo, que no 
 
 ## Prototipo Interactivo
 
-En esta sección se presentan capturas de pantalla del segundo prototipo, que era interactivo y se acercaba más al diseño definitivo. A continuación, se enumeran las diferentes ventanas presentadas:
+En esta sección se presentan capturas de pantalla del segundo prototipo que era interactivo y se acercaba más al diseño definitivo. A continuación, se enumeran las diferentes ventanas presentadas:
 
 - La Figura \ref{anexo4:pr2_inicio-sesion} muestra la ventana de inicio de sesión.
 - La Figura \ref{anexo4:pr2_pacientes} muestra la ventana que lista los diferentes pacientes que el médico puede gestionar.

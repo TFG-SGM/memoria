@@ -9,11 +9,11 @@ Los datos que se han identificado para visualizar en la aplicación Web son los 
 - **Duración del vídeo en segundos**: Permite un análisis detallado.
 - **Partes del cuerpo de interés para cada tipo de prueba**: Identifica las áreas relevantes para cada evaluación.
 - **Desplazamiento ideal y real de cada parte del cuerpo**: Se registra el movimiento óptimo y el movimiento real en cada segundo del vídeo en los ejes *x* e *y*.
-- **Variación entre desplazamiento ideal y real**: Se analiza la discrepancia entre el movimiento deseado y el observado en cada parte del cuerpo y en cada segundo del vídeo, en los ejes *x* e *y*.
+- **Variación entre desplazamiento ideal y real**: Se analiza la discrepancia entre el movimiento deseado y el observado en cada parte del cuerpo y en cada segundo del vídeo en los ejes *x* e *y*.
 - **Restricción de movimiento por parte del cuerpo**: Se asigna un valor del 0 al 100 que representa la limitación de movimiento para cada parte del cuerpo. Este cálculo se basa en las variaciones de movimiento observadas en los ejes *x* e *y* entre todos los pacientes, siendo el valor máximo (100) la media de las cinco peores situaciones.
 - **Restricción de movimiento total después de la prueba**: Al igual que el dato anterior, se asigna un valor del 0 al 100 que indica la restricción de movimiento total tras la prueba. Este valor se calcula considerando la media de las restricciones individuales de movimiento para cada parte del cuerpo entre todos los pacientes, siendo el valor máximo (100) la media de las cinco peores situaciones.
 
-Una vez identificados los diferentes datos a visualizar, en los siguientes puntos se detallarán las diferentes técnicas de visualización de datos para distintos casos.
+Una vez identificados los diferentes datos a visualizar, en los siguientes puntos se detallan las diferentes técnicas de visualización de datos para distintos casos.
 
 ## Visualización del Tiempo de Vídeo
 
@@ -23,7 +23,7 @@ La Figura \ref{anexo5:lineas} muestra una gráfica de línea que representa el d
 
 ## Evaluación de Restricción de Movimiento
 
-Para evaluar la restricción de movimiento de las distintas partes del cuerpo, se recurre a técnicas de visualización tipo ranking. Estas pueden ser representadas tanto mediante un diagrama radial, como se ilustra en la Figura \ref{anexo5:radar}, o mediante un gráfico de barras, como se muestra en la Figura \ref{anexo5:barras}. Sin embargo, se sugiere preferir el uso del gráfico de barras debido a su capacidad para diferenciar de manera más clara entre los datos. Además, es relevante señalar que otra alternativa válida es el uso del gráfico de lollipop en lugar del de barras, como se describe en el capítulo del estado del arte.
+Para evaluar la restricción de movimiento de las distintas partes del cuerpo se recurre a técnicas de visualización tipo ranking. Estas pueden ser representadas tanto mediante un diagrama radial, como se ilustra en la Figura \ref{anexo5:radar}, o mediante un gráfico de barras, como se muestra en la Figura \ref{anexo5:barras}. Sin embargo, se sugiere preferir el uso del gráfico de barras debido a su capacidad para diferenciar de manera más clara entre los datos. Además, es relevante señalar que otra alternativa válida es el uso del gráfico de lollipop en lugar del de barras, como se describe en el capítulo del estado del arte.
 
 ![Diagrama radial para evaluar restricción de movimiento\label{anexo5:radar}](anx5_radar.png){width=75%}
 
@@ -31,7 +31,7 @@ Para evaluar la restricción de movimiento de las distintas partes del cuerpo, s
 
 ## Análisis Conjunto
 
-Para abordar el análisis integral de la restricción del movimiento, se emplean técnicas de visualización que representan el todo y sus partes. Entre estas técnicas se incluyen el gráfico de pastel, ejemplificado en la Figura \ref{anexo5:pastel}, y el diagrama de árbol, representado en la Figura \ref{anexo5:arbol}. Aunque el gráfico de pastel podría considerarse como una opción, se prefieren los diagramas de barras o de árbol debido a que ofrecen una percepción visual más clara y efectiva.
+Para abordar el análisis integral de la restricción del movimiento se emplean técnicas de visualización que representan el todo y sus partes. Entre estas técnicas se incluyen el gráfico de pastel ejemplificado en la Figura \ref{anexo5:pastel} y el diagrama de árbol representado en la Figura \ref{anexo5:arbol}. Aunque el gráfico de pastel podría considerarse como una opción, se prefieren los diagramas de barras o de árbol debido a que ofrecen una percepción visual más clara y efectiva.
 
 ![Gráfico de pastel según el conjunto de la restricción de movimiento\label{anexo5:pastel}](anx5_pastel.png){width=75%}
 
@@ -39,19 +39,19 @@ Para abordar el análisis integral de la restricción del movimiento, se emplean
 
 ## Distribución de Datos
 
-Para analizar la distribución de los datos, específicamente la variación entre el desplazamiento real y el ideal de las distintas partes del cuerpo en un eje específico, se emplean técnicas de visualización como el histograma, representado en la Figura \ref{anexo5:histograma}, y el diagrama de cajas y bigotes, ejemplificado en la Figura \ref{anexo5:caja-2}. Además, es relevante señalar que otras alternativas válidas son el uso de los gráficos de densidad y de violín en lugar de los histogramas y los diagramas de caja y bigotes, respectivamente, tal como se describe en el capítulo del estado del arte.
+Para analizar la distribución de los datos específicamente la variación entre el desplazamiento real y el ideal de las distintas partes del cuerpo en un eje específico se emplean técnicas de visualización como el histograma representado en la Figura \ref{anexo5:histograma} y el diagrama de cajas y bigotes ejemplificado en la Figura \ref{anexo5:caja-2}. Además, es relevante señalar que otras alternativas válidas son el uso de los gráficos de densidad y de violín en lugar de los histogramas y los diagramas de caja y bigotes respectivamente, tal como se describe en el capítulo del estado del arte.
 
 ![Histogramas comparando la distribución de variaciones entre el desplazamiento real e ideal \label{anexo5:histograma}](anx5_histograma.png){width=75%}
 
 ![Diagrama de cajas y bigotes comparando la distribución de variaciones de varias partes del cuerpo\label{anexo5:caja-2}](anx5_caja-2.png){width=75%}
 
-Además, el diagrama de cajas y bigotes puede ser usado para comparar la distribución del desplazamiento real e ideal de una parte del cuerpo específica. Aunque, en este caso será necesario un división de cuando empieza y acaba una repetición del movimiento pedido durante la prueba.
+Además, el diagrama de cajas y bigotes puede ser usado para comparar la distribución del desplazamiento real e ideal de una parte del cuerpo específica. Aunque, en este caso será necesario una división de cuando empieza y acaba una repetición del movimiento pedido durante la prueba.
 
 ![Diagrama de cajas y bigotes comparando la distribución del desplazamiento real e ideal de una parte del cuerpo\label{anexo5:caja-1}](anx5_caja-1.png){width=75%}
 
 ## Correlación entre Partes del Cuerpo
 
-Para observar la correlación entre las diferentes partes del cuerpo, se propone utilizar las ténicas de visualización como el diagrama de burbujas mostrado en la Figura \ref{anexo5:burbujas} y el mapa de calor ilustrado en la FIgura \ref{anexo5:calor}. En dichos diagramas se relacionan las diferentes partes del cuerpo según si tienen la misma variación en un momento exacto del vídeo.
+Para observar la correlación entre las diferentes partes del cuerpo, se propone utilizar las técnicas de visualización como el diagrama de burbujas mostrado en la Figura \ref{anexo5:burbujas} y el mapa de calor ilustrado en la Figura \ref{anexo5:calor}. En dichos diagramas se relacionan las diferentes partes del cuerpo según si tienen la misma variación en un momento exacto del vídeo.
 
 ![Diagrama de burbujas según la variación de dos partes del cuerpo en un momento de la prueba\label{anexo5:burbujas}](anx5_burbujas.png){width=75%}
 
@@ -59,7 +59,7 @@ Para observar la correlación entre las diferentes partes del cuerpo, se propone
 
 ## Evolución del Paciente
 
-Finalmente, para analizar la evolución del paciente se emplean diversas técnicas de visualización que muestren como mejora o empeora la restricción de movimiento de las diferentes partes del cuerpo del paciente. Entre estas técnicas se pueden utilizar las gráficas de líneas, tal y como muestra la Figura \ref{anexo5:evolucion-lineas}, las de barras ilustradas en la Figura \ref{anexo5:evolucion-barras} y varios diagramas radiales como se observa en la Figura \ref{anexo5:evolucion-radar}.
+Finalmente, para analizar la evolución del paciente se emplean diversas técnicas de visualización que muestren cómo mejora o empeora la restricción de movimiento de las diferentes partes del cuerpo del paciente. Entre estas técnicas se pueden utilizar las gráficas de líneas, tal y como muestra la Figura \ref{anexo5:evolucion-lineas}, las de barras ilustradas en la Figura \ref{anexo5:evolucion-barras} y varios diagramas radiales como se observa en la Figura \ref{anexo5:evolucion-radar}.
 
 Se sugiere además emplear técnicas de análisis de distribución para examinar la manera en que las restricciones de movimiento se distribuyen en distintas partes del cuerpo a lo largo del tiempo. Igualmente, se propone utilizar métodos de correlación para identificar momentos en los que dos regiones corporales presenten restricciones de movimiento similares.
 

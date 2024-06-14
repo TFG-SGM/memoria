@@ -11,7 +11,6 @@ EVA: Escala Visual Analógica
 HTML: HyperText Markup Language (Lenguaje de Marcas de Hypertexto)
 HTTP: Hypertext Transfer Protocol (Protocolo de Transferencia de Hipertexto)
 HU: Historia de Usuario
-IA: Inteligencia Artificial
 IPO: Interacción Persona-Ordenador
 ISO: International Organization for Standardization (Organización Internacional de Normalización)
 MVC: Model-View-Controller (Modelo-Vista-Controlador)

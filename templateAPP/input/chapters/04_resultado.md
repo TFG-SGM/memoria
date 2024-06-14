@@ -1,12 +1,12 @@
 # DynaViz
 
-En este capítulo, se proporcionará un detallado análisis de la aplicación Web DynaViz desarrollada durante el proyecto, acompañado de diversos diagramas y capturas de pantalla que ilustran su funcionamiento. Se explicará en detalle las funcionalidades y la arquitectura del sistema implementado. También, se ofrecerá una guía completa para su utilización. Además, se examinará las diversas técnicas de visualización de datos empleadas y se detallará la compatibilidad del sistema con los diferentes dispositivos.
+En este capítulo se presenta un detallado análisis de la aplicación Web *DynaViz* desarrollada durante el proyecto, acompañado de diversos diagramas y capturas de pantalla que ilustran su funcionamiento. Se explican en detalle las funcionalidades y la arquitectura del sistema implementado. También, se ofrece una guía completa para su instalación y uso. Además, se detalla la compatibilidad del sistema con los diferentes dispositivos.
 
 ## Funcionalidades del Sistema
 
-Antes de pasar a explicar el resultado final de la aplicación Web es fundamental detallar las diferentes funcionalidades que se han implementado. Para ello, es muy importante tener en cuenta que la aplicación Web tenía como objetivo el diagnostico de la fibormialgía a través del movimiento. No obstante, este proyecto se concentra en la parte visual del lado del cliente, es decir, en la representación de los datos recopilados, los cuales se analizarán para comprender mejor el problema de la fibromialgia.
+Antes de pasar a explicar el resultado final de la aplicación Web es fundamental detallar las diferentes funcionalidades que se han implementado. Para ello, es muy importante tener en cuenta que la aplicación Web tiene como objetivo el diagnóstico de la fibromialgia a través del movimiento. No obstante, este proyecto se concentra en la parte visual del lado del cliente, es decir, en la representación de los datos recopilados, los cuales se analizan para comprender mejor el problema de la fibromialgia.
 
-Para que este sistema pueda lograr dicho objetivo, es esencial que cumpla con los diferentes casos de uso que muestra la Figura \ref{capitulo4:diagrama-casos-uso}. Los cuales son repartidas en dos roles: administradores y médicos.
+Para que este sistema pueda lograr dicho objetivo, es esencial que cumpla con los diferentes casos de uso que muestra la Figura \ref{capitulo4:diagrama-casos-uso}. Los cuales son repartidos en dos roles: administradores y médicos.
 
 ```{.plantuml #capitulo4:diagrama-casos-uso caption="Diagrama de casos de uso" frame=single}
 @startuml
@@ -62,7 +62,7 @@ Médico --> (Consultar evolución de paciente)
 @enduml
 ```
 
-Por un lado, los administradores deben poder iniciar sesión y tener la capacidad de consultar, añadir, editar y eliminar otros administradores y médicos.
+Por un lado, los administradores deben poder iniciar sesión y tener la capacidad de consultar, añadir, editar y eliminar a otros administradores y médicos.
 
 Por otro lado, los médicos deben poder iniciar sesión en la aplicación y tener la capacidad de consultar, añadir, editar y eliminar tanto médicos como pacientes. También deben tener la capacidad de añadir, gestionar y consultar las pruebas realizadas a los pacientes, además de poder revisar la evolución del paciente según los resultados de estas pruebas. Finalmente, es importante destacar que la visualización de los datos será crucial en la consulta de las diferentes pruebas.
 
@@ -292,41 +292,41 @@ En el diagrama se pueden observar las diferentes clases distribuidas de arriba h
 - **Controladores**: Utilizan los diferentes modelos para responder a las diversas solicitudes.
 - **Modelos**: Estas clases acceden a la base de datos.
 
-Además de emplear la arquitectura [MVC](#MVP), la aplicación Web se trata de una [SPA](#SPA). Como se explicó en capítulos anteriores, esto implica un enrutado en el lado del cliente, lo que hace que la aplicación Web simule el movimiento entre páginas, a pesar de que en realidad sea una única página.
+Además de emplear la arquitectura [MVC](#MVP), la aplicación Web se trata de una [SPA](#SPA). Como se explicó en capítulos anteriores, esto implica un enrutado en el lado del cliente, lo que hace que la aplicación Web simule el movimiento entre páginas a pesar de que en realidad sea una única página.
 
 Por último, el Anexo C contiene información complementaria que muestra diagramas diseñados durante el desarrollo del sistema, profundizando más en la arquitectura del mismo.
 
-Ahora que se conoce la arquitectura de la aplicación Web desarrollada, en el siguiente punto se proporcionará una guía para su utilización.
+Una vez presentada la arquitectura de la aplicación Web desarrollada, en el siguiente punto se presenta la guía para su instalación y uso.
 
 ## Guía de Instalación y Uso
 
-Una vez presentada la arquitectura de la aplicación *DynaViz*, en este punto se detallará la guía de instalación y uso tanto con el rol del administrador como de médico.
+Una vez presentada la arquitectura de la aplicación *DynaViz*, en este punto se detalla la guía de instalación y uso tanto con el rol del administrador como de médico.
 
 ### Prerrequisitos e Instalación
 
-Para utilizar *DynaViz* de manera local, es necesario contar con la instalación previa del gestor de paquetes *pnpm* y el gestor de base de datos *MongoDB Compass*.
+Para utilizar *DynaViz* de manera local es necesario contar con la instalación previa del gestor de paquetes *pnpm* y el gestor de base de datos *MongoDB Compass*.
 
-Una vez completada la instalación de la tecnología requerida, se podrá seguir los siguientes pasos para desplegar la aplicación:
+Una vez completada la instalación de la tecnología requerida, se pueden seguir los siguientes pasos para desplegar la aplicación:
 
 1. Iniciar la aplicación Web con `pnpm install`, seguido de `pnpm run dev`.
 2. Generar los datos aleatorios con `pnpm run generate`.
 3. Iniciar sesión con el correo del administrador o médico (el cual se puede ver en la [BD](#BD) de *MongoDB Compass*) y usando la contraseña "admin" o "doctor" según el rol con el que se este iniciando sesión.
 
-En los siguientes puntos, se mostrarán los diferentes menús tanto para el rol de administrador como para el rol de médico.
+Finalmente, en el siguiente puntos se muestran los diferentes menús tanto para el rol de administrador como para el rol de médico.
 
 ### Rol de Administrador
 
 Por un lado, como administrador se puede administrar los tres tipos de identidades: administradores, médicos y pacientes.
 
-Antes de poder usar *DynaViz*, el administrador debe iniciar sesión desde la ventana mostrada en la Figura \ref{capitulo4:inicio-sesion}, la cual se encuentra en [http://localhost:5173/](http://localhost:5173/). Una vez completado el inicio de sesión, el usuario será dirigido a la ventana de la Figura \ref{capitulo4:inicio-admin}, donde podrá elegir entre consultar administradores, médicos o pacientes.
+Antes de poder usar *DynaViz*, el administrador debe iniciar sesión desde la ventana mostrada en la Figura \ref{capitulo4:inicio-sesion}, la cual se encuentra en [http://localhost:5173/](http://localhost:5173/). Una vez completado el inicio de sesión, el usuario es dirigido a la ventana de la Figura \ref{capitulo4:inicio-admin}, donde puede elegir entre consultar administradores, médicos o pacientes.
 
-Dado que la administración de los tres tipos de identidades es similar, se explicará únicamente la administración de médicos. Por lo tanto, al seleccionar la opción de consultar médicos, el administrador será dirigido a la ventana de lista de médicos mostrada en la Figura \ref{capitulo4:lista-medicos}.
+Dado que la administración de los tres tipos de identidades es similar, se detalla únicamente la administración de médicos. Por lo tanto, al seleccionar la opción de consultar médicos, el administrador es dirigido a la ventana de lista de médicos mostrada en la Figura \ref{capitulo4:lista-medicos}.
 
-En esta ventana, el administrador puede añadir un nuevo médico o seleccionar un médico existente, lo que abrirá una ventana modal (Figura \ref{capitulo4:detalles-medico}) en la que se pueden consultar los detalles, editar o eliminar el médico seleccionado.
+En esta ventana el administrador puede añadir un nuevo médico o seleccionar un médico existente, lo que abre una ventana modal (Figura \ref{capitulo4:detalles-medico}) en la que se pueden consultar los detalles, editar o eliminar el médico seleccionado.
 
 Las ventanas modales para crear y editar son similares. En la Figura \ref{capitulo4:nuevo-medico} se muestra la ventana modal de creación, donde se destaca que la imagen es el único campo no obligatorio. Además, el campo de contraseña no se solicita al editar un médico, permitiendo que solo el usuario pueda cambiar su propia contraseña.
 
-Finalmente, el administrador puede consultar y administrar los datos de su cuenta seleccionando el icono en la cabecera de la aplicación Web, lo que abrirá la ventana modal mostrada en la Figura \ref{capitulo4:mi-cuenta}. En dicho menú, el usuario puede editar sus datos como se observa en las Figuras \ref{capitulo4:editar-mi-cuenta} y \ref{capitulo4:editar-contraseña}.
+Finalmente, el administrador puede consultar y administrar los datos de su cuenta seleccionando el icono en la cabecera de la aplicación Web, lo que abre la ventana modal mostrada en la Figura \ref{capitulo4:mi-cuenta}. En dicho menú, el usuario puede editar sus datos como se observa en las Figuras \ref{capitulo4:editar-mi-cuenta} y \ref{capitulo4:editar-contraseña}.
 
 ![Ventana de inicio de sesión\label{capitulo4:inicio-sesion}](cap4_inicio-sesion.png)
 
@@ -348,15 +348,15 @@ Finalmente, el administrador puede consultar y administrar los datos de su cuent
 
 Por otro lado, como médico se puede administrar únicamente pacientes, pero de una manera más avanzada que los administradores, teniendo la posibilidad de gestionar las pruebas de dichos pacientes.
 
-Al igual que los administradores, el médico debe iniciar sesión para usar *DynaViz* desde la ventana de la Figura \ref{capitulo4:inicio-sesion}, la cual se encuentra en [http://localhost:5173/](http://localhost:5173/). Una vez iniciada la sesión, el médico será dirigido directamente a la ventana de lista de pacientes que muestra la Figura \ref{capitulo4:lista-pacientes-medico}, donde solo se listan los pacientes asignados al médico que ha iniciado sesión.
+Al igual que los administradores, el médico debe iniciar sesión para usar *DynaViz* desde la ventana de la Figura \ref{capitulo4:inicio-sesion}, la cual se encuentra en [http://localhost:5173/](http://localhost:5173/). Una vez iniciada la sesión, el médico es dirigido directamente a la ventana de lista de pacientes que muestra la Figura \ref{capitulo4:lista-pacientes-medico}, donde solo se listan los pacientes asignados al médico que ha iniciado sesión.
 
-En esta ventana, el médico puede añadir un nuevo paciente, desde la ventana modal mostrada en la Figura \ref{capitulo4:nuevo-paciente} o consultar los detalles de uno existente. Similar al rol de administrador, en la ventana modal de los detalles del paciente, se puede editar o eliminar al paciente. Sin embargo, al iniciar sesión como médico, habrá un tercer botón para consultar las pruebas del paciente, tal como se muestra en la Figura \ref{capitulo4:detalles-paciente}.
+En esta ventana, el médico puede añadir un nuevo paciente desde la ventana modal mostrada en la Figura \ref{capitulo4:nuevo-paciente} o consultar los detalles de uno existente. Similar al rol de administrador, en la ventana modal de los detalles del paciente, se puede editar o eliminar al paciente. Sin embargo, al iniciar sesión como médico, existe un tercer botón para consultar las pruebas del paciente, tal como se muestra en la Figura \ref{capitulo4:detalles-paciente}.
 
 En la ventana de la lista de pruebas mostrada en la Figura \ref{capitulo4:lista-pruebas}, el médico puede elegir entre añadir una nueva prueba, consultar una prueba existente o consultar la evolución del paciente.
 
-Por un lado, si el médico decide añadir una nueva prueba, aparecerá la ventana modal de la Figura \ref{capitulo4:nueva-prueba}, donde puede o bien usar un vídeo grabado previamente o bien grabar un vídeo desde *DynaViz*, tal como se muestra en la Figura \ref{capitulo4:grabando-video}.
+Por un lado, si el médico decide añadir una nueva prueba, aparece la ventana modal de la Figura \ref{capitulo4:nueva-prueba}, donde puede o bien usar un vídeo grabado previamente o bien grabar un vídeo desde *DynaViz*, tal como se muestra en la Figura \ref{capitulo4:grabando-video}.
 
-Por otro lado, si el médico decide consultar una prueba existente, se dirigirá a una nueva ventana para analizar la prueba (Figura \ref{capitulo4:grafica-lineas}). En dicha ventana, el médico puede consultar los detalles de la prueba, donde, como se muestra en la Figura \ref{capitulo4:detalles-prueba}, se puede eliminar la prueba; exportar los datos a un documento PDF, como se muestra en las Figuras \ref{capitulo4:exportar-datos} y \ref{capitulo4:documento-prueba}; y elegir entre las diferentes gráficas para visualizar los datos. A continuación, se listan todas las gráficas que existen en *DynaViz*:
+Por otro lado, si el médico decide consultar una prueba existente, es dirigido a una nueva ventana para analizar la prueba (Figura \ref{capitulo4:grafica-lineas}). En dicha ventana, el médico puede consultar los detalles de la prueba, donde, como se muestra en la Figura \ref{capitulo4:detalles-prueba}, se puede eliminar la prueba; exportar los datos a un documento PDF como se muestra en las Figuras \ref{capitulo4:exportar-datos} y \ref{capitulo4:documento-prueba}; y elegir entre las diferentes gráficas para visualizar los datos. A continuación, se listan todas las gráficas que existen en *DynaViz*:
 
 - Gráfico de líneas mostrado en la Figura \ref{capitulo4:grafica-lineas}
 - Gráfico de barras mostrado en la Figura \ref{capitulo4:grafica-barras}
@@ -368,17 +368,17 @@ Por otro lado, si el médico decide consultar una prueba existente, se dirigirá
 - Gráfico de burbujas mostrado en la Figura \ref{capitulo4:grafica-burbujas}
 - Mapa de calor mostrado en la Figura \ref{capitulo4:grafica-calor}
 
-Por último, en el caso de consultar la evolución, el médico será dirigido a la ventana de la Figura \ref{capitulo4:grafica-evolucion}, donde, como se puede observar, el médico puede filtrar el análisis de la evolución tanto por el tipo de prueba como por la parte del cuerpo específica. A continuación, se listan los tres tipos de gráficas de evolución que existen en *DynaViz*:
+Por último, en el caso de consultar la evolución, el médico es dirigido a la ventana de la Figura \ref{capitulo4:grafica-evolucion}, donde, como se puede observar, el médico puede filtrar el análisis de la evolución tanto por el tipo de prueba como por la parte del cuerpo específica. A continuación, se listan los tres tipos de gráficas de evolución que existen en *DynaViz*:
 
-- Gráfico de líneas mostrada en la Figura \ref{capitulo4:grafica-evolucion-lineas}
-- Gráfico de barras mostrada en la Figura \ref{capitulo4:grafica-evolucion-barras}
-- Gráfico radial mostrada en la Figura \ref{capitulo4:grafica-evolucion-radar}
+- Gráfico de líneas mostrado en la Figura \ref{capitulo4:grafica-evolucion-lineas}
+- Gráfico de barras mostrado en la Figura \ref{capitulo4:grafica-evolucion-barras}
+- Gráfico radial mostrado en la Figura \ref{capitulo4:grafica-evolucion-radar}
 
 Además, cabe destacar que cada una de las gráficas viene acompañada de un botón de ayuda, el cual hace aparecer una ventana modal similar a la Figura \ref{capitulo4:grafica-ayuda}.
 
 Finalmente, al igual que el rol de administrador, el médico puede consultar y administrar los datos de su cuenta en las mismas ventanas modales mostradas en las Figuras \ref{capitulo4:mi-cuenta}, \ref{capitulo4:editar-mi-cuenta} y \ref{capitulo4:editar-contraseña}.
 
-Una vez, presentada la guía de utilización, en los siguientes puntos se detallaran las pruebas unitarias realizadas durante el desarrollo así como la compatibilidad de *DynaViz*.
+Una vez presentada la guía de utilización, en los siguientes puntos se detallan las pruebas unitarias realizadas durante el desarrollo, así como la compatibilidad de *DynaViz*.
 
 ![Ventana de lista de pacientes como médico\label{capitulo4:lista-pacientes-medico}](cap4_lista-pacientes-medico.png)
 
@@ -430,7 +430,7 @@ Una vez, presentada la guía de utilización, en los siguientes puntos se detall
 
 ## Pruebas Unitarias
 
-Durante el desarrollo de DynaViz, se realizaron varias pruebas unitarias con el objetivo de probar los diferentes componentes de *React*. Al final, de los 55 componentes implementados, se han probado 20 de ellos utilizando la herramienta *Cypress* @cypress. A continuación se listan los componentes probados:
+Durante el desarrollo de *DynaViz* se realizaron varias pruebas unitarias con el objetivo de probar los diferentes componentes de *React*. Al final de los 55 componentes implementados, se han probado 20 de ellos utilizando la herramienta *Cypress* @cypress. A continuación se listan los componentes probados:
 
 - CrossButton
 - DeleteUserButton
@@ -454,9 +454,9 @@ Durante el desarrollo de DynaViz, se realizaron varias pruebas unitarias con el 
 
 Finalmente, *DynaViz* ha sido probado en los navegadores *Google Chrome v125.0.6422.112*, *Firefox v126.0*, y *Brave v1.66.113*, obteniendo un funcionamiento correcto en todos ellos. Al tratarse de una aplicación Web, se espera que también sea compatible con otros navegadores modernos como *Edge* y *Safari*.
 
-Además, la aplicación es *responsive*, lo que significa que se adapta a las pantallas de dispositivos móviles. Esto se puede apreciar en la Figura \ref{capitulo4:diseño-responsive}, que muestra la ventana de lista de pacientes, la ventana modal de detalles del paciente y la gráfica de líneas, respectivamente. Estas tres ventanas corresponden a las Figuras \ref{capitulo4:lista-pacientes-medico}, \ref{capitulo4:detalles-paciente} y \ref{capitulo4:grafica-lineas}, mostradas anteriormente.
+Además, la aplicación es *responsive*, lo que significa que se adapta a las pantallas de dispositivos móviles. Esto se puede apreciar en la Figura \ref{capitulo4:diseño-responsive} que muestra la ventana de lista de pacientes, la ventana modal de detalles del paciente y la gráfica de líneas, respectivamente. Estas tres ventanas corresponden a las Figuras \ref{capitulo4:lista-pacientes-medico}, \ref{capitulo4:detalles-paciente} y \ref{capitulo4:grafica-lineas} mostradas anteriormente.
 
-Una vez se ha presentado la aplicación Web implementada, en el siguiente capítulo se detallará la evaluación de dicho sistema.
+Una vez se ha presentado la aplicación Web implementada, en el siguiente capítulo se detalla la evaluación de dicho sistema.
 
 ![Diseño responsive\label{capitulo4:diseño-responsive}](cap4_diseño-responsive.png)
 

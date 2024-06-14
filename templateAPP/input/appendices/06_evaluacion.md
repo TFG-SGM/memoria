@@ -39,9 +39,9 @@ Los resultados del cuestionario [SUS](#SUS) de la primera evaluación se muestra
 
 ## Puntuación del SUS
 
-Para conseguir la puntuación total sobre 100, se siguen los siguientes pasos según explica Sauro @sauro:
+Para conseguir la puntuación total sobre 100 se siguen los siguientes pasos, según explica Sauro @sauro:
 
-1. Para elementos impares, se resta uno de la respuesta del usuario.
-2. Para elementos pares. se resta las respuestas del usuario de 5.
+1. Para elementos impares se resta uno de la respuesta del usuario.
+2. Para elementos pares se restan las respuestas del usuario de 5.
 3. Esto escala todos los valores de 0 a 4 (siendo cuatro la respuesta más positiva).
 4. Se suma las respuestas convertidas para cada usuario y se multiplica ese total por 2,5. Esto convierte el rango de valores posibles de 0 a 100 en lugar de 0 a 40.

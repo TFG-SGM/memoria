@@ -50,10 +50,6 @@
 
 : Historia de Usuario
 
-<span id='IA'>IA</span>
-
-: Inteligencia Artificial
-
 <span id='IPO'>IPO</span>
 
 : Interacción Persona-Ordenador

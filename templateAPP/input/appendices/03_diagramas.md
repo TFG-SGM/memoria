@@ -1,14 +1,14 @@
 # Diagramas
 
-En este anexo se recogen los diagramas diseñados para facilitar la implementación y compresión del sistema desarrollado. A continuación, son explicados en detalle cada uno de ellos.
+En este anexo se recogen los diagramas diseñados para facilitar la implementación y comprensión del sistema desarrollado. A continuación, son explicados en detalle cada uno de ellos.
 
 ## Diagrama de Despliegue
 
-El diagrama de la Figura \ref{anexo3:diagrama-despliegue} muestra la disposición física de los diferentes artefactos software de la aplicación Wev en nodos. Se identifican principalmente tres nodos:
+El diagrama de la Figura \ref{anexo3:diagrama-despliegue} muestra la disposición física de los diferentes artefactos software de la aplicación Web en nodos. Se identifican principalmente tres nodos:
 
-- El PC del cliente, que contiene la cámara y el navegador. Este último con los archivos específicos del lado del cliente.
-- El servidor Web, que aloja la [API](#API) accedida por el cliente.
-- La base de datos MongoDB Atlas, donde se guardan los datos de la aplicación Web en las diferentes colecciones.
+- El PC del cliente que contiene la cámara y el navegador. Este último con los archivos específicos del lado del cliente.
+- El servidor Web que aloja la [API](#API) accedida por el cliente.
+- La base de datos MongoDB Atlas donde se guardan los datos de la aplicación Web en las diferentes colecciones.
 
 ```{.plantuml #anexo3:diagrama-despliegue caption="Diagrama de despliegue" frame=single}
 @startuml
@@ -56,9 +56,9 @@ models.ts --> mongodb : Database Operations
 
 ## Diagrama de Base de Datos
 
-El diagrama de la Figura \ref{anexo3:diagrama-bd} muestra las diferentes entidades de la base de datos.  Es importante recordar que esta base de datos es no relacional y utiliza MongoDB, lo que significa que no es necesario que cada documento tenga la misma estructura exacta. Sin embargo, se diseñó el diagrama para proporcionar una base de los diferentes atributos que pueden tener cada entidad.
+El diagrama de la Figura \ref{anexo3:diagrama-bd} muestra las diferentes entidades de la base de datos.  Es importante recordar que esta base de datos es no relacional y utiliza *MongoDB*, lo que significa que no es necesario que cada documento tenga la misma estructura exacta. Sin embargo, se diseñó el diagrama para proporcionar una base de los diferentes atributos que puede tener cada entidad.
 
-En el contexto de la aplicación Web, se han identificado principalmente cinco entidades: administrador, médico, paciente, prueba y datos de prueba. 
+En el contexto de la aplicación Web se han identificado principalmente cinco entidades: administrador, médico, paciente, prueba y datos de prueba. 
 
 ```{.plantuml #anexo3:diagrama-bd caption="Diagrama de base de datos" frame=single}
 @startuml
@@ -151,9 +151,9 @@ fs.files "1" o-- "1..*" fs.chunks
 
 ## Diagrama de Secuencia para Iniciar Sesión
 
-El diagrama de la Figura \ref{anexo3:diagrama-secuencia-inicio-sesion} muestra los diferentes pasos que ocurren al iniciar sesión con exito en la aplicación Web. Se puede observar como la página de inicio de sesión a través de la clase *DataService* ejecuta la operación *PUT* a la [API](#API), la cual empleando el *AuthController* comprueba si existe el correo electronico pedido, seguidamente de verificar si la contraseña es correcta. 
+El diagrama de la Figura \ref{anexo3:diagrama-secuencia-inicio-sesion} muestra los diferentes pasos que ocurren al iniciar sesión con exito en la aplicación Web. Se puede observar cómo la página de inicio de sesión a través de la clase *DataService* ejecuta la operación *PUT* a la [API](#API), la cual empleando el *AuthController* comprueba si existe el correo electrónico pedido, seguidamente de verificar si la contraseña es correcta. 
 
-Una vez todo se realiza con exito el *DataService* añade el token obtenido al almacenamiento local, el cual será empleado para verificar la identidad en posteriores operaciones que realice el usuario.
+Una vez todo se realiza con éxito, el *DataService* añade el token obtenido al almacenamiento local, el cual es empleado para verificar la identidad en posteriores operaciones que realice el usuario.
 
 ```{.plantuml #anexo3:diagrama-secuencia-inicio-sesion caption="Diagrama de secuencia de inicio de sesión con exito" frame=single}
 @startuml
@@ -190,13 +190,13 @@ LoginPage -> Doctor : navigate(/app)
 
 ## Diagrama de Secuencia para Crear un Paciente 
 
-El diagrama de la Figura \ref{anexo3:diagrama-secuencia-creacion-paciente} muestra los diferentes pasos que ocurren al crear un nuevo paciente con exito en la aplicación Web, teniendo en cuenta que el médico ya esta iniciado sesión. 
+El diagrama de la Figura \ref{anexo3:diagrama-secuencia-creacion-paciente} muestra los diferentes pasos que ocurren al crear un nuevo paciente con éxito en la aplicación Web, teniendo en cuenta que el médico ya está iniciado sesión. 
 
-En el diagrama, se puede observar como nuevamente a través del *DataService* se ejecuta la operación *POST* en la ruta de paciente. Dicho ruta, antes de continuar con las operaciones comprueba si el usuario está autentificado y si tiene el rol correcto, en este caso, si es un médico. Estas comprobaciones son realizadas por los middlewares *userAuth* y *checkRole*.
+En el diagrama se puede observar cómo nuevamente a través del *DataService* se ejecuta la operación *POST* en la ruta de paciente. Dicha ruta, antes de continuar con las operaciones, comprueba si el usuario está autentificado y si tiene el rol correcto, en este caso si es un médico. Estas comprobaciones son realizadas por los middlewares *userAuth* y *checkRole*.
 
-Una vez completadas las comprobaciones previas, se pasa a la segunda etapa, donde se verifica la validez de los datos del nuevo paciente, así como la existencia previa del correo electrónico en la base de datos. Si todas las verificaciones son exitosas, el nuevo paciente se agrega y el usuario recibe la confirmación en la interfaz.
+Una vez completadas las comprobaciones previas, se pasa a la segunda etapa donde se verifica la validez de los datos del nuevo paciente, así como la existencia previa del correo electrónico en la base de datos. Si todas las verificaciones son exitosas, el nuevo paciente se agrega y el usuario recibe la confirmación en la interfaz.
 
-Es importante destacar que los diagramas de secuencia para la consulta, creación, edición y eliminación de las diferentes entidades de la base de datos seguirían un patrón similar al mostrado en este diagrama.
+Es importante destacar que los diagramas de secuencia para la consulta, creación, edición y eliminación de las diferentes entidades de la base de datos siguen un patrón similar al mostrado en este diagrama.
 
 ```{.plantuml #anexo3:diagrama-secuencia-creacion-paciente caption="Diagrama de secuencia de creación de un paciente con exito" frame=single}
 @startuml
@@ -234,7 +234,7 @@ PatientsListPage -> Doctor : Muestra nuevo paciente
 
 ## Diagrama de Actividad para Crear una Prueba
 
-El diagrama de la Figura \ref{anexo3:diagrama-actividad-crear-prueba} muestra los diferentes pasos que debe seguir un médico para crear una nueva prueba. En el cual, se puede observar que si el paciente no existe, será necesario crearlo antes de agregar la nueva prueba deseada.
+El diagrama de la Figura \ref{anexo3:diagrama-actividad-crear-prueba} muestra los diferentes pasos que debe seguir un médico para crear una nueva prueba. En el cual se puede observar que, si el paciente no existe, es necesario crearlo antes de agregar la nueva prueba deseada.
 
 ```{.plantuml #anexo3:diagrama-actividad-crear-prueba caption="Diagrama de actividad para crear una prueba" frame=single width=50%}
 @startuml
